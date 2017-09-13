@@ -3,7 +3,7 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Space Company</title>
+	<title>太空公司</title>
 	<link href="SpaceCompanyFavicon.png" rel="shortcut icon" type="image/x-icon" />
 	<link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css" id="theme_css"/>
 	<link href="lib/pnotify.custom.min.css" rel="stylesheet" type="text/css">
@@ -33,14 +33,14 @@
 <body>
 <div id="loadScreen" style="width:100%; height:100%">
 	<div style="width:70%; font-size:72px; font-family: 'Orbitron', 'sans-serif'; font-weight: lighter; color:#000000; line-height:72px; text-align:center; margin: auto; margin-top:3%;">
-		Space Company
+		太空公司
 	<!-- </div>
 	<div style="margin-left:31%; "> -->
 		<img id="loadLogo" style="opacity: 1; width:50%; height:50%;" src="loadScreenPic.png">
 		<br>
 	</div>
 	<div id="splashText" style="width:100%; font-size:40px; font-family: 'Orbitron', 'sans-serif'; font-weight: bold; color:#000000; line-height:40px; text-align:center;">
-		Reticulating Splines...
+		
 	</div>
 </div>
 <script type="text/javascript" src="data/splashTextData.js"></script>
@@ -54,18 +54,18 @@
 					<img src="SpaceCompanyFavicon.png" style="width:40px; height:auto; margin-top:-30%;">
 				</a>
 				<a class="navbar-brand page-title" href="#">
-					<span id="companyName">Space</span> Company
+					<span id="companyName">太空</span> 公司
 				</a>
 				<a class="navbar-brand" ng-href="" target="_blank" href="https://github.com/sparticle999/SpaceCompany#changelog">
 					<span id="versionLabel" class="text-muted small ng-binding"></span>
 				</a>
 				<a class="navbar-brand">
 					<span id="energyLow" class="text-muted small ng-binding red hidden">
-						Energy Deficit!
+						能源不足...
 					</span>
 				</a>
 				<a class="navbar-brand">
-					<span class="text-muted small">V0.5! - Sept. 12th 18:00 UTC+0</span>
+					<span class="text-muted small">版本 V0.5 - 9月12日 18:00 UTC+0</span>
 				</a>
 				<div class="pull-right" style="width:200px;">
 					<a class="navbar-brand">
@@ -84,15 +84,15 @@
 
 <!-- Nav tabs -->
 	<ul class="nav nav-tabs no-select" role="tablist" id="tabList">
-		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Resources</a></li>
-		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Research</a></li>
-    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Solar System</a></li>
-    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Wonders</a></li>
-    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Sol Center</a></li>
-    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Machines</a></li>
-    	<li role="presentation" id="interstellarTab" class="hidden"><a href="#interstellar" aria-control="interstellar" role="tab" data-toggle="tab"onclick="tabClicked('interstellar')"><div id="interstellarTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Interstellar</a></li>
-    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> Help / FAQ</a></li>
-    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> More...</a></li>
+		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 资源</a></li>
+		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 研究</a></li>
+    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 太阳系</a></li>
+    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 奇观</a></li>
+    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 太阳中心</a></li>
+    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 机器</a></li>
+    	<li role="presentation" id="interstellarTab" class="hidden"><a href="#interstellar" aria-control="interstellar" role="tab" data-toggle="tab"onclick="tabClicked('interstellar')"><div id="interstellarTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 星际</a></li>
+    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> 帮助 / 问答</a></li>
+    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 更多...</a></li>
 	</ul>
 
 
@@ -109,12 +109,12 @@
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Plasma
+								等离子体
 							</span>
 						</td>
 						<td style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="plasmaps">0</span>/Sec
+								<span id="plasmaps">0</span>/秒
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -133,12 +133,12 @@
 						</td>
 						<td id="energyNav1" style="border:none; vertical-align:middle;">
 							<span>
-								Energy
+								发动机
 							</span>
 						</td>
 						<td id="energyNav2" style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="energyps">0</span>/Sec
+								<span id="energyps">0</span>/秒
 							</span>
 						</td>
 						<td id="energyNav3" style="border:none; vertical-align:middle; text-align:right;">
@@ -157,12 +157,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Uranium
+								铀
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="uraniumps">0</span>/Sec
+								<span id="uraniumps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -179,12 +179,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lava
+								岩浆
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lavaps">0</span>/Sec
+								<span id="lavaps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -197,7 +197,7 @@
 					</tr>
 					<tr id="collapseEarth" class="collapseEarth" style="border:none;">
 						<td colspan="4">
-							<span>Earth Resources</span> <span class="caret"></span>
+							<span>地球资源</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="oilNav" onclick="activeResourceTab('oilNav')" class="sideTab hidden" href="#oilTab" aria-controls="oilTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -206,12 +206,12 @@
 						</td>
 						<td id="oilNav1" style="vertical-align:middle;">
 							<span>
-								Oil
+								石油
 							</span>
 						</td>
 						<td id="oilNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="oilps">0</span>/Sec
+								<span id="oilps">0</span>/秒
 							</span>
 						</td>
 						<td id="oilNav3" style="vertical-align:middle; text-align:right;">
@@ -228,12 +228,12 @@
 						</td>
 						<td id="metalNav1" style="vertical-align:middle;">
 							<span>
-								Metal
+								金属
 							</span>
 						</td>
 						<td id="metalNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="metalps">0</span>/Sec
+								<span id="metalps">0</span>/秒
 							</span>
 						</td>
 						<td id="metalNav3" style="vertical-align:middle; text-align:right;">
@@ -250,12 +250,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gems
+								宝石
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="gemps">0</span>/Sec
+								<span id="gemps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -272,12 +272,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Charcoal
+								木炭
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="charcoalps">0</span>/Sec
+								<span id="charcoalps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -294,12 +294,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Wood
+								木头
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="woodps">0</span>/Sec
+								<span id="woodps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -316,12 +316,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Silicon
+								硅
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="siliconps">0</span>/Sec
+								<span id="siliconps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -334,7 +334,7 @@
 					</tr>
 					<tr id="collapseInnerPlanet" class="collapseInnerPlanet hidden">
 						<td colspan="4">
-							<span>Inner Planetary Resources</span> <span class="caret"></span>
+							<span>内行星资源</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="lunariteNav" onclick="activeResourceTab('lunariteNav')" class="sideTab hidden" href="#lunariteTab" aria-controls="lunariteTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -343,12 +343,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lunarite
+								陆地
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lunariteps">0</span>/Sec
+								<span id="lunariteps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -365,12 +365,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Methane
+								甲烷
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="methaneps">0</span>/Sec
+								<span id="methaneps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -387,12 +387,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Titanium
+								钛
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="titaniumps">0</span>/Sec
+								<span id="titaniumps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -409,12 +409,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gold
+								黄金
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="goldps">0</span>/Sec
+								<span id="goldps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -431,12 +431,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Silver
+								银
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="silverps">0</span>/Sec
+								<span id="silverps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -449,7 +449,7 @@
 					</tr>
 					<tr id="collapseOuterPlanet" class="collapseOuterPlanet hidden">
 						<td colspan="4">
-							<span>Outer Planetary Resources</span> <span class="caret"></span>
+							<span>外行星资源</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="hydrogenNav" onclick="activeResourceTab('hydrogenNav')" class="sideTab hidden" href="#hydrogenTab" aria-controls="hydrogenTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -458,12 +458,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Hydrogen
+								氢
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="hydrogenps">0</span>/Sec
+								<span id="hydrogenps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -480,12 +480,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Helium
+								氦
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="heliumps">0</span>/Sec
+								<span id="heliumps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -502,12 +502,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Ice
+								冰
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="iceps">0</span>/Sec
+								<span id="iceps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -524,12 +524,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Meteorite
+								陨石
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="meteoriteps">0</span>/Sec
+								<span id="meteoriteps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -549,12 +549,12 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Plasma
+										等离子体
 									</h2>
 									<span>
-										Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company. At first you can hold 100,000 plasma at once, but you can unlock and purchase Plasma Storage Units to increase this number.
+										等离子体是第四种物质状态，被第4层机器和大型空间结构用作贵公司的极端电源。 起初，您可以一次固定10万个等离子体，但您可以解锁并购买等离子体存储单元以增加此数量。
 										<br>
-										Time remaining until <span id="plasmaLimitType">full</span> storage: <b><span id="plasmaLimitTime">N/A</span></b>
+										库存 <span id="plasmaLimitType">full</span> 剩余时间: <b><span id="plasmaLimitTime">N/A</span></b>
 										<br>
 										1 Plasma is created by infusing <span id="manualPlasmaHydrogenCost">10</span> Hydrogen with <span id="manualPlasmaEnergyCost">1000</span> Energy.
 									</span>
@@ -575,7 +575,7 @@
 									<span>
 										PSUs increase your plasma storage by 50,000 per PSU built.
 										<br>
-										Costs <span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										花费 <span id="PSUSilverCost">770,000</span> 银， <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
 									</span>
 									<br>
 									<br>
@@ -590,7 +590,7 @@
 									<span>
 										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
 										<br>
-										Costs <span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										花费 <span id="PSUT2SilverCost">9.300M</span> 银， <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
 									</span>
 									<br>
 									<br>
@@ -609,7 +609,7 @@
 										<br>
 										Produces 1 Plasma per second.
 										<br>
-										Costs <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Gems, <span id="heaterSiliconCost">59,000</span> Silicon.
+										花费 <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> 宝石， <span id="heaterSiliconCost">59,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -630,7 +630,7 @@
 										<br>
 										Produces 10 Plasma per second.
 										<br>
-										Costs <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Meteorite.
+										花费 <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -648,93 +648,93 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Energy
+										能源
 									</h2>
 									<span>
-										Energy is created by power sources such as steam engines, solar power and advances even to fusion power and nuclear energy. The maximum you can hold to start with is 100,000 Energy, but batteries are unlockable which can increase this.
+										能源是由诸如蒸汽机，太阳能发电等电源创造的，甚至可以融合能源和核能。 您可以开始的最大限度是100,000能量，但是电池可以解锁，这可以增加这一点。
 										<br>
-										Time remaining until <span id="energyLimitType">full</span> storage: <b><span id="energyLimitTime">N/A</span></b>
+										库存 <span id="energyLimitType">full</span> 剩余时间: <b><span id="energyLimitTime">N/A</span></b>
 										<br>
 									</span>
 									<br>
-									<button onclick="toggleEnergy()" class="btn btn-default">Toggle All Energy Production + Consumption</button>
+									<button onclick="toggleEnergy()" class="btn btn-default">切换所有能源生产+消费</button>
 								</td>
 							</tr>
 							<tr id="batteries" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Batteries: <span id="battery">0</span>
+										电池: <span id="battery">0</span>
 									</h3>
 									<span>
-										Batteries increase your energy storage by 50,000 per battery built.
+										电池可以将您的能源储存量增加50000能量/每个电池。
 										<br>
-										Costs <span id="batteryMetalCost">50,000</span> Metal, <span id="batteryGemCost">50,000</span> Gems, <span id="batteryLunariteCost">30,000</span> Lunarite.
+										花费 <span id="batteryMetalCost">50,000</span> 金属, <span id="batteryGemCost">50,000</span> 宝石, <span id="batteryLunariteCost">30,000</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBattery()" class="btn btn-default">Get Battery</button>
+									<button onclick="getBattery()" class="btn btn-default">获取电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2 Batteries: <span id="batteryT2">0</span>
+										T2电池: <span id="batteryT2">0</span>
 									</h3>
 									<span>
-										Tier 2 Batteries increase your energy storage by 500,000 per battery built.
+										T2电池增加你的能量存储上限50万/每个电池。
 										<br>
-										Costs <span id="batteryT2MetalCost">550,000</span> Metal, <span id="batteryT2GemCost">550,000</span> Gems, <span id="batteryT2LunariteCost">330,000</span> Lunarite.
+										花费 <span id="batteryT2MetalCost">550,000</span> 金属， <span id="batteryT2GemCost">550,000</span> 宝石， <span id="batteryT2LunariteCost">330,000</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT2()" class="btn btn-default">Get Battery T2</button>
+									<button onclick="getBatteryT2()" class="btn btn-default">获取T2电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T3 Batteries: <span id="batteryT3">0</span>
+										T3电池: <span id="batteryT3">0</span>
 									</h3>
 									<span>
-										Tier 3 Batteries increase your energy storage by 5,000,000 per battery built.
+										T3电池增加你的能量存储上限500万/每个电池。
 										<br>
-										Costs <span id="batteryT3MetalCost">5,500,000</span> Metal, <span id="batteryT3GemCost">5,500,000</span> Gems, <span id="batteryT3LunariteCost">3,300,000</span> Lunarite.
+										花费 <span id="batteryT3MetalCost">5,500,000</span> 金属， <span id="batteryT3GemCost">5,500,000</span> 宝石， <span id="batteryT3LunariteCost">3,300,000</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT3()" class="btn btn-default">Get Battery T3</button>
+									<button onclick="getBatteryT3()" class="btn btn-default">获取T3电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T4 Batteries: <span id="batteryT4">0</span>
+										T4电池: <span id="batteryT4">0</span>
 									</h3>
 									<span>
-										Tier 4 Batteries increase your energy storage by 50,000,000 per battery built.
+										T4电池增加你的能量存储上限5000万/每个电池。
 										<br>
-										Costs <span id="batteryT4MetalCost">55,000,000</span> Metal, <span id="batteryT4GemCost">55,000,000</span> Gems, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
+										花费 <span id="batteryT4MetalCost">55,000,000</span> 金属， <span id="batteryT4GemCost">55,000,000</span> 宝石， <span id="batteryT4LunariteCost">33,000,000</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT4()" class="btn btn-default">Get Battery T4</button>
+									<button onclick="getBatteryT4()" class="btn btn-default">获取T4电池</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Charcoal Engine: <span id="charcoalEngine">0</span>
+										木炭引擎: <span id="charcoalEngine">0</span>
 									</h3>
 									<span>
-										Burns Charcoal to produce a steady source of Energy.
+										燃烧木炭产生稳定的能源。
 										<br>
-										Each engine produces <span id="charcoalEngineOutput">2</span> Energy and uses 1 Charcoal per second.
+										每个木炭引擎每秒产生<span id="charcoalEngineOutput">2</span> 能源并且消耗1木炭。
 										<br>
-										Costs <span id="charcoalEngineMetalCost">50</span> Metal, <span id="charcoalEngineGemCost">25</span> Gems.
+										花费 <span id="charcoalEngineMetalCost">50</span> 金属， <span id="charcoalEngineGemCost">25</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCharcoalEngine()" class="btn btn-default">Get Charcoal Engine</button>
+									<button onclick="getCharcoalEngine()" class="btn btn-default">获取木炭引擎</button>
 									<button onclick="destroyMachine(charcoalEngine, 'charcoalEngine')" class="btn btn-default destroy hidden">Destroy Charcoal Engine</button>
 								</td>
 							</tr>
@@ -748,7 +748,7 @@
 										<br>
 										Each Solar Panel produces <span id="solarPanelOutput">1.5</span> Energy per second.
 										<br>
-										Costs <span id="solarPanelMetalCost">30</span> Metal, <span id="solarPanelGemCost">35</span> Gems.
+										花费 <span id="solarPanelMetalCost">30</span> 金属， <span id="solarPanelGemCost">35</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -766,7 +766,7 @@
 										<br>
 										Each Power Station produces 23 Energy and uses 6 methane per second.
 										<br>
-										Costs <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
+										花费 <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -784,7 +784,7 @@
 										<br>
 										Each Power Station produces 153 Energy and uses 7 uranium per second.
 										<br>
-										Costs <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
+										花费 <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -802,7 +802,7 @@
 										<br>
 										Each Power Station produces 191 Energy and uses 11 lava per second.
 										<br>
-										Costs <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Gems, <span id="magmaticSilverCost">20,000</span> Silver.
+										花费 <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> 宝石， <span id="magmaticSilverCost">20,000</span> Silver.
 									</span>
 									<br>
 									<br>
@@ -820,7 +820,7 @@
 										<br>
 										Each Power Station produces 273 Energy and uses 10 Hydrogen and 10 Helium per second.
 										<br>
-										Costs <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
+										花费 <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -854,18 +854,18 @@
 							<tr id="uraniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Uranium storage size to <span id="uraniumNextStorage">100</span>.
+										升级铀储存上限到 <span id="uraniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="uraniumLimitType">full</span> storage: <b><span id="uraniumLimitTime">N/A</span></b>
+										库存 <span id="uraniumLimitType">full</span> 剩余时间: <b><span id="uraniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeUraniumStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeUraniumStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -878,7 +878,7 @@
 										<br>
 										Produces 1 Uranium per second.
 										<br>
-										Costs <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
+										花费 <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -898,7 +898,7 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										Costs <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
+										花费 <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -918,7 +918,7 @@
 										<br>
 										Uses 180 Energy per second.
 										<br>
-										Costs <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
+										花费 <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -938,7 +938,7 @@
 										<br>
 										Uses 463 Energy per second.
 										<br>
-										Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> Meteorite.
+										花费 <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -970,18 +970,18 @@
 							<tr id="oilStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Oil storage size to <span id="oilNextStorage">100</span>.
+										升级石油储存上限到 <span id="oilNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="oilLimitType">full</span> storage: <b><span id="oilLimitTime">N/A</span></b>
+										库存 <span id="oilLimitType">full</span> 剩余时间: <b><span id="oilLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="oilStorageCost">50</span> Oil, <span id="oilStorageMetalCost">20</span> Metal.
+										花费 <span id="oilStorageCost">50</span> 石油， <span id="oilStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeOilStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeOilStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -994,7 +994,7 @@
 										<br>
 										Produces 1 Oil per second.
 										<br>
-										Costs <span id="pumpMetalCost">60</span> Metal, <span id="pumpGemCost">20</span> Gems.
+										花费 <span id="pumpMetalCost">60</span> 金属， <span id="pumpGemCost">20</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -1012,7 +1012,7 @@
 										<br>
 										Each one produces <span id="pumpjackOutput">5</span> Oil for 4 Energy every second.
 										<br>
-										Costs <span id="pumpjackMetalCost">250</span> Metal, <span id="pumpjackGemCost">80</span> Gems, <span id="pumpjackOilCost">50</span> Oil.
+										花费 <span id="pumpjackMetalCost">250</span> 金属， <span id="pumpjackGemCost">80</span> 宝石， <span id="pumpjackOilCost">50</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1032,7 +1032,7 @@
 										<br>
 										Uses 17 Energy per second.
 										<br>
-										Costs <span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
+										花费 <span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1052,7 +1052,7 @@
 										<br>
 										Uses 44 Energy per second.
 										<br>
-										Costs <span id="oilRigLunariteCost">19,400</span> Lunarite, <span id="oilRigTitaniumCost">16,800</span> Titanium, <span id="oilRigMeteoriteCost">760</span> Meteorite.
+										花费 <span id="oilRigLunariteCost">19,400</span> Lunarite, <span id="oilRigTitaniumCost">16,800</span> Titanium, <span id="oilRigMeteoriteCost">760</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1069,15 +1069,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Metal
+										金属
 									</h2>
 									<span>
-										Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.
+										金属是主要资源之一。 它用于许多事情，包括存储升级，机器和大部分的太空工具。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainMetal()" class="btn btn-default">Gain 1</div>
+									<div onclick="gainMetal()" class="btn btn-default">获取 1</div>
 									</hide>
 									<br>
 									<br>
@@ -1086,71 +1086,71 @@
 							<tr id="metalStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										存储升级
 									</h3>
 									<span>
-										Upgrade your Metal storage size to <span id="metalNextStorage">100</span>.
+										升级你的金属储存上限到 <span id="metalNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="metalLimitType">full</span> storage: <b><span id="metalLimitTime">N/A</span></b>
+										库存<span id="metalLimitType">装满</span> 剩余时间: <b><span id="metalLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="metalStorageCost">50</span> Metal.
+										花费 <span id="metalStorageCost">50</span> 金属.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMetalStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeMetalStorage()" class="btn btn-default">升级库存</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Miner: <span id="miner">0</span>
+										矿工: <span id="miner">0</span>
 									</h3>
 									<span>
-										Build a pickaxe for your miner.
+										建立你的矿工镐头。
 										<br>
-										Produces 1 Metal per second.
+										每秒生产1金属。
 										<br>
-										Costs <span id="minerMetalCost">10</span> Metal, <span id="minerWoodCost">5</span> Wood.
+										花费 <span id="minerMetalCost">10</span> 金属, <span id="minerWoodCost">5</span> 木头.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMiner()" class="btn btn-default">Get Miner</button>
-									<button onclick="destroyMachine(miner, 'miner')" class="btn btn-default destroy hidden">Destroy Miner</button>
+									<button onclick="getMiner()" class="btn btn-default">获取矿工</button>
+									<button onclick="destroyMachine(miner, 'miner')" class="btn btn-default destroy hidden">摧毁矿工</button>
 								</td>
 							</tr>
 							<tr id="metalMachine1" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Heavy Drill: <span id="heavyDrill">0</span>
+										重型钻机: <span id="heavyDrill">0</span>
 									</h3>
 									<span>
-										Heavy Drills mine Metal at mass.
+										重型钻机可以提高获取的矿物金属质量。
 										<br>
-										They produce <span id="heavyDrillOutput">8</span> Metal per second.
+										每秒生产 <span id="heavyDrillOutput">8</span> 金属。
 										<br>
-										They use 2 Energy per second.
+										每秒消耗2能源。
 										<br>
-										Costs <span id="heavyDrillMetalCost">160</span> Metal, <span id="heavyDrillGemCost">60</span> Gems, <span id="heavyDrillOilCost">50</span> Oil.
+										花费 <span id="heavyDrillMetalCost">160</span> 金属, <span id="heavyDrillGemCost">60</span> 宝石, <span id="heavyDrillOilCost">50</span> 油.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeavyDrill()" class="btn btn-default">Get Heavy Drill</button>
-									<button onclick="destroyMachine(heavyDrill, 'heavyDrill')" class="btn btn-default destroy hidden">Destroy Heavy Drill</button>
+									<button onclick="getHeavyDrill()" class="btn btn-default">获取重型钻机</button>
+									<button onclick="destroyMachine(heavyDrill, 'heavyDrill')" class="btn btn-default destroy hidden">摧毁重型钻机</button>
 								</td>
 							</tr>
 							<tr id="metalTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Giga Drill: <span id="gigaDrill">0</span>
+										千兆钻: <span id="gigaDrill">0</span>
 									</h3>
 									<span>
-										Giga Drills extract Metal at colossal speeds.
+										千兆钻以极快的速度提取金属。
 										<br>
-										They produce 108 Metal per second.
+										每秒生产108金属。
 										<br>
-										They use 9 Energy per second.
+										每秒消耗9能源。
 										<br>
-										Costs <span id="gigaDrillLunariteCost">2,800</span> Lunarite, <span id="gigaDrillGemCost">3,400</span> Gems, <span id="gigaDrillSiliconCost">4,100</span> Silicon.
+										花费 <span id="gigaDrillLunariteCost">2,800</span> Lunarite, <span id="gigaDrillGemCost">3,400</span> 宝石， <span id="gigaDrillSiliconCost">4,100</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1170,7 +1170,7 @@
 										<br>
 										They use 24 Energy per second.
 										<br>
-										Costs <span id="quantumDrillLunariteCost">29,000</span> Lunarite, <span id="quantumDrillGoldCost">18,700</span> Gold, <span id="quantumDrillMeteoriteCost">900</span> Meteorite.
+										花费 <span id="quantumDrillLunariteCost">29,000</span> Lunarite, <span id="quantumDrillGoldCost">18,700</span> Gold, <span id="quantumDrillMeteoriteCost">900</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1187,15 +1187,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Gems
+										宝石
 									</h2>
 									<span>
-										Gems are one of the primary resources. They are used for advanced machines and for powerful tools and components. They are more useful in later game.
+										宝石是主要资源之一。 它们用于高级机器和强大的工具和组件。 它们在游戏后期更有用。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainGem()" class="btn btn-default">Gain 1</div>
+									<div onclick="gainGem()" class="btn btn-default">获取 1</div>
 									</hide>
 									<br>
 									<br>
@@ -1204,18 +1204,18 @@
 							<tr id="gemStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级存储
 									</h3>
 									<span>
-										Upgrade your gem storage size to <span id="gemNextStorage">100</span>.
+										升级宝石最大存储量到<span id="gemNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="gemLimitType">full</span> storage: <b><span id="gemLimitTime">N/A</span></b>
+										库存 <span id="gemLimitType">full</span> 剩余时间: <b><span id="gemLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="gemStorageCost">50</span> Gems, <span id="gemStorageMetalCost">20</span> Metal.
+										花费 <span id="gemStorageCost">50</span> 宝石, <span id="gemStorageMetalCost">20</span> 金属.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeGemStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeGemStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1224,11 +1224,11 @@
 										Gem Miner: <span id="gemMiner">0</span>
 									</h3>
 									<span>
-										Build an improved pickaxe to mine Gems.
+										Build an improved pickaxe to mine 宝石。
 										<br>
 										Produces 1 gem per second.
 										<br>
-										Costs <span id="gemMinerMetalCost">15</span> Metal, <span id="gemMinerGemCost">10</span> Gems.
+										花费 <span id="gemMinerMetalCost">15</span> 金属， <span id="gemMinerGemCost">10</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -1248,7 +1248,7 @@
 										<br>
 										Uses 2 Energy per second.
 										<br>
-										Costs <span id="advancedDrillMetalCost">120</span> Metal, <span id="advancedDrillGemCost">200</span> Gems, <span id="advancedDrillOilCost">60</span> Oil.
+										花费 <span id="advancedDrillMetalCost">120</span> 金属， <span id="advancedDrillGemCost">200</span> 宝石， <span id="advancedDrillOilCost">60</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1268,7 +1268,7 @@
 										<br>
 										Uses 15 Energy per second.
 										<br>
-										Costs <span id="diamondDrillLunariteCost">3,400</span> Lunarite, <span id="diamondDrillGemCost">8,000</span> Gems, <span id="diamondDrillSiliconCost">4,500</span> Silicon.
+										花费 <span id="diamondDrillLunariteCost">3,400</span> Lunarite, <span id="diamondDrillGemCost">8,000</span> 宝石， <span id="diamondDrillSiliconCost">4,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1288,7 +1288,7 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										Costs <span id="carbyneDrillLunariteCost">21,000</span> Lunarite, <span id="carbyneDrillGemCost">27,000</span> Gems, <span id="carbyneDrillMeteoriteCost">800</span> Meteorite.
+										花费 <span id="carbyneDrillLunariteCost">21,000</span> Lunarite, <span id="carbyneDrillGemCost">27,000</span> 宝石， <span id="carbyneDrillMeteoriteCost">800</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1305,17 +1305,17 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Charcoal
+										木炭
 									</h2>
 									<span>
-										Charcoal is a secondary tier resource and is used by Engines to produce power for your company. 1 Charcoal is created by burning <span id="manualCharcoalCost">2</span> wood.
+										木炭是二级资源，用来给发动机提供动力，为您的公司生产电力。 制造1个木炭需要燃烧 <span id="manualCharcoalCost">2</span> 木头.
 										<br>
 									</span>
 									<br>
 									<hide class="gainButton">
-									<div onclick="gainCharcoal()" class="btn btn-default">Convert 1</div>
+									<div onclick="gainCharcoal()" class="btn btn-default">转换 1</div>
 									</hide>
-									<button onclick="toggleCharcoal()" class="btn btn-default">Turn Charcoal Production <span id="charcoalToggled">Off</span></button>
+									<button onclick="toggleCharcoal()" class="btn btn-default">把煤炭转换 <span id="charcoalToggled">关闭</span></button>
 									<br>
 									<br>
 								</td>
@@ -1323,18 +1323,18 @@
 							<tr id="charcoalStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Charcoal storage size to <span id="charcoalNextStorage">100</span>.
+										升级木炭储存上限到 <span id="charcoalNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="charcoalLimitType">full</span> storage: <b><span id="charcoalLimitTime">N/A</span></b>
+										库存 <span id="charcoalLimitType">full</span> 剩余时间: <b><span id="charcoalLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="charcoalStorageCost">50</span> Charcoal, <span id="charcoalStorageMetalCost">20</span> Metal.
+										花费 <span id="charcoalStorageCost">50</span> Charcoal, <span id="charcoalStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeCharcoalStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeCharcoalStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1349,7 +1349,7 @@
 										<br>
 										Uses 2 wood per second.
 										<br>
-										Costs <span id="woodburnerMetalCost">10</span> Metal, <span id="woodburnerWoodCost">5</span> Wood.
+										花费 <span id="woodburnerMetalCost">10</span> 金属， <span id="woodburnerWoodCost">5</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -1371,7 +1371,7 @@
 										<br>
 										Uses 3 Energy per second.
 										<br>
-										Costs <span id="furnaceMetalCost">80</span> Metal, <span id="furnaceWoodCost">40</span> Wood, <span id="furnaceOilCost">100</span> Oil.
+										花费 <span id="furnaceMetalCost">80</span> 金属， <span id="furnaceWoodCost">40</span> Wood, <span id="furnaceOilCost">100</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1393,7 +1393,7 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										Costs <span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> Gems, <span id="kilnSiliconCost">3,800</span> Silicon.
+										花费 <span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> 宝石， <span id="kilnSiliconCost">3,800</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1415,7 +1415,7 @@
 										<br>
 										Uses 34 Energy per second.
 										<br>
-										Costs <span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> Meteorite.
+										花费 <span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1449,18 +1449,18 @@
 							<tr id="woodStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your wood storage size to <span id="woodNextStorage">100</span>.
+										升级木头储存上限到 <span id="woodNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="woodLimitType">full</span> storage: <b><span id="woodLimitTime">N/A</span></b>
+										库存 <span id="woodLimitType">full</span> 剩余时间: <b><span id="woodLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="woodStorageCost">50</span> wood, <span id="woodStorageMetalCost">20</span> Metal.
+										花费 <span id="woodStorageCost">50</span> wood, <span id="woodStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeWoodStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeWoodStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1473,7 +1473,7 @@
 										<br>
 										Produces 1 wood per second.
 										<br>
-										Costs <span id="woodcutterMetalCost">10</span> Metal, <span id="woodcutterWoodCost">5</span> Wood.
+										花费 <span id="woodcutterMetalCost">10</span> 金属， <span id="woodcutterWoodCost">5</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -1493,7 +1493,7 @@
 										<br>
 										Uses 4 Energy per second.
 										<br>
-										Costs <span id="laserCutterMetalCost">50</span> Metal, <span id="laserCutterGemCost">90</span> Gems, <span id="laserCutterOilCost">40</span> Oil.
+										花费 <span id="laserCutterMetalCost">50</span> 金属， <span id="laserCutterGemCost">90</span> 宝石， <span id="laserCutterOilCost">40</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1513,7 +1513,7 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										Costs <span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
+										花费 <span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1533,7 +1533,7 @@
 										<br>
 										Uses 43 Energy per second.
 										<br>
-										Costs <span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> Oil, <span id="infuserMeteoriteCost">490</span> Meteorite.
+										花费 <span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> 石油， <span id="infuserMeteoriteCost">490</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1567,18 +1567,18 @@
 							<tr id="siliconStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Silicon storage size to <span id="siliconNextStorage">100</span>.
+										升级硅储存上限到 <span id="siliconNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="siliconLimitType">full</span> storage: <b><span id="siliconLimitTime">N/A</span></b>
+										库存 <span id="siliconLimitType">full</span> 剩余时间: <b><span id="siliconLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeSiliconStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeSiliconStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1591,7 +1591,7 @@
 										<br>
 										Produces 1 silicon per second.
 										<br>
-										Costs <span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
+										花费 <span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -1611,7 +1611,7 @@
 										<br>
 										Uses 18 Energy per second.
 										<br>
-										Costs <span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> Gems, <span id="scorcherOilCost">1,600</span> Oil.
+										花费 <span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> 宝石， <span id="scorcherOilCost">1,600</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1631,7 +1631,7 @@
 										<br>
 										Uses 53 Energy per second.
 										<br>
-										Costs <span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> Gems, <span id="annihilatorSilverCost">2,400</span> Silver.
+										花费 <span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> 宝石， <span id="annihilatorSilverCost">2,400</span> Silver.
 									</span>
 									<br>
 									<br>
@@ -1651,7 +1651,7 @@
 										<br>
 										Uses 138 Energy per second.
 										<br>
-										Costs <span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> Meteorite.
+										花费 <span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1685,18 +1685,18 @@
 							<tr id="lunariteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Lunarite storage size to <span id="lunariteNextStorage">100</span>.
+										升级土地储存上限到 <span id="lunariteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lunariteLimitType">full</span> storage: <b><span id="lunariteLimitTime">N/A</span></b>
+										库存 <span id="lunariteLimitType">full</span> 剩余时间: <b><span id="lunariteLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
+										花费 <span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLunariteStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeLunariteStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1705,11 +1705,11 @@
 										Native Moon Worker: <span id="moonWorker">0</span>
 									</h3>
 									<span>
-										Bribe local workers to mine your Lunarite.
+										Bribe local workers to mine your 土地。
 										<br>
 										Produces 1 Lunarite per second.
 										<br>
-										Costs <span id="moonWorkerGemCost">500</span> Gems.
+										花费 <span id="moonWorkerGemCost">500</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -1729,7 +1729,7 @@
 										<br>
 										Uses 20 Energy per second.
 										<br>
-										Costs <span id="moonDrillMetalCost">1,000</span> Metal, <span id="moonDrillGemCost">600</span> Gems, <span id="moonDrillOilCost">400</span> Oil.
+										花费 <span id="moonDrillMetalCost">1,000</span> 金属， <span id="moonDrillGemCost">600</span> 宝石， <span id="moonDrillOilCost">400</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1749,7 +1749,7 @@
 										<br>
 										Uses 70 Energy per second.
 										<br>
-										Costs <span id="moonQuarryLunariteCost">8,000</span> Lunarite, <span id="moonQuarryGemCost">5,000</span> Gems, <span id="moonQuarrySiliconCost">3,500</span> Silicon.
+										花费 <span id="moonQuarryLunariteCost">8,000</span> Lunarite, <span id="moonQuarryGemCost">5,000</span> 宝石， <span id="moonQuarrySiliconCost">3,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1769,7 +1769,7 @@
 										<br>
 										Uses 182 Energy per second.
 										<br>
-										Costs <span id="planetExcavatorTitaniumCost">45,000</span> Titanium, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> Meteorite.
+										花费 <span id="planetExcavatorTitaniumCost">45,000</span> Titanium, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1803,18 +1803,18 @@
 							<tr id="methaneStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your methane storage size to <span id="methaneNextStorage">100</span>.
+										升级甲烷储存上限到 <span id="methaneNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="methaneLimitType">full</span> storage: <b><span id="methaneLimitTime">N/A</span></b>
+										库存 <span id="methaneLimitType">full</span> 剩余时间: <b><span id="methaneLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="methaneStorageCost">50</span> Methane, <span id="methaneStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="methaneStorageCost">50</span> Methane, <span id="methaneStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMethaneStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeMethaneStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1827,7 +1827,7 @@
 										<br>
 										Produces 1 methane per second.
 										<br>
-										Costs <span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> Gems.
+										花费 <span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -1847,7 +1847,7 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										Costs <span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> Gems, <span id="suctionExcavatorOilCost">600</span> Oil.
+										花费 <span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> 宝石， <span id="suctionExcavatorOilCost">600</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1867,7 +1867,7 @@
 										<br>
 										Uses 49 Energy per second.
 										<br>
-										Costs <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
+										花费 <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1887,7 +1887,7 @@
 										<br>
 										Uses 132 Energy per second.
 										<br>
-										Costs <span id="ventLunariteCost">52,000</span> Lunarite, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> Meteorite.
+										花费 <span id="ventLunariteCost">52,000</span> Lunarite, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -1922,18 +1922,18 @@
 							<tr id="titaniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Titanium storage size to <span id="titaniumNextStorage">100</span>.
+										升级钛储存上限到 <span id="titaniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="titaniumLimitType">full</span> storage: <b><span id="titaniumLimitTime">N/A</span></b>
+										库存 <span id="titaniumLimitType">full</span> 剩余时间: <b><span id="titaniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="titaniumStorageCost">50</span> Titanium, <span id="titaniumStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="titaniumStorageCost">50</span> Titanium, <span id="titaniumStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeTitaniumStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeTitaniumStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1946,7 +1946,7 @@
 										<br>
 										Produces 1 Titanium per second.
 										<br>
-										Costs <span id="explorerGemCost">1,000</span> Gems.
+										花费 <span id="explorerGemCost">1,000</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -1966,7 +1966,7 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										Costs <span id="lunariteDrillLunariteCost">200</span> Lunarite, <span id="lunariteDrillGemCost">800</span> Gems, <span id="lunariteDrillOilCost">1,000</span> Oil.
+										花费 <span id="lunariteDrillLunariteCost">200</span> Lunarite, <span id="lunariteDrillGemCost">800</span> 宝石， <span id="lunariteDrillOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1986,7 +1986,7 @@
 										<br>
 										Uses 46 Energy per second.
 										<br>
-										Costs <span id="pentaDrillLunariteCost">14,000</span> Lunarite, <span id="pentaDrillGemCost">11,000</span> Gems, <span id="pentaDrillSiliconCost">5,600</span> Silicon.
+										花费 <span id="pentaDrillLunariteCost">14,000</span> Lunarite, <span id="pentaDrillGemCost">11,000</span> 宝石， <span id="pentaDrillSiliconCost">5,600</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2006,7 +2006,7 @@
 										<br>
 										Uses 123 Energy per second.
 										<br>
-										Costs <span id="titanDrillLunariteCost">63,000</span> Lunarite, <span id="titanDrillGoldCost">27,000</span> Gold, <span id="titanDrillMeteoriteCost">600</span> Meteorite.
+										花费 <span id="titanDrillLunariteCost">63,000</span> Lunarite, <span id="titanDrillGoldCost">27,000</span> Gold, <span id="titanDrillMeteoriteCost">600</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2040,18 +2040,18 @@
 							<tr id="goldStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Gold storage size to <span id="goldNextStorage">100</span>.
+										升级黄金储存上限到 <span id="goldNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="goldLimitType">full</span> storage: <b><span id="goldLimitTime">N/A</span></b>
+										库存 <span id="goldLimitType">full</span> 剩余时间: <b><span id="goldLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="goldStorageCost">50</span> Gold, <span id="goldStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="goldStorageCost">50</span> Gold, <span id="goldStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeGoldStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeGoldStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2064,7 +2064,7 @@
 										<br>
 										Produces 1 Gold per second.
 										<br>
-										Costs <span id="droidLunariteCost">200</span> Lunarite, <span id="droidMethaneCost">50</span> Methane.
+										花费 <span id="droidLunariteCost">200</span> Lunarite, <span id="droidMethaneCost">50</span> Methane.
 									</span>
 									<br>
 									<br>
@@ -2084,7 +2084,7 @@
 										<br>
 										Uses 19 Energy per second.
 										<br>
-										Costs <span id="destroyerLunariteCost">500</span> Lunarite, <span id="destroyerGemCost">1,500</span> Gems, <span id="destroyerOilCost">1,000</span> Oil.
+										花费 <span id="destroyerLunariteCost">500</span> Lunarite, <span id="destroyerGemCost">1,500</span> 宝石， <span id="destroyerOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2104,7 +2104,7 @@
 										<br>
 										Uses 81 Energy per second.
 										<br>
-										Costs <span id="deathStarLunariteCost">17,000</span> Lunarite, <span id="deathStarSilverCost">11,500</span> Silver, <span id="deathStarSiliconCost">8,200</span> Silicon.
+										花费 <span id="deathStarLunariteCost">17,000</span> Lunarite, <span id="deathStarSilverCost">11,500</span> 银， <span id="deathStarSiliconCost">8,200</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2124,7 +2124,7 @@
 										<br>
 										Uses 223 Energy per second.
 										<br>
-										Costs <span id="actuatorLunariteCost">61,000</span> Lunarite, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> Meteorite.
+										花费 <span id="actuatorLunariteCost">61,000</span> Lunarite, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2158,18 +2158,18 @@
 							<tr id="silverStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your silver storage size to <span id="silverNextStorage">100</span>.
+										升级银储存上限到 <span id="silverNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="silverLimitType">full</span> storage: <b><span id="silverLimitTime">N/A</span></b>
+										库存 <span id="silverLimitType">full</span> 剩余时间: <b><span id="silverLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="silverStorageCost">50</span> Silver, <span id="silverStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="silverStorageCost">50</span> 银， <span id="silverStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeSilverStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeSilverStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2182,7 +2182,7 @@
 										<br>
 										Produces 1 silver per second.
 										<br>
-										Costs <span id="scoutLunariteCost">100</span> Lunarite, <span id="scoutTitaniumCost">20</span> Titanium.
+										花费 <span id="scoutLunariteCost">100</span> Lunarite, <span id="scoutTitaniumCost">20</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -2202,7 +2202,7 @@
 										<br>
 										Uses 24 Energy per second.
 										<br>
-										Costs <span id="spaceLaserLunariteCost">350</span> Lunarite, <span id="spaceLaserGemCost">900</span> Gems, <span id="spaceLaserOilCost">1,200</span> Oil.
+										花费 <span id="spaceLaserLunariteCost">350</span> Lunarite, <span id="spaceLaserGemCost">900</span> 宝石， <span id="spaceLaserOilCost">1,200</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2222,7 +2222,7 @@
 										<br>
 										Uses 65 Energy per second.
 										<br>
-										Costs <span id="berthaLunariteCost">19,500</span> Lunarite, <span id="berthaTitaniumCost">18,200</span> Titanium, <span id="berthaSiliconCost">11,000</span> Silicon.
+										花费 <span id="berthaLunariteCost">19,500</span> Lunarite, <span id="berthaTitaniumCost">18,200</span> Titanium, <span id="berthaSiliconCost">11,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2242,7 +2242,7 @@
 										<br>
 										Uses 170 Energy per second.
 										<br>
-										Costs <span id="cannonLunariteCost">85,100</span> Lunarite, <span id="cannonOilCost">93,800</span> Oil, <span id="cannonMeteoriteCost">520</span> Meteorite.
+										花费 <span id="cannonLunariteCost">85,100</span> Lunarite, <span id="cannonOilCost">93,800</span> 石油， <span id="cannonMeteoriteCost">520</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2276,18 +2276,18 @@
 							<tr id="lavaStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Lava storage size to <span id="lavaNextStorage">100</span>.
+										升级岩浆储存上限到 <span id="lavaNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lavaLimitType">full</span> storage: <b><span id="lavaLimitTime">N/A</span></b>
+										库存 <span id="lavaLimitType">full</span> 剩余时间: <b><span id="lavaLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLavaStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeLavaStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2300,7 +2300,7 @@
 										<br>
 										Produces 1 Lava per second.
 										<br>
-										Costs <span id="crucibleGemCost">7,000</span> Gems, <span id="crucibleLunariteCost">4,000</span> Lunarite.
+										花费 <span id="crucibleGemCost">7,000</span> 宝石， <span id="crucibleLunariteCost">4,000</span> 土地。
 									</span>
 									<br>
 									<br>
@@ -2320,7 +2320,7 @@
 										<br>
 										Uses 58 Energy per second.
 										<br>
-										Costs <span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
+										花费 <span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2340,7 +2340,7 @@
 										<br>
 										Uses 237 Energy per second.
 										<br>
-										Costs <span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
+										花费 <span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2360,7 +2360,7 @@
 										<br>
 										Uses 689 Energy per second.
 										<br>
-										Costs <span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> Meteorite.
+										花费 <span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2394,18 +2394,18 @@
 							<tr id="hydrogenStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Hydrogen storage size to <span id="hydrogenNextStorage">100</span>.
+										升级氢储存上限到 <span id="hydrogenNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="hydrogenLimitType">full</span> storage: <b><span id="hydrogenLimitTime">N/A</span></b>
+										库存 <span id="hydrogenLimitType">full</span> 剩余时间: <b><span id="hydrogenLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="hydrogenStorageCost">50</span> Hydrogen, <span id="hydrogenStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="hydrogenStorageCost">50</span> Hydrogen, <span id="hydrogenStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeHydrogenStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeHydrogenStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2418,7 +2418,7 @@
 										<br>
 										Produces 1 Hydrogen per second.
 										<br>
-										Costs <span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
+										花费 <span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -2438,7 +2438,7 @@
 										<br>
 										Uses 63 Energy per second.
 										<br>
-										Costs <span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
+										花费 <span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -2458,7 +2458,7 @@
 										<br>
 										Uses 234 Energy per second.
 										<br>
-										Costs <span id="eCellSilverCost">37,200</span> Silver, <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
+										花费 <span id="eCellSilverCost">37,200</span> 银， <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2478,7 +2478,7 @@
 										<br>
 										Uses 613 Energy per second.
 										<br>
-										Costs <span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> Meteorite.
+										花费 <span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2512,18 +2512,18 @@
 							<tr id="heliumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Helium storage size to <span id="heliumNextStorage">100</span>.
+										升级氦储存上限到 <span id="heliumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="heliumLimitType">full</span> storage: <b><span id="heliumLimitTime">N/A</span></b>
+										库存 <span id="heliumLimitType">full</span> 剩余时间: <b><span id="heliumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="heliumStorageCost">50</span> Helium, <span id="heliumStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="heliumStorageCost">50</span> Helium, <span id="heliumStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeHeliumStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeHeliumStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2536,7 +2536,7 @@
 										<br>
 										Produces 1 Helium per second.
 										<br>
-										Costs <span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
+										花费 <span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2556,7 +2556,7 @@
 										<br>
 										Uses 72 Energy per second.
 										<br>
-										Costs <span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
+										花费 <span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2576,7 +2576,7 @@
 										<br>
 										Uses 248 Energy per second.
 										<br>
-										Costs <span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
+										花费 <span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2596,7 +2596,7 @@
 										<br>
 										Uses 670 Energy per second.
 										<br>
-										Costs <span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> Meteorite.
+										花费 <span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2630,18 +2630,18 @@
 							<tr id="iceStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Ice storage size to <span id="iceNextStorage">100</span>.
+										升级冰储存上限到 <span id="iceNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="iceLimitType">full</span> storage: <b><span id="iceLimitTime">N/A</span></b>
+										库存 <span id="iceLimitType">full</span> 剩余时间: <b><span id="iceLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="iceStorageCost">50</span> Ice, <span id="iceStorageLunariteCost">20</span> Lunarite.
+										花费 <span id="iceStorageCost">50</span> Ice, <span id="iceStorageLunariteCost">20</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeIceStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeIceStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2654,7 +2654,7 @@
 										<br>
 										Produces 1 Ice per second.
 										<br>
-										Costs <span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> Gems.
+										花费 <span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -2674,7 +2674,7 @@
 										<br>
 										Uses 83 Energy per second.
 										<br>
-										Costs <span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
+										花费 <span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2694,7 +2694,7 @@
 										<br>
 										Uses 397 Energy per second.
 										<br>
-										Costs <span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
+										花费 <span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2714,7 +2714,7 @@
 										<br>
 										Uses 1,135 Energy per second.
 										<br>
-										Costs <span id="mrFreezeWoodCost">379,000</span> Wood, <span id="mrFreezeHeliumCost">14,000</span> Helium, <span id="mrFreezeMeteoriteCost">1,500</span> Meteorite.
+										花费 <span id="mrFreezeWoodCost">379,000</span> Wood, <span id="mrFreezeHeliumCost">14,000</span> Helium, <span id="mrFreezeMeteoriteCost">1,500</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -2751,18 +2751,18 @@
 							<tr id="meteoriteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										升级库存
 									</h3>
 									<span>
-										Upgrade your Meteorite storage size to <span id="meteoriteNextStorage">100</span>.
+										升级陨石储存上限到 <span id="meteoriteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="meteoriteLimitType">full</span> storage: <b><span id="meteoriteLimitTime">N/A</span></b>
+										库存 <span id="meteoriteLimitType">full</span> 剩余时间: <b><span id="meteoriteLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="meteoriteStorageCost">50</span> Meteorite, <span id="meteoriteStorageLunariteCost">400</span> Lunarite.
+										花费 <span id="meteoriteStorageCost">50</span> 陨石， <span id="meteoriteStorageLunariteCost">400</span> 土地。
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMeteoriteStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeMeteoriteStorage()" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier1" class="hidden">
@@ -2775,7 +2775,7 @@
 										<br>
 										Produces 1 Meteorite per second. Uses 3 Plasma per second.
 										<br>
-										Costs <span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
+										花费 <span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2793,7 +2793,7 @@
 										<br>
 										Produces 8 Meteorite per second. Uses 21 Plasma per second.
 										<br>
-										Costs <span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
+										花费 <span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2817,12 +2817,12 @@
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Science Production
+								科学生产
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="scienceps">0</span>/Sec
+								<span id="scienceps">0</span>/秒
 							</span>
 					</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -2837,7 +2837,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Technologies
+								科技
 							</span>
 						</td>
 					</tr>
@@ -2850,10 +2850,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Science Production
+										科学生产
 									</h2>
 									<span>
-										Science is used for researching new technologies to further your progress in the game.
+										科学用于研究新技术，以进一步推动您在游戏中的进步。
 									</span>
 									<br>
 									<br>
@@ -2862,18 +2862,18 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Home Science Kit: <span id="lab">0</span>
+										家庭科学套件: <span id="lab">0</span>
 									</h3>
 									<span>
-										Build a small laboratory of your very own to start producing science.
+										建立一个你自己的小实验室，开始生产科学。
 										<br>
-										Each one produces 0.1 science per second.
+										每秒生产0.1科学。
 										<br>
-										Costs <span id="labMetalCost">20</span> Metal, <span id="labGemCost">15</span> Gems, <span id="labWoodCost">10</span> Wood.
+										花费 <span id="labMetalCost">20</span> 金属, <span id="labGemCost">15</span> 宝石, <span id="labWoodCost">10</span> 木头.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLab()" class="btn btn-default">Build</button>
+									<button onclick="getLab()" class="btn btn-default">建造</button>
 									<br>
 									<br>
 								</td>
@@ -2881,18 +2881,18 @@
 							<tr id="labTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										High School Science: <span id="labT2">0</span>
+										高中科学: <span id="labT2">0</span>
 									</h3>
 									<span>
-										Build a more effective laboratory to continue your quest into the realm of science at a significantly faster speed.
+										建立一个更有效的实验室，以更快的速度继续探索科学领域。
 										<br>
-										Each one produces 1 science per second.
+										每秒生产1科学。
 										<br>
-										Costs <span id="labT2MetalCost">1,000</span> Metal, <span id="labT2GemCost">200</span> Gems, <span id="labT2WoodCost">500</span> Wood.
+										花费 <span id="labT2MetalCost">1,000</span> 金属, <span id="labT2GemCost">200</span> 宝石, <span id="labT2WoodCost">500</span> 木头.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT2()" class="btn btn-default">Build Laboratory T2</button>
+									<button onclick="getLabT2()" class="btn btn-default">建立实验室T2</button>
 									<br>
 									<br>
 								</td>
@@ -2907,7 +2907,7 @@
 										<br>
 										Each one produces 10 science per second.
 										<br>
-										Costs <span id="labT3MetalCost">17,000</span> Metal, <span id="labT3GemCost">4,700</span> Gems, <span id="labT3WoodCost">9,600</span> Wood.
+										花费 <span id="labT3MetalCost">17,000</span> 金属， <span id="labT3GemCost">4,700</span> 宝石， <span id="labT3WoodCost">9,600</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -2924,7 +2924,7 @@
 										<br>
 										Each one produces 100 science per second.
 										<br>
-										Costs <span id="labT4MetalCost">610,000</span> Metal, <span id="labT4GemCost">370,000</span> Gems, <span id="labT4WoodCost">926,000</span> Wood.
+										花费 <span id="labT4MetalCost">610,000</span> 金属， <span id="labT4GemCost">370,000</span> 宝石， <span id="labT4WoodCost">926,000</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -2940,10 +2940,10 @@
 							<tr>
 								<td style="border: none;">
 									<h2 class="default btn-link">
-										Technologies
+										科技
 									</h2>
 									<span>
-										Research new technologies to unlock more mechanics and advance through the game.
+										研究新技术解锁更多的力量，并通过游戏推进。
 									</span>
 								</td>
 							</tr>
@@ -2964,12 +2964,12 @@
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Rocket Fuel
+								火箭燃料
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="rocketFuelps">0</span>/Sec
+								<span id="rocketFuelps">0</span>/秒
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -2984,13 +2984,13 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Space Rocket
+								
 							</span>
 						</td>
 					</tr>
 					<tr id="collapseInner" class="collapseInner hidden" style="border:none;">
 						<td colspan="4">
-							<span>Collapse Inner Solar System</span> <span class="caret"></span>
+							<span>折叠内太阳系</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr class="hidden" id="moon" onclick="activeSolarTab('moon')" href="#moonTab" aria-controls="moonTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -2999,7 +2999,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								The Moon
+								月球
 							</span>
 						</td>
 					</tr>
@@ -3009,7 +3009,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Mercury
+								水星
 							</span>
 						</td>
 					</tr>
@@ -3019,7 +3019,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Venus
+								金星
 							</span>
 						</td>
 					</tr>
@@ -3029,7 +3029,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Mars
+								火星
 							</span>
 						</td>
 					</tr>
@@ -3039,7 +3039,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Asteroid Belt
+								小行星带
 							</span>
 						</td>
 					</tr>
@@ -3049,7 +3049,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								The Wonder Station
+								奇迹站
 							</span>
 						</td>
 					</tr>
@@ -3064,7 +3064,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Jupiter
+								木星
 							</span>
 						</td>
 					</tr>
@@ -3074,7 +3074,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Saturn
+								土星
 							</span>
 						</td>
 					</tr>
@@ -3084,7 +3084,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Uranus
+								天王星
 							</span>
 						</td>
 					</tr>
@@ -3094,7 +3094,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Neptune
+								海王星
 							</span>
 						</td>
 					</tr>
@@ -3104,7 +3104,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Pluto
+								冥王星
 							</span>
 						</td>
 					</tr>
@@ -3114,7 +3114,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Kuiper Belt
+								柯伊伯带
 							</span>
 						</td>
 					</tr>
@@ -3124,7 +3124,7 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								Sol Scientific Center
+								太阳科学中心
 							</span>
 						</td>
 					</tr>
@@ -3137,7 +3137,7 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Rocket Fuel
+										火箭燃料
 									</h2>
 									<span>
 										Rocket fuel is created in chemical plants and is used to allow rockets to launch off into space and to travel to other planets and star systems.
@@ -3161,7 +3161,7 @@
 										<br>
 										They produce 0.2 Rocket Fuel per second.
 										<br>
-										Costs <span id="chemicalPlantMetalCost">1,000</span> Metal, <span id="chemicalPlantGemCost">750</span> Gems, <span id="chemicalPlantOilCost">500</span> Oil.
+										花费 <span id="chemicalPlantMetalCost">1,000</span> 金属， <span id="chemicalPlantGemCost">750</span> 宝石， <span id="chemicalPlantOilCost">500</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3183,7 +3183,7 @@
 										<br>
 										They produce 1.5 Rocket Fuel per second.
 										<br>
-										Costs <span id="oxidisationMetalCost">12,000</span> Metal, <span id="oxidisationGemCost">8,300</span> Gems, <span id="oxidisationOilCost">6,800</span> Oil.
+										花费 <span id="oxidisationMetalCost">12,000</span> 金属， <span id="oxidisationGemCost">8,300</span> 宝石， <span id="oxidisationOilCost">6,800</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3205,7 +3205,7 @@
 										<br>
 										They produce 20 Rocket Fuel per second.
 										<br>
-										Costs <span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
+										花费 <span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -3243,7 +3243,7 @@
 									<span>
 										To launch the rocket into space, it must first be built.
 										<br>
-										Costs <span id="rocketMetalCost">1,200</span> Metal, <span id="rocketGemCost">900</span> Gems, <span id="rocketOilCost">1,000</span> Oil.
+										花费 <span id="rocketMetalCost">1,200</span> 金属， <span id="rocketGemCost">900</span> 宝石， <span id="rocketOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3293,13 +3293,13 @@
 										Exploration
 									</h3>
 									<span>
-										Exploring the Moon will unlock the collection of Lunarite.
+										Exploring the Moon will unlock the collection of 土地。
 										<br>
-										Costs <span id="moonRocketFuelCost">20</span> rocket fuel.
+										花费 <span id="moonRocketFuelCost">20</span> rocket fuel.
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('Moon')" class="btn btn-default">Explore Moon</button>
+									<button onclick="explore('Moon')" class="btn btn-default">探索月球</button>
 									<br>
 									<br>
 								</td>
@@ -3313,10 +3313,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Mercury
+										水星
 									</h2>
 									<span>
-										Mercury is a lifeless rock with little to no value. It is not worth exploring on the ground as there are no valuable materials present.
+										水星是一大块无生命的岩石，几乎没有价值。 这是不值得探索的地方，因为没有有价值的材料存在。
 									</span>
 									<br>
 									<br>
@@ -3331,10 +3331,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Venus
+										金星
 									</h2>
 									<span>
-										Venus is the hottest planet in the solar system and the closest one to Earth. It is rich in greenhouse gases, contributing to its extreme heat. You can extract methane from Venus, which allows you to build up a new form of power generation.
+										金星是太阳系中最热的星球，也是最接近地球的星球。 它有丰富的温室气体，有极大的热量。 您可以从金星提取甲烷，这样可以建立一种新形式的发电。
 									</span>
 									<br>
 									<br>
@@ -3348,7 +3348,7 @@
 									<span>
 										Exploring Venus will unlock methane and methane based power.
 										<br>
-										Costs <span id="venusRocketFuelCost">50</span> rocket fuel.
+										花费 <span id="venusRocketFuelCost">50</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3383,7 +3383,7 @@
 									<span>
 										Exploring Mars unlocks Titanium production, which allows you to harvest Silicon on Earth and to build Methane power plants.
 										<br>
-										Costs <span id="marsRocketFuelCost">80</span> rocket fuel.
+										花费 <span id="marsRocketFuelCost">80</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3418,7 +3418,7 @@
 									<span>
 										Exploring the asteroid belt gives you access to Gold and Silver.
 										<br>
-										Costs <span id="asteroidBeltRocketFuelCost">200</span> rocket fuel.
+										花费 <span id="asteroidBeltRocketFuelCost">200</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3453,7 +3453,7 @@
 									<span>
 										Exploring the Wonder Station will gives you access to Wonders and allow you to continue your research and travel even further than before.
 										<br>
-										Costs <span id="wonderStationRocketFuelCost">500</span> rocket fuel.
+										花费 <span id="wonderStationRocketFuelCost">500</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3486,9 +3486,9 @@
 										Exploration
 									</h3>
 									<span>
-										Exploring Jupiter gives you access to Hydrogen.
+										Exploring Jupiter gives you access to 氢。
 										<br>
-										Costs <span id="jupiterRocketFuelCost">1000</span> rocket fuel.
+										花费 <span id="jupiterRocketFuelCost">1000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3523,7 +3523,7 @@
 									<span>
 										Exploring Saturn gives you access to Helium.
 										<br>
-										Costs <span id="saturnRocketFuelCost">2000</span> rocket fuel.
+										花费 <span id="saturnRocketFuelCost">2000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3594,7 +3594,7 @@
 									<span>
 										No-one knows what lies near and around pluto as it is so far away. On there surface, there is almost only ice, but maybe an exploration will teach us more about the unknown.
 										<br>
-										Costs <span id="plutoRocketFuelCost">5000</span> rocket fuel.
+										花费 <span id="plutoRocketFuelCost">5000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3629,7 +3629,7 @@
 									<span>
 										Exploring the Kuiper Belt gives you access to the hidden base
 										<br>
-										Costs <span id="kuiperBeltRocketFuelCost">6000</span> rocket fuel.
+										花费 <span id="kuiperBeltRocketFuelCost">6000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3664,7 +3664,7 @@
 									<span>
 										Exploring the Sol Center gives you access to the hidden base.
 										<br>
-										Costs <span id="solCenterRocketFuelCost">7000</span> rocket fuel.
+										花费 <span id="solCenterRocketFuelCost">7000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3802,11 +3802,11 @@
 									<span>
 										The first painting depicts a large, shiny structure and the plaque reads:
 										<br>
-										"While I am rich beyond comparison, I still value adding precious resources to my collection. In return for your Gems, Silver, and Gold, I will teach you about something that lies inside your own planet, allowing you to find a rare resource and dangerous element previously unfound."
+										"While I am rich beyond comparison, I still value adding precious resources to my collection. In return for your 宝石， 银， and Gold, I will teach you about something that lies inside your own planet, allowing you to find a rare resource and dangerous element previously unfound."
 										<br>
 										<br>
 										<hide id="preciousWonderButton">
-											He requires that you donate <span id="preciousGemCost">10,000</span> Gems, <span id="preciousSilverCost">7,500</span> Silver and <span id="preciousGoldCost">5,000</span> Gold for this knowledge.
+											He requires that you donate <span id="preciousGemCost">10,000</span> 宝石， <span id="preciousSilverCost">7,500</span> Silver and <span id="preciousGoldCost">5,000</span> Gold for this knowledge.
 											<br>
 											<br>
 											<button onclick="achievePreciousWonder()" class="btn btn-default">Donate Metals</button>
@@ -3887,7 +3887,7 @@
 										<br>
 										<br>
 										<hide id="meteoriteWonderButton">
-											The Overlord wishes for a cube made up of <span id="meteoriteMeteoriteCost">5,000</span> Meteorite, <span id="meteoriteIceCost">600,000</span> Ice and <span id="meteoriteSiliconCost">1,200,000</span> Silicon to be given this technology.
+											The Overlord wishes for a cube made up of <span id="meteoriteMeteoriteCost">5,000</span> 陨石， <span id="meteoriteIceCost">600,000</span> Ice and <span id="meteoriteSiliconCost">1,200,000</span> Silicon to be given this technology.
 											<br>
 											<br>
 											<button onclick="achieveMeteoriteWonder()" class="btn btn-default">Donate Resources</button>
@@ -3927,7 +3927,7 @@
 										Activating this wonder will teach you about Uranium, how to get it and how to harness it. Learning about this rare element found deep within Earth will unlock nuclear power, a new way to create Energy.
 										<br>
 										<hide id="activatePreciousWonder">
-											Costs: <span id="preciousActivateGemCost">30,000</span> Gems, <span id="preciousActivateSilverCost">20,000</span> Silver, <span id="preciousActivateGoldCost">10,000</span> Gold.
+											花费： <span id="preciousActivateGemCost">30,000</span> 宝石， <span id="preciousActivateSilverCost">20,000</span> 银， <span id="preciousActivateGoldCost">10,000</span> Gold.
 											<br>
 											<br>
 											<button onclick="activatePreciousWonder()" class="btn btn-default">Activate Precious Wonder</button>
@@ -3968,7 +3968,7 @@
 										Activating this wonder will allow you to harness the power of Lava, a new method of Energy generation.
 										<br>
 										<hide id="activateEnergeticWonder">
-											Costs: <span id="energeticActivateWoodCost">30,000</span> Wood, <span id="energeticActivateCharcoalCost">15,000</span> Charcoal, <span id="energeticActivateUraniumCost">500</span> Uranium.
+											花费： <span id="energeticActivateWoodCost">30,000</span> Wood, <span id="energeticActivateCharcoalCost">15,000</span> Charcoal, <span id="energeticActivateUraniumCost">500</span> Uranium.
 											<br>
 											<br>
 											<button onclick="activateEnergeticWonder()" class="btn btn-default">Activate Energetic Wonder</button>
@@ -4009,7 +4009,7 @@
 										Activating this wonder will allow you to build Tier 3 Machines, a much more effective method of collecting resources.
 										<br>
 										<hide id="activateTechWonder">
-											Costs: <span id="techActivateSiliconCost">50,000</span> Silicon, <span id="techActivateGoldCost">30,000</span> Gold, <span id="techActivateGemCost">60,000</span> Gems.
+											花费： <span id="techActivateSiliconCost">50,000</span> Silicon, <span id="techActivateGoldCost">30,000</span> Gold, <span id="techActivateGemCost">60,000</span> 宝石。
 											<br>
 											<br>
 											<button onclick="activateTechWonder()" class="btn btn-default">Activate Technological Wonder</button>
@@ -4050,7 +4050,7 @@
 										Activating this wonder gives you the ability to construct 4th Tier resource gathering machines, which are better and more efficient than anything before it.
 										<br>
 										<hide id="activateMeteoriteWonder">
-											Costs: <span id="meteoriteActivateMeteoriteCost">10,000</span> Meteorite, <span id="meteoriteActivateIceCost">2,000,000</span> Ice, <span id="meteoriteActivateSiliconCost">4,000,000</span> Silicon.
+											花费： <span id="meteoriteActivateMeteoriteCost">10,000</span> 陨石， <span id="meteoriteActivateIceCost">2,000,000</span> Ice, <span id="meteoriteActivateSiliconCost">4,000,000</span> Silicon.
 											<br>
 											<br>
 											<button onclick="activateMeteoriteWonder()" class="btn btn-default">Activate Meteorite Wonder</button>
@@ -4091,7 +4091,7 @@
 										For rebuilding the Communication Wonder, you will be able to talk and listen to aliens in other star systems and determine whether there is sentient life outside of our solar system.
 										<br>
 										<hide id="rebuildCommsWonder">
-											Costs: <span id="commsWonderGoldCost">6M</span> Gold, <span id="commsWonderSiliconCost">10M</span> Silicon, <span id="commsWonderIceCost">6M</span> Ice.
+											花费： <span id="commsWonderGoldCost">6M</span> Gold, <span id="commsWonderSiliconCost">10M</span> Silicon, <span id="commsWonderIceCost">6M</span> Ice.
 											<br>
 											<br>
 											<button onclick="rebuildCommsWonder()" class="btn btn-default">Rebuild Communication Wonder</button>
@@ -4132,7 +4132,7 @@
 										For rebuilding the Rocket Wonder, you will discover advanced technologies where you can learn how to move beyond your tiny star system.
 										<br>
 										<hide id="rebuildRocketWonder">
-											Costs: <span id="rocketWonderLunariteCost">8M</span> Lunarite, <span id="rocketWonderTitaniumCost">6M</span> Titanium, <span id="rocketWonderMetalCost">12M</span> Metal.
+											花费： <span id="rocketWonderLunariteCost">8M</span> Lunarite, <span id="rocketWonderTitaniumCost">6M</span> Titanium, <span id="rocketWonderMetalCost">12M</span> Metal.
 											<br>
 											<br>
 											<button onclick="rebuildRocketWonder()" class="btn btn-default">Rebuild Rocket Wonder</button>
@@ -4173,7 +4173,7 @@
 										For rebuilding the Antimatter Wonder, you will gain access to antimatter production and storage.
 										<br>
 										<hide id="rebuildAntimatterWonder">
-											Costs: <span id="antimatterWonderUraniumCost">6M</span> Uranium, <span id="antimatterWonderLavaCost">10M</span> Lava, <span id="antimatterWonderOilCost">8M</span> Oil, <span id="antimatterWonderMethaneCost">6M</span> Methane.
+											花费： <span id="antimatterWonderUraniumCost">6M</span> Uranium, <span id="antimatterWonderLavaCost">10M</span> Lava, <span id="antimatterWonderOilCost">8M</span> 石油， <span id="antimatterWonderMethaneCost">6M</span> Methane.
 											<br>
 											<br>
 											<button onclick="rebuildAntimatterWonder()" class="btn btn-default">Rebuild Antimatter Wonder</button>
@@ -4214,7 +4214,7 @@
 										Activating the Portal will allow you to go through it to get to the Third Floor of the Wonder Station, detached from the rest of the tetrahedral monolith.
 										<br>
 										<hide id="activatePortal">
-											Costs: <span id="portalMeteoriteCost">500K</span> Meteorite, <span id="portalHeliumCost">8M</span> Helium, <span id="portalSiliconCost">6M</span> Silicon.
+											花费： <span id="portalMeteoriteCost">500K</span> 陨石， <span id="portalHeliumCost">8M</span> Helium, <span id="portalSiliconCost">6M</span> Silicon.
 											<br>
 											<br>
 											<button onclick="activatePortal()" class="btn btn-default">Activate Portal</button>
@@ -4256,7 +4256,7 @@
 										For rebuilding the Stargate, you will be able to explore outer space, beyond your own solar system.
 										<br>
 										<hide id="rebuildStargate">
-											Costs: <span id="stargateWonderPlasmaCost">500,000</span> Plasma, <span id="stargateWonderSiliconCost">920.0M</span> Silicon, <span id="stargateWonderMeteoriteCost">17.00M</span> Meteorite.
+											花费： <span id="stargateWonderPlasmaCost">500,000</span> Plasma, <span id="stargateWonderSiliconCost">920.0M</span> Silicon, <span id="stargateWonderMeteoriteCost">17.00M</span> 陨石。
 											<br>
 											<br>
 											<button onclick="rebuildStargate()" class="btn btn-default">Rebuild Stargate</button>
@@ -4330,7 +4330,7 @@
 									<span>
 										After trading resources with the Sol Center, they will give you some of their research on plasma and how to get it.
 										<br>
-										Costs: <span id="unlockPlasmaResearchHydrogenCost">1,500</span> Hydrogen, <span id="unlockPlasmaResearchUraniumCost">1,500</span> Uranium, <span id="unlockPlasmaResearchOilCost">15,000</span> Oil, <span id="unlockPlasmaResearchWoodCost">15,000</span> Wood.
+										花费： <span id="unlockPlasmaResearchHydrogenCost">1,500</span> Hydrogen, <span id="unlockPlasmaResearchUraniumCost">1,500</span> Uranium, <span id="unlockPlasmaResearchOilCost">15,000</span> 石油， <span id="unlockPlasmaResearchWoodCost">15,000</span> Wood.
 										<br>
 										<br>
 										<button onclick="unlockPlasmaResearch()" class="btn btn-default">Unlock Plasma Research</button>
@@ -4361,7 +4361,7 @@
 									<span>
 										To be given the blueprints for this mysterious machine, the Aliens require both types of energy.
 										<br>
-										Costs: <span id="unlockEmcResearchEnergyCost">75,000</span> Energy, <span id="unlockEmcResearchPlasmaCost">100</span> Plasma.
+										花费： <span id="unlockEmcResearchEnergyCost">75,000</span> Energy, <span id="unlockEmcResearchPlasmaCost">100</span> Plasma.
 										<br>
 										<br>
 										<button onclick="unlockEmcResearch()" class="btn btn-default">Unlock EMC Machine Research</button>
@@ -4531,7 +4531,7 @@
 									<span>
 										To understand this supreme construct, you must request the aliens' help. They require vast amounts of energy and plasma.
 										<br>
-										Costs: <span id="unlockDysonResearchEnergyCost">100,000</span> Energy, <span id="unlockDysonResearchPlasmaCost">10,000</span> Plasma.
+										花费： <span id="unlockDysonResearchEnergyCost">100,000</span> Energy, <span id="unlockDysonResearchPlasmaCost">10,000</span> Plasma.
 										<br>
 										<br>
 										<button onclick="unlockDysonResearch()" class="btn btn-default">Unlock Dyson Sphere Research</button>
@@ -4546,7 +4546,7 @@
 									<span>
 										These mega-structures cannot possibly be built in one piece. They must be created from small sections and forged together around the sun.
 										<br>
-										The next section costs: <span id="dysonTitaniumCost">300,000</span> Titanium, <span id="dysonGoldCost">100,000</span> Gold, <span id="dysonSiliconCost">200,000</span> Silicon, <span id="dysonMeteoriteCost">1,000</span> Meteorite, <span id="dysonIceCost">100,000</span> Ice.
+										The next section 花费： <span id="dysonTitaniumCost">300,000</span> Titanium, <span id="dysonGoldCost">100,000</span> Gold, <span id="dysonSiliconCost">200,000</span> Silicon, <span id="dysonMeteoriteCost">1,000</span> 陨石， <span id="dysonIceCost">100,000</span> Ice.
 										<br>
 										<br>
 										<button onclick="getDyson()" class="btn btn-default">Build Dyson Section</button>
@@ -4592,7 +4592,7 @@
 											<span>
 												The entire sphere is a monolithic structure completely surrounding the sun. It will allow for enough energy to get interstellar travel and finally escape this Solar System. It will produce 1,000,000 energy per second.
 												<br>
-												Costs: <span id="sphereRocketFuelCost">1.000M</span> Rocket Fuel to assemble the pieces.
+												花费： <span id="sphereRocketFuelCost">1.000M</span> Rocket Fuel to assemble the pieces.
 												<br>
 												<br>
 												<span id="buildSphereInfo">You currently have <span id="dysonPieces3">0</span> out of 250 Dyson pieces to build the completed structure.</span>
@@ -4617,28 +4617,28 @@
 					<tr href="#machineEnergyTab" aria-controls="machineEnergyTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Energy
+								能源
 							</span>
 						</td>
 					</tr>
 					<tr href="#machineEarthTab" aria-controls="machineEarthTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Earth
+								地球
 							</span>
 						</td>
 					</tr>
 					<tr href="#machineInnerTab" aria-controls="machineInnerTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Inner Planets
+								内行星
 							</span>
 						</td>
 					</tr>
 					<tr href="#machineOuterTab" aria-controls="machineOuterTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Outer Planets
+								外行星
 							</span>
 						</td>
 					</tr>
@@ -4658,12 +4658,12 @@
 								<td colspan="2"></td>
 								<td colspan="2">
 									<h3 class="default btn-link">
-										Input/sec
+										Input/秒
 									</h3>
 								</td>
 								<td colspan="2">
 									<h3 class="default btn-link">
-										Output/sec
+										Output/秒
 									</h3>
 								</td>
 							</tr>
@@ -4677,12 +4677,12 @@
 								<td colspan="2"></td>
 								<td colspan="2">
 									<h5 class="default btn-link">
-										Produced: XX/sec
+										Produced: XX/秒
 									</h5>
 								</td>
 								<td colspan="2">
 									<h5 class="default btn-link">
-										Used: XX/sec
+										Used: XX/秒
 									</h5>
 								</td>
 							</tr>
@@ -4773,12 +4773,12 @@
 								<td colspan="2"></td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Produced: XX/sec
+										Produced: XX/秒
 									</h5>
 								</td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Used: XX/sec
+										Used: XX/秒
 									</h5>
 								</td>
 							</tr>
@@ -5017,12 +5017,12 @@
 								<td colspan="2"></td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Produced: XX/sec
+										Produced: XX/秒
 									</h5>
 								</td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Used: XX/sec
+										Used: XX/秒
 									</h5>
 								</td>
 							</tr>
@@ -5187,12 +5187,12 @@
 								<td colspan="2"></td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Produced: XX/sec
+										Produced: XX/秒
 									</h5>
 								</td>
 								<td colspan="2">
 									<h5 class="default btn-link" style="border:none;">
-										Used: XX/sec
+										Used: XX/秒
 									</h5>
 								</td>
 							</tr>
@@ -6116,7 +6116,7 @@
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="antimatterps">0</span>/Sec
+								<span id="antimatterps">0</span>/秒
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -6156,7 +6156,7 @@
 									<span>
 										The Overlord gifts you with the technology to discover stars in outer space by using the IRS. It can find any Tier 1 stars that are close by. Each one increases the range by 5 Light Years.
 										<br>
-										Costs <span id="IRSMetalCost">38.6B</span> Metal, <span id="IRSIceCost">4.32B</span> Ice, <span id="IRSMeteoriteCost">15.8M</span> Meteorite.
+										花费 <span id="IRSMetalCost">38.6B</span> 金属， <span id="IRSIceCost">4.32B</span> Ice, <span id="IRSMeteoriteCost">15.8M</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -6202,7 +6202,7 @@
 									<span>
 										This plating combats the Sun's radiation, and can protect anyone inside from the frigid cold of space.
 										<br>
-										Costs <span id="shieldLunariteCost">100,000</span> Lunarite, <span id="shieldTitaniumCost">100,000</span> Titanium, <span id="shieldMetalCost">100,000</span> Metal.
+										花费 <span id="shieldLunariteCost">100,000</span> Lunarite, <span id="shieldTitaniumCost">100,000</span> Titanium, <span id="shieldMetalCost">100,000</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -6217,7 +6217,7 @@
 									<span>
 										These combine antimatter with matter in a controlled reaction to create propulsion that will carry you to the stars.
 										<br>
-										Costs <span id="engineSiliconCost">500,000</span> Silicon, <span id="engineMeteoriteCost">10,000</span> Meteorite, <span id="engineHydrogenCost">250,000</span> Hydrogen.
+										花费 <span id="engineSiliconCost">500,000</span> Silicon, <span id="engineMeteoriteCost">10,000</span> 陨石， <span id="engineHydrogenCost">250,000</span> 氢。
 									</span>
 									<br>
 									<br>
@@ -6232,7 +6232,7 @@
 									<span>
 										These allow for easy takeoffs and landings out of atmospheres so that you don't have to worry about air resistance.
 										<br>
-										Costs <span id="aeroSilverCost">200,000</span> Silver, <span id="aeroIceCost">300,000</span> Ice, <span id="aeroGemCost">250,000</span> Gems.
+										花费 <span id="aeroSilverCost">200,000</span> 银， <span id="aeroIceCost">300,000</span> Ice, <span id="aeroGemCost">250,000</span> 宝石。
 									</span>
 									<br>
 									<br>
@@ -6272,7 +6272,7 @@
 										<br>
 										Uses 100 Plasma and 12k Ice per second.
 										<br>
-										Costs <span id="driveSilverCost">163.0M</span> Silver, <span id="driveOilCost">712.0M</span> Oil, <span id="driveMeteoriteCost">12.30M</span> Meteorite.
+										花费 <span id="driveSilverCost">163.0M</span> 银， <span id="driveOilCost">712.0M</span> 石油， <span id="driveMeteoriteCost">12.30M</span> 陨石。
 									</span>
 									<br>
 									<br>
@@ -6289,10 +6289,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Travel (Coming Soon!)
+										旅行(即将推出!)
 									</h2>
 									<span>
-										Here, you can travel across the cosmos.
+										在这里，你可以穿越宇宙。
 									</span>
 								</td>
 							</tr>
@@ -6322,28 +6322,28 @@
 					<tr href="#savingTab" aria-controls="savingTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Saving
+								保存
 							</span>
 						</td>
 					</tr>
 					<tr href="#uiTab" aria-controls="uiTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="vertical-align:middle;">
 							<span>
-								Graphics Options
+								图形选项
 							</span>
 						</td>
 					</tr>
 					<tr href="#statsTab" aria-controls="statsTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Stats
+								统计
 							</span>
 						</td>
 					</tr>
 					<tr href="#achievementsTab" aria-controls="achievementsTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab" onclick="tabClicked('achievements')">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Achievements
+								成就
 							</span>
 							<span id="achievementsTabGlyph" class="pull-right glyphicon glyphicon-exclamation-sign hidden"></span>
 						</td>
@@ -6351,14 +6351,14 @@
 					<tr href="#donatingTab" aria-controls="donatingTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Donating
+								捐赠
 							</span>
 						</td>
 					</tr>
 					<tr href="#linksTab" aria-controls="linksTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Links
+								链接
 							</span>
 						</td>
 					</tr>
@@ -6371,20 +6371,20 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Saving
+										保存
 									</h2>
 									<span>
-										This is where you can change how your game is saved.
+										在这里，你可以修改游戏的保存方式。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Auto-Save Duration
+										自动保存时间
 									</h3>
 									<span>
-										Change how long the game waits before auto-saving again.
+										更改游戏的自动保存间隔时间。
 									</span>
 									<br>
 									<div class="btn-group" data-toggle="buttons">
@@ -6515,7 +6515,7 @@
 										Text Decoration
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="boldEnabled" type="checkbox" value="">Red Costs: Bold</label>
+										<label><input id="boldEnabled" type="checkbox" value="">Red 花费： Bold</label>
 									</div>
 				                </td>
 							</tr>
@@ -6601,10 +6601,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Achievements
+										成就
 									</h2>
 									<span>
-										This is where you can see your rank and all of your achievements.
+										在这里，您可以看到您的等级和所有你的成就。
 									</span>
 								</td>
 								<td id="rankContent" style="border:none;"></td>
@@ -6620,16 +6620,16 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Donating
+										捐赠
 									</h2>
 									<span>
-										I didn't like the intrusiveness of ads on this game and felt that getting people to pay for an in-game boost wouldn't bode well in the community as it makes the game feel like a freemium or pay-to-win game.
+										我不喜欢在这个游戏中的广告的侵扰性，并且觉得让人们支付游戏中的提升在社区中不会很好，因为它使游戏感觉像一个免费的或付费的游戏。
 										<br>
-										However, I like the donation system because there is nothing forcing you to donate other than out of the goodness of people's hearts. If you like the game and want more content faster, I would be happy to put more time towards this game if I felt that it is paying off.
+										但是，我喜欢捐赠制度，因为没有什么可以强迫你捐赠，而不是出于人心的好处。 如果你喜欢这个游戏并且想要更快的内容，那么如果我觉得这个游戏有所回报，我会很乐意为这个游戏花费更多的时间。
 										<br>
-										I have a <a href="https://www.paypal.me/Sparticle999" target="_blank" class="btn-link" style="font-size:16px;">PayPal Link</a> if you want to help out and speed the game's progress along.
+										我有一个 <a href="https://www.paypal.me/Sparticle999" target="_blank" class="btn-link" style="font-size:16px;">PayPal 链接</a> 如果你愿意提供帮助，加快游戏开发进展。
 										<br>
-										And a <a href="https://www.patreon.com/sparticle999" target="_blank" class="btn-link" style="font-size:16px;">Patreon Page</a>, if you want to have continued support for Space Company development, and for an impact on the game yourself.
+										并且这里有一个 <a href="https://www.patreon.com/sparticle999" target="_blank" class="btn-link" style="font-size:16px;">Patreon 主页</a>, 如果你想为太空公司的发展，并在游戏中自己产生影响的持续支持。
 									</span>
 								</td>
 							</tr>
@@ -6642,23 +6642,23 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Links
+										链接
 									</h2>
 									<span style="font-size:18px">
-										These are links to everything Space Company outside of the game itself.
+										这些是与游戏本身以外的所有太空公司的链接。
 										<br>
 										<br>
 										<a href="http://reddit.com/r/spacecompany">Sub-Reddit</a>
 										<br>
 										<a href="http://www.kongregate.com">Kongregate: </a><a href="http://www.kongregate.com/games/sparticle999/space-company">Game</a>
 										<br>
-										<a href="http://github.com">GitHub: </a><a href="https://github.com/sparticle999/SpaceCompany/">Source Code</a>
+										<a href="http://github.com">GitHub: </a><a href="https://github.com/sparticle999/SpaceCompany/">源码</a>
 										<br>
-										<a href="https://plaza.dsolver.ca/">The Plaza: </a><a href="https://plaza.dsolver.ca/games/space-company">Game</a>
+										<a href="https://plaza.dsolver.ca/">The Plaza: </a><a href="https://plaza.dsolver.ca/games/space-company">游戏</a>
 										<br>
-										<a href="https://github.com/sparticle999/SpaceCompany#changelog">Changelog</a> / <a href="https://www.reddit.com/r/SpaceCompany/wiki/futureplans">Future Plans</a>
+										<a href="https://github.com/sparticle999/SpaceCompany#changelog">更新日志</a> / <a href="https://www.reddit.com/r/SpaceCompany/wiki/futureplans">未来的计划</a>
 										<br>
-										<a href="https://www.reddit.com/r/SpaceCompany/wiki/index">Wiki</a>
+										<a href="https://www.reddit.com/r/SpaceCompany/wiki/index">Wiki文档</a>
 										<br>
 										<a href="https://www.discord.gg/cjQBgPW">Discord</a>
 									</span>
@@ -6677,21 +6677,21 @@
 					<tr href="#startingTab" aria-controls="startingTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Getting Started
+								新手指南
 							</span>
 						</td>
 					</tr>
 					<tr href="#faqTab" aria-controls="faqTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								FAQ
+								问答
 							</span>
 						</td>
 					</tr>
 					<tr href="#creditsTab" aria-controls="creditsTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Credits
+								贡献
 							</span>
 						</td>
 					</tr>
@@ -6704,7 +6704,7 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Beginner's Guide
+										新手指南
 									</h2>
 									<span>
 										This guide will get you from starting the game to activating your first wonder and will be helpful to grasp everything you need to do. You can refer to this guide at anytime while playing by clicking the Help/FAQ tab in the top right and selecting the Getting Started sub-tab.
@@ -6732,7 +6732,7 @@
 										To unlock research, you must purchase a metal miner, costing 10 Metal and 5 Wood. This is the first step to idle automation. The Research tab is where you can build laboratories to produce science for you, and also where you can discover and research new technologies to further help you through the game.
 										<br>
 										<br>
-										The first technology you can research is 'Storage Upgrades', which allows you to build storages to hold more of each type of resource. This is necessary when building machines and other tools costs more than 50 of a resource.
+										The first technology you can research is '升级库存', which allows you to build storages to hold more of each type of resource. This is necessary when building machines and other tools costs more than 50 of a resource.
 
 										You can also research 'Basic Energy Production', which opens up the world of power and advanced machines to help you get resources even faster.
 									</span>
@@ -6891,28 +6891,28 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										About
+										关于
 									</h2>
 									<span>
-										This game is made by me, Sparticle999, as a project to improve my skills at making games and to see what I could add to the incremental gaming world.
+										这个游戏是由我做的，Sparticle999，作为一个项目来提高我的做游戏技能，看看有什么我可以添加到增量的游戏世界。
 										<br>
-										The content in this game is not always accurate. This is because if it were accurate, many of the elements on other planets would be the same as Earth's, such as metal on Mars (iron oxide). Thus, I have had to make up some facts to help my game stay diverse. I apologise for any infuriation caused.
+										这个游戏中的内容并不总是准确的。 这是因为如果它是准确的，其他行星上的许多元素将与地球相同，例如火星上的金属（氧化铁）。 因此，我不得不编造一些内容来帮助我的游戏保持多样化。 对于任何引起的不快，我深表歉意。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td style="border:none;">
 									<h3 class="default btn-link">
-										Tools Used
+										使用的工具
 									</h3>
 									<span>
-										<a class="pointer btn-link" target="_blank" href="http://getbootstrap.com/">Bootstrap</a> was central to the base design of the game, and until I decide to create an interface for myself, either when I feel that it is necessary, or when people ask me to change it, this will be the general look for a while.
+										<a class="pointer btn-link" target="_blank" href="http://getbootstrap.com/">Bootstrap</a> 是游戏基础设计的核心，直到我决定为自己创建一个界面，无论是当我觉得有必要，还是当人们要求我改变它，这将是一般的外观。
 										<br>
 										<br>
-										<a class="pointer btn-link" target="_blank" href="http://bootswatch.com/">Bootswatch</a> is the tool that I used to add the different themes to the game. If anyone wants more themes from this website, I would be happy to add them in.
+										<a class="pointer btn-link" target="_blank" href="http://bootswatch.com/">Bootswatch</a> 是我用来将不同主题添加到游戏中的工具。 如果有人想为这个游戏制作更多的主题，我很乐意添加它们。
 										<br>
 										<br>
-										Most of the images are from <a class="pointer btn-link" target="_blank" href="https://www.shutterstock.com/">Shutterstock</a> and retextured and edited by myself to fit the theme of this game.
+										大部分图片都是来自<a class="pointer btn-link" target="_blank" href="https://www.shutterstock.com/">Shutterstock</a> 和retextured，还有我自己的编辑，以适应这个游戏的主题。
 									</span>
 								</td>
 							</tr>

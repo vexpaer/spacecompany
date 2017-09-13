@@ -54,15 +54,15 @@ var splashTextArray = ["Venturing Into The Unknown...",
 "Minors welcome!",
 "More than 300,000 plays!",
 "Not on steam!",
-"Now in 2D!",
+"现在，在2D!",
 "r/incremental_games!",
-"pls rt",
-"Pretty!",
-"10 metal, 10 wood, 10 gems",
-"The cake is a lie",
+"请问",
+"漂亮!",
+"10 金属, 10 木头, 10 宝石",
+"蛋糕是一个谎言",
 "10s of hits on YouTube!",
 "Read more books!",
-"Friday Facts!",
+"周五事实！",
 "Singleplayer!",
 "Something's not quite right...",
 "sqrt(-1) love you!",
@@ -107,15 +107,15 @@ var splashText = splashTextArray[Math.floor(Math.random()*splashTextArray.length
 
 var currentDate = (new Date()).toString();
 if(currentDate.indexOf("Jan 01") !== -1){
-	splashText = "Happy New Year!";
+	splashText = "新年快乐!";
 }
 if(currentDate.indexOf("Feb 14") !== -1){
-	splashText = "Happy Valentines!";
+	splashText = "情人节快乐！";
 }
 if(currentDate.indexOf("Sep 12") !== -1){
-	splashText = "6 Month Anniversary! V0.5 Released!";
+	splashText = "6个月周年纪念！ V0.5发布！";
 }
 if(currentDate.indexOf("Dec 25") !== -1){
-	splashText = "Merry Christmas!";
+	splashText = "圣诞节快乐！";
 }
 document.getElementById("splashText").innerHTML = splashText;

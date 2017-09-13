@@ -86,7 +86,7 @@ Game.stargazeUI = (function(){
                 '<h3 class="default btn-link">{{name}}: <span id="{{htmlId}}Achieved">Dormant</span></h3>',
                 '<span>',
                     '<p>{{desc}}</p>',
-                    '<p id="{{htmlId}}_cost">Costs: {{cost}} Dark Matter</p>',,
+                    '<p id="{{htmlId}}_cost">花费: {{cost}} Dark Matter</p>',,
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-default {{disabled}}">Activate</div>',
                 '<br><br>',

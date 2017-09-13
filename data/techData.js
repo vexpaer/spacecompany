@@ -110,7 +110,7 @@ Game.techData = (function () {
      *********************/
 
     instance.storageUpgradePlasma = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Plasma storage size',
+        desc: '将等离子体存储容量翻倍',
         resource: 'plasma',
         cost: {
             'plasma': .95
@@ -118,7 +118,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeUranium = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Uranium storage size',
+        desc: '将您的铀储存量翻倍',
         resource: 'uranium',
         cost: {
             'uranium': .95,
@@ -127,7 +127,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeLava = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Lava storage size',
+        desc: '将您的熔岩储存量翻倍',
         resource: 'lava',
         cost: {
             'lava': .95,
@@ -140,7 +140,7 @@ Game.techData = (function () {
      ********************/
 
     instance.storageUpgradeOil = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Oil storage size',
+        desc: '将您的石油储存量翻倍',
         resource: 'oil',
         cost: {
             'oil': .95,
@@ -149,7 +149,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeMetal = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Metal storage size',
+        desc: '将您的金属储存量翻倍',
         resource: 'metal',
         cost: {
             'metal': .95
@@ -157,7 +157,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeGem = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Gem storage size',
+        desc: '将您的宝石量翻倍',
         resource: 'gem',
         cost: {
             'gem': .95,
@@ -166,7 +166,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeCharcoal = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Charcoal storage size',
+        desc: '将您的木炭储存量翻倍',
         resource: 'charcoal',
         cost: {
             'charcoal': .95,
@@ -175,7 +175,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeWood = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Wood storage size',
+        desc: '将您的木头储存量翻倍',
         resource: 'wood',
         cost: {
             'wood': .95,
@@ -184,7 +184,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeSilicon = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Silicon storage size',
+        desc: '将您的硅储存量翻倍',
         resource: 'silicon',
         cost: {
             'silicon': .95,
@@ -273,7 +273,7 @@ Game.techData = (function () {
     });
 
     instance.storageUpgradeMeteorite = $.extend({}, baseUpgradeData, {
-        desc: 'Doubles your Meteorite storage size',
+        desc: '将您的陨石存储空间增加一倍',
         resource: 'meteorite',
         cost: {
             'meteorite': .95,
@@ -282,9 +282,9 @@ Game.techData = (function () {
     });
 
     instance.unlockStorage = $.extend({}, techBase, {
-        name: 'Storage Upgrades',
-        desc: 'This will allow you to build storage upgrades to increase the maximum on the amount of resource you can have at once.',
-        buttonText: 'Unlock Storage',
+        name: '存储升级',
+        desc: '这将允许您构建存储升级，以增加您一次可以获得的资源量的最大值。',
+        buttonText: '解锁存储',
         type: TECH_TYPE.UNLOCK,
         unlocked: true,
         costType: COST_TYPE.FIXED,
@@ -297,9 +297,9 @@ Game.techData = (function () {
 
     // Other Researches
     instance.unlockBasicEnergy = $.extend({}, techBase, {
-        name: 'Basic Energy Production',
-        desc: 'You will be able to produce power from steam engines using Charcoal made from wood in a furnace.',
-        buttonText: 'Unlock Basic Energy Production',
+        name: '基本能源生产',
+        desc: '您将能够通过把木材在炉子中变为木炭，从而使蒸汽发动机发电。',
+        buttonText: '解锁基础能源生产',
         type: TECH_TYPE.UNLOCK,
         unlocked: true,
         costType: COST_TYPE.FIXED,
@@ -312,9 +312,9 @@ Game.techData = (function () {
     });
 
     instance.unlockOil = $.extend({}, techBase, {
-        name: 'Oil Processing',
-        desc: 'Oil used to fuel more advanced machines that gather resources and also to produce more power than basic means. Unlocking Oil Processing allows you to extract it from the ground.',
-        buttonText: 'Unlock Oil',
+        name: '石油加工',
+        desc: '石油用于燃料更先进的机器，收集资源，并产生比基本手段更多的电力。 解锁油加工可以让您从地面上提取。',
+        buttonText: '解锁石油',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -325,9 +325,9 @@ Game.techData = (function () {
     });
 
     instance.unlockSolar = $.extend({}, techBase, {
-        name: 'Solar Panels',
-        desc: 'Solar Panels produce Energy without the need for fuel, but they do it slower than other forms of Energy production.',
-        buttonText: 'Unlock Solar Panels',
+        name: '太阳能板',
+        desc: '太阳能电池板不需要燃料就可以生产能源，但它们比其他形式的能源生产要慢。',
+        buttonText: '解锁太阳能板',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -338,9 +338,9 @@ Game.techData = (function () {
     });
 
     instance.unlockMachines = $.extend({}, techBase, {
-        name: 'Resource Machines',
-        desc: 'Resource Machines produce more resources than simple methods but require a constant supply of power to work.',
-        buttonText: 'Unlock Resource Machines',
+        name: '资源机器',
+        desc: '资源机器比简单的方法生产更多的资源，但需要不断的供电。',
+        buttonText: '解锁资源机器',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -691,8 +691,8 @@ Game.techData = (function () {
     });
 
     instance.efficiencyResearch = $.extend({}, techBase, {
-        name: 'Research Resource Efficiency',
-        desc: 'Resource Efficiency increases the income of resources by 1%/s per purchase.',
+        name: '研究资源效率',
+        desc: '资源效率将资源收入增加1％/秒。',
         type: TECH_TYPE.UPGRADE,
         costType: COST_TYPE.FIXED,
         maxLevel: -1,
@@ -714,7 +714,7 @@ Game.techData = (function () {
 
     instance.energyEfficiencyResearch = $.extend({}, techBase, {
         name: 'Research Energy Efficiency',
-        desc: 'Energy Efficiency decreases the energy consumption of all machines by 1%/s per purchase.',
+        desc: 'Energy Efficiency decreases the energy consumption of all machines by 1%/秒 per purchase.',
         type: TECH_TYPE.UPGRADE,
         costType: COST_TYPE.FIXED,
         maxLevel: 25,

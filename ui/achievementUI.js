@@ -11,7 +11,7 @@ Game.achievementsUI = (function(){
     instance.initialise = function() {
         this.rankTemplate = Handlebars.compile(
             ['<td>',
-                '<h3 class="default btn-link">Current Rank: <br><span id="rankNumber">{{number}}</span> - <span id="rankName">{{name}}</span></h3>',
+                '<h3 class="default btn-link">当前排名: <br><span id="rankNumber">{{number}}</span> - <span id="rankName">{{name}}</span></h3>',
                 '</td>'].join('\n'));
 
         this.rankBarTemplate = Handlebars.compile(

@@ -28,7 +28,7 @@
             return;
         }
 
-        this.tab = Game.ui.createTab({id: 'resourcesBETA', title: 'Resources (BETA)'});
+        this.tab = Game.ui.createTab({id: 'resourcesBETA', title: '资 (BETA)'});
         this.tab.initialise();
 
         instance.titleTemplate = Handlebars.compile(
@@ -78,7 +78,7 @@
                     '<span>{{name}}</span>',
                 '</td>',
                 '<td style="vertical-align:middle; text-align:center;">',
-                    '<span id="{{htmlId}}_perSecond">0</span>/Sec',
+                    '<span id="{{htmlId}}_perSecond">0</span>/秒',
                 '</td>',
                 '<td style="vertical-align:middle; text-align:center;">',
                     '<span id="{{htmlId}}_current">0</span> / <span id="{{htmlId}}_capacity">0</span>',

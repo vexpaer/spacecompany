@@ -3,25 +3,25 @@ Game.resourceCategoryData = (function () {
     var instance = {};
 
     instance.energy = {
-        title: 'Energy',
+        title: '能源',
         category: 'energy'
     };
 
     instance.earth = {
         class: 'collapseEarth',
-        title: 'Earth Resources',
+        title: '地球资源',
         category: 'earth'
     };
 
     instance.innerSol = {
         class: 'collapseInnerPlanetary',
-        title: 'Inner Planetary Resources',
+        title: '内行星资源',
         category: 'innerSol'
     };
 
     instance.outerSol = {
         class: 'collapseOuterPlanetary',
-        title: 'Outer Planetary Resources',
+        title: '外行星资源',
         category: 'outerSol'
     };
 
@@ -40,7 +40,7 @@ Game.resourceData = (function () {
 
     instance.energy = {
         name: 'Energy',
-        desc: 'Energy is created by power sources such as steam engines, solar power and advances even to fusion power and nuclear energy. The maximum you can hold to start with is 100,000 Energy, but batteries are unlockable which can increase this.',
+        desc: '能源是由诸如蒸汽机，太阳能发电等电源创造的，甚至可以融合能源和核能。 您可以开始的最大限度是100,000能量，但是电池可以解锁，这可以增加这一点。',
         icon: 'energyIcon',
         category: 'energy',
         baseCapacity: 50000,
@@ -58,7 +58,7 @@ Game.resourceData = (function () {
 
     instance.uranium = {
         name: 'Uranium',
-        desc: 'Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.',
+        desc: '金属是主要资源之一。 它用于许多事情，包括存储升级，机器和大部分太空的东西。',
         icon: 'uraniumIcon',
         category: 'energy',
         baseCapacity: 50,
@@ -67,7 +67,7 @@ Game.resourceData = (function () {
 
     instance.lava = {
         name: 'Lava',
-        desc: 'Hard to handle and only found in volcanoes, Lava is one of the hardest resources to get.',
+        desc: '难以处理，仅在火山中发现，熔岩是获得最难的资源之一。',
         icon: 'lavaIcon',
         category: 'energy',
         baseCapacity: 50,
@@ -88,7 +88,7 @@ Game.resourceData = (function () {
     };
 
     instance.metal = {
-        name: 'Metal',
+        name: '金属',
         desc: 'Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.',
         icon: 'metalIcon',
         category: 'earth',
@@ -97,7 +97,7 @@ Game.resourceData = (function () {
     };
 
     instance.gem = {
-        name: 'Gem',
+        name: '宝石',
         desc: 'Gems are one of the primary resources. They are used for advanced machines and for powerful tools and components. They are more useful in later game.',
         icon: 'gemIcon',
         category: 'earth',

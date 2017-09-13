@@ -147,8 +147,8 @@ var Game = (function() {
         data = legacySave(data);
 
         localStorage.setItem("save",JSON.stringify(data));
-        Game.notifyInfo('Game Saved', 'Your save data has been stored in localStorage on your computer');
-        console.log('Game Saved');
+        Game.notifyInfo('游戏已保存','您的存档数据已存储在您计算机上的本地存储器中。');
+        console.log('游戏已保存');
 
         return data;
     };
@@ -207,7 +207,7 @@ var Game = (function() {
     };
 
     instance.deleteSave = function() {
-        var deleteSave = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box.");
+        var deleteSave = prompt("您确定要删除游戏存档吗？ 这是不可逆转的！ 如果是，请在框中键入“DELETE”。");
 
         if(deleteSave === "DELETE") {
             localStorage.removeItem("save");
@@ -310,8 +310,8 @@ var Game = (function() {
     instance.notifyStorage = function() {
         if(Game.settings.entries.notificationsEnabled === true){
             this.activeNotifications.storage = new PNotify({
-                title: "Storage Full!",
-                text: 'You will no longer collect resources when they are full.',
+                title: "存储空间已满!",
+                text: '存储空间充满时您将不再收集资源。',
                 type: 'warning',
                 animation: 'fade',
                 animate_speed: 'fast',
@@ -328,8 +328,8 @@ var Game = (function() {
 
     instance.notifyOffline = function(time) {
         this.activeNotifications.success = new PNotify({
-            title: "Offline Gains",
-            text: "You've been offline for " + Game.utils.getFullTimeDisplay(time, true),
+            title: "离线收益",
+            text: "你已经离线了" + Game.utils.getFullTimeDisplay(time, true),
             type: 'info',
             animation: 'fade',
             animate_speed: 'fast',
@@ -363,10 +363,10 @@ var Game = (function() {
         if (timeLeft <= 15000) {
             element.show();
             if(timeLeft <= 5000){
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(1) + " seconds");
+                element.text("自动保存还有" + (timeLeft / 1000).toFixed(1) + " 秒");
             }
             else{
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(0) + " seconds");
+                element.text("自动保存还有" + (timeLeft / 1000).toFixed(0) + " 秒");
             }
         } else {
             element.hide();
