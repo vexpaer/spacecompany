@@ -7,30 +7,36 @@ Game.tech = (function(){
     instance.techTypeCount = 0;
 
     instance.initialise = function() {
-        var techTable = $('#techTable');
         Game.techUI.initialise();
         for (var id in Game.techData) {
-            var data = Game.techData[id];
+            var data = this.initTech(id);
             this.techTypeCount++;
-            data.setId(id);
             this.entries[id] = data;
 
-            // the storage techs are currently unused
-            if (data.type !== TECH_TYPE.STORAGE) {
-                var html = Game.techUI.techTemplate(data);
-                techTable.append(html);
-                
-                // all currently used techs cost only science
-                var cost = Game.settings.format(data.cost['science']);
-                data.getCostElement().text(cost);
-            }
+            Game.techUI.addTech(data);
         }
-
         console.debug("Loaded " + this.techTypeCount + " Tech Types");
     };
 
-    instance.update = function(delta) {
+    instance.initTech = function(id) {
+        // using extend to create a new object and leave the defaults unchanged
+        var data = jQuery.extend({}, Game.techData[id]);
+        data.setId(id);
+        return data;
     };
+
+    instance.reset = function() {
+        for (var id in Game.techData) {
+            var data = this.initTech(id);
+            this.entries[id] = data;
+
+            Game.techUI.replaceTech(data);
+        }
+        refreshResearches();
+        console.debug("Loaded " + this.techTypeCount + " Tech Types");
+    };
+
+    instance.update = function(delta) {};
 
     instance.save = function(data) {
         data.tech = { v: this.dataVersion, i: {}};
@@ -86,6 +92,7 @@ Game.tech = (function(){
         for (var id in data.tech.i) {
             if (typeof this.entries[id] !== 'undefined') {
                 if (typeof data.tech.i[id].current !== 'undefined' && data.tech.i[id].current > 0) {
+                    this.entries[id].current = 0;
                     this.gainTech(id, data.tech.i[id].current);
                     // we can assume that the tech is unlocked if it has been purchased
                     this.entries[id].unlocked = true;
@@ -122,10 +129,6 @@ Game.tech = (function(){
                 return false;
             }
         }
-        // the percent cost items are storages, can't buy more than 1
-        if (tech.costType === COST_TYPE.PERCENT && count > 1) {
-            count = 1;
-        }
 
         // create a new object for cost to avoid reference issues
         var cost = {};
@@ -145,19 +148,6 @@ Game.tech = (function(){
                 for (var resource in tech.cost) {
                     cost[resource] = tech.cost[resource];
                 }
-            }
-        } else if (tech.costType === COST_TYPE.PERCENT) {
-            if (typeof tech.resource === 'undefined') {
-                // can't calculate a percent cost without a resource
-                return false;
-            }
-            var storage = window[tech.resource + 'Storage'];
-            if (typeof storage === 'undefined') {
-                // percent is meaningless without a defined storage
-                return false;
-            }
-            for (var resource in tech.cost) {
-                cost[resource] = Math.floor(tech.cost[resource] * storage)
             }
         } else {
             return false;
