@@ -50,7 +50,7 @@ function getRocket(){
 		gem -= 900;
 		oil -= 1000;
 		rocket = 1;
-		document.getElementById("rocket").innerHTML = "Built";
+		document.getElementById("rocket").innerHTML = "修建";
 		document.getElementById("rocketRocketCost").className = "";
 		document.getElementById("solarRocket").className = "hidden";
 	}

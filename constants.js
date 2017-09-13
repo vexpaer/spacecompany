@@ -57,12 +57,12 @@ Game.constants = (function(){
     instance.achievementProducerBrackets = [10, 50, 100, 500, 1000];
     instance.achievementBracketColors = ["#9d9d9d", "#1eff00", "#0070dd", "#a335ee", "#ff8000"];
 
-    instance.achievementCategoryResources = "Resources";
-    instance.achievementCategoryProducers = "Producers";
+    instance.achievementCategoryResources = "资源";
+    instance.achievementCategoryProducers = "生产";
 
-    instance.statisticCategoryGeneral = "General";
-    instance.statisticCategoryUnlockable = "Unlockables";
-    instance.statisticCategoryTiming = "Timing";
+    instance.statisticCategoryGeneral = "总结";
+    instance.statisticCategoryUnlockable = "解锁";
+    instance.statisticCategoryTiming = "计时";
 
     instance.maxTier = 6;
 

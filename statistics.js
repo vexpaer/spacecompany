@@ -12,21 +12,21 @@ Game.statistics = (function(){
     instance.statisticTypeCount = 0;
 
     instance.initialise = function() {
-        this.createStatistic("manualResources", Game.constants.statisticCategoryGeneral, "Resources Mined By Hand");
+        this.createStatistic("manualResources", Game.constants.statisticCategoryGeneral, "手动开采的资源");
 
         for(var i = 1; i <= Game.constants.maxTier; i++) {
-            this.createStatistic("tierOwned" + i, Game.constants.statisticCategoryGeneral, "Tier " + i + " Machines Owned");
+            this.createStatistic("tierOwned" + i, Game.constants.statisticCategoryGeneral, "拥有 " + i + " 级机器");
         }
 
-        this.createStatistic("tabsUnlocked", Game.constants.statisticCategoryUnlockable, "Tabs Unlocked", 7);
-        this.createStatistic("resourcesUnlocked", Game.constants.statisticCategoryUnlockable, "Resources Unlocked", 16);
-        this.createStatistic("techResearched", Game.constants.statisticCategoryUnlockable, "Technologies Researched", 26);
-        this.createStatistic("placesExplored", Game.constants.statisticCategoryUnlockable, "Places Explored", 10);
-        this.createStatistic("wondersBuilt", Game.constants.statisticCategoryUnlockable, "Wonders Built", 4);
-        this.createStatistic("wondersActivated", Game.constants.statisticCategoryUnlockable, "Wonders Activated", 9);
+        this.createStatistic("tabsUnlocked", Game.constants.statisticCategoryUnlockable, "标签解锁", 7);
+        this.createStatistic("resourcesUnlocked", Game.constants.statisticCategoryUnlockable, "资源解锁", 16);
+        this.createStatistic("techResearched", Game.constants.statisticCategoryUnlockable, "技术研究", 26);
+        this.createStatistic("placesExplored", Game.constants.statisticCategoryUnlockable, "探索的地方", 10);
+        this.createStatistic("wondersBuilt", Game.constants.statisticCategoryUnlockable, "奇迹建成", 4);
+        this.createStatistic("wondersActivated", Game.constants.statisticCategoryUnlockable, "奇迹激活", 9);
 
-        this.createStatistic("sessionTime", Game.constants.statisticCategoryTiming, "Session time", 0, STATISTIC_TYPE.TIME);
-        this.createStatistic("timePlayed", Game.constants.statisticCategoryTiming, "Time Played", 0, STATISTIC_TYPE.TIME);
+        this.createStatistic("sessionTime", Game.constants.statisticCategoryTiming, "会话时间", 0, STATISTIC_TYPE.TIME);
+        this.createStatistic("timePlayed", Game.constants.statisticCategoryTiming, "游戏时间", 0, STATISTIC_TYPE.TIME);
 
         // Set some defaults
         this.add('resourcesUnlocked', 3);

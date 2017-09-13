@@ -167,7 +167,7 @@ Game.stargazeUI = (function(){
                 var data = Game.stargaze.upgradeEntries[id];
                 if(data.achieved == true){
                     if(id != 'rebirth'){
-                        document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "Activated";
+                        document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "激活";
                         document.getElementById("stargazeUpg" + id + '_buy').className = "btn btn-default disabled";
                     }
                 }

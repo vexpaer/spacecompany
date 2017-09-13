@@ -468,7 +468,7 @@ function activatePreciousWonder(){
 		document.getElementById("nuclearPower").className = "";
 		document.getElementById("activatePreciousWonder").className = "hidden";
 		document.getElementById("uraniumNav").className = "innerPlanet";
-		document.getElementById("preciousActivation").innerHTML = "Activated";
+		document.getElementById("preciousActivation").innerHTML = "激活";
 		document.getElementById("preciousActivation").className = "green";
 		resourcesUnlocked.push("uraniumNav", "nuclearPower");
 		buttonsHidden.push("activatePreciousWonder");
@@ -500,7 +500,7 @@ function activateEnergeticWonder(){
 		document.getElementById("magmaticPower").className = "";
 		document.getElementById("activateEnergeticWonder").className = "hidden";
 		document.getElementById("lavaNav").className = "innerPlanet";
-		document.getElementById("energeticActivation").innerHTML = "Activated";
+		document.getElementById("energeticActivation").innerHTML = "激活";
 		document.getElementById("energeticActivation").className = "green";
 		resourcesUnlocked.push("lavaNav", "magmaticPower");
 		buttonsHidden.push("activateEnergeticWonder");
@@ -531,7 +531,7 @@ function activateTechWonder(){
 		Game.resources.takeResource(RESOURCE.Gem, 60000);
 		unlockTier3();
 		document.getElementById("activateTechWonder").className = "hidden";
-		document.getElementById("techActivation").innerHTML = "Activated";
+		document.getElementById("techActivation").innerHTML = "激活";
 		document.getElementById("techActivation").className = "green";
 		techUnlocked = true;
 		buttonsHidden.push("activateTechWonder");
@@ -562,7 +562,7 @@ function activateMeteoriteWonder(){
 		Game.resources.takeResource(RESOURCE.Silicon, 4000000);
 		unlockTier4();
 		document.getElementById("activateMeteoriteWonder").className = "hidden";
-		document.getElementById("meteoriteActivation").innerHTML = "Activated";
+		document.getElementById("meteoriteActivation").innerHTML = "激活";
 		document.getElementById("meteoriteActivation").className = "green";
 		meteoriteUnlocked = true;
 		buttonsHidden.push("activateMeteoriteWonder");
@@ -585,7 +585,7 @@ function rebuildCommsWonder(){
 		Game.resources.takeResource(RESOURCE.Silicon, 10000000);
 		Game.resources.takeResource(RESOURCE.Ice, 6000000);
 		document.getElementById("rebuildCommsWonder").className = "hidden";
-		document.getElementById("commsActivation").innerHTML = "Activated";
+		document.getElementById("commsActivation").innerHTML = "激活";
 		document.getElementById("commsActivation").className = "green";
 		document.getElementById("commsNav").className = "sideTab";
 		buttonsHidden.push("rebuildCommsWonder");
@@ -610,7 +610,7 @@ function rebuildRocketWonder(){
 		Game.resources.takeResource(RESOURCE.Titanium, 6000000);
 		Game.resources.takeResource(RESOURCE.Metal, 12000000);
 		document.getElementById("rebuildRocketWonder").className = "hidden";
-		document.getElementById("rocketActivation").innerHTML = "Activated";
+		document.getElementById("rocketActivation").innerHTML = "激活";
 		document.getElementById("rocketActivation").className = "green";
 		buttonsHidden.push("rebuildRocketWonder");
 		activated.push("rocket");
@@ -636,7 +636,7 @@ function rebuildAntimatterWonder(){
 		Game.resources.takeResource(RESOURCE.Oil, 8000000);
 		Game.resources.takeResource(RESOURCE.Methane, 6000000);
 		document.getElementById("rebuildAntimatterWonder").className = "hidden";
-		document.getElementById("antimatterActivation").innerHTML = "Activated";
+		document.getElementById("antimatterActivation").innerHTML = "激活";
 		document.getElementById("antimatterActivation").className = "green";
 		buttonsHidden.push("rebuildAntimatterWonder");
 		activated.push("antimatter");
@@ -661,7 +661,7 @@ function activatePortal(){
 		Game.resources.takeResource(RESOURCE.Helium, 8000000);
 		Game.resources.takeResource(RESOURCE.Silicon, 6000000);
 		document.getElementById("activatePortal").className = "hidden";
-		document.getElementById("portalRoomActivation").innerHTML = "Activated";
+		document.getElementById("portalRoomActivation").innerHTML = "激活";
 		document.getElementById("portalRoomActivation").className = "green";
 		document.getElementById("wonderFloor3Nav").className = "sideTab";
 		document.getElementById("stargateNav").className = "sideTab";
@@ -678,7 +678,7 @@ function rebuildStargate(){
 		Game.resources.takeResource(RESOURCE.Silicon, 920000000);
 		Game.resources.takeResource(RESOURCE.Meteorite, 17000000);
 		document.getElementById("rebuildStargate").className = "hidden";
-		document.getElementById("stargateActivation").innerHTML = "Activated";
+		document.getElementById("stargateActivation").innerHTML = "激活";
 		document.getElementById("stargateActivation").className = "green";
 		document.getElementById("travelNav").className = "sideTab";
 		buttonsHidden.push("rebuildStargate");

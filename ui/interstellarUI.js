@@ -741,7 +741,7 @@ Game.interstellarUI = (function(){
                     document.getElementById("rocpart_" + data.entryName).className = "hidden";
                 }
             }
-            status.innerHTML = "Built";
+            status.innerHTML = "修建";
             status.className = "green";
             var costElement = $('#' + data.htmlId + '_cost');
             costElement.empty();
