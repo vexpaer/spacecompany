@@ -1,39 +1,39 @@
-# Overview:
-Space Company is a science-fiction incremental game where you start from humble beginnings on Earth, working your way up to travelling between star systems and building Dyson Spheres and pretty much colonising the entire galaxy(ies?)
+# 概述:
+太空公司是一个科幻小说增量游戏，您可以从地球上的谦逊的起点开始，在星系之间旅行，搭建戴森星球（Dyson Spheres）以及几乎整个星系的殖民地(ies?)
 
-Currently, the game is in Beta, which means there is frequent, active development on the game and most bugs from existing features will have been fixed. You should not have to worry about your saves being wiped. However, there will be the occasional bug and I will endeavour to amend these.
+目前，游戏是Beta版，这意味着游戏中经常有积极的发展，现有功能的大多数bug都将被修复。你不必担心你的储存被擦掉。不过，偶尔会有bug，我会尽力修改。
 
-# Plans for the Future
-- Check https://www.reddit.com/r/SpaceCompany/wiki/futureplans
-- When loading game, the tab you left on is the tab you now start on
-- Random Events
-- [Change UI from bootstrap to my own]
+# 未来的计划
+- 查看 https://www.reddit.com/r/SpaceCompany/wiki/futureplans
+- 加载游戏时，您剩下的标签是您现在开始的标签
+- 随机事件
+- [把界面从bootstrap变为我自己的]
 
-# RoadMap
+# 路线图
 
-v0.6.0 The Lore Update
+v0.6.0 知识更新
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 
-- Adding Lore onto every Building and an introduction to your Space Company
-- Rebalance all costs to not use as much Lunarite/Gems
-- Loading screen flavour text changes as you progress
-- Machine Overview Tab
+- 在每个建筑物上添加知识，以及对您的太空公司的介绍
+- 重新平衡所有成本，不要使用太多的土地 / 宝石
+- 加载屏幕风味文字随着进度而改变
+- 机器概览选项卡
 
-v0.5.0 The Interstellar Update
+v0.5.0 星际更新
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 
-- Dark Matter
-- Prestige (https://www.reddit.com/r/SpaceCompany/comments/6lcgzu/plan_for_prestige/)
-- Unknown Planets that you have to explore to know what it holds
-- Each star system is more hostile than the last until prestige, where it resets
-- Pushing Planets into the Sun gets prestige currency
-- Mass to Energy Conversion
-- Buy X buttons
-- Buy Max/Custom Buttons
-- Reduce Storage Costs
-- Change Letter Formatting To Start At 100K
-- Rebalance Science
-- Change Icons (white circle with icon inside)
+- 暗物质
+- 声望 (https://www.reddit.com/r/SpaceCompany/comments/6lcgzu/plan_for_prestige/)
+- 未知的行星，你必须探索，知道它上面有什么
+- 每个星系都比最后直到声望重新起伏，
+- 将行星推入太阳将获得声望
+- 质量转换能量
+- 购买X按钮
+- 购买最大/自定义按钮
+- 降低存储成本
+- 更改数字格式化开始于100K
+- 重新平衡科学
+- 更换图标（带有图标的白色圆圈）
 
 # Changelog:
 
