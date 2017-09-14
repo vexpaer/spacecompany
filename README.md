@@ -35,116 +35,116 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - 重新平衡科学
 - 更换图标（带有图标的白色圆圈）
 
-# Changelog:
+# 更新日志:
 
 ### v0.5.0
-##### Features
+##### 功能
 
-- Offline Production
-- Screen Notifications Graphics Option
-- Kongregate Leaderboard
-- 7 New Themes
-- Random Loading Messages (100)
-- Communication Wonder
-- Rocket Wonder
-- Antimatter Wonder
-- Portal Room
-- Stargate
-- Plasma Storage Units
-- Buying Multiple Dyson Parts
-- Option to Hide Gain Buttons
-- Achievements for Rings and Swarms
-- Time Until Storage Full Display
-- Max Emc Conversion Button
-- Tier 3 Batteries
-- Tier 4 Labs
-- Tier 4 Batteries
-- Custom Company Name
-- Copy Export to Clipboard
-- Update Log On Page Load
-- Battery Efficiency Research
-- Coloured Destroy Button Option
-- Hydrazine Catalyst - T3 Rocket Fuel
-- Interstellar Radar Scanner
-- Achievement Ranks
-- Renamed Space Metal as Lunarite
-- The Wonder Tab hides itself when completed (makes space for more tabs)
-- Rebuilt Achievement Tooltips
-- Dark Matter
-- Hide Completed Tabs Button
-- Added Astronomical Breakthrough
-- Seperate Option for Autosave Notifications
+- 离线生产
+- 屏幕通知图形选项
+- Kongregate 排行榜
+- 7个新主题
+- 加载界面随机载入信息（100条）
+- 通信奇迹
+- 火箭奇迹
+- 反物质奇迹
+- 门户室
+- 星际之门
+- 等离子体存储单元
+- 购买多个Dyson零件
+- 隐藏增益按钮的选项
+- 戒指和群众的成就
+- 时间直到存储完整显示
+- Max Emc转换按钮
+- 三级电池
+- 第4层实验室
+- 第4层电池
+- 公司名称
+- 复制导出到剪贴板
+- 更新登录页面加载
+- 电池效率研究
+- 彩色销毁按钮选项
+- 肼催化剂 - T3火箭燃料
+- 星际雷达扫描仪
+- 成就等级
+- 将空间金属重命名为Lunarite
+- “Wonder”选项卡在完成后隐藏（为更多选项卡留出空间）
+- 重建成就工具提示
+- 暗物质
+- 隐藏已完成的标签按钮
+- 增加了天文学突破
+- 自动保存通知单独选项
 
-##### Small Changes
+##### 小变化
 
-- Individual buttons to turn off Plasma and Meteorite Machines
-- Turn-off switch for all energy producers/consumers
-- Alternative scientific formatting
-- Made it clear that Dyson Sections Costs reset when used
-- 'Off' Option For Autosaving
-- Science Forced 1 Decimal Until 100
-- Cleared Up Misconceptions With 'NB:' Notes
-- Uranium + Plasma Achievements
-- Changed Some Descriptions
-- Made Red Bold Costs Also Underlined
-- Allow decreasing EMC amount with right click
-- Changed Version Number System to include 4th digit
-- Made EMC Max By Default
-- Import Checks For Empty Field To Refuse Load
-- Fixed Typos
-- Fixed Interstellar Backwards Compatibility
-- Changed Dyson Parts Buying To Buy Parts And Build Dyson
-- Destroy Alcubierre Drive Button
-- Nerfed Energy Efficiency to be 1000x cheaper, but only go up to 25%
-- Changed Multibuy researches to show current level instead of next level
-- Buffed Battery Efficiency to 200 levels instead of 50
-- Nerfed Rocket Fuel Research Costs
-- Buffed Hydrazine Production
-- Achievement Number Formatting
-- Rocket Fuel Machine Achievements
-- Refactored EMC (behind the scenes)
-- Optimised Saving and Loading
-- Time until storage full now shows until empty if negative gain
-- Reset achievements
-- Standardised gainResource() function
-- Achievement Stars are worth their position
+- 个别按钮关闭等离子和陨石机
+- 所有能源生产商/消费者的关闭开关
+- 替代科学格式化
+- 明确指出，戴森的部分成本在使用时重置
+- “关闭”选项用于自动保存
+- 科学强迫1小数到100
+- 用“NB：”注释清除了误解
+- 铀+等离子体成就
+- 改变了一些描述
+- 制作红色大胆费用也下划线
+- 允许通过右键单击降低EMC量
+- 更改版本号系统包括第4位数
+- 默认为EMC Max
+- 导入检查空场以拒绝负载
+- 固定错字
+- 固定的星际向后兼容性
+- 更改戴森零件购买零件和构建戴森
+- 破坏Alcubierre驱动器按钮
+- 削弱能源效率要低1000倍，但只能涨到25％
+- 更改了批量研究，以显示当前水平而不是下一级
+- 将电池效率提升到200级，而不是50级
+- 削弱火箭燃料研究费用
+- 缓冲肼生产
+- 成就号格式
+- 火箭燃油机成就
+- 重组EMC（幕后）
+- 优化保存和加载
+- 直到储存充满的时间现在显示为空，如果负增益
+- 重置成就
+- 标准化的gainResource（）函数
+- 成就明星值得他们的立场
 
-##### Bug Fixes
+##### Bug修复
 
-- Fixed Bug With Solar System Sidebar
-- Fixed Unlocked Tabs Statistic Bug
-- Fixed Rocket Launching Costs Not Being Red
-- Fixed Antimatter Tab Highlighting Sticking
-- Fixed Typos
-- Fixed Rocket Wonder Not Working
-- Fixed Solar Panel Showing Incorrect Output
-- Fixed Interstellar Tab Not Loading Values
-- Fixed Collapse Outer Solar System SideBarTab Visual Bug
-- Fixed Portal Room Helium Bug
-- Fixed Whitespace Bug on Plasma Tab
-- Fixed Infinite Meteorite Bug
-- Fixed Stargate Not Deducting Resources
-- Fixed Dyson Sections Cost Bug
-- Fixed Plasma EMC Display Bug
-- Fixed Stargate Red Costs Bug
-- Fixed T3 Battery Lunarite Cost Not Saving
-- Fixed UI Bug With Certain Themes
-- Fixed Rocket Building Not Saving
-- Fixed Antimatter Decimals Not Being Uniform
-- Fixed Batteries Not Unlocking Without Refresh
-- Fixed Interstellar Backwards Compatibility
-- Fixed Browser Compatibility Problem
-- Fixed Antimatter Not Turning Green On Full Storage
-- Fixed Hydrazine Research Cost Not Turning Red
-- Fixed Antimatter Going Above 100k
-- Fixed Buying Multiple Solar System Rockets
-- Fixed T4 Science unlocking only after refresh
-- Fixed Hydrazine Not Getting Resource Efficiency
-- Fixed Exponential Notation UI
-- Fixed Typos
-- Fixed Stargaze not showing up until refresh
-- Fixed Silicon Achievement not existing
-- Fixed Logo not animating
+- 修复了带有太阳能系统侧栏的Bug
+- 固定解锁标签统计错误
+- 固定火箭发射成本不红
+- 固定反物质选项卡突出显示粘贴
+- 固定错字
+- 固定火箭奇迹不工作
+- 固定太阳能电池板显示错误的输出
+- 固定星际选项卡未加载值
+- 固定折叠太阳系侧栏选项卡视觉错误
+- 固定门户室氦虫
+- 固定等离子体标签上的空白错误
+- 固定无限陨石虫
+- 固定星际不扣除资源
+- 固定戴森节成本错误
+- 固定等离子体EMC显示错误
+- 固定星光红色成本错误
+- 固定T3电池的月岩成本不节省
+- 固定UI Bug与某些主题
+- 固定火箭建筑不保存
+- 固定反物质小数不统一
+- 固定电池不解锁而不刷新
+- 固定的星际向后兼容性
+- 固定浏览器兼容性问题
+- 固定反物质在全存储时不变绿
+- 固定肼研究成本不变红
+- 固定反物质超过100k
+- 固定购买多个太阳系火箭
+- 固定T4科学只在刷新后才能解锁
+- 固定肼不能获得资源效率
+- 固定指数符号UI
+- 固定错字
+- 固定遥望星空不显示直到刷新
+- 固定硅成就不存在
+- 固定标志不动画
 
 ### v0.4.4
 ##### Features

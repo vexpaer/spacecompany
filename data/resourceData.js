@@ -165,8 +165,8 @@ Game.resourceData = (function () {
     };
 
     instance.gold = {
-        name: 'Gold',
-        desc: 'Gold is a metal found inside asteroids. It is used to build some Wonders and for complex machinery.',
+        name: '黄金',
+        desc: '金是在小行星内发现的金属。 它用于构建一些奇迹和复杂的机器。',
         icon: 'goldIcon',
         category: 'innerSol',
         baseCapacity: 50,
