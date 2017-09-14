@@ -11,7 +11,7 @@ Game.techData = (function () {
         displayNeedsUpdate: true,
 
         name: 'Research',
-        desc: 'Purchase to unlock something.',
+        desc: '购买解锁的东西。',
         notifyTitle: null,
         notifyText: null,
         buttonText: 'Unlock',
@@ -139,8 +139,8 @@ Game.techData = (function () {
     });
 
     instance.unlockDestruction = $.extend({}, techBase, {
-        name: 'Destruction of Machines',
-        desc: 'This allows you to destroy machines you have already created. It can be useful when there are more efficient methods of gaining resources, or if you don\'t have enough energy to support your machines.',
+        name: '破坏机器',
+        desc: '这样您就可以销毁已经创建的机器。 当有更有效的获取资源的方法，或者您没有足够的能量来支持您的机器时，这将非常有用。',
         buttonText: 'Unlock Destruction',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
@@ -284,9 +284,9 @@ Game.techData = (function () {
     });
 
     instance.unlockPlasma = $.extend({}, techBase, {
-        name: 'Plasma Tier 1 Technology',
-        desc: 'This allows you to turn your energy and hydrogen into Plasma',
-        buttonText: 'Unlock Plasma',
+        name: '等离子1级技术',
+        desc: '这使您能够将能量和氢气转化为等离子体',
+        buttonText: '解锁等离子',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {

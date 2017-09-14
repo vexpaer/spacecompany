@@ -178,7 +178,7 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								岩浆
+								熔岩
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
@@ -555,7 +555,7 @@
 										<br>
 										库存 <span id="plasmaLimitType">full</span> 剩余时间: <b><span id="plasmaLimitTime">N/A</span></b>
 										<br>
-										1 Plasma is created by infusing <span id="manualPlasmaHydrogenCost">10</span> Hydrogen with <span id="manualPlasmaEnergyCost">1000</span> Energy.
+										1等离子体消耗<span id="manualPlasmaHydrogenCost">10</span>氢 <span id="manualPlasmaEnergyCost">1000</span> 能源.
 									</span>
 									<br>
 									<br>
@@ -569,52 +569,52 @@
 							<tr id="plasmaStorageUnits" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										PSUs: <span id="PSU">0</span>
+										电源模块: <span id="PSU">0</span>
 									</h3>
 									<span>
-										PSUs increase your plasma storage by 50,000 per PSU built.
+										每个电源模块将您的等离子体存储量增加5万个。
 										<br>
-										花费 <span id="PSUSilverCost">770,000</span> 银， <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										花费 <span id="PSUSilverCost">770,000</span> 银， <span id="PSUGoldCost">770,000</span> 黄金， <span id="PSUUraniumCost">550,000</span> 铀.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSU()" class="btn btn-default">Get PSU</button>
+									<button onclick="getPSU()" class="btn btn-default">获取电源模块</button>
 								</td>
 							</tr>
 							<tr id="plasmaStorageUnitsT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2 PSUs: <span id="PSUT2">0</span>
+										2级电源模块: <span id="PSUT2">0</span>
 									</h3>
 									<span>
-										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
+										每个2级电源模块将您的等离子体存储量增加50万个。
 										<br>
-										花费 <span id="PSUT2SilverCost">9.300M</span> 银， <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										花费 <span id="PSUT2SilverCost">9.300M</span> 银， <span id="PSUT2GoldCost">9.300M</span> 黄金， <span id="PSUT2UraniumCost">6.800M</span> Uranium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSUT2()" class="btn btn-default">Get PSU T2</button>
+									<button onclick="getPSUT2()" class="btn btn-default">获取PSU T2</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Super-Heater: <span id="heater">0</span>
+										加热器: <span id="heater">0</span>
 									</h3>
 									<span>
-										The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.
+										超级加热器在氢气中引发电能将其转化为血浆物质。
 										<br>
-										Uses 1,000 Energy and 10 Hydrogen per second.
+										每秒消耗1000能量和10氢气。
 										<br>
-										Produces 1 Plasma per second.
+										每秒产生1等离子体
 										<br>
-										花费 <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> 宝石， <span id="heaterSiliconCost">59,000</span> Silicon.
+										花费 <span id="heaterLunariteCost">75,000</span> 月岩, <span id="heaterGemCost">68,000</span> 宝石， <span id="heaterSiliconCost">59,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">Get Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">获取Super-Heater</button>
 									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">Off</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Destroy Super-Heater</button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">摧毁 Super-Heater</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
@@ -629,34 +629,34 @@
 										<br>
 										Produces 10 Plasma per second.
 										<br>
-										花费 <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> 陨石。
+										花费 <span id="plasmaticLunariteCost">810,000</span> 月岩, <span id="plasmaticSiliconCost">720,000</span> 硅， <span id="plasmaticMeteoriteCost">970</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlasmatic()" class="btn btn-default">Get Plasmatic Pit</button>
+									<button onclick="getPlasmatic()" class="btn btn-default">获取Plasmatic Pit</button>
 									<button onclick="togglePlasmatic()" class="btn btn-default">Turn Plasmatic Pit <span id="plasmaticToggled">Off</span></button>
-									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">Destroy Plasmatic Pit</button>
+									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">摧毁 Plasmatic Pit</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Electron Bath: <span id="bath">0</span>
+										电子保险箱: <span id="bath">0</span>
 									</h3>
 									<span>
-										Bathing in Electrons. What could go wrong?
+										在电子里洗澡，怎么会错呢？
 										<br>
-										Uses 15,000 Energy and 100 Helium and 100 Hydrogen per second.
+										每秒消耗15,000能量和100氦气和100个氢气。
 										<br>
-										Produces 140 Plasma per second.
+										每秒产生140等离子体。
 										<br>
-										Costs <span id="bathLavaCost">6.20M</span> Lava, <span id="bathGoldCost">5.90M</span> Silicon, <span id="bathMeteoriteCost">12,100</span> Meteorite.
+										花费 <span id="bathLavaCost">6.20M</span> 熔岩, <span id="bathGoldCost">5.90M</span> 硅， <span id="bathMeteoriteCost">12,100</span> 陨石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBath()" class="btn btn-default">Get Electron Bath</button>
-									<button onclick="toggleBath()" class="btn btn-default">Turn Electron Bath <span id="bathToggled">Off</span></button>
-									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">Destroy Electron Bath</button>
+									<button onclick="getBath()" class="btn btn-default">获取电子保险箱</button>
+									<button onclick="toggleBath()" class="btn btn-default">把电子保险箱<span id="bathToggled">关闭</span></button>
+									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">摧毁电子保险箱</button>
 								</td>
 							</tr>
 						</table>
@@ -761,91 +761,91 @@
 							<tr id="solarPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Solar Panels: <span id="solarPanel">0</span>
+										太阳能板: <span id="solarPanel">0</span>
 									</h3>
 									<span>
-										Gains Energy slowly from the sun without using any resources.
+										从太阳慢慢地获得能量，而消耗任何资源。
 										<br>
-										Each Solar Panel produces <span id="solarPanelOutput">1.5</span> Energy per second.
+										每个太阳能板每秒产生<span id="solarPanelOutput">1.5</span>能量.
 										<br>
 										花费 <span id="solarPanelMetalCost">30</span> 金属， <span id="solarPanelGemCost">35</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getSolarPanel()" class="btn btn-default">Get Solar Panel</button>
-									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">Destroy Solar Panel</button>
+									<button onclick="getSolarPanel()" class="btn btn-default">获取太阳能板</button>
+									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">摧毁太阳能板</button>
 								</td>
 							</tr>
 							<tr id="methanePower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Methane Power Stations: <span id="methaneStation">0</span>
+										沼气发电站: <span id="methaneStation">0</span>
 									</h3>
 									<span>
-										Burn powerful methane from Venus to satisfy all your power needs.
+										从金星燃烧强大的甲烷，以满足您所有的电力需求。
 										<br>
-										Each Power Station produces 23 Energy and uses 6 methane per second.
+										每个沼气发电站每秒产生23能源消耗6甲烷。
 										<br>
-										花费 <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
+										花费 <span id="methaneStationLunariteCost">110</span> 月岩, <span id="methaneStationTitaniumCost">90</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMethaneStation()" class="btn btn-default">Get Methane Power Station</button>
-									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">Destroy Methane Station</button>
+									<button onclick="getMethaneStation()" class="btn btn-default">获取沼气发电站</button>
+									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">摧毁沼气发电站</button>
 								</td>
 							</tr>
 							<tr id="nuclearPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Nuclear Power Stations: <span id="nuclearStation">0</span>
+										核电站: <span id="nuclearStation">0</span>
 									</h3>
 									<span>
-										Uses fission to create large amounts of power.
+										使用裂变产生大量的能量。
 										<br>
-										Each Power Station produces 153 Energy and uses 7 uranium per second.
+										每个核电站每秒产生153能源，消耗7铀。
 										<br>
-										花费 <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
+										花费 <span id="nuclearStationLunariteCost">20,000</span> 月岩, <span id="nuclearStationTitaniumCost">10,000</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getNuclearStation()" class="btn btn-default">Get Nuclear Power Station</button>
-									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">Destroy Nuclear Station</button>
+									<button onclick="getNuclearStation()" class="btn btn-default">获取核电站</button>
+									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">摧毁核电站</button>
 								</td>
 							</tr>
 							<tr id="magmaticPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Magmatic Dynamo: <span id="magmatic">0</span>
+										熔岩发电机: <span id="magmatic">0</span>
 									</h3>
 									<span>
-										The Magmatic Dynamo is a method of producing power by using lava as a fuel. Because of the extreme temperature of lava, a lot of Energy can be produced at once.
+										熔岩发电机是通过使用熔岩作为燃料来发电的方法。 由于熔岩的极端温度，可以立即生产大量能源。
 										<br>
-										Each Power Station produces 191 Energy and uses 11 lava per second.
+										每个熔岩发电机每秒产生191能源，消耗11熔岩。
 										<br>
-										花费 <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> 宝石， <span id="magmaticSilverCost">20,000</span> Silver.
+										花费 <span id="magmaticLunariteCost">25,000</span> 月岩, <span id="magmaticGemCost">30,000</span> 宝石， <span id="magmaticSilverCost">20,000</span> 银.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagmatic()" class="btn btn-default">Get Magmatic Dynamo</button>
-									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">Destroy Magmatic Dynamo</button>
+									<button onclick="getMagmatic()" class="btn btn-default">获取熔岩发电机</button>
+									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">摧毁熔岩发电机</button>
 								</td>
 							</tr>
 							<tr id="fusionPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fusion Reactor: <span id="fusionReactor">0</span>
+										核聚变反应堆: <span id="fusionReactor">0</span>
 									</h3>
 									<span>
-										In a fusion reaction, Energy is released when two light atomic nuclei are fused together to form one heavier atom. This is the same reaction that occurs in stars and produces a lot of power.
+										在融合反应中，当两个轻原子核融合在一起形成一个较重的原子时，释放能量。 这是同样的反应发生在星星，并产生大量的能量。
 										<br>
-										Each Power Station produces 273 Energy and uses 10 Hydrogen and 10 Helium per second.
+										每个核聚变反应堆每秒产生273能量，消耗10氢和10氦。
 										<br>
-										花费 <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
+										花费 <span id="fusionReactorLunariteCost">30,000</span> 月岩, <span id="fusionReactorTitaniumCost">20,000</span> 钛, <span id="fusionReactorSiliconCost">15,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFusionReactor()" class="btn btn-default">Get Fusion Reactor</button>
-									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">Destroy Fusion Reactor</button>
+									<button onclick="getFusionReactor()" class="btn btn-default">获取核聚变反应堆</button>
+									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">摧毁核聚变反应堆</button>
 								</td>
 							</tr>
 						</table>
@@ -898,12 +898,12 @@
 										<br>
 										Produces 1 Uranium per second.
 										<br>
-										花费 <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
+										花费 <span id="grinderTitaniumCost">2000</span> 钛, <span id="grinderLunariteCost">4000</span> 月岩, <span id="grinderGoldCost">2000</span> Gold.
 									</span>
 									<br>
 									<br>
-									<button onclick="getGrinder()" class="btn btn-default">Get Grinder</button>
-									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">Destroy Grinder</button>
+									<button onclick="getGrinder()" class="btn btn-default">获取Grinder</button>
+									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">摧毁 Grinder</button>
 								</td>
 							</tr>
 							<tr>
@@ -918,12 +918,12 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										花费 <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
+										花费 <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> 月岩, <span id="cubicOilCost">10000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCubic()" class="btn btn-default">Get Cubic Teleposer</button>
-									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">Destroy Cubic Teleposer</button>
+									<button onclick="getCubic()" class="btn btn-default">获取Cubic Teleposer</button>
+									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">摧毁 Cubic Teleposer</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier3" class="hidden">
@@ -938,12 +938,12 @@
 										<br>
 										Uses 180 Energy per second.
 										<br>
-										花费 <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
+										花费 <span id="enricherLunariteCost">21,700</span> 月岩, <span id="enricherTitaniumCost">23,000</span> 钛, <span id="enricherSiliconCost">13,500</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getEnricher()" class="btn btn-default">Get Uranium Enricher</button>
-									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">Destroy Uranium Enricher</button>
+									<button onclick="getEnricher()" class="btn btn-default">获取Uranium Enricher</button>
+									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">摧毁 Uranium Enricher</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier4" class="hidden">
@@ -958,12 +958,12 @@
 										<br>
 										Uses 463 Energy per second.
 										<br>
-										花费 <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> 陨石。
+										花费 <span id="recyclerLunariteCost">93,100</span> 月岩, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getRecycler()" class="btn btn-default">Get Yellowcake Recycler</button>
-									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">Destroy Yellowcake Recycler</button>
+									<button onclick="getRecycler()" class="btn btn-default">获取Yellowcake Recycler</button>
+									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">摧毁 Yellowcake Recycler</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier5" class="hidden">
@@ -978,12 +978,12 @@
 										<br>
 										Uses 2719 Energy per second.
 										<br>
-										Costs <span id='planetNukeTitaniumCost'>486000</span> Titanium, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Ice
+										花费 <span id='planetNukeTitaniumCost'>486000</span> 钛, <span id='planetNukeSiliconCost'>266000</span> 硅， <span id='planetNukeIceCost'>364000</span> Ice
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetNuke()" class="btn btn-default">Get Planetary Nuclear Plant</button>
-									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">Destroy Planetary Nuclear Plant</button>
+									<button onclick="getPlanetNuke()" class="btn btn-default">获取Planetary Nuclear Plant</button>
+									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">摧毁 Planetary Nuclear Plant</button>
 								</td>
 							</tr>
 						</table>
@@ -1038,8 +1038,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">Get Pump</button>
-									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">Destroy Small Pump</button>
+									<button onclick="getPump()" class="btn btn-default">获取Pump</button>
+									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">摧毁 Small Pump</button>
 								</td>
 							</tr>
 							<tr id="oilTier2" class="hidden">
@@ -1056,8 +1056,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPumpjack()" class="btn btn-default">Get Pumpjack</button>
-									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">Destroy Pumpjack</button>
+									<button onclick="getPumpjack()" class="btn btn-default">获取Pumpjack</button>
+									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">摧毁 Pumpjack</button>
 								</td>
 							</tr>
 							<tr id="oilTier3" class="hidden">
@@ -1072,12 +1072,12 @@
 										<br>
 										Uses 17 Energy per second.
 										<br>
-										花费 <span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
+										花费 <span id="oilFieldLunariteCost">2,400</span> 月岩, <span id="oilFieldTitaniumCost">2,700</span> 钛, <span id="oilFieldSiliconCost">3,900</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilField()" class="btn btn-default">Get Oil Field</button>
-									<button onclick="destroyMachine('oilField')" class="btn btn-default destroy hidden">Destroy Oil Field</button>
+									<button onclick="getOilField()" class="btn btn-default">获取Oil Field</button>
+									<button onclick="destroyMachine('oilField')" class="btn btn-default destroy hidden">摧毁 Oil Field</button>
 								</td>
 							</tr>
 							<tr id="oilTier4" class="hidden">
@@ -1092,12 +1092,12 @@
 										<br>
 										Uses 44 Energy per second.
 										<br>
-										花费 <span id="oilRigLunariteCost">19,400</span> Lunarite, <span id="oilRigTitaniumCost">16,800</span> Titanium, <span id="oilRigMeteoriteCost">760</span> 陨石。
+										花费 <span id="oilRigLunariteCost">19,400</span> 月岩, <span id="oilRigTitaniumCost">16,800</span> 钛, <span id="oilRigMeteoriteCost">760</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilRig()" class="btn btn-default">Get Offshore Rig</button>
-									<button onclick="destroyMachine('oilRig')" class="btn btn-default destroy hidden">Destroy Offshore Rig</button>
+									<button onclick="getOilRig()" class="btn btn-default">获取Offshore Rig</button>
+									<button onclick="destroyMachine('oilRig')" class="btn btn-default destroy hidden">摧毁 Offshore Rig</button>
 								</td>
 							</tr>
 							<tr id="oilTier5" class="hidden">
@@ -1112,12 +1112,12 @@
 										<br>
 										Uses 258 Energy per second.
 										<br>
-										Costs <span id='fossilatorUraniumCost'>110000</span> Uranium, <span id='fossilatorCharcoalCost'>96000</span> Charcoal, <span id='fossilatorLavaCost'>167000</span> Lava.
+										花费 <span id='fossilatorUraniumCost'>110000</span> Uranium, <span id='fossilatorCharcoalCost'>96000</span> Charcoal, <span id='fossilatorLavaCost'>167000</span> Lava.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFossilator()" class="btn btn-default">Get Fossilator 9000</button>
-									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">Destroy Fossilator 9000</button>
+									<button onclick="getFossilator()" class="btn btn-default">获取Fossilator 9000</button>
+									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">摧毁 Fossilator 9000</button>
 								</td>
 							</tr>
 						</table>
@@ -1210,12 +1210,12 @@
 										<br>
 										每秒消耗9能源。
 										<br>
-										花费 <span id="gigaDrillLunariteCost">2,800</span> Lunarite, <span id="gigaDrillGemCost">3,400</span> 宝石， <span id="gigaDrillSiliconCost">4,100</span> Silicon.
+										花费 <span id="gigaDrillLunariteCost">2,800</span> 月岩, <span id="gigaDrillGemCost">3,400</span> 宝石， <span id="gigaDrillSiliconCost">4,100</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getGigaDrill()" class="btn btn-default">Get Giga Drill</button>
-									<button onclick="destroyMachine('gigaDrill')" class="btn btn-default destroy hidden">Destroy Giga Drill</button>
+									<button onclick="getGigaDrill()" class="btn btn-default">获取Giga Drill</button>
+									<button onclick="destroyMachine('gigaDrill')" class="btn btn-default destroy hidden">摧毁 Giga Drill</button>
 								</td>
 							</tr>
 							<tr id="metalTier4" class="hidden">
@@ -1230,12 +1230,12 @@
 										<br>
 										They use 24 Energy per second.
 										<br>
-										花费 <span id="quantumDrillLunariteCost">29,000</span> Lunarite, <span id="quantumDrillGoldCost">18,700</span> Gold, <span id="quantumDrillMeteoriteCost">900</span> 陨石。
+										花费 <span id="quantumDrillLunariteCost">29,000</span> 月岩, <span id="quantumDrillGoldCost">18,700</span> 黄金， <span id="quantumDrillMeteoriteCost">900</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getQuantumDrill()" class="btn btn-default">Get Quantum Drill</button>
-									<button onclick="destroyMachine('quantumDrill')" class="btn btn-default destroy hidden">Destroy Quantum Drill</button>
+									<button onclick="getQuantumDrill()" class="btn btn-default">获取Quantum Drill</button>
+									<button onclick="destroyMachine('quantumDrill')" class="btn btn-default destroy hidden">摧毁 Quantum Drill</button>
 								</td>
 							</tr>
 							<tr id="metalTier5" class="hidden">
@@ -1250,12 +1250,12 @@
 										<br>
 										They use 131 Energy per second.
 										<br>
-										Costs <span id='multiDrillTitaniumCost'>184000</span> Titanium, <span id='multiDrillGoldCost'>133000</span> Gold, <span id='multiDrillOilCost'>170000</span> Oil.
+										花费 <span id='multiDrillTitaniumCost'>184000</span> 钛, <span id='multiDrillGoldCost'>133000</span> 黄金， <span id='multiDrillOilCost'>170000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMultiDrill()" class="btn btn-default">Get Multiverse Drill</button>
-									<button onclick="destroyMachine('multiDrill')" class="btn btn-default destroy hidden">Destroy Multiverse Drill</button>
+									<button onclick="getMultiDrill()" class="btn btn-default">获取Multiverse Drill</button>
+									<button onclick="destroyMachine('multiDrill')" class="btn btn-default destroy hidden">摧毁 Multiverse Drill</button>
 								</td>
 							</tr>
 						</table>
@@ -1312,8 +1312,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getGemMiner()" class="btn btn-default">Get Gem Miner</button>
-									<button onclick="destroyMachine('gemMiner')" class="btn btn-default destroy hidden">Destroy Gem Miner</button>
+									<button onclick="getGemMiner()" class="btn btn-default">获取Gem Miner</button>
+									<button onclick="destroyMachine('gemMiner')" class="btn btn-default destroy hidden">摧毁 Gem Miner</button>
 								</td>
 							</tr>
 							<tr id="gemTier2" class="hidden">
@@ -1332,8 +1332,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getAdvancedDrill()" class="btn btn-default">Get Advanced Drill</button>
-									<button onclick="destroyMachine('advancedDrill')" class="btn btn-default destroy hidden">Destroy Advanced Drill</button>
+									<button onclick="getAdvancedDrill()" class="btn btn-default">获取Advanced Drill</button>
+									<button onclick="destroyMachine('advancedDrill')" class="btn btn-default destroy hidden">摧毁 Advanced Drill</button>
 								</td>
 							</tr>
 							<tr id="gemTier3" class="hidden">
@@ -1348,12 +1348,12 @@
 										<br>
 										Uses 15 Energy per second.
 										<br>
-										花费 <span id="diamondDrillLunariteCost">3,400</span> Lunarite, <span id="diamondDrillGemCost">8,000</span> 宝石， <span id="diamondDrillSiliconCost">4,500</span> Silicon.
+										花费 <span id="diamondDrillLunariteCost">3,400</span> 月岩, <span id="diamondDrillGemCost">8,000</span> 宝石， <span id="diamondDrillSiliconCost">4,500</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondDrill()" class="btn btn-default">Get Diamond Drill</button>
-									<button onclick="destroyMachine('diamondDrill')" class="btn btn-default destroy hidden">Destroy Diamond Drill</button>
+									<button onclick="getDiamondDrill()" class="btn btn-default">获取Diamond Drill</button>
+									<button onclick="destroyMachine('diamondDrill')" class="btn btn-default destroy hidden">摧毁 Diamond Drill</button>
 								</td>
 							</tr>
 							<tr id="gemTier4" class="hidden">
@@ -1368,12 +1368,12 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										花费 <span id="carbyneDrillLunariteCost">21,000</span> Lunarite, <span id="carbyneDrillGemCost">27,000</span> 宝石， <span id="carbyneDrillMeteoriteCost">800</span> 陨石。
+										花费 <span id="carbyneDrillLunariteCost">21,000</span> 月岩, <span id="carbyneDrillGemCost">27,000</span> 宝石， <span id="carbyneDrillMeteoriteCost">800</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCarbyneDrill()" class="btn btn-default">Get Carbyne Drill</button>
-									<button onclick="destroyMachine('carbyneDrill')" class="btn btn-default destroy hidden">Destroy Carbyne Drill</button>
+									<button onclick="getCarbyneDrill()" class="btn btn-default">获取Carbyne Drill</button>
+									<button onclick="destroyMachine('carbyneDrill')" class="btn btn-default destroy hidden">摧毁 Carbyne Drill</button>
 								</td>
 							</tr>
 							<tr id="gemTier5" class="hidden">
@@ -1388,12 +1388,12 @@
 										<br>
 										Uses 260 Energy per second.
 										<br>
-										Costs <span id='diamondChamberUraniumCost'>181,000</span> Uranium, <span id='diamondChamberCharcoalCost'>185,000</span> Charcoal, <span id='diamondChamberMeteoriteCost'>12,500</span> Meteorite.
+										花费 <span id='diamondChamberUraniumCost'>181,000</span> Uranium, <span id='diamondChamberCharcoalCost'>185,000</span> Charcoal, <span id='diamondChamberMeteoriteCost'>12,500</span> 陨石.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondChamber()" class="btn btn-default">Get Diamond Accretion Chamber</button>
-									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">Destroy Diamond Accretion Chamber</button>
+									<button onclick="getDiamondChamber()" class="btn btn-default">获取Diamond Accretion Chamber</button>
+									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">摧毁 Diamond Accretion Chamber</button>
 								</td>
 							</tr>
 						</table>
@@ -1453,8 +1453,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodburner()" class="btn btn-default">Get Woodburner</button>
-									<button onclick="destroyMachine('woodburner')" class="btn btn-default destroy hidden">Destroy Woodburner</button>
+									<button onclick="getWoodburner()" class="btn btn-default">获取Woodburner</button>
+									<button onclick="destroyMachine('woodburner')" class="btn btn-default destroy hidden">摧毁 Woodburner</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier2" class="hidden">
@@ -1475,8 +1475,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFurnace()" class="btn btn-default">Get Furnace</button>
-									<button onclick="destroyMachine('furnace')" class="btn btn-default destroy hidden">Destroy Furnace</button>
+									<button onclick="getFurnace()" class="btn btn-default">获取Furnace</button>
+									<button onclick="destroyMachine('furnace')" class="btn btn-default destroy hidden">摧毁 Furnace</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier3" class="hidden">
@@ -1493,12 +1493,12 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										花费 <span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> 宝石， <span id="kilnSiliconCost">3,800</span> Silicon.
+										花费 <span id="kilnLunariteCost">3,500</span> 月岩, <span id="kilnGemCost">6,200</span> 宝石， <span id="kilnSiliconCost">3,800</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getKiln()" class="btn btn-default">Get Industrial Kiln</button>
-									<button onclick="destroyMachine('kiln')" class="btn btn-default destroy hidden">Destroy Industrial Kiln</button>
+									<button onclick="getKiln()" class="btn btn-default">获取Industrial Kiln</button>
+									<button onclick="destroyMachine('kiln')" class="btn btn-default destroy hidden">摧毁 Industrial Kiln</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier4" class="hidden">
@@ -1515,12 +1515,12 @@
 										<br>
 										Uses 34 Energy per second.
 										<br>
-										花费 <span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> 陨石。
+										花费 <span id="fryerLunariteCost">15,800</span> 月岩, <span id="fryerLavaCost">12,500</span> 熔岩, <span id="fryerMeteoriteCost">560</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getFryer()" class="btn btn-default">Get Forest Fryer</button>
-									<button onclick="destroyMachine('fryer')" class="btn btn-default destroy hidden">Destroy Forest Fryer</button>
+									<button onclick="getFryer()" class="btn btn-default">获取Forest Fryer</button>
+									<button onclick="destroyMachine('fryer')" class="btn btn-default destroy hidden">摧毁 Forest Fryer</button>
 								</td>
 							</tr>
 							<tr id="charcoalTier5" class="hidden">
@@ -1537,12 +1537,12 @@
 										<br>
 										Uses 187 Energy per second.
 										<br>
-										Costs <span id='microPollutorMetalCost'>133000</span> Metal, <span id='microPollutorWoodCost'>189000</span> Wood, <span id='microPollutorLavaCost'>160000</span> Lava.
+										花费 <span id='microPollutorMetalCost'>133000</span> Metal, <span id='microPollutorWoodCost'>189000</span> Wood, <span id='microPollutorLavaCost'>160000</span> Lava.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMicroPollutor()" class="btn btn-default">Get Microverse Pollutor</button>
-									<button onclick="destroyMachine('microPollutor')" class="btn btn-default destroy hidden">Destroy Microverse Pollutor</button>
+									<button onclick="getMicroPollutor()" class="btn btn-default">获取Microverse Pollutor</button>
+									<button onclick="destroyMachine('microPollutor')" class="btn btn-default destroy hidden">摧毁 Microverse Pollutor</button>
 								</td>
 							</tr>
 						</table>
@@ -1599,8 +1599,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodcutter()" class="btn btn-default">Get Woodcutter</button>
-									<button onclick="destroyMachine('woodcutter')" class="btn btn-default destroy hidden">Destroy Woodcutter</button>
+									<button onclick="getWoodcutter()" class="btn btn-default">获取Woodcutter</button>
+									<button onclick="destroyMachine('woodcutter')" class="btn btn-default destroy hidden">摧毁 Woodcutter</button>
 								</td>
 							</tr>
 							<tr id="woodTier2" class="hidden">
@@ -1619,8 +1619,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLaserCutter()" class="btn btn-default">Get Laser Cutter</button>
-									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">Destroy Laser Cutter</button>
+									<button onclick="getLaserCutter()" class="btn btn-default">获取Laser Cutter</button>
+									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">摧毁 Laser Cutter</button>
 								</td>
 							</tr>
 							<tr id="woodTier3" class="hidden">
@@ -1635,12 +1635,12 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										花费 <span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
+										花费 <span id="deforesterLunariteCost">3,000</span> 月岩, <span id="deforesterTitaniumCost">2,700</span> 钛, <span id="deforesterSiliconCost">2,500</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeforester()" class="btn btn-default">Get Mass Deforester</button>
-									<button onclick="destroyMachine('deforester')" class="btn btn-default destroy hidden">Destroy Mass Deforester</button>
+									<button onclick="getDeforester()" class="btn btn-default">获取Mass Deforester</button>
+									<button onclick="destroyMachine('deforester')" class="btn btn-default destroy hidden">摧毁 Mass Deforester</button>
 								</td>
 							</tr>
 							<tr id="woodTier4" class="hidden">
@@ -1655,12 +1655,12 @@
 										<br>
 										Uses 43 Energy per second.
 										<br>
-										花费 <span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> 石油， <span id="infuserMeteoriteCost">490</span> 陨石。
+										花费 <span id="infuserLunariteCost">16,000</span> 月岩, <span id="infuserOilCost">31,200</span> 石油， <span id="infuserMeteoriteCost">490</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getInfuser()" class="btn btn-default">Get Biomass Infuser</button>
-									<button onclick="destroyMachine('infuser')" class="btn btn-default destroy hidden">Destroy Biomass Infuser</button>
+									<button onclick="getInfuser()" class="btn btn-default">获取Biomass Infuser</button>
+									<button onclick="destroyMachine('infuser')" class="btn btn-default destroy hidden">摧毁 Biomass Infuser</button>
 								</td>
 							</tr>
 							<tr id="woodTier5" class="hidden">
@@ -1675,12 +1675,12 @@
 										<br>
 										Uses 244 Energy per second.
 										<br>
-										Costs <span id='forestMetalCost'>122000</span> Metal, <span id='forestGemCost'>151000</span> Gems, <span id='forestHydrogenCost'>183000</span> Hydrogen.
+										花费 <span id='forestMetalCost'>122000</span> Metal, <span id='forestGemCost'>151000</span> Gems, <span id='forestHydrogenCost'>183000</span> Hydrogen.
 									</span>
 									<br>
 									<br>
-									<button onclick="getForest()" class="btn btn-default">Get Russian Forest</button>
-									<button onclick="destroyMachine('forest')" class="btn btn-default destroy hidden">Destroy Russian Forest</button>
+									<button onclick="getForest()" class="btn btn-default">获取Russian Forest</button>
+									<button onclick="destroyMachine('forest')" class="btn btn-default destroy hidden">摧毁 Russian Forest</button>
 								</td>
 							</tr>
 						</table>
@@ -1716,7 +1716,7 @@
 										<br>
 										库存 <span id="siliconLimitType">full</span> 剩余时间: <b><span id="siliconLimitTime">N/A</span></b>
 										<br>
-										花费 <span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> 月岩。
+										花费 <span id="siliconStorageCost">50</span> 硅， <span id="siliconStorageLunariteCost">20</span> 月岩。
 									</span>
 									<br>
 									<br>
@@ -1729,16 +1729,16 @@
 										Empowered Blowtorch: <span id="blowtorch">0</span>
 									</h3>
 									<span>
-										This type of blowtorch instantly turns sand into Silicon, but only on a small scale. To make it, extraterrestrial resources are required.
+										This type of blowtorch instantly turns sand into 硅， but only on a small scale. To make it, extraterrestrial resources are required.
 										<br>
 										Produces 1 silicon per second.
 										<br>
-										花费 <span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
+										花费 <span id="blowtorchLunariteCost">150</span> 月岩, <span id="blowtorchTitaniumCost">30</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBlowtorch()" class="btn btn-default">Get Blowtorch</button>
-									<button onclick="destroyMachine('blowtorch')" class="btn btn-default destroy hidden">Destroy Empowered Blowtorch</button>
+									<button onclick="getBlowtorch()" class="btn btn-default">获取Blowtorch</button>
+									<button onclick="destroyMachine('blowtorch')" class="btn btn-default destroy hidden">摧毁 Empowered Blowtorch</button>
 								</td>
 							</tr>
 							<tr>
@@ -1753,12 +1753,12 @@
 										<br>
 										Uses 18 Energy per second.
 										<br>
-										花费 <span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> 宝石， <span id="scorcherOilCost">1,600</span> Oil.
+										花费 <span id="scorcherLunariteCost">500</span> 月岩, <span id="scorcherGemCost">1,200</span> 宝石， <span id="scorcherOilCost">1,600</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getScorcher()" class="btn btn-default">Get Seaside Scorcher</button>
-									<button onclick="destroyMachine('scorcher')" class="btn btn-default destroy hidden">Destroy Scorcher</button>
+									<button onclick="getScorcher()" class="btn btn-default">获取Seaside Scorcher</button>
+									<button onclick="destroyMachine('scorcher')" class="btn btn-default destroy hidden">摧毁 Scorcher</button>
 								</td>
 							</tr>
 							<tr id="siliconTier3" class="hidden">
@@ -1773,12 +1773,12 @@
 										<br>
 										Uses 53 Energy per second.
 										<br>
-										花费 <span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> 宝石， <span id="annihilatorSilverCost">2,400</span> Silver.
+										花费 <span id="annihilatorLunariteCost">3,000</span> 月岩, <span id="annihilatorGemCost">8,300</span> 宝石， <span id="annihilatorSilverCost">2,400</span> 银.
 									</span>
 									<br>
 									<br>
-									<button onclick="getAnnihilator()" class="btn btn-default">Get Annihilator</button>
-									<button onclick="destroyMachine('annihilator')" class="btn btn-default destroy hidden">Destroy Beach Annihilator</button>
+									<button onclick="getAnnihilator()" class="btn btn-default">获取Annihilator</button>
+									<button onclick="destroyMachine('annihilator')" class="btn btn-default destroy hidden">摧毁 Beach Annihilator</button>
 								</td>
 							</tr>
 							<tr id="siliconTier4" class="hidden">
@@ -1793,12 +1793,12 @@
 										<br>
 										Uses 138 Energy per second.
 										<br>
-										花费 <span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> 陨石。
+										花费 <span id="desertLunariteCost">20,000</span> 月岩, <span id="desertSiliconCost">17,700</span> 硅， <span id="desertMeteoriteCost">400</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getDesert()" class="btn btn-default">Get Desert Destroyer</button>
-									<button onclick="destroyMachine('desert')" class="btn btn-default destroy hidden">Destroy Desert Destroyer</button>
+									<button onclick="getDesert()" class="btn btn-default">获取Desert Destroyer</button>
+									<button onclick="destroyMachine('desert')" class="btn btn-default destroy hidden">摧毁 Desert Destroyer</button>
 								</td>
 							</tr>
 							<tr id="siliconTier5" class="hidden">
@@ -1813,12 +1813,12 @@
 										<br>
 										Uses 746 Energy per second.
 										<br>
-										Costs <span id='tardisTitaniumCost'>204000</span> Titanium, <span id='tardisSiliconCost'>205000</span> Silicon, <span id='tardisMeteoriteCost'>17800</span> Meterorite.
+										花费 <span id='tardisTitaniumCost'>204000</span> 钛, <span id='tardisSiliconCost'>205000</span> 硅， <span id='tardisMeteoriteCost'>17800</span> Meterorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getTardis()" class="btn btn-default">Get T.A.R.D.I.S.</button>
-									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">Destroy T.A.R.D.I.S.</button>
+									<button onclick="getTardis()" class="btn btn-default">获取T.A.R.D.I.S.</button>
+									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">摧毁 T.A.R.D.I.S.</button>
 								</td>
 							</tr>
 						</table>
@@ -1854,7 +1854,7 @@
 										<br>
 										库存 <span id="lunariteLimitType">full</span> 剩余时间: <b><span id="lunariteLimitTime">N/A</span></b>
 										<br>
-										花费 <span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
+										花费 <span id="lunariteStorageCost">50</span> 月岩, <span id="lunariteStorageMetalCost">200</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1875,7 +1875,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonWorker()" class="btn btn-default">Get Moon Worker</button>
+									<button onclick="getMoonWorker()" class="btn btn-default">获取Moon Worker</button>
 									<button onclick="destroyMachine('moonWorker')" class="btn btn-default destroy hidden">Fire Moon Worker</button>
 								</td>
 							</tr>
@@ -1895,8 +1895,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonDrill()" class="btn btn-default">Get Low-Gravity Drill</button>
-									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">Destroy Low-Gravity Drill</button>
+									<button onclick="getMoonDrill()" class="btn btn-default">获取Low-Gravity Drill</button>
+									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">摧毁 Low-Gravity Drill</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier3" class="hidden">
@@ -1911,12 +1911,12 @@
 										<br>
 										Uses 70 Energy per second.
 										<br>
-										花费 <span id="moonQuarryLunariteCost">8,000</span> Lunarite, <span id="moonQuarryGemCost">5,000</span> 宝石， <span id="moonQuarrySiliconCost">3,500</span> Silicon.
+										花费 <span id="moonQuarryLunariteCost">8,000</span> 月岩, <span id="moonQuarryGemCost">5,000</span> 宝石， <span id="moonQuarrySiliconCost">3,500</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonQuarry()" class="btn btn-default">Get Moon Quarry</button>
-									<button onclick="destroyMachine('moonQuarry')" class="btn btn-default destroy hidden">Destroy Moon Quarry</button>
+									<button onclick="getMoonQuarry()" class="btn btn-default">获取Moon Quarry</button>
+									<button onclick="destroyMachine('moonQuarry')" class="btn btn-default destroy hidden">摧毁 Moon Quarry</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier4" class="hidden">
@@ -1931,12 +1931,12 @@
 										<br>
 										Uses 182 Energy per second.
 										<br>
-										花费 <span id="planetExcavatorTitaniumCost">45,000</span> Titanium, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> 陨石。
+										花费 <span id="planetExcavatorTitaniumCost">45,000</span> 钛, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetExcavator()" class="btn btn-default">Get Planetary Excavator</button>
-									<button onclick="destroyMachine('planetExcavator')" class="btn btn-default destroy hidden">Destroy Planetary Excavator</button>
+									<button onclick="getPlanetExcavator()" class="btn btn-default">获取Planetary Excavator</button>
+									<button onclick="destroyMachine('planetExcavator')" class="btn btn-default destroy hidden">摧毁 Planetary Excavator</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier5" class="hidden">
@@ -1951,12 +1951,12 @@
 										<br>
 										Uses 1216 Energy per second.
 										<br>
-										Costs <span id='clonerTitaniumCost'>204000</span> Titanium, <span id='clonerGoldCost'>150000</span> Gold, <span id='clonerMethaneCost'>195000</span> Methane.
+										花费 <span id='clonerTitaniumCost'>204000</span> 钛, <span id='clonerGoldCost'>150000</span> 黄金， <span id='clonerMethaneCost'>195000</span> Methane.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCloner()" class="btn btn-default">Get Moon Cloner</button>
-									<button onclick="destroyMachine('cloner')" class="btn btn-default destroy hidden">Destroy Moon Cloner</button>
+									<button onclick="getCloner()" class="btn btn-default">获取Moon Cloner</button>
+									<button onclick="destroyMachine('cloner')" class="btn btn-default destroy hidden">摧毁 Moon Cloner</button>
 								</td>
 							</tr>
 						</table>
@@ -2009,12 +2009,12 @@
 										<br>
 										Produces 1 methane per second.
 										<br>
-										花费 <span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> 宝石。
+										花费 <span id="vacuumLunariteCost">50</span> 月岩, <span id="vacuumGemCost">500</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getVacuum()" class="btn btn-default">Get Vacuum Cleaner</button>
-									<button onclick="destroyMachine('vacuum')" class="btn btn-default destroy hidden">Destroy Vacuum Cleaner</button>
+									<button onclick="getVacuum()" class="btn btn-default">获取Vacuum Cleaner</button>
+									<button onclick="destroyMachine('vacuum')" class="btn btn-default destroy hidden">摧毁 Vacuum Cleaner</button>
 								</td>
 							</tr>
 							<tr>
@@ -2029,12 +2029,12 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										花费 <span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> 宝石， <span id="suctionExcavatorOilCost">600</span> Oil.
+										花费 <span id="suctionExcavatorLunariteCost">10,000</span> 月岩, <span id="suctionExcavatorGemCost">800</span> 宝石， <span id="suctionExcavatorOilCost">600</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSuctionExcavator()" class="btn btn-default">Get Suction Excavator</button>
-									<button onclick="destroyMachine('suctionExcavator')" class="btn btn-default destroy hidden">Destroy Suction Excavator</button>
+									<button onclick="getSuctionExcavator()" class="btn btn-default">获取Suction Excavator</button>
+									<button onclick="destroyMachine('suctionExcavator')" class="btn btn-default destroy hidden">摧毁 Suction Excavator</button>
 								</td>
 							</tr>
 							<tr id="methaneTier3" class="hidden">
@@ -2049,12 +2049,12 @@
 										<br>
 										Uses 49 Energy per second.
 										<br>
-										花费 <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
+										花费 <span id="spaceCowLunariteCost">10,000</span> 月岩, <span id="spaceCowTitaniumCost">9,000</span> 钛, <span id="spaceCowSiliconCost">4,100</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSpaceCow()" class="btn btn-default">Get Space Cow</button>
-									<button onclick="destroyMachine('spaceCow')" class="btn btn-default destroy hidden">Destroy Space Cow</button>
+									<button onclick="getSpaceCow()" class="btn btn-default">获取Space Cow</button>
+									<button onclick="destroyMachine('spaceCow')" class="btn btn-default destroy hidden">摧毁 Space Cow</button>
 								</td>
 							</tr>
 							<tr id="methaneTier4" class="hidden">
@@ -2069,12 +2069,12 @@
 										<br>
 										Uses 132 Energy per second.
 										<br>
-										花费 <span id="ventLunariteCost">52,000</span> Lunarite, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> 陨石。
+										花费 <span id="ventLunariteCost">52,000</span> 月岩, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getVent()" class="btn btn-default">Get Hydrothermal Vent</button>
-									<button onclick="destroyMachine('vent')" class="btn btn-default destroy hidden">Destroy Hydrothermal Vent</button>
+									<button onclick="getVent()" class="btn btn-default">获取Hydrothermal Vent</button>
+									<button onclick="destroyMachine('vent')" class="btn btn-default destroy hidden">摧毁 Hydrothermal Vent</button>
 								</td>
 							</tr>
 							<tr id="methaneTier5" class="hidden">
@@ -2089,12 +2089,12 @@
 										<br>
 										Uses 899 Energy per second.
 										<br>
-										Costs <span id='interCowLunariteCost'>140000</span> Lunarite, <span id='interCowGoldCost'>202000</span> Gold, <span id='interCowHydrogenCost'>158000</span> Hydrogen.
+										花费 <span id='interCowLunariteCost'>140000</span> 月岩, <span id='interCowGoldCost'>202000</span> 黄金， <span id='interCowHydrogenCost'>158000</span> Hydrogen.
 									</span>
 									<br>
 									<br>
-									<button onclick="getInterCow()" class="btn btn-default">Get Interstellar Cow</button>
-									<button onclick="destroyMachine('interCow')" class="btn btn-default destroy hidden">Destroy Interstellar Cow</button>
+									<button onclick="getInterCow()" class="btn btn-default">获取Interstellar Cow</button>
+									<button onclick="destroyMachine('interCow')" class="btn btn-default destroy hidden">摧毁 Interstellar Cow</button>
 								</td>
 							</tr>
 						</table>
@@ -2130,7 +2130,7 @@
 										<br>
 										库存 <span id="titaniumLimitType">full</span> 剩余时间: <b><span id="titaniumLimitTime">N/A</span></b>
 										<br>
-										花费 <span id="titaniumStorageCost">50</span> Titanium, <span id="titaniumStorageLunariteCost">20</span> 月岩。
+										花费 <span id="titaniumStorageCost">50</span> 钛, <span id="titaniumStorageLunariteCost">20</span> 月岩。
 									</span>
 									<br>
 									<br>
@@ -2151,8 +2151,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getExplorer()" class="btn btn-default">Get Explorer</button>
-									<button onclick="destroyMachine('explorer')" class="btn btn-default destroy hidden">Destroy Explorer</button>
+									<button onclick="getExplorer()" class="btn btn-default">获取Explorer</button>
+									<button onclick="destroyMachine('explorer')" class="btn btn-default destroy hidden">摧毁 Explorer</button>
 								</td>
 							</tr>
 							<tr>
@@ -2167,12 +2167,12 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										花费 <span id="lunariteDrillLunariteCost">200</span> Lunarite, <span id="lunariteDrillGemCost">800</span> 宝石， <span id="lunariteDrillOilCost">1,000</span> Oil.
+										花费 <span id="lunariteDrillLunariteCost">200</span> 月岩, <span id="lunariteDrillGemCost">800</span> 宝石， <span id="lunariteDrillOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getLunariteDrill()" class="btn btn-default">Get Lunarite Drill</button>
-									<button onclick="destroyMachine('lunariteDrill')" class="btn btn-default destroy hidden">Destroy Lunarite Drill</button>
+									<button onclick="getLunariteDrill()" class="btn btn-default">获取Lunarite Drill</button>
+									<button onclick="destroyMachine('lunariteDrill')" class="btn btn-default destroy hidden">摧毁 Lunarite Drill</button>
 								</td>
 							</tr>
 							<tr id="titaniumTier3" class="hidden">
@@ -2187,12 +2187,12 @@
 										<br>
 										Uses 46 Energy per second.
 										<br>
-										花费 <span id="pentaDrillLunariteCost">14,000</span> Lunarite, <span id="pentaDrillGemCost">11,000</span> 宝石， <span id="pentaDrillSiliconCost">5,600</span> Silicon.
+										花费 <span id="pentaDrillLunariteCost">14,000</span> 月岩, <span id="pentaDrillGemCost">11,000</span> 宝石， <span id="pentaDrillSiliconCost">5,600</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPentaDrill()" class="btn btn-default">Get Penta-Drill</button>
-									<button onclick="destroyMachine('pentaDrill')" class="btn btn-default destroy hidden">Destroy Penta-Drill</button>
+									<button onclick="getPentaDrill()" class="btn btn-default">获取Penta-Drill</button>
+									<button onclick="destroyMachine('pentaDrill')" class="btn btn-default destroy hidden">摧毁 Penta-Drill</button>
 								</td>
 							</tr>
 							<tr id="titaniumTier4" class="hidden">
@@ -2207,12 +2207,12 @@
 										<br>
 										Uses 123 Energy per second.
 										<br>
-										花费 <span id="titanDrillLunariteCost">63,000</span> Lunarite, <span id="titanDrillGoldCost">27,000</span> Gold, <span id="titanDrillMeteoriteCost">600</span> 陨石。
+										花费 <span id="titanDrillLunariteCost">63,000</span> 月岩, <span id="titanDrillGoldCost">27,000</span> 黄金， <span id="titanDrillMeteoriteCost">600</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getTitanDrill()" class="btn btn-default">Get Titan-Drill</button>
-									<button onclick="destroyMachine('titanDrill')" class="btn btn-default destroy hidden">Destroy Titan-Drill</button>
+									<button onclick="getTitanDrill()" class="btn btn-default">获取Titan-Drill</button>
+									<button onclick="destroyMachine('titanDrill')" class="btn btn-default destroy hidden">摧毁 Titan-Drill</button>
 								</td>
 							</tr>
 							<tr id="titaniumTier5" class="hidden">
@@ -2227,12 +2227,12 @@
 										<br>
 										Uses 690 Energy per second.
 										<br>
-										Costs <span id='clubUraniumCost'>175000</span> Uranium, <span id='clubWoodCost'>164000</span> Wood, <span id='clubHeliumCost'>156000</span> Helium.
+										花费 <span id='clubUraniumCost'>175000</span> Uranium, <span id='clubWoodCost'>164000</span> Wood, <span id='clubHeliumCost'>156000</span> Helium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getClub()" class="btn btn-default">Get Club</button>
-									<button onclick="destroyMachine('club')" class="btn btn-default destroy hidden">Destroy Club</button>
+									<button onclick="getClub()" class="btn btn-default">获取Club</button>
+									<button onclick="destroyMachine('club')" class="btn btn-default destroy hidden">摧毁 Club</button>
 								</td>
 							</tr>
 						</table>
@@ -2268,7 +2268,7 @@
 										<br>
 										库存 <span id="goldLimitType">full</span> 剩余时间: <b><span id="goldLimitTime">N/A</span></b>
 										<br>
-										花费 <span id="goldStorageCost">50</span> Gold, <span id="goldStorageLunariteCost">20</span> 月岩。
+										花费 <span id="goldStorageCost">50</span> 黄金， <span id="goldStorageLunariteCost">20</span> 月岩。
 									</span>
 									<br>
 									<br>
@@ -2285,12 +2285,12 @@
 										<br>
 										Produces 1 Gold per second.
 										<br>
-										花费 <span id="droidLunariteCost">200</span> Lunarite, <span id="droidMethaneCost">50</span> Methane.
+										花费 <span id="droidLunariteCost">200</span> 月岩, <span id="droidMethaneCost">50</span> Methane.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDroid()" class="btn btn-default">Get Rocket Droid</button>
-									<button onclick="destroyMachine('droid')" class="btn btn-default destroy hidden">Destroy Droid</button>
+									<button onclick="getDroid()" class="btn btn-default">获取Rocket Droid</button>
+									<button onclick="destroyMachine('droid')" class="btn btn-default destroy hidden">摧毁 Droid</button>
 								</td>
 							</tr>
 							<tr>
@@ -2305,12 +2305,12 @@
 										<br>
 										Uses 19 Energy per second.
 										<br>
-										花费 <span id="destroyerLunariteCost">500</span> Lunarite, <span id="destroyerGemCost">1,500</span> 宝石， <span id="destroyerOilCost">1,000</span> Oil.
+										花费 <span id="destroyerLunariteCost">500</span> 月岩, <span id="destroyerGemCost">1,500</span> 宝石， <span id="destroyerOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDestroyer()" class="btn btn-default">Get Asteroid Destroyer</button>
-									<button onclick="destroyMachine('destroyer')" class="btn btn-default destroy hidden">Destroy Destroyer</button>
+									<button onclick="getDestroyer()" class="btn btn-default">获取Asteroid Destroyer</button>
+									<button onclick="destroyMachine('destroyer')" class="btn btn-default destroy hidden">摧毁 Destroyer</button>
 								</td>
 							</tr>
 							<tr id="goldTier3" class="hidden">
@@ -2325,12 +2325,12 @@
 										<br>
 										Uses 81 Energy per second.
 										<br>
-										花费 <span id="deathStarLunariteCost">17,000</span> Lunarite, <span id="deathStarSilverCost">11,500</span> 银， <span id="deathStarSiliconCost">8,200</span> Silicon.
+										花费 <span id="deathStarLunariteCost">17,000</span> 月岩, <span id="deathStarSilverCost">11,500</span> 银， <span id="deathStarSiliconCost">8,200</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeathStar()" class="btn btn-default">Get Death Star Jr</button>
-									<button onclick="destroyMachine('deathStar')" class="btn btn-default destroy hidden">Destroy Death Star Jr</button>
+									<button onclick="getDeathStar()" class="btn btn-default">获取Death Star Jr</button>
+									<button onclick="destroyMachine('deathStar')" class="btn btn-default destroy hidden">摧毁 Death Star Jr</button>
 								</td>
 							</tr>
 							<tr id="goldTier4" class="hidden">
@@ -2345,12 +2345,12 @@
 										<br>
 										Uses 223 Energy per second.
 										<br>
-										花费 <span id="actuatorLunariteCost">61,000</span> Lunarite, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> 陨石。
+										花费 <span id="actuatorLunariteCost">61,000</span> 月岩, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getActuator()" class="btn btn-default">Get Chronal Actuator</button>
-									<button onclick="destroyMachine('actuator')" class="btn btn-default destroy hidden">Destroy Chronal Actuator</button>
+									<button onclick="getActuator()" class="btn btn-default">获取Chronal Actuator</button>
+									<button onclick="destroyMachine('actuator')" class="btn btn-default destroy hidden">摧毁 Chronal Actuator</button>
 								</td>
 							</tr>
 							<tr id="goldTier5" class="hidden">
@@ -2365,12 +2365,12 @@
 										<br>
 										Uses 1324 Energy per second.
 										<br>
-										Costs <span id='philosopherMetalCost'>208000</span> Metal, <span id='philosopherSilverCost'>167000</span> Silver, <span id='philosopherMeteoriteCost'>18000</span> Meterorite.
+										花费 <span id='philosopherMetalCost'>208000</span> Metal, <span id='philosopherSilverCost'>167000</span> Silver, <span id='philosopherMeteoriteCost'>18000</span> Meterorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPhilosopher()" class="btn btn-default">Get Philosopher's Stone</button>
-									<button onclick="destroyMachine('philosopher')" class="btn btn-default destroy hidden">Destroy Philosopher's Stone</button>
+									<button onclick="getPhilosopher()" class="btn btn-default">获取Philosopher's Stone</button>
+									<button onclick="destroyMachine('philosopher')" class="btn btn-default destroy hidden">摧毁 Philosopher's Stone</button>
 								</td>
 							</tr>
 						</table>
@@ -2423,12 +2423,12 @@
 										<br>
 										Produces 1 silver per second.
 										<br>
-										花费 <span id="scoutLunariteCost">100</span> Lunarite, <span id="scoutTitaniumCost">20</span> Titanium.
+										花费 <span id="scoutLunariteCost">100</span> 月岩, <span id="scoutTitaniumCost">20</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getScout()" class="btn btn-default">Get Scout Ship</button>
-									<button onclick="destroyMachine('scout')" class="btn btn-default destroy hidden">Destroy Scout</button>
+									<button onclick="getScout()" class="btn btn-default">获取Scout Ship</button>
+									<button onclick="destroyMachine('scout')" class="btn btn-default destroy hidden">摧毁 Scout</button>
 								</td>
 							</tr>
 							<tr>
@@ -2443,12 +2443,12 @@
 										<br>
 										Uses 24 Energy per second.
 										<br>
-										花费 <span id="spaceLaserLunariteCost">350</span> Lunarite, <span id="spaceLaserGemCost">900</span> 宝石， <span id="spaceLaserOilCost">1,200</span> Oil.
+										花费 <span id="spaceLaserLunariteCost">350</span> 月岩, <span id="spaceLaserGemCost">900</span> 宝石， <span id="spaceLaserOilCost">1,200</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSpaceLaser()" class="btn btn-default">Get Interplanetary Laser</button>
-									<button onclick="destroyMachine('spaceLaser')" class="btn btn-default destroy hidden">Destroy Space Laser</button>
+									<button onclick="getSpaceLaser()" class="btn btn-default">获取Interplanetary Laser</button>
+									<button onclick="destroyMachine('spaceLaser')" class="btn btn-default destroy hidden">摧毁 Space Laser</button>
 								</td>
 							</tr>
 							<tr id="silverTier3" class="hidden">
@@ -2463,12 +2463,12 @@
 										<br>
 										Uses 65 Energy per second.
 										<br>
-										花费 <span id="berthaLunariteCost">19,500</span> Lunarite, <span id="berthaTitaniumCost">18,200</span> Titanium, <span id="berthaSiliconCost">11,000</span> Silicon.
+										花费 <span id="berthaLunariteCost">19,500</span> 月岩, <span id="berthaTitaniumCost">18,200</span> 钛, <span id="berthaSiliconCost">11,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBertha()" class="btn btn-default">Get Big Bertha</button>
-									<button onclick="destroyMachine('bertha')" class="btn btn-default destroy hidden">Destroy Big Bertha</button>
+									<button onclick="getBertha()" class="btn btn-default">获取Big Bertha</button>
+									<button onclick="destroyMachine('bertha')" class="btn btn-default destroy hidden">摧毁 Big Bertha</button>
 								</td>
 							</tr>
 							<tr id="silverTier4" class="hidden">
@@ -2483,12 +2483,12 @@
 										<br>
 										Uses 170 Energy per second.
 										<br>
-										花费 <span id="cannonLunariteCost">85,100</span> Lunarite, <span id="cannonOilCost">93,800</span> 石油， <span id="cannonMeteoriteCost">520</span> 陨石。
+										花费 <span id="cannonLunariteCost">85,100</span> 月岩, <span id="cannonOilCost">93,800</span> 石油， <span id="cannonMeteoriteCost">520</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCannon()" class="btn btn-default">Get Atomic Cannon</button>
-									<button onclick="destroyMachine('cannon')" class="btn btn-default destroy hidden">Destroy Atomic Cannon</button>
+									<button onclick="getCannon()" class="btn btn-default">获取Atomic Cannon</button>
+									<button onclick="destroyMachine('cannon')" class="btn btn-default destroy hidden">摧毁 Atomic Cannon</button>
 								</td>
 							</tr>
 							<tr id="silverTier5" class="hidden">
@@ -2503,11 +2503,11 @@
 										<br>
 										Uses 1008 Energy per second.
 										<br>
-										Costs <span id='werewolfUraniumCost'>165000</span> Uranium, <span id='werewolfGemCost'>209000</span> G <span id='werewolfMethaneCost'>170000</span> Methane.
+										花费 <span id='werewolfUraniumCost'>165000</span> Uranium, <span id='werewolfGemCost'>209000</span> G <span id='werewolfMethaneCost'>170000</span> Methane.
 									<br>
 									<br>
-									<button onclick="getWerewolf()" class="btn btn-default">Get Dead Werewolf Finder</button>
-									<button onclick="destroyMachine('werewolf')" class="btn btn-default destroy hidden">Destroy Dead Werewolf Finder</button>
+									<button onclick="getWerewolf()" class="btn btn-default">获取Dead Werewolf Finder</button>
+									<button onclick="destroyMachine('werewolf')" class="btn btn-default destroy hidden">摧毁 Dead Werewolf Finder</button>
 								</td>
 							</tr>
 						</table>
@@ -2539,11 +2539,11 @@
 										升级库存
 									</h3>
 									<span>
-										升级岩浆储存上限到 <span id="lavaNextStorage">100</span>.
+										升级熔岩储存上限到 <span id="lavaNextStorage">100</span>.
 										<br>
 										库存 <span id="lavaLimitType">full</span> 剩余时间: <b><span id="lavaLimitTime">N/A</span></b>
 										<br>
-										花费 <span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> 月岩。
+										花费 <span id="lavaStorageCost">50</span> 熔岩, <span id="lavaStorageLunariteCost">20</span> 月岩。
 									</span>
 									<br>
 									<br>
@@ -2564,8 +2564,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCrucible()" class="btn btn-default">Get Crucible</button>
-									<button onclick="destroyMachine('crucible')" class="btn btn-default destroy hidden">Destroy Heat Resistant Crucible</button>
+									<button onclick="getCrucible()" class="btn btn-default">获取Crucible</button>
+									<button onclick="destroyMachine('crucible')" class="btn btn-default destroy hidden">摧毁 Heat Resistant Crucible</button>
 								</td>
 							</tr>
 							<tr>
@@ -2580,12 +2580,12 @@
 										<br>
 										Uses 58 Energy per second.
 										<br>
-										花费 <span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
+										花费 <span id="extractorLunariteCost">16,000</span> 月岩, <span id="extractorTitaniumCost">14,000</span> 钛, <span id="extractorSiliconCost">6,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtractor()" class="btn btn-default">Get Extractor</button>
-									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">Destroy Lava Extractor</button>
+									<button onclick="getExtractor()" class="btn btn-default">获取Extractor</button>
+									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">摧毁 Lava Extractor</button>
 								</td>
 							</tr>
 							<tr id="lavaTier3" class="hidden">
@@ -2600,12 +2600,12 @@
 										<br>
 										Uses 237 Energy per second.
 										<br>
-										花费 <span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
+										花费 <span id="extruderLunariteCost">69,000</span> 月岩, <span id="extruderTitaniumCost">57,000</span> 钛, <span id="extruderSiliconCost">39,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtruder()" class="btn btn-default">Get Igneous Extruder</button>
-									<button onclick="destroyMachine('extruder')" class="btn btn-default destroy hidden">Destroy Igneous Extruder</button>
+									<button onclick="getExtruder()" class="btn btn-default">获取Igneous Extruder</button>
+									<button onclick="destroyMachine('extruder')" class="btn btn-default destroy hidden">摧毁 Igneous Extruder</button>
 								</td>
 							</tr>
 							<tr id="lavaTier4" class="hidden">
@@ -2620,12 +2620,12 @@
 										<br>
 										Uses 689 Energy per second.
 										<br>
-										花费 <span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> 陨石。
+										花费 <span id="veluptuatorLunariteCost">298,000</span> 月岩, <span id="veluptuatorGoldCost">121,000</span> 黄金， <span id="veluptuatorMeteoriteCost">750</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getVeluptuator()" class="btn btn-default">Get Volcanic Veluptuator</button>
-									<button onclick="destroyMachine('veluptuator')" class="btn btn-default destroy hidden">Destroy Volcanic Veluptuator</button>
+									<button onclick="getVeluptuator()" class="btn btn-default">获取Volcanic Veluptuator</button>
+									<button onclick="destroyMachine('veluptuator')" class="btn btn-default destroy hidden">摧毁 Volcanic Veluptuator</button>
 								</td>
 							</tr>
 							<tr id="lavaTier5" class="hidden">
@@ -2640,12 +2640,12 @@
 										<br>
 										Uses 4142 Energy per second.
 										<br>
-										Costs <span id='condensatorLunariteCost'>288000</span> Lunarite, <span id='condensatorGemCost'>210000</span> Gems, <span id='condensatorIceCost'>238000</span> Ice.
+										花费 <span id='condensatorLunariteCost'>288000</span> 月岩, <span id='condensatorGemCost'>210000</span> Gems, <span id='condensatorIceCost'>238000</span> Ice.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCondensator()" class="btn btn-default">Get Jupitonian Condensator</button>
-									<button onclick="destroyMachine('condensator')" class="btn btn-default destroy hidden">Destroy Jupitonian Condensator</button>
+									<button onclick="getCondensator()" class="btn btn-default">获取Jupitonian Condensator</button>
+									<button onclick="destroyMachine('condensator')" class="btn btn-default destroy hidden">摧毁 Jupitonian Condensator</button>
 								</td>
 							</tr>
 						</table>
@@ -2698,12 +2698,12 @@
 										<br>
 										Produces 1 Hydrogen per second.
 										<br>
-										花费 <span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
+										花费 <span id="collectorLunariteCost">6,000</span> 月岩, <span id="collectorTitaniumCost">4,800</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCollector()" class="btn btn-default">Get Collector</button>
-									<button onclick="destroyMachine('collector')" class="btn btn-default destroy hidden">Destroy Collector</button>
+									<button onclick="getCollector()" class="btn btn-default">获取Collector</button>
+									<button onclick="destroyMachine('collector')" class="btn btn-default destroy hidden">摧毁 Collector</button>
 								</td>
 							</tr>
 							<tr>
@@ -2718,12 +2718,12 @@
 										<br>
 										Uses 63 Energy per second.
 										<br>
-										花费 <span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
+										花费 <span id="magnetLunariteCost">10,800</span> 月岩, <span id="magnetTitaniumCost">9,600</span> 钛, <span id="magnetGoldCost">6,600</span> Gold.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagnet()" class="btn btn-default">Get Magnet</button>
-									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">Destroy Gaseous Magnet</button>
+									<button onclick="getMagnet()" class="btn btn-default">获取Magnet</button>
+									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">摧毁 Gaseous Magnet</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier3" class="hidden">
@@ -2738,12 +2738,12 @@
 										<br>
 										Uses 234 Energy per second.
 										<br>
-										花费 <span id="eCellSilverCost">37,200</span> 银， <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
+										花费 <span id="eCellSilverCost">37,200</span> 银， <span id="eCellGoldCost">34,200</span> 黄金， <span id="eCellSiliconCost">25,800</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getECell()" class="btn btn-default">Get Electrolytic Cell</button>
-									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">Destroy Electrolytic Cell</button>
+									<button onclick="getECell()" class="btn btn-default">获取Electrolytic Cell</button>
+									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">摧毁 Electrolytic Cell</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier4" class="hidden">
@@ -2758,12 +2758,12 @@
 										<br>
 										Uses 613 Energy per second.
 										<br>
-										花费 <span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> 陨石。
+										花费 <span id="hindenburgLunariteCost">172,000</span> 月岩, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getHindenburg()" class="btn btn-default">Get Hindenburg Excavation</button>
-									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">Destroy Hindenburg Excavation</button>
+									<button onclick="getHindenburg()" class="btn btn-default">获取Hindenburg Excavation</button>
+									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">摧毁 Hindenburg Excavation</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier5" class="hidden">
@@ -2778,12 +2778,12 @@
 										<br>
 										Uses 3562 Energy per second.
 										<br>
-										Costs <span id='harvesterLunariteCost'>250000</span> Lunarite, <span id='harvesterWoodCost'>184000</span> Wood, <span id='harvesterOilCost'>146000</span> Oil.
+										花费 <span id='harvesterLunariteCost'>250000</span> 月岩, <span id='harvesterWoodCost'>184000</span> Wood, <span id='harvesterOilCost'>146000</span> Oil.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHarvester()" class="btn btn-default">Get Star Harvester</button>
-									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">Destroy Star Harvester</button>
+									<button onclick="getHarvester()" class="btn btn-default">获取Star Harvester</button>
+									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">摧毁 Star Harvester</button>
 								</td>
 							</tr>
 						</table>
@@ -2836,12 +2836,12 @@
 										<br>
 										Produces 1 Helium per second.
 										<br>
-										花费 <span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
+										花费 <span id="droneLunariteCost">8,400</span> 月岩, <span id="droneSiliconCost">6,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDrone()" class="btn btn-default">Get Drone</button>
-									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">Destroy Helium Drone</button>
+									<button onclick="getDrone()" class="btn btn-default">获取Drone</button>
+									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">摧毁 Helium Drone</button>
 								</td>
 							</tr>
 							<tr>
@@ -2856,12 +2856,12 @@
 										<br>
 										Uses 72 Energy per second.
 										<br>
-										花费 <span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
+										花费 <span id="tankerLunariteCost">12,600</span> 月岩, <span id="tankerTitaniumCost">10,200</span> 钛, <span id="tankerSiliconCost">8,400</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getTanker()" class="btn btn-default">Get Tanker</button>
-									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">Destroy Helium Tanker</button>
+									<button onclick="getTanker()" class="btn btn-default">获取Tanker</button>
+									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">摧毁 Helium Tanker</button>
 								</td>
 							</tr>
 							<tr id="heliumTier3" class="hidden">
@@ -2876,12 +2876,12 @@
 										<br>
 										Uses 248 Energy per second.
 										<br>
-										花费 <span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
+										花费 <span id="compressorLunariteCost">63,000</span> 月岩, <span id="compressorTitaniumCost">43,800</span> 钛, <span id="compressorSiliconCost">35,400</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCompressor()" class="btn btn-default">Get Morphic Compressor</button>
-									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">Destroy Morphic Compressor</button>
+									<button onclick="getCompressor()" class="btn btn-default">获取Morphic Compressor</button>
+									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">摧毁 Morphic Compressor</button>
 								</td>
 							</tr>
 							<tr id="heliumTier4" class="hidden">
@@ -2896,12 +2896,12 @@
 										<br>
 										Uses 670 Energy per second.
 										<br>
-										花费 <span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> 陨石。
+										花费 <span id="skimmerLunariteCost">255,000</span> 月岩, <span id="skimmerTitaniumCost">173,000</span> 钛, <span id="skimmerMeteoriteCost">770</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getSkimmer()" class="btn btn-default">Get Gas Giant Skimmer</button>
-									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">Destroy Gas Giant Skimmer</button>
+									<button onclick="getSkimmer()" class="btn btn-default">获取Gas Giant Skimmer</button>
+									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">摧毁 Gas Giant Skimmer</button>
 								</td>
 							</tr>
 							<tr id="heliumTier5" class="hidden">
@@ -2916,12 +2916,12 @@
 										<br>
 										Uses 4075 Energy per second.
 										<br>
-										Costs <span id='cageLunariteCost'>171000</span> Lunarite, <span id='cageSiliconCost'>165000</span> Silicon, <span id='cageMeteoriteCost'>18600</span> Meterorite.
+										花费 <span id='cageLunariteCost'>171000</span> 月岩, <span id='cageSiliconCost'>165000</span> 硅， <span id='cageMeteoriteCost'>18600</span> Meterorite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCage()" class="btn btn-default">Get Caged Star</button>
-									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">Destroy Caged Star</button>
+									<button onclick="getCage()" class="btn btn-default">获取Caged Star</button>
+									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">摧毁 Caged Star</button>
 								</td>
 							</tr>
 						</table>
@@ -2974,12 +2974,12 @@
 										<br>
 										Produces 1 Ice per second.
 										<br>
-										花费 <span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> 宝石。
+										花费 <span id="icePickLunariteCost">17,800</span> 月岩, <span id="icePickGemCost">19,300</span> 宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getIcePick()" class="btn btn-default">Get Ice Pickaxe</button>
-									<button onclick="destroyMachine('icePick')" class="btn btn-default destroy hidden">Destroy Ice Pickaxe</button>
+									<button onclick="getIcePick()" class="btn btn-default">获取Ice Pickaxe</button>
+									<button onclick="destroyMachine('icePick')" class="btn btn-default destroy hidden">摧毁 Ice Pickaxe</button>
 								</td>
 							</tr>
 							<tr>
@@ -2994,12 +2994,12 @@
 										<br>
 										Uses 83 Energy per second.
 										<br>
-										花费 <span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
+										花费 <span id="iceDrillLunariteCost">23,900</span> 月岩, <span id="iceDrillTitaniumCost">21,200</span> 钛, <span id="iceDrillSiliconCost">19,600</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getIceDrill()" class="btn btn-default">Get Ice Drill</button>
-									<button onclick="destroyMachine('iceDrill')" class="btn btn-default destroy hidden">Destroy Ice Drill</button>
+									<button onclick="getIceDrill()" class="btn btn-default">获取Ice Drill</button>
+									<button onclick="destroyMachine('iceDrill')" class="btn btn-default destroy hidden">摧毁 Ice Drill</button>
 								</td>
 							</tr>
 							<tr id="iceTier3" class="hidden">
@@ -3014,12 +3014,12 @@
 										<br>
 										Uses 397 Energy per second.
 										<br>
-										花费 <span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
+										花费 <span id="freezerLunariteCost">117,000</span> 月岩, <span id="freezerTitaniumCost">86,000</span> 钛, <span id="freezerSiliconCost">73,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFreezer()" class="btn btn-default">Get Freezer</button>
-									<button onclick="destroyMachine('freezer')" class="btn btn-default destroy hidden">Destroy Ocean Freezer</button>
+									<button onclick="getFreezer()" class="btn btn-default">获取Freezer</button>
+									<button onclick="destroyMachine('freezer')" class="btn btn-default destroy hidden">摧毁 Ocean Freezer</button>
 								</td>
 							</tr>
 							<tr id="iceTier4" class="hidden">
@@ -3038,8 +3038,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMrFreeze()" class="btn btn-default">Get Mr Freeze</button>
-									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">Destroy Mr Freeze</button>
+									<button onclick="getMrFreeze()" class="btn btn-default">获取Mr Freeze</button>
+									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">摧毁 Mr Freeze</button>
 								</td>
 							</tr>
 							<tr id="iceTier5" class="hidden">
@@ -3054,12 +3054,12 @@
 										<br>
 										Uses 7397 Energy per second.
 										<br>
-										Costs <span id='overexchangeMetalCost'>210000</span> Metal, <span id='overexchangeSilverCost'>188000</span> Silver, <span id='overexchangeHeliumCost'>205000</span> Helium.
+										花费 <span id='overexchangeMetalCost'>210000</span> Metal, <span id='overexchangeSilverCost'>188000</span> Silver, <span id='overexchangeHeliumCost'>205000</span> Helium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getOverexchange()" class="btn btn-default">Get Overexchange Condenser</button>
-									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">Destroy Overexchange Condenser</button>
+									<button onclick="getOverexchange()" class="btn btn-default">获取Overexchange Condenser</button>
+									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">摧毁 Overexchange Condenser</button>
 								</td>
 							</tr>
 						</table>
@@ -3115,12 +3115,12 @@
 										<br>
 										Produces 1 Meteorite per second. Uses 3 Plasma per second.
 										<br>
-										花费 <span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
+										花费 <span id="printerLunariteCost">100,000</span> 月岩, <span id="printerSiliconCost">60,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPrinter()" class="btn btn-default">Get Meteorite Printer</button>
-									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">Destroy Meteorite Printer</button>
+									<button onclick="getPrinter()" class="btn btn-default">获取Meteorite Printer</button>
+									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">摧毁 Meteorite Printer</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier2" class="hidden">
@@ -3133,12 +3133,12 @@
 										<br>
 										Produces 8 Meteorite per second. Uses 21 Plasma per second.
 										<br>
-										花费 <span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
+										花费 <span id="webLunariteCost">940,000</span> 月岩, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getWeb()" class="btn btn-default">Get Meteorite Web</button>
-									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">Destroy Meteorite Web</button>
+									<button onclick="getWeb()" class="btn btn-default">获取Meteorite Web</button>
+									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">摧毁 Meteorite Web</button>
 								</td>
 							</tr>
 						</table>
@@ -3281,7 +3281,7 @@
 										<br>
 										Each one produces 1000 science per second.
 										<br>
-										Costs <span id="labT5MetalCost">12.40M</span> Metal, <span id="labT5GemCost">7.30M</span> Gems, <span id="labT5WoodCost">15.90M</span> Wood.
+										花费 <span id="labT5MetalCost">12.40M</span> Metal, <span id="labT5GemCost">7.30M</span> Gems, <span id="labT5WoodCost">15.90M</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3523,7 +3523,7 @@
 									<br>
 									<br>
 									<button onclick="getChemicalPlant()" class="btn btn-default">Build Chemical Plant</button>
-									<button onclick="destroyMachine('chemicalPlant')" class="btn btn-default destroy hidden">Destroy Chemical Plant</button>
+									<button onclick="destroyMachine('chemicalPlant')" class="btn btn-default destroy hidden">摧毁 Chemical Plant</button>
 									<br>
 									<br>
 								</td>
@@ -3545,7 +3545,7 @@
 									<br>
 									<br>
 									<button onclick="getOxidisation()" class="btn btn-default">Build Oxidisation Chamber</button>
-									<button onclick="destroyMachine('oxidisation')" class="btn btn-default destroy hidden">Destroy Oxidisation Chamber</button>
+									<button onclick="destroyMachine('oxidisation')" class="btn btn-default destroy hidden">摧毁 Oxidisation Chamber</button>
 									<br>
 									<br>
 								</td>
@@ -3562,12 +3562,12 @@
 										<br>
 										They produce 20 Rocket Fuel per second.
 										<br>
-										花费 <span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
+										花费 <span id="hydrazineTitaniumCost">140,000</span> 钛, <span id="hydrazineSiliconCost">96,300</span> 硅， <span id="hydrazineGoldCost">78,600</span> Gold.
 									</span>
 									<br>
 									<br>
 									<button onclick="getHydrazine()" class="btn btn-default">Build Hydrazine Catalyst</button>
-									<button onclick="destroyMachine('hydrazine')" class="btn btn-default destroy hidden">Destroy Hydrazine Catalyst</button>
+									<button onclick="destroyMachine('hydrazine')" class="btn btn-default destroy hidden">摧毁 Hydrazine Catalyst</button>
 									<br>
 									<br>
 								</td>
@@ -3774,7 +3774,7 @@
 										勘探
 									</h3>
 									<span>
-										探索小行星带可以获取黄金和白银。
+										探索小行星带可以解锁黄金和白银。
 										<br>
 										花费 <span id="asteroidBeltRocketFuelCost">200</span>火箭燃料。
 									</span>
@@ -3794,10 +3794,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Wonder Station
+										奇迹站
 									</h2>
 									<span>
-										The Wonder Station is a large, mysterious construct, orbiting inside the Asteroid Belt. What it contains isn't known exactly, but carvings on ancient artifacts depict something similar. They say that there, you will learn about an almost supernatural, extra-terrestrial overlord, commanding over the galaxy. They say that he will be able to teach you many things on your journey to inter-star and galactic exploration.
+										奇迹站是一个大型，神秘的建筑，在小行星带内行驶。 它所包含的不完全是知道的，但古代文物上的雕刻描绘了类似的东西。 他们说，在那里，你将会了解到一个几乎超自然的超地平线的霸主，指挥着星系。 他们说，他将能够在你的旅程中教你许多事情进行星际和银河探险。
 									</span>
 									<br>
 									<br>
@@ -3809,13 +3809,13 @@
 										勘探
 									</h3>
 									<span>
-										Exploring the Wonder Station will gives you access to Wonders and allow you to continue your research and travel even further than before.
+										探索奇迹站将让您解锁奇迹，并允许您继续进行研究和旅行比以前更远。
 										<br>
 										花费 <span id="wonderStationRocketFuelCost">500</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('WonderStation')" class="btn btn-default">探索 The Wonder Station</button>
+									<button onclick="explore('WonderStation')" class="btn btn-default">探索奇迹站</button>
 									<br>
 									<br>
 								</td>
@@ -3829,10 +3829,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Jupiter
+										木星
 									</h2>
 									<span>
-										The largest planet in the solar system, one of four gas giants.
+										太阳系中最大的行星，是四大天然气巨头之一。
 									</span>
 									<br>
 									<br>
@@ -3844,13 +3844,13 @@
 										勘探
 									</h3>
 									<span>
-										Exploring Jupiter gives you access to 氢。
+										探索木星可以让您解锁氢气。
 										<br>
 										花费 <span id="jupiterRocketFuelCost">1000</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('Jupiter')" class="btn btn-default">探索 Jupiter</button>
+									<button onclick="explore('Jupiter')" class="btn btn-default">探索木星</button>
 									<br>
 									<br>
 								</td>
@@ -3864,10 +3864,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Saturn
+										土星
 									</h2>
 									<span>
-										The second largest planet in the solar system, next to Jupiter. It is one of the few celestial bodies in our solar system to have rings and is the least dense planet in the solar system. You can find Helium here.
+										太阳系第二大行星，旁边是木星。 它是我们太阳系中少有的天体之一，拥有环，是太阳系中最不密集的星球。 你可以在这里找到氦。
 									</span>
 									<br>
 									<br>
@@ -3879,13 +3879,13 @@
 										勘探
 									</h3>
 									<span>
-										Exploring Saturn gives you access to Helium.
+										探索土星可以让您解锁氦气。
 										<br>
 										花费 <span id="saturnRocketFuelCost">2000</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('Saturn')" class="btn btn-default">探索 Saturn</button>
+									<button onclick="explore('Saturn')" class="btn btn-default">探索土星</button>
 									<br>
 									<br>
 								</td>
@@ -3899,10 +3899,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Uranus
+										天王星
 									</h2>
 									<span>
-										The planet that rotates differently from everyone else has winds up to 300 miles per hour (483kph). Its composition is much like that of the other gas giants, mainly composed of Hydrogen and Helium. Because of this, it is not worth exploring to get the same resources as in Saturn and Jupiter.
+										与其他星球不同的，天王星星风速可达每小时300英里（483公里）。 其组成与其他主要由氢和氦组成的气体巨头相似。 因此，得到与土星和木星相同的资源是不值得探索的。
 									</span>
 									<br>
 									<br>
@@ -3917,10 +3917,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Neptune
+										海王星
 									</h2>
 									<span>
-										Neptune has the strangest weather in the solar system. There are huge storms and winds that are more violent than any other in the solar system. There is not much there but Methane, Hydrogen and Helium.
+										海王星在太阳系中有最奇怪的天气。 太阳系中有比其他任何一个暴风雨更大的风暴和大风。 那里没有太多，但甲烷，氢气和氦气。
 									</span>
 									<br>
 									<br>
@@ -3935,10 +3935,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Pluto
+										冥王星
 									</h2>
 									<span>
-										Pluto is the smallest of the widely known celestial bodies, being smaller than the moon. Classed as a dwarf planet, it orbits in the far reaches of the solar system. However, there may be more of interest on the surface than humans think.
+										冥王星是众所周知的天体中最小的，比月球小。 它被列为矮星球，它在太阳系的远处轨道。 然而，表面上可能比人类想象的更多的兴趣。
 									</span>
 									<br>
 									<br>
@@ -3950,13 +3950,13 @@
 										勘探
 									</h3>
 									<span>
-										No-one knows what lies near and around pluto as it is so far away. On there surface, there is almost only ice, but maybe an exploration will teach us more about the unknown.
+										没有人知道冥王星附近和周围是什么，因为它是如此遥远。 在那个地方，几乎只有冰，但也许一个探索将会教我们更多关于未知数。
 										<br>
 										花费 <span id="plutoRocketFuelCost">5000</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('Pluto')" class="btn btn-default">探索 Pluto</button>
+									<button onclick="explore('Pluto')" class="btn btn-default">探索冥王星</button>
 									<br>
 									<br>
 								</td>
@@ -3970,10 +3970,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Kuiper Belt
+										柯伊伯带
 									</h2>
 									<span>
-										In the large asteroid belt extending beyond Pluto, you see a large purple structure with a huge glass dome on one of the asteroids. This seems worth checking out. There could be something interesting there.
+										在超过冥王星的大型小行星带中，您会看到一个大的紫色结构，其中一个小行星上有一个巨大的玻璃圆顶。 这似乎值得一看。 可能有什么有趣的。
 									</span>
 									<br>
 									<br>
@@ -3985,13 +3985,13 @@
 										勘探
 									</h3>
 									<span>
-										Exploring the Kuiper Belt gives you access to the hidden base
+										探索柯伊伯带可以让您进入隐藏的基地
 										<br>
 										花费 <span id="kuiperBeltRocketFuelCost">6000</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('KuiperBelt')" class="btn btn-default">探索 Kuiper Belt</button>
+									<button onclick="explore('KuiperBelt')" class="btn btn-default">探索柯伊伯带</button>
 									<br>
 									<br>
 								</td>
@@ -4005,7 +4005,7 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Sol Scientific Center
+										太阳科学中心
 									</h2>
 									<span>
 										Welcome to our home. Our race is dedicated to scientific progress and interacting with others. If you wish to trade with us, we can provide you blueprints for technology that few in the galaxy have ever seen.
@@ -4020,13 +4020,13 @@
 										勘探
 									</h3>
 									<span>
-										Exploring the Sol Center gives you access to the hidden base.
+										探索太阳中心可以访问隐藏的基础。
 										<br>
 										花费 <span id="solCenterRocketFuelCost">7000</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="explore('SolCenter')" class="btn btn-default">探索 Sol Center</button>
+									<button onclick="explore('SolCenter')" class="btn btn-default">探索太阳科学中心</button>
 									<br>
 									<br>
 								</td>
@@ -4218,7 +4218,7 @@
 										<br>
 										<br>
 										<hide id="techWonderButton">
-											He requests a tower consisting of <span id="techSiliconCost">30,000</span> Silicon, <span id="techGoldCost">18,000</span> Gold and <span id="techGemCost">40,000</span> Gems to unlock this technology.
+											He requests a tower consisting of <span id="techSiliconCost">30,000</span> 硅， <span id="techGoldCost">18,000</span> Gold and <span id="techGemCost">40,000</span> Gems to unlock this technology.
 											<br>
 											<br>
 											<button onclick="achieveTechWonder()" class="btn btn-default">Donate Resources</button>
@@ -4351,23 +4351,23 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Technological Wonder
+										技术奇迹
 									</h2>
 									<span>
-										Proud of his new monument, the Overlord teaches you the ways of computerized machines and advanced gathering of resources.
+										他引以为傲的新纪念碑，霸主教你电脑机器的方式和资源的高级收集。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Activate Wonder
+										激活奇迹
 									</h3>
 									<span>
-										Activating this wonder will allow you to build Tier 3 Machines, a much more effective method of collecting resources.
+										激活这个奇迹将允许您建造3级机器，这是一种更有效的收集资源的方法。
 										<br>
 										<hide id="activateTechWonder">
-											花费： <span id="techActivateSiliconCost">50,000</span> Silicon, <span id="techActivateGoldCost">30,000</span> Gold, <span id="techActivateGemCost">60,000</span> 宝石。
+											花费： <span id="techActivateSiliconCost">50,000</span> 硅， <span id="techActivateGoldCost">30,000</span> 黄金， <span id="techActivateGemCost">60,000</span> 宝石。
 											<br>
 											<br>
 											<button onclick="activateTechWonder()" class="btn btn-default">Activate Technological Wonder</button>
@@ -4408,7 +4408,7 @@
 										Activating this wonder gives you the ability to construct 4th Tier resource gathering machines, which are better and more efficient than anything before it.
 										<br>
 										<hide id="activateMeteoriteWonder">
-											花费： <span id="meteoriteActivateMeteoriteCost">10,000</span> 陨石， <span id="meteoriteActivateIceCost">2,000,000</span> Ice, <span id="meteoriteActivateSiliconCost">4,000,000</span> Silicon.
+											花费： <span id="meteoriteActivateMeteoriteCost">10,000</span> 陨石， <span id="meteoriteActivateIceCost">2,000,000</span> Ice, <span id="meteoriteActivateSiliconCost">4,000,000</span> 硅.
 											<br>
 											<br>
 											<button onclick="activateMeteoriteWonder()" class="btn btn-default">Activate Meteorite Wonder</button>
@@ -4449,7 +4449,7 @@
 										For rebuilding the Communication Wonder, you will be able to talk and listen to aliens in other star systems and determine whether there is sentient life outside of our solar system.
 										<br>
 										<hide id="rebuildCommsWonder">
-											花费： <span id="commsWonderGoldCost">6M</span> Gold, <span id="commsWonderSiliconCost">10M</span> Silicon, <span id="commsWonderIceCost">6M</span> Ice.
+											花费： <span id="commsWonderGoldCost">6M</span> 黄金， <span id="commsWonderSiliconCost">10M</span> 硅， <span id="commsWonderIceCost">6M</span> Ice.
 											<br>
 											<br>
 											<button onclick="rebuildCommsWonder()" class="btn btn-default">Rebuild Communication Wonder</button>
@@ -4490,7 +4490,7 @@
 										For rebuilding the Rocket Wonder, you will discover advanced technologies where you can learn how to move beyond your tiny star system.
 										<br>
 										<hide id="rebuildRocketWonder">
-											花费： <span id="rocketWonderLunariteCost">8M</span> Lunarite, <span id="rocketWonderTitaniumCost">6M</span> Titanium, <span id="rocketWonderMetalCost">12M</span> Metal.
+											花费： <span id="rocketWonderLunariteCost">8M</span> 月岩, <span id="rocketWonderTitaniumCost">6M</span> 钛, <span id="rocketWonderMetalCost">12M</span> Metal.
 											<br>
 											<br>
 											<button onclick="rebuildRocketWonder()" class="btn btn-default">Rebuild Rocket Wonder</button>
@@ -4531,7 +4531,7 @@
 										For rebuilding the Antimatter Wonder, you will gain access to antimatter production and storage.
 										<br>
 										<hide id="rebuildAntimatterWonder">
-											花费： <span id="antimatterWonderUraniumCost">6M</span> Uranium, <span id="antimatterWonderLavaCost">10M</span> Lava, <span id="antimatterWonderOilCost">8M</span> 石油， <span id="antimatterWonderMethaneCost">6M</span> Methane.
+											花费： <span id="antimatterWonderUraniumCost">6M</span> Uranium, <span id="antimatterWonderLavaCost">10M</span> 熔岩, <span id="antimatterWonderOilCost">8M</span> 石油， <span id="antimatterWonderMethaneCost">6M</span> Methane.
 											<br>
 											<br>
 											<button onclick="rebuildAntimatterWonder()" class="btn btn-default">Rebuild Antimatter Wonder</button>
@@ -4572,7 +4572,7 @@
 										Activating the Portal will allow you to go through it to get to the Third Floor of the Wonder Station, detached from the rest of the tetrahedral monolith.
 										<br>
 										<hide id="activatePortal">
-											花费： <span id="portalMeteoriteCost">500K</span> 陨石， <span id="portalHeliumCost">8M</span> Helium, <span id="portalSiliconCost">6M</span> Silicon.
+											花费： <span id="portalMeteoriteCost">500K</span> 陨石， <span id="portalHeliumCost">8M</span> Helium, <span id="portalSiliconCost">6M</span> 硅.
 											<br>
 											<br>
 											<button onclick="activatePortal()" class="btn btn-default">Activate Portal</button>
@@ -4614,7 +4614,7 @@
 										For rebuilding the Stargate, you will be able to explore outer space, beyond your own solar system.
 										<br>
 										<hide id="rebuildStargate">
-											花费： <span id="stargateWonderPlasmaCost">500,000</span> Plasma, <span id="stargateWonderSiliconCost">920.0M</span> Silicon, <span id="stargateWonderMeteoriteCost">17.00M</span> 陨石。
+											花费： <span id="stargateWonderPlasmaCost">500,000</span> Plasma, <span id="stargateWonderSiliconCost">920.0M</span> 硅， <span id="stargateWonderMeteoriteCost">17.00M</span> 陨石。
 											<br>
 											<br>
 											<button onclick="rebuildStargate()" class="btn btn-default">Rebuild Stargate</button>
@@ -4704,22 +4704,22 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Energy-Mass Conversion
+										能源质量转化
 									</h2>
 									<span>
-										EMC is a technology only dreamt about back on Earth. Here, it's a reality. You can turn energy and plasma into regular resources, or, with large amounts, you can turn it into rare ones, which you are unable to find and have to make to acquire.
+										能源质量转化是一种仅仅追求地球的技术。 在这里，这是一个现实。 您可以将能源和等离子体转化为常规资源，或者大量将能量和等离子体转化为罕见的，您无法找到并且必须获取的资源。
 									</span>
 								</td>
 							</tr>
 							<tr id="researchEmc">
 								<td>
 									<h3 class="default btn-link">
-										Research
+										研究
 									</h3>
 									<span>
-										To be given the blueprints for this mysterious machine, the Aliens require both types of energy.
+										要获得这个神秘机器的蓝图，需要给外星人两种类型的能量。gy.
 										<br>
-										花费： <span id="unlockEmcResearchEnergyCost">75,000</span> Energy, <span id="unlockEmcResearchPlasmaCost">100</span> Plasma.
+										花费： <span id="unlockEmcResearchEnergyCost">75,000</span> 能源, <span id="unlockEmcResearchPlasmaCost">100</span> 等离子体.
 										<br>
 										<br>
 										<button onclick="unlockEmcResearch()" class="btn btn-default">Unlock EMC Machine Research</button>
@@ -4889,7 +4889,7 @@
 									<span>
 										To understand this supreme construct, you must request the aliens' help. They require vast amounts of energy and plasma.
 										<br>
-										花费： <span id="unlockDysonResearchEnergyCost">100,000</span> Energy, <span id="unlockDysonResearchPlasmaCost">10,000</span> Plasma.
+										花费： <span id="unlockDysonResearchEnergyCost">100,000</span> Energy, <span id="unlockDysonResearchPlasmaCost">10,000</span> 等离子体.
 										<br>
 										<br>
 										<button onclick="unlockDysonResearch()" class="btn btn-default">Unlock Dyson Sphere Research</button>
@@ -4904,7 +4904,7 @@
 									<span>
 										These mega-structures cannot possibly be built in one piece. They must be created from small sections and forged together around the sun.
 										<br>
-										The next section 花费： <span id="dysonTitaniumCost">300,000</span> Titanium, <span id="dysonGoldCost">100,000</span> Gold, <span id="dysonSiliconCost">200,000</span> Silicon, <span id="dysonMeteoriteCost">1,000</span> 陨石， <span id="dysonIceCost">100,000</span> Ice.
+										The next section 花费： <span id="dysonTitaniumCost">300,000</span> 钛, <span id="dysonGoldCost">100,000</span> 黄金， <span id="dysonSiliconCost">200,000</span> 硅， <span id="dysonMeteoriteCost">1,000</span> 陨石， <span id="dysonIceCost">100,000</span> Ice.
 										<br>
 										<br>
 										<button onclick="getDyson()" class="btn btn-default">Build Dyson Section</button>
@@ -6630,50 +6630,50 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Change Company Name
+										修改游戏公司名称
 									</h3>
 				                	<div class="checkbox">
-										<input type="text" name="companyName"> Company <input type="submit" value="Submit">
+										<input type="text" name="companyName"> 公司 <input type="submit" value="Submit">
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Text Decoration
+										文本装饰
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="boldEnabled" type="checkbox" value="">Red 花费： Bold</label>
+										<label><input id="boldEnabled" type="checkbox" value="">加红 花费： 加粗</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Autosave Notifications
+										自动保存通知
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="saveNotifsEnabled" type="checkbox" value="">Autosave Notifications</label>
+										<label><input id="saveNotifsEnabled" type="checkbox" value="">是否弹出自动保存通知</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Notifications (Not Autosave)
+										通知（不自动保存）
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="notificationsEnabled" type="checkbox" value="">Screen Notifications</label>
+										<label><input id="notificationsEnabled" type="checkbox" value="">屏幕通知</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Sidebar Height Compression (Not fully implemented)
+										侧边栏高度压缩（未完全实现）
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="sidebarCompressed" type="checkbox" value="">Compress Rows in Sidebar to Decrease White Space</label>
+										<label><input id="sidebarCompressed" type="checkbox" value="">压缩边栏中的行减少空白</label>
 									</div>
 				                </td>
 							</tr>
@@ -6693,7 +6693,7 @@
 										Coloured Destroy Buttons
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="redDestroyButtons" type="checkbox" value="">Destroy Buttons Red</label>
+										<label><input id="redDestroyButtons" type="checkbox" value="">摧毁 Buttons Red</label>
 									</div>
 				                </td>
 							</tr>
