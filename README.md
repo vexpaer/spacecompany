@@ -38,28 +38,28 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 # 更新日志:
 
 ### v0.5.1
-##### Features
+##### 功能
 
-- Storage Upgrade Discounts
+- 存储升级折扣
 
-##### Small Changes
+##### 小变化
 
-- Made Alpha Centauri distance clear
-- You cannot rebirth without a sphere
-- Fixed higher antimatter storages not saving
-- Reduced framerate from 100fps to 10fps
+- 使半人马座阿尔法星的距离清晰
+- 你不能在没有球体的情况下重生
+- 修正了更高的反物质储存不节能
+- 帧速率从100fps降低到10fps
 
-##### Bug Fixed
+##### 错误修正
 
-- Fixed Comms wonder not showing interstellar tab
-- Fixed TARDIS production being incorrect
-- Fixed Storage Discount not working
-- Fixed Storage Upgrade overwriting old storages if greater than 6400
-- Fixed Tier 1 Rocket not showing red costs when inadequate
-- Fixed Subsequent Rebirths
-- Fixed Plasma not showing Gain 20
-- Fixed Wonders showing up as activated after rebirth
-- Fixed Solar System Showing planets before exploring requirements
+- 修正通讯想知道没有显示星际标签
+- 修正TARDIS生产不正确
+- 修正存储折扣不工作
+- 修正存储升级覆盖旧存储（如果大于6400）
+- 修正一级火箭不足以显示红色成本
+- 修正后续重生
+- 修正等离子体不显示增益20
+- 修正奇迹重生后显示为激活
+- 修正太阳能系统在探索要求之前显示行星
 
 ### v0.5.0
 ##### 功能

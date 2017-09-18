@@ -599,7 +599,7 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										加热器: <span id="heater">0</span>
+										超级加热器: <span id="heater">0</span>
 									</h3>
 									<span>
 										超级加热器在氢气中引发电能将其转化为血浆物质。
@@ -612,9 +612,9 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">获取Super-Heater</button>
-									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">关闭</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">摧毁 Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">获取超级加热器</button>
+									<button onclick="toggleHeater()" class="btn btn-default">把超级加热器 <span id="heaterToggled">关闭</span></button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">摧毁超级加热器</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
@@ -4010,7 +4010,7 @@
 										太阳科学中心
 									</h2>
 									<span>
-										Welcome to our home. Our race is dedicated to scientific progress and interacting with others. If you wish to trade with us, we can provide you blueprints for technology that few in the galaxy have ever seen.
+										欢迎来到我们的家。 我们的种族致力于科学进步，与他人互动。 如果您想与我们进行交易，我们可以为您提供有关银河系中少有的技术蓝图。
 									</span>
 									<br>
 									<br>
@@ -4095,42 +4095,42 @@
 					<tr id="communicationWonderNav" onclick="activeWonderTab('communicationWonderNav')" class="sideTab hidden" href="#communicationWonderTab" aria-controls="communicationWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Comms Wonder: <span id="commsActivation">Dormant</span>
+								通讯奇迹： <span id="commsActivation">Dormant</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="rocketWonderNav" onclick="activeWonderTab('rocketWonderNav')" class="sideTab hidden" href="#rocketWonderTab" aria-controls="rocketWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Rocket Wonder: <span id="rocketActivation">Dormant</span>
+								火箭奇迹：<span id="rocketActivation">Dormant</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="antimatterWonderNav" onclick="activeWonderTab('antimatterWonderNav')" class="sideTab hidden" href="#antimatterWonderTab" aria-controls="antimatterWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Antimatter Wonder: <span id="antimatterActivation">Dormant</span>
+								反物质奇迹： <span id="antimatterActivation">Dormant</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="portalRoomNav" onclick="activeWonderTab('portalRoomNav')" class="sideTab hidden" href="#portalRoomTab" aria-controls="portalRoomTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Portal Room: <span id="portalRoomActivation">Dormant</span>
+								门户室：<span id="portalRoomActivation">Dormant</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="wonderFloor3Nav" class="hidden">
 						<th>
 							<span>
-								Wonder Station - Floor 3
+								奇迹站 - 3楼
 							</span>
 						</th>
 					</tr>
 					<tr id="stargateNav" onclick="activeWonderTab('stargateNav')" class="sideTab hidden" href="#stargateTab" aria-controls="stargateTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								Stargate: <span id="stargateActivation">Dormant</span>
+								星际之门: <span id="stargateActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
@@ -4247,7 +4247,7 @@
 										<br>
 										<br>
 										<hide id="meteoriteWonderButton">
-											霸主希望得到一个立方体，需要 <span id="meteoriteMeteoriteCost">5,000</span> 陨石， <span id="meteoriteIceCost">600,000</span> Ice and <span id="meteoriteSiliconCost">1,200,000</span> 硅去获取这个技术。
+											霸主希望得到一个立方体，需要 <span id="meteoriteMeteoriteCost">5,000</span> 陨石， <span id="meteoriteIceCost">600,000</span> 冰 和 <span id="meteoriteSiliconCost">1,200,000</span> 硅去获取这个技术。
 											<br>
 											<br>
 											<button onclick="achieveMeteoriteWonder()" class="btn btn-default">捐赠资源</button>
@@ -4394,26 +4394,26 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Meteorite Wonder
+										陨石奇观
 									</h2>
 									<span>
-										The Overlord, watching his newly built wonder, offers you the possibility for a new wave of machines that best any before them.
+										霸王，看着他新建的奇迹，为您提供了最新的一波新机器的可能性。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Activate Wonder
+										激活奇迹
 									</h3>
 									<span>
-										Activating this wonder gives you the ability to construct 4th Tier resource gathering machines, which are better and more efficient than anything before it.
+										激活这个奇迹使您有能力构建第四层资源收集机，它们比之前更好，更有效率。
 										<br>
 										<hide id="activateMeteoriteWonder">
-											花费： <span id="meteoriteActivateMeteoriteCost">10,000</span> 陨石， <span id="meteoriteActivateIceCost">2,000,000</span> Ice, <span id="meteoriteActivateSiliconCost">4,000,000</span> 硅.
+											花费： <span id="meteoriteActivateMeteoriteCost">10,000</span> 陨石， <span id="meteoriteActivateIceCost">2,000,000</span> 冰, <span id="meteoriteActivateSiliconCost">4,000,000</span> 硅.
 											<br>
 											<br>
-											<button onclick="activateMeteoriteWonder()" class="btn btn-default">Activate Meteorite Wonder</button>
+											<button onclick="activateMeteoriteWonder()" class="btn btn-default">激活陨石奇迹</button>
 											<br>
 											<br>
 											<div id="meteoriteActivateProgress" class="progress">
@@ -4435,26 +4435,26 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Communication Wonder
+										通信奇迹
 									</h2>
 									<span>
-										In the center of the room, you see a smouldered antenna dish, lying on the floor. A plaque next to it says 'Original Comms Relay between my first two star systems'. A loud voice booms again from the speakers at the far corners of the floor: 'This is one of my most prized memorabilia, reminding me of the first message I sent between star systems'. I will be elated if you repair this for me, and in return, I will help you on your mission to colonise the stars.
+										在房间的中心，你会看到一个烟雾天线，躺在地板上。 在它旁边的一个匾说“我的前两个星系之间的原始通讯继电器”。 大声的声音从地板上角落的扬声器再次起飞：“这是我最珍贵的纪念品之一，提醒我星际系统之间发送的第一条信息。 如果你为我修理这件事，我会很高兴的，作为回报，我会帮助你执行星星的任务。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Rebuild Communication Wonder
+										重建通讯奇迹
 									</h3>
 									<span>
-										For rebuilding the Communication Wonder, you will be able to talk and listen to aliens in other star systems and determine whether there is sentient life outside of our solar system.
+										为了重建“传播奇迹”，您将可以在其他星系统中谈话和听外星人，并确定我们的太阳系之外是否存在有意识的生活。
 										<br>
 										<hide id="rebuildCommsWonder">
 											花费： <span id="commsWonderGoldCost">6M</span> 黄金， <span id="commsWonderSiliconCost">10M</span> 硅， <span id="commsWonderIceCost">6M</span> 冰.
 											<br>
 											<br>
-											<button onclick="rebuildCommsWonder()" class="btn btn-default">Rebuild Communication Wonder</button>
+											<button onclick="rebuildCommsWonder()" class="btn btn-default">重建通讯奇迹</button>
 											<br>
 											<br>
 											<div id="commsWonderProgress" class="progress">
@@ -4476,26 +4476,26 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Rocket Wonder
+										火箭奇迹
 									</h2>
 									<span>
-										Up on the second floor, you find a disarray of broken machines and scattered parts on the floor. You can reassemble what seems to be a rocket engine lying next to you. The booming voice of the Overlord comes over the speakers in the room: 'Greetings, friend. As you can see, this floor has largely fallen into disorder. If you fix it for me, you will be handsomely rewarded. Your first task is to repair the wonder to your right. It used to be a rocket engine, but I'm not sure where the pieces are. You may need additional research to build this once more, but I'm sure you will figure it out just fine.'
+										在二楼，你发现地板上破碎的机器和分散的零件混乱。 你可以重新组装似乎是旁边的火箭发动机。 霸主的蓬勃发展的声音来自房间里的扬声器：“问候，朋友。 正如你所看到的，这个楼层已经很大程度上陷入混乱。 如果你为我解决这个问题，你会得到很好的回报。 你的第一个任务是修复你的权利的奇迹。 它曾经是一个火箭发动机，但我不知道这些碎片在哪里。 您可能需要进一步的研究来再建一次，但我相信你会想出来的很好。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Rebuild Rocket Wonder
+										重建火箭奇迹
 									</h3>
 									<span>
-										For rebuilding the Rocket Wonder, you will discover advanced technologies where you can learn how to move beyond your tiny star system.
+										为了重建火箭奇迹，您将发现先进的技术，您可以在其中学习如何超越您的微星系统。
 										<br>
 										<hide id="rebuildRocketWonder">
 											花费： <span id="rocketWonderLunariteCost">8M</span> 月岩, <span id="rocketWonderTitaniumCost">6M</span> 钛, <span id="rocketWonderMetalCost">12M</span> 金属.
 											<br>
 											<br>
-											<button onclick="rebuildRocketWonder()" class="btn btn-default">Rebuild Rocket Wonder</button>
+											<button onclick="rebuildRocketWonder()" class="btn btn-default">重建火箭奇迹</button>
 											<br>
 											<br>
 											<div id="rocketWonderProgress" class="progress">
@@ -4517,26 +4517,26 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Antimatter Wonder
+										反物质奇迹
 									</h2>
 									<span>
-										In the corner of the floor, you see a faintly glowing, large canister, propped up against the walls. The announcing message plays after pressing a red button next to it: 'This was my first antimatter tank for the maiden voyage of "The Interstellar", on my first trip to another star system. For repairing it and bringing back the memories, I will teach you about your own antimatter production to fuel your dreams of escaping your small piece of the universe.'
+										在地板的角落，你看到一个微弱发光的大罐子，靠在墙上。 在按下旁边的红色按钮之后，宣布信息播放：“这是我第一次使用”星际之星“的首个反坦克坦克，在我第一次访问另一个明星系统时。 为了修复它并带回回忆，我会教你关于你自己的反物质生产，以提供你逃离宇宙小块的梦想。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Rebuild Antimatter Wonder
+										重建反物质奇迹
 									</h3>
 									<span>
-										For rebuilding the Antimatter Wonder, you will gain access to antimatter production and storage.
+										为了重建反物质奇迹，您将获得反物质的生产和储存。
 										<br>
 										<hide id="rebuildAntimatterWonder">
 											花费： <span id="antimatterWonderUraniumCost">6M</span> 铀， <span id="antimatterWonderLavaCost">10M</span> 熔岩, <span id="antimatterWonderOilCost">8M</span> 石油， <span id="antimatterWonderMethaneCost">6M</span> 甲烷.
 											<br>
 											<br>
-											<button onclick="rebuildAntimatterWonder()" class="btn btn-default">Rebuild Antimatter Wonder</button>
+											<button onclick="rebuildAntimatterWonder()" class="btn btn-default">重建反物质奇迹</button>
 											<br>
 											<br>
 											<div id="antimatterWonderProgress" class="progress">
@@ -4558,26 +4558,26 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Portal Room
+										门户室
 									</h2>
 									<span>
-										An obsidian-looking giant-sized frame stands out in the room, mounted on the far wall of the floor. It's plaque reads: 'This is the pathway to the third and final floor of my mystical Wonder Station. It takes many resources to activate it, but once completed, will grant you access to the Stargate Room: The only way you will find your way out of this pathetic solar system and explore the cosmos'.
+										一个黑曜石般的巨型框架突出在房间里，安装在地板的远处。 这是匾额：“这是我神秘的神奇站的第三个也是最后一楼的通道。 它需要很多资源来激活它，但一旦完成，将授予您访问星际之门：唯一的方式，你会找到你的方式从这个可悲的太阳系和探索宇宙。
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Activate Portal
+										激活门户
 									</h3>
 									<span>
-										Activating the Portal will allow you to go through it to get to the Third Floor of the Wonder Station, detached from the rest of the tetrahedral monolith.
+										激活门户将允许您通过它到达奇迹站的三楼，与四面体巨石的其余部分分离。
 										<br>
 										<hide id="activatePortal">
 											花费： <span id="portalMeteoriteCost">500K</span> 陨石， <span id="portalHeliumCost">8M</span> 氦, <span id="portalSiliconCost">6M</span> 硅.
 											<br>
 											<br>
-											<button onclick="activatePortal()" class="btn btn-default">Activate Portal</button>
+											<button onclick="activatePortal()" class="btn btn-default">激活门户</button>
 											<br>
 											<br>
 											<div id="portalProgress" class="progress">
@@ -4599,27 +4599,27 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										The Stargate Room
+										星际之门
 									</h2>
 									<span>
-										The final floor, despite being the smallest of the three, appears to be the trophy room, displaying an imposing control panel and a large table.<br>
-										<strong>NB: The Wonder Tab will disappear after completing this wonder. Make sure all others are completed first.</strong>
+										最后一楼虽然是三人中最小的，但似乎是奖杯室，展示了一个强大的控制面板和一张大桌子。<br>
+										<strong>注意：完成这个奇迹后，奇迹选项卡将消失。 确保所有其他人首先完成。</strong>
 									</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Rebuild Stargate Wonder
+										重建星际之门
 									</h3>
 									<span>
-										For rebuilding the Stargate, you will be able to explore outer space, beyond your own solar system.
+										为了重建星际之门，您将能够探索超越自己太阳系的外太空。
 										<br>
 										<hide id="rebuildStargate">
-											花费： <span id="stargateWonderPlasmaCost">500,000</span> Plasma, <span id="stargateWonderSiliconCost">920.0M</span> 硅， <span id="stargateWonderMeteoriteCost">17.00M</span> 陨石。
+											花费： <span id="stargateWonderPlasmaCost">500,000</span>等离子， <span id="stargateWonderSiliconCost">920.0M</span> 硅， <span id="stargateWonderMeteoriteCost">17.00M</span> 陨石。
 											<br>
 											<br>
-											<button onclick="rebuildStargate()" class="btn btn-default">Rebuild Stargate</button>
+											<button onclick="rebuildStargate()" class="btn btn-default">重建星际之门</button>
 											<br>
 											<br>
 											<div id="stargateWonderProgress" class="progress">
@@ -6682,30 +6682,30 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Gain Buttons
+										增益按钮
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="gainButtonsHidden" type="checkbox" value="">获取 Buttons Hidden</label>
+										<label><input id="gainButtonsHidden" type="checkbox" value="">获取增益按钮</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Coloured Destroy Buttons
+										破坏按钮彩色
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="redDestroyButtons" type="checkbox" value="">摧毁 Buttons Red</label>
+										<label><input id="redDestroyButtons" type="checkbox" value="">摧毁按钮加颜色来区分</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Hide Completed Tabs
+										隐藏已完成的标签
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="hideCompleted" type="checkbox" value="">Hidden</label>
+										<label><input id="hideCompleted" type="checkbox" value="">隐藏</label>
 									</div>
 				                </td>
 							</tr>
@@ -7059,16 +7059,15 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Thank you to all Donators and my supporters on Patreon!
+										感谢所有捐赠者和我的支持者在Patreon！
 									</h3>
-									<h4>Patreon:</h4>
+									<h4>Patreon捐赠者:</h4>
 									<ul>
 										<li>Tom Paine</li>
 									</ul>
-									<h4>Paypal Donators:</h4>
+									<h4>Paypal捐赠者:</h4>
 									<ul>
 										<li>Steve Chahine</li>
-										<li></li>
 									</ul>
 								</td>
 							</tr>

@@ -8,7 +8,7 @@ Game.updates = (function(){
 
 	instance.updateTitleTemplate = Handlebars.compile(['<div id="updateAlert" class="alert alert-info alert-dismissible fade in">',
 	    '<button href="#" class="close btn.btn-info" data-dismiss="alert" aria-label="close">Close</button>',
-	    '<strong>New Update!</strong> These are the features since you last played (V0.4.4.8 onwards):<br>',
+	    '<strong>新的更新！</strong> 这是从上次更新后，新增加的功能（V.4.4.8起）：<br>',
 	    '<ul id="updateLog"></ul>',
 	'</div>'].join('\n'));
 	instance.updateTemplate = Handlebars.compile('<li><span>{{desc}}</span></li>');
@@ -88,97 +88,97 @@ Game.updatesData = (function(){
 	var instance = {};
 
 	instance.nerfEnergyEff = {
-		desc: 'Nerfed Energy Efficiency to be 100x cheaper, but only go up to 25%',
+		desc: '削弱能源效率降低100倍，但只能涨到25％',
 		read: false
 	};
 
 	instance.batteryEff = {
-		desc: 'Battery Efficiency Upgrade increases your battery storage by 1% (max 50)',
+		desc: '电池效率升级将您的电池存储量提高1％（最多50个）',
 		read: false
 	};
 
 	instance.effResearchLevel = {
-		desc: 'Changed Efficiency researches to show current level instead of next level',
+		desc: '改变效率研究，显示当前水平，而不是下一个水平',
 		read: false
 	};
 
 	instance.buffBattEff = {
-		desc: 'Buffed Battery Efficiency to go up to 200 levels instead of 50.',
+		desc: '提高电池效率达到200级，而不是50级。',
 		read: false
 	};
 
 	instance.redDestroy = {
-		desc: 'More -> Graphics Options. Added option to turn destroy buttons red.',
+		desc: '更多 - >图形选项。 增加了将破坏按钮变红的选项。',
 		read: false
 	};
 
 	instance.nerfRocketFuelResearch = {
-		desc: 'Increased the Science cost of Rocket Fuel researches',
+		desc: '增加火箭燃料研究的科学成本',
 		read: false
 	};
 
 	instance.rocketFuelT3 = {
-		desc: 'Added Hydrazine Catalyst - T3 Rocket Fuel',
+		desc: '添加肼催化剂 - T3火箭燃料',
 		read: false
 	};
 
 	instance.achievFormat = {
-		desc: 'Added Achievement Number Formatting',
+		desc: '新增成就数字格式',
 		read: false
 	};
 
 	instance.splash = {
-		desc: 'There are now 100 Loading Messages!',
+		desc: '现在有100个加载消息！',
 		read: false
 	};
 
 	instance.stargazeIntro = {
-		desc: 'Barebones + Intro added for Stargaze tab',
+		desc: 'Barebones + Intro添加了Stargaze标签',
 		read: false
 	};
 
 	instance.irs = {
-		desc: 'Added Interstellar Radar Scanner (Interstellar -> Comms)',
+		desc: '新增星际雷达扫描仪（星际 - >通讯）',
 		read: false
 	};
 
 	instance.ranks = {
-		desc: 'Added Achievement Ranks',
+		desc: '增加成就等级',
 		read: false
 	};
 
 	instance.lunarite = {
-		desc: 'Changed Space Metal to Lunarite',
+		desc: '改变太空金属为：月陆',
 		read: false
 	};
 
 	instance.hideWonder = {
-		desc: 'The Wonder Tab hides itself when completed (makes space for more tabs)',
+		desc: '“奇迹”选项卡在完成后隐藏（为更多选项卡留出空间）',
 		read: false
 	};
 
 	instance.dmCounter = {
-		desc: 'Dark Matter is now calculated and shown.',
+		desc: '暗物质是现在计算并显示。',
 		read: false
 	};
 
 	instance.hideButton = {
-		desc: 'You can unhide completed tabs if wanted. More -> Graphics Options.',
+		desc: '如果需要，您可以取消隐藏已完成的选项卡。 更多 - >图形选项。',
 		read: false
 	};
 
 	instance.achivementsReset = {
-		desc: 'Achievements have been reset, you will get back any you are currently over the level needed for.',
+		desc: '成就已重新设定，您将收回您目前所需的水平。',
 		read: false
 	};
 
 	instance.relationUpgrades = {
-		desc: 'Rebirth Upgrades now give relationship for upgrading them.',
+		desc: '重生升级现在为升级提供了关联。',
 		read: false
 	}
 
 	instance.fixSecondRebirth = {
-		desc: 'Fixed Subsequent Rebirths. You can now rebirth more than once without fear of save corruption!',
+		desc: '固定后续重生。 你现在可以多次重生，不用担心贪污腐败！',
 		read: false
 	}
 
