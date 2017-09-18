@@ -732,7 +732,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_64',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'goldIcon',
-		title: '建造 %s Death Stars Jr',
+		title: '建造 %s 死星JR',
 		evaluator: function(x) { return deathStar >= x },
 		progressEvaluator: function(x) { return deathStar/x }
 	};
@@ -741,7 +741,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_65',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'goldIcon',
-		title: '建造 %s Chronal Actuators',
+		title: '建造 %s 时空猎驱动器',
 		evaluator: function(x) { return actuator >= x },
 		progressEvaluator: function(x) { return actuator/x }
 	};
@@ -750,7 +750,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_66',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'silverIcon',
-		title: '建造 %s Scout Ships',
+		title: '建造 %s 侦察船',
 		evaluator: function(x) { return scout >= x },
 		progressEvaluator: function(x) { return scout/x }
 	};
@@ -759,7 +759,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_67',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'silverIcon',
-		title: '建造 %s Interplanetary Lasers',
+		title: '建造 %s 星际激光',
 		evaluator: function(x) { return spaceLaser >= x },
 		progressEvaluator: function(x) { return spaceLaser/x }
 	};
@@ -768,7 +768,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_68',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'silverIcon',
-		title: '建造 %s Big Berthas',
+		title: '建造 %s 大柏萨斯',
 		evaluator: function(x) { return bertha >= x },
 		progressEvaluator: function(x) { return bertha/x }
 	};
@@ -777,7 +777,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_69',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'silverIcon',
-		title: '建造 %s Atomic Cannons',
+		title: '建造 %s 原子大炮',
 		evaluator: function(x) { return cannon >= x },
 		progressEvaluator: function(x) { return cannon/x }
 	};
@@ -786,7 +786,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_78',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'hydrogenIcon',
-		title: '建造 %s Hydrogen Collectors',
+		title: '建造 %s 氢气收集器',
 		evaluator: function(x) { return collector >= x },
 		progressEvaluator: function(x) { return collector/x }
 	};
@@ -795,7 +795,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_79',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'hydrogenIcon',
-		title: '建造 %s Gaseous Magnets',
+		title: '建造 %s 气态磁铁',
 		evaluator: function(x) { return magnet >= x },
 		progressEvaluator: function(x) { return magnet/x }
 	};
@@ -804,7 +804,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_80',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'hydrogenIcon',
-		title: '建造 %s Electrolytic Cells',
+		title: '建造 %s 电解槽',
 		evaluator: function(x) { return eCell >= x },
 		progressEvaluator: function(x) { return eCell/x }
 	};
@@ -813,7 +813,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_81',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'hydrogenIcon',
-		title: '建造 %s Hindenburg Excavations',
+		title: '建造 %s 兴登堡挖掘',
 		evaluator: function(x) { return hindenburg >= x },
 		progressEvaluator: function(x) { return hindenburg/x }
 	};
@@ -822,7 +822,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_82',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'heliumIcon',
-		title: '建造 %s Helium Drones',
+		title: '建造 %s 氦无人机',
 		evaluator: function(x) { return drone >= x },
 		progressEvaluator: function(x) { return drone/x }
 	};
@@ -831,7 +831,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_83',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'heliumIcon',
-		title: '建造 %s Helium Tankers',
+		title: '建造 %s 氦油轮',
 		evaluator: function(x) { return tanker >= x },
 		progressEvaluator: function(x) { return tanker/x }
 	};
@@ -840,7 +840,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_84',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'heliumIcon',
-		title: '建造 %s Morphic Compressors',
+		title: '建造 %s 变形压缩机',
 		evaluator: function(x) { return compressor >= x },
 		progressEvaluator: function(x) { return compressor/x }
 	};
@@ -849,7 +849,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_85',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'heliumIcon',
-		title: '建造 %s Gas Giant Skimmers',
+		title: '建造 %s 天然气巨型撇渣器',
 		evaluator: function(x) { return skimmer >= x },
 		progressEvaluator: function(x) { return skimmer/x }
 	};
@@ -858,7 +858,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_86',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'iceIcon',
-		title: '建造 %s Ice Pickaxes',
+		title: '建造 %s 冰镐',
 		evaluator: function(x) { return icePick >= x },
 		progressEvaluator: function(x) { return icePick/x }
 	};
@@ -867,7 +867,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_87',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'iceIcon',
-		title: '建造 %s Ice Drills',
+		title: '建造 %s 冰钻',
 		evaluator: function(x) { return iceDrill >= x },
 		progressEvaluator: function(x) { return iceDrill/x }
 	};
@@ -876,7 +876,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_88',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'iceIcon',
-		title: '建造 %s Ocean Freezers',
+		title: '建造 %s 海洋冰柜',
 		evaluator: function(x) { return freezer >= x },
 		progressEvaluator: function(x) { return freezer/x }
 	};
@@ -885,7 +885,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_89',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'iceIcon',
-		title: '建造 %s Mr Freezes',
+		title: '建造 %s 冰冻先生',
 		evaluator: function(x) { return mrFreeze >= x },
 		progressEvaluator: function(x) { return mrFreeze/x }
 	};
@@ -894,7 +894,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_90',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'meteoriteIcon',
-		title: '建造 %s Meteorite Printers',
+		title: '建造 %s 陨石打印机',
 		evaluator: function(x) { return printer >= x },
 		progressEvaluator: function(x) { return printer/x }
 	};
@@ -903,7 +903,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_91',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'meteoriteIcon',
-		title: '建造 %s Meteorite Webs',
+		title: '建造 %s 陨石站点',
 		evaluator: function(x) { return web >= x },
 		progressEvaluator: function(x) { return web/x }
 	};
@@ -912,7 +912,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_92',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'technologyIcon',
-		title: '建造 %s Home Science Kits',
+		title: '建造 %s 家庭科学套件',
 		evaluator: function(x) { return lab >= x },
 		progressEvaluator: function(x) { return lab/x }
 	};
@@ -921,7 +921,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_93',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'technologyIcon',
-		title: '建造 %s High School Sciences',
+		title: '建造 %s 高中科学',
 		evaluator: function(x) { return labT2 >= x },
 		progressEvaluator: function(x) { return labT2/x }
 	};
@@ -930,7 +930,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_94',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'technologyIcon',
-		title: '建造 %s University Laboratories',
+		title: '建造 %s 大学实验室',
 		evaluator: function(x) { return labT3 >= x },
 		progressEvaluator: function(x) { return labT3/x }
 	};
@@ -939,7 +939,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_95',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'technologyIcon',
-		title: '建造 %s Scientific Observatories',
+		title: '建造 %s 科学观测台',
 		evaluator: function(x) { return labT4 >= x },
 		progressEvaluator: function(x) { return labT4/x }
 	};
@@ -948,7 +948,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_101',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'technologyIcon',
-		title: '建造 %s Space Scientific Satellite Stations',
+		title: '建造 %s 太空科学卫星站',
 		evaluator: function(x) { return labT5 >= x },
 		progressEvaluator: function(x) { return labT5/x }
 	};
@@ -957,7 +957,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_98',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'rocketFuelIcon',
-		title: '建造 %s Chemical Plants',
+		title: '建造 %s 化工厂',
 		evaluator: function(x) { return chemicalPlant >= x },
 		progressEvaluator: function(x) { return chemicalPlant/x }
 	};
@@ -966,7 +966,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_99',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'rocketFuelIcon',
-		title: '建造 %s Oxidisation Chambers',
+		title: '建造 %s 氧化室',
 		evaluator: function(x) { return oxidisation >= x },
 		progressEvaluator: function(x) { return oxidisation/x }
 	};
@@ -975,7 +975,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_100',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'rocketFuelIcon',
-		title: '建造 %s Hydrazine Catalysts',
+		title: '建造 %s 肼催化剂',
 		evaluator: function(x) { return hydrazine >= x },
 		progressEvaluator: function(x) { return hydrazine/x }
 	};
@@ -984,7 +984,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_96',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'EnergyIcon',
-		title: '建造 %s Dyson Rings',
+		title: '建造 %s 戴森戒指',
 		evaluator: function(x) { return ring >= x },
 		progressEvaluator: function(x) { return ring/x }
 	};
@@ -993,7 +993,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_97',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'EnergyIcon',
-		title: '建造 %s Dyson Swarms',
+		title: '建造 %s 成群的戴森',
 		evaluator: function(x) { return swarm >= x },
 		progressEvaluator: function(x) { return swarm/x }
 	};
