@@ -56,7 +56,7 @@ Game.stargazeUI = (function(){
             ['<tr><td style="border:none;">',
                 '<h2 class="default btn-link">{{name}}</h2>',
                 '<h4><b>Relationship: {{opinion}}</b></h4>',
-                '<span>{{desc}}</span>',
+                '<span>{{{desc}}}</span>',
                 '<br><br>',
                 '</td></tr>'].join('\n'));
 
@@ -86,7 +86,7 @@ Game.stargazeUI = (function(){
             ['<tr id="{{htmlId}}"><td>',
                 '<h3 class="default btn-link">{{name}}</h3>',
                 '<span>',
-                    '<p>{{desc}}</p>',
+                    '<p>{{{desc}}}</p>',
                     '<p id="{{htmlId}}_cost">Costs: {{cost}} Dark Matter</p>',,
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">Rebirth</div>',
@@ -97,8 +97,9 @@ Game.stargazeUI = (function(){
             ['<tr id="{{htmlId}}"><td>',
                 '<h3 class="default btn-link">{{name}}: <span id="{{htmlId}}Achieved">Dormant</span></h3>',
                 '<span>',
-                    '<p>{{desc}}</p>',
-                    '<p id="{{htmlId}}_cost">花费: {{cost}} Dark Matter</p>',,
+                    '<p>{{{desc}}}</p>',
+                    '<p id="{{htmlId}}_cost">花费: {{cost}} Dark Matter</p>',
+                    '<p id="{{htmlId}}_opinion">通过改善关系 {{opinion}}</p>',
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-default">Activate</div>',
                 '<br><br>',
@@ -165,11 +166,17 @@ Game.stargazeUI = (function(){
             // Marks achieved upgrades as 'Activated'
             for(var id in Game.stargaze.upgradeEntries){
                 var data = Game.stargaze.upgradeEntries[id];
-                if(data.achieved == true){
-                    if(id != 'rebirth'){
+                if(id != 'rebirth'){
+                    if(data.achieved == true){
                         document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "激活";
                         document.getElementById("stargazeUpg" + id + '_buy').className = "btn btn-default disabled";
+                    } else{
+                        document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "Dormant";
+                        document.getElementById("stargazeUpg" + id + '_buy').className = "btn btn-default";
                     }
+                }
+                if((data.category == "intro" || data.category == "darkMatter") && data.htmlId != "stargazeUpgrebirth"){
+                    document.getElementById(data.htmlId + "_opinion").className = "hidden";
                 }
             }
             stargaze.rebirthNeedsUpdate = false;

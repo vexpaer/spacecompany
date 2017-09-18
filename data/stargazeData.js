@@ -140,7 +140,7 @@ Game.prestigeData = (function(){
 
 	instance.rebirth = {
 		name: "Rebirth",
-		desc: "Stepping forth into a new life is a great undertaking and not something to be done on a whim. Once certain, you may start afresh, maintaining the knowledge and experience you gave gained from your previous life and renew yourself, achieving greater and faster than before. You will keep any unspent dark matter, as well as your upgrades.",
+		desc: "Stepping forth into a new life is a great undertaking and not something to be done on a whim. Once certain, you may start afresh, maintaining the knowledge and experience you gave gained from your previous life and renew yourself, achieving greater and faster than before. You will keep any unspent dark matter, as well as your upgrades. <br><b>NB: You cannot rebirth without a sphere, even on second runs.<br> NB: You will lose all upgrades purchased in your last life, so make sure you have more dark matter than you did last time.</b>",
 		cost: 0,
 		category: "intro",
 	};
@@ -184,8 +184,8 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			// old
 			gainNum = 20;
-			for(var i = 0; i < resources.length; i++){
-				$('#' + resources[i] + 'Gain').text(gainNum);
+			for(var resource in RESOURCE){
+				if(RESOURCE[resource] != "science")$('#' + RESOURCE[resource] + 'Gain').text(gainNum);
 			}
 
 			// new
@@ -199,7 +199,7 @@ Game.prestigeData = (function(){
 
 	instance.startingStorage = {
 		name: "Starting Storage",
-		desc: "Start with 6,400 max-storage on everything on rebirth.",
+		desc: "Start with 6,400 max-storage on everything on rebirth. (Does not affect if over 6,400)",
 		cost: 8,
 		category: "carnelian",
 		opinion: 6,
@@ -207,9 +207,26 @@ Game.prestigeData = (function(){
 			// old
 			var newStorage = 6400;
 			for(var i = 0; i < resources.length; i++){
-				window[resources[i] + "Storage"] = newStorage;
-				window[resources[i] + "NextStorage"] = newStorage * 2;
+				if(window[resources[i] + "Storage"] <= 6400){
+					window[resources[i] + "Storage"] = newStorage;
+					window[resources[i] + "NextStorage"] = newStorage * 2;
+				}
 			}
+
+			// new
+		},
+		achieved: false
+	};
+
+	instance.storageDiscount = {
+		name: "Storage Discount",
+		desc: "All Storages no longer cost 100% of the main resource, but instead, 75%.",
+		cost: 21,
+		category: "carnelian",
+		opinion: 14,
+		onApply: function(){
+			// old
+			storagePrice -= 0.25;
 
 			// new
 		},

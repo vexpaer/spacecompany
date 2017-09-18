@@ -37,6 +37,30 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 
 # 更新日志:
 
+### v0.5.1
+##### Features
+
+- Storage Upgrade Discounts
+
+##### Small Changes
+
+- Made Alpha Centauri distance clear
+- You cannot rebirth without a sphere
+- Fixed higher antimatter storages not saving
+- Reduced framerate from 100fps to 10fps
+
+##### Bug Fixed
+
+- Fixed Comms wonder not showing interstellar tab
+- Fixed TARDIS production being incorrect
+- Fixed Storage Discount not working
+- Fixed Storage Upgrade overwriting old storages if greater than 6400
+- Fixed Tier 1 Rocket not showing red costs when inadequate
+- Fixed Subsequent Rebirths
+- Fixed Plasma not showing Gain 20
+- Fixed Wonders showing up as activated after rebirth
+- Fixed Solar System Showing planets before exploring requirements
+
 ### v0.5.0
 ##### 功能
 
