@@ -79,8 +79,8 @@ Game.resourceData = (function () {
      ********************/
 
     instance.oil = {
-        name: 'Oil',
-        desc: 'Oil is pumped up from the ground and is used to build Tier 2 resource gatherers.',
+        name: '石油',
+        desc: '石油从地上抽出来，用于构建二级资源采集器。',
         icon: 'oilIcon',
         category: 'earth',
         baseCapacity: 50,
@@ -196,8 +196,8 @@ Game.resourceData = (function () {
     };
 
     instance.helium = {
-        name: 'Helium',
-        desc: 'Helium is the second most common element on gas giants such as Jupiter and Saturn.',
+        name: '氦气',
+        desc: '氦气是天然气巨头如木星和土星的第二大常见元素。',
         icon: 'heliumIcon',
         category: 'outerSol',
         baseCapacity: 50,

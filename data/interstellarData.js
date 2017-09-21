@@ -21,30 +21,30 @@ Game.interstellarData = (function(){
 	var instance = {};
 
 	instance.comms = {
-		name: 'Communications',
-		desc: 'This is where you learn about other systems to travel to. <br><b>NB: The first star, Alpha Centauri is 4.3 LY away. 1 IRS will not get you there.</b>',
+		name: '通讯',
+		desc: '这是您了解其他系统旅行的地方。 <br> <b>注意：半人马座阿尔法星的第一颗星星是4.3 LY。 1 IRS不会让你在那里。</b>',
 		category: 'general',
 		unlocked: false
 	};
 
 	instance.rocket = {
-		name: 'Rockets',
-		desc: 'This is where you can construct your transport to the stars.',
+		name: '火箭',
+		desc: '这是在那里你可以构建你的运输到星星。',
 		category: 'general',
 		built: 'Not Built',
 		unlocked: false
 	};
 
 	instance.antimatter = {
-		name: 'Antimatter',
-		desc: 'Your fuel for interstellar travel is produced here. Unfortunately, you can only handle 100k Antimatter per Star System as it is incredibly volatile.<br><br><button class="btn btn-default" onclick="toggleAntimatter()">Toggle Antimatter <span id="antimatterToggled">On</span></button>',
+		name: '反物质',
+		desc: '您的星际旅行燃料是在这里生产的。 不幸的是，您只能处理每个星系的100k反物质，因为它是非常不稳定的。<br><br><button class="btn btn-default" onclick="toggleAntimatter()">切换反物质 <span id="antimatterToggled">On</span></button>',
 		category: 'general',
 		unlocked: false
 	};
 
 	instance.travel = {
-		name: 'Travel',
-		desc: 'Here, you can travel across the cosmos to your heart\'s desire. When you explore a star system, it will appear in the respective faction tab, where you can gain control of it for boosts in the resources present. The number in () after the distance is the antimatter needed to travel there.',
+		name: '旅行',
+		desc: '在这里，你可以穿过宇宙到你心中的愿望。 当您探索星系统时，它将显示在各个派系选项卡中，您可以在其中获得控制权，以提高资源的存在。 距离之后的（）中的数字是需要在那里旅行的反物质。',
 		category: 'general',
 		unlocked: false
 	};
@@ -114,8 +114,8 @@ Game.commsData = (function(){
 
 	instance.astroBreakthrough = {
 		entryName: 'astroBreakthrough',
-		name: 'Astronomical Breakthrough',
-		desc: 'A huge problem with the theory of interstellar space travel is on the verge of being broken. Make it happen with this upgrade. This is a one time upgrade, increasing your exploration range by 5 Light Years.',
+		name: '天文突破',
+		desc: '星际空间旅行理论的一个巨大问题正在被打破。 通过此升级实现。 这是一次升级，将您的勘探范围提高5光年。',
 		category: 'comms',
 		unlocked: true,
 		displayNeedsUpdate: true,

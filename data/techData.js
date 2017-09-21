@@ -141,7 +141,7 @@ Game.techData = (function () {
     instance.unlockDestruction = $.extend({}, techBase, {
         name: '破坏机器',
         desc: '这样您就可以销毁已经创建的机器。 当有更有效的获取资源的方法，或者您没有足够的能量来支持您的机器时，这将非常有用。',
-        buttonText: '解锁Destruction',
+        buttonText: '解锁破坏机器',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -151,11 +151,11 @@ Game.techData = (function () {
     });
 
     instance.unlockSolarSystem = $.extend({}, techBase, {
-        name: 'Space',
-        desc: 'Unlocking space-travel allows for launching of rockets and opens a whole new field of research.',
-        buttonText: '解锁Space Travel',
-        notifyTitle: 'new Tab!',
-        notifyText: 'You\'ve unlocked the Solar System Tab!',
+        name: '空间',
+        desc: '解锁空间旅行允许发射火箭，并开辟了一个全新的研究领域。',
+        buttonText: '解锁空间旅行',
+        notifyTitle: '新标签!',
+        notifyText: '你已经解锁了太阳系选项卡！',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -167,9 +167,9 @@ Game.techData = (function () {
     });
 
     instance.unlockRocketFuelT2 = $.extend({}, techBase, {
-        name: 'Oxidisation',
-        desc: 'Oxidisation is a more efficient process of creating Rocket Fuel.',
-        buttonText: '解锁Oxidisation',
+        name: '氧化作用',
+        desc: '氧化是创造火箭燃料的更有效的过程。',
+        buttonText: '解锁氧化作用',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {

@@ -997,10 +997,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Oil
+										石油
 									</h2>
 									<span>
-										Oil is pumped up from the ground and is used to build Tier 2 resource gatherers.
+										
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -1029,97 +1029,97 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Small Pump: <span id="pump">0</span>
+										小泵: <span id="pump">0</span>
 									</h3>
 									<span>
-										Build a small pump to extract Oil from the ground
+										建立一个小型泵来从地下提取油。
 										<br>
-										Produces 1 Oil per second.
+										每秒生产1石油。
 										<br>
 										花费 <span id="pumpMetalCost">60</span> 金属， <span id="pumpGemCost">20</span> 宝石。
 									</span>
 									<br>
 									<br>
 									<button onclick="getPump()" class="btn btn-default">获取Pump</button>
-									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">摧毁 Small Pump</button>
+									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">摧毁小泵</button>
 								</td>
 							</tr>
 							<tr id="oilTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Pumpjack: <span id="pumpjack">0</span>
+										抽油机: <span id="pumpjack">0</span>
 									</h3>
 									<span>
-										Pumpjacks are much bigger than small pumps and produce Oil on an industrial scale but they require a lot of Energy.
+										抽油机比小型泵大得多，在工业规模上生产石油，但需要大量的能源。
 										<br>
-										Each one produces <span id="pumpjackOutput">5</span> Oil for 4 Energy every second.
+										每秒上次<span id="pumpjackOutput">5</span>石油，消耗4能源。
 										<br>
 										花费 <span id="pumpjackMetalCost">250</span> 金属， <span id="pumpjackGemCost">80</span> 宝石， <span id="pumpjackOilCost">50</span> 石油。
 									</span>
 									<br>
 									<br>
-									<button onclick="getPumpjack()" class="btn btn-default">获取Pumpjack</button>
-									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">摧毁 Pumpjack</button>
+									<button onclick="getPumpjack()" class="btn btn-default">获取抽油机</button>
+									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">摧毁抽油机</button>
 								</td>
 							</tr>
 							<tr id="oilTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Oil Field: <span id="oilField">0</span>
+										油田: <span id="oilField">0</span>
 									</h3>
 									<span>
-										Oil Fields are large open spaces, usually found in deserts where vast oil wells can be found under the ground.
+										油田是大型开放空间，通常位于沙漠地带，可以在地下找到大量油井。
 										<br>
-										Produces 63 Oil per second.
+										每秒生产63石油。
 										<br>
-										Uses 17 Energy per second.
+										每秒消耗17能源。
 										<br>
 										花费 <span id="oilFieldLunariteCost">2,400</span> 月岩, <span id="oilFieldTitaniumCost">2,700</span> 钛, <span id="oilFieldSiliconCost">3,900</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilField()" class="btn btn-default">获取Oil Field</button>
-									<button onclick="destroyMachine('oilField')" class="btn btn-default destroy hidden">摧毁 Oil Field</button>
+									<button onclick="getOilField()" class="btn btn-default">获取油田</button>
+									<button onclick="destroyMachine('oilField')" class="btn btn-default destroy hidden">摧毁油田</button>
 								</td>
 							</tr>
 							<tr id="oilTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Offshore Rig: <span id="oilRig">0</span>
+										海上钻井平台: <span id="oilRig">0</span>
 									</h3>
 									<span>
-										Offshore Rigs are megastructures floating in the oceans, extracting Oil from under the sea-beds.
+										海上钻井平台是漂浮在海洋中的大型结构物，从海底提取油。
 										<br>
-										Produces 246 Oil per second.
+										每秒生产246石油。
 										<br>
-										Uses 44 Energy per second.
+										每秒消耗44能源。
 										<br>
 										花费 <span id="oilRigLunariteCost">19,400</span> 月岩, <span id="oilRigTitaniumCost">16,800</span> 钛, <span id="oilRigMeteoriteCost">760</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilRig()" class="btn btn-default">获取Offshore Rig</button>
-									<button onclick="destroyMachine('oilRig')" class="btn btn-default destroy hidden">摧毁 Offshore Rig</button>
+									<button onclick="getOilRig()" class="btn btn-default">获取海上钻井平台</button>
+									<button onclick="destroyMachine('oilRig')" class="btn btn-default destroy hidden">摧毁海上钻井平台</button>
 								</td>
 							</tr>
 							<tr id="oilTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fossilator 9000: <span id="fossilator">0</span>
+										化石9000: <span id="fossilator">0</span>
 									</h3>
 									<span>
-										Much better than the 8000 version, this fossilator reverses the fossil fuel cycle. Instead of burning, it creates them from carbon in the air.
+										这个化石燃料循环比化石燃料循环要好。 它不是燃烧，而是由空气中的碳制成。
 										<br>
-										Produces 2627 Oil per second.
+										每秒生产2627石油。
 										<br>
-										Uses 258 Energy per second.
+										每秒消耗258能源。
 										<br>
 										花费 <span id='fossilatorUraniumCost'>110000</span> 铀， <span id='fossilatorCharcoalCost'>96000</span> 木炭, <span id='fossilatorLavaCost'>167000</span> 熔岩.
 									</span>
 									<br>
 									<br>
 									<button onclick="getFossilator()" class="btn btn-default">获取Fossilator 9000</button>
-									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">摧毁 Fossilator 9000</button>
+									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">摧毁化石9000</button>
 								</td>
 							</tr>
 						</table>
@@ -1228,9 +1228,9 @@
 									<span>
 										Quantum Drills bend the space-time continuum to get metal faster than conventional methods.
 										<br>
-										They produce 427 Metal per second.
+										每秒生产427金属。
 										<br>
-										They use 24 Energy per second.
+										每秒消耗24能源。
 										<br>
 										花费 <span id="quantumDrillLunariteCost">29,000</span> 月岩, <span id="quantumDrillGoldCost">18,700</span> 黄金， <span id="quantumDrillMeteoriteCost">900</span> 陨石。
 									</span>
@@ -1248,9 +1248,9 @@
 									<span>
 										Drills metal from alternate realities where metal is plentiful .
 										<br>
-										They produce 4768 Metal per second.
+										每秒生产4768金属。
 										<br>
-										They use 131 Energy per second.
+										每秒消耗131能源。
 										<br>
 										花费 <span id='multiDrillTitaniumCost'>184000</span> 钛, <span id='multiDrillGoldCost'>133000</span> 黄金， <span id='multiDrillOilCost'>170000</span> 石油。
 									</span>
@@ -1308,7 +1308,7 @@
 									<span>
 										Build an improved pickaxe to mine 宝石。
 										<br>
-										Produces 1 gem per second.
+										每秒生产1宝石。
 										<br>
 										花费 <span id="gemMinerMetalCost">15</span> 金属， <span id="gemMinerGemCost">10</span> 宝石。
 									</span>
@@ -1326,9 +1326,9 @@
 									<span>
 										Advanced Drills mine gem at mass. Because of the toughness of the drill needed it is slower than the heavy drill.
 										<br>
-										Produces <span id="advancedDrillOutput">4</span> 宝石 per second.
+										每秒生产 <span id="advancedDrillOutput">4</span> 宝石。
 										<br>
-										Uses 2 Energy per second.
+										每秒消耗2能源。
 										<br>
 										花费 <span id="advancedDrillMetalCost">120</span> 金属， <span id="advancedDrillGemCost">200</span> 宝石， <span id="advancedDrillOilCost">60</span> 石油。
 									</span>
@@ -1346,9 +1346,9 @@
 									<span>
 										The Diamond Encrusted Drill is the best drill possible that can be made on Earth, meaning it produces Gems at intense speeds.
 										<br>
-										Produces 89 Gems per second.
+										每秒生产89宝石。
 										<br>
-										Uses 15 Energy per second.
+										每秒消耗15能源。
 										<br>
 										花费 <span id="diamondDrillLunariteCost">3,400</span> 月岩, <span id="diamondDrillGemCost">8,000</span> 宝石， <span id="diamondDrillSiliconCost">4,500</span> 硅.
 									</span>
@@ -1366,9 +1366,9 @@
 									<span>
 										Carbyne Drills are one of the strongest drills in the solar system, and as such, can collect Gems faster than anything before it.
 										<br>
-										Produces 358 Gems per second.
+										每秒生产358宝石。
 										<br>
-										Uses 40 Energy per second.
+										每秒消耗40能源。
 										<br>
 										花费 <span id="carbyneDrillLunariteCost">21,000</span> 月岩, <span id="carbyneDrillGemCost">27,000</span> 宝石， <span id="carbyneDrillMeteoriteCost">800</span> 陨石。
 									</span>
@@ -1386,9 +1386,9 @@
 									<span>
 										This special container condenses carbon dioxide gas into diamonds, creating gems at a faster rate than any drill.
 										<br>
-										Produces 3747 Gems per second.
+										每秒生产3747宝石。
 										<br>
-										Uses 260 Energy per second.
+										每秒消耗260能源。
 										<br>
 										花费 <span id='diamondChamberUraniumCost'>181,000</span> 铀， <span id='diamondChamberCharcoalCost'>185,000</span> 木炭, <span id='diamondChamberMeteoriteCost'>12,500</span> 陨石.
 									</span>
@@ -1633,9 +1633,9 @@
 									<span>
 										This machine is the reason we're losing our rainforests. At least we get lots of wood!
 										<br>
-										Produces <span id="deforesterOutput">74</span> 木头 per second.
+										每秒生产<span id="deforesterOutput">74</span> 木头。
 										<br>
-										Uses 16 Energy per second.
+										每秒消耗16能源。
 										<br>
 										花费 <span id="deforesterLunariteCost">3,000</span> 月岩, <span id="deforesterTitaniumCost">2,700</span> 钛, <span id="deforesterSiliconCost">2,500</span> 硅.
 									</span>
@@ -1815,7 +1815,7 @@
 										<br>
 										Uses 746 Energy per second.
 										<br>
-										花费 <span id='tardisTitaniumCost'>204000</span> 钛, <span id='tardisSiliconCost'>205000</span> 硅， <span id='tardisMeteoriteCost'>17800</span> Meterorite.
+										花费 <span id='tardisTitaniumCost'>204000</span> 钛, <span id='tardisSiliconCost'>205000</span> 硅， <span id='tardisMeteoriteCost'>17800</span>陨石。
 									</span>
 									<br>
 									<br>
@@ -2280,99 +2280,99 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Rocket Droid: <span id="droid">0</span>
+										火箭机器人: <span id="droid">0</span>
 									</h3>
 									<span>
-										Powered by Methane, this droid scouts the asteroids for gold deposits.
+										由甲烷提供技术支持，这个机器人为小行星研究金矿。
 										<br>
-										Produces 1 Gold per second.
+										每秒生产1黄金。
 										<br>
 										花费 <span id="droidLunariteCost">200</span> 月岩, <span id="droidMethaneCost">50</span> 甲烷.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDroid()" class="btn btn-default">获取Rocket Droid</button>
-									<button onclick="destroyMachine('droid')" class="btn btn-default destroy hidden">摧毁 Droid</button>
+									<button onclick="getDroid()" class="btn btn-default">获取火箭机器人</button>
+									<button onclick="destroyMachine('droid')" class="btn btn-default destroy hidden">摧毁火箭机器人</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Asteroid Destroyer: <span id="destroyer">0</span>
+										小行星驱逐舰: <span id="destroyer">0</span>
 									</h3>
 									<span>
-										Mines through asteroids to find Gold. It is much more effective than the simple droid.
+										矿山通过小行星找到黄金。 它比简单的机器人更有效。
 										<br>
-										Produces 8 Gold per second.
+										每秒生产8黄金。
 										<br>
-										Uses 19 Energy per second.
+										每秒消耗19能源。
 										<br>
 										花费 <span id="destroyerLunariteCost">500</span> 月岩, <span id="destroyerGemCost">1,500</span> 宝石， <span id="destroyerOilCost">1,000</span> 石油。
 									</span>
 									<br>
 									<br>
-									<button onclick="getDestroyer()" class="btn btn-default">获取Asteroid Destroyer</button>
-									<button onclick="destroyMachine('destroyer')" class="btn btn-default destroy hidden">摧毁 Destroyer</button>
+									<button onclick="getDestroyer()" class="btn btn-default">获取小行星驱逐舰</button>
+									<button onclick="destroyMachine('destroyer')" class="btn btn-default destroy hidden">摧毁小行星驱逐舰</button>
 								</td>
 							</tr>
 							<tr id="goldTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Death Star Jr: <span id="deathStar">0</span>
+										死星JR: <span id="deathStar">0</span>
 									</h3>
 									<span>
-										That's no moon! That's a Space Station! This cuts through asteroids to expose all of the Gold in the centers.
+										那没有月亮！ 那是一个空间站！ 这样可以切割小行星，以揭示中心的所有黄金。
 										<br>
-										Produces 51 Gold per second.
+										每秒生产51黄金。
 										<br>
-										Uses 81 Energy per second.
+										每秒消耗81能源。
 										<br>
 										花费 <span id="deathStarLunariteCost">17,000</span> 月岩, <span id="deathStarSilverCost">11,500</span> 银， <span id="deathStarSiliconCost">8,200</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeathStar()" class="btn btn-default">获取Death Star Jr</button>
-									<button onclick="destroyMachine('deathStar')" class="btn btn-default destroy hidden">摧毁 Death Star Jr</button>
+									<button onclick="getDeathStar()" class="btn btn-default">获取死星JR</button>
+									<button onclick="destroyMachine('deathStar')" class="btn btn-default destroy hidden">摧毁死星JR</button>
 								</td>
 							</tr>
 							<tr id="goldTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Chronal Actuator: <span id="actuator">0</span>
+										时空猎器: <span id="actuator">0</span>
 									</h3>
 									<span>
-										Speeds up time through quantum physics in order to produce even more Gold.
+										通过量子物理加速时间，以产生更多的黄金。
 										<br>
-										Produces 211 Gold per second.
+										每秒生产211黄金。
 										<br>
-										Uses 223 Energy per second.
+										每秒消耗223能源。
 										<br>
 										花费 <span id="actuatorLunariteCost">61,000</span> 月岩, <span id="actuatorHeliumCost">15,700</span> 氦, <span id="actuatorMeteoriteCost">600</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getActuator()" class="btn btn-default">获取Chronal Actuator</button>
-									<button onclick="destroyMachine('actuator')" class="btn btn-default destroy hidden">摧毁 Chronal Actuator</button>
+									<button onclick="getActuator()" class="btn btn-default">获取时空猎器</button>
+									<button onclick="destroyMachine('actuator')" class="btn btn-default destroy hidden">摧毁时空猎器</button>
 								</td>
 							</tr>
 							<tr id="goldTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Philosopher's Stone: <span id="philosopher">0</span>
+										贤者之石: <span id="philosopher">0</span>
 									</h3>
 									<span>
-										Transumation has progressed to being able to turn thin air into gold!
+										蜕变已经发展到能够将稀薄的空气变成黄金！
 										<br>
-										Produces 2422 Gold per second.
+										每秒生产2422黄金。
 										<br>
-										Uses 1324 Energy per second.
+										每秒消耗1324能源。
 										<br>
-										花费 <span id='philosopherMetalCost'>208000</span> 金属, <span id='philosopherSilverCost'>167000</span> 银, <span id='philosopherMeteoriteCost'>18000</span> Meterorite.
+										花费 <span id='philosopherMetalCost'>208000</span> 金属, <span id='philosopherSilverCost'>167000</span> 银, <span id='philosopherMeteoriteCost'>18000</span>陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getPhilosopher()" class="btn btn-default">获取Philosopher's Stone</button>
-									<button onclick="destroyMachine('philosopher')" class="btn btn-default destroy hidden">摧毁 Philosopher's Stone</button>
+									<button onclick="getPhilosopher()" class="btn btn-default">获取贤者之石</button>
+									<button onclick="destroyMachine('philosopher')" class="btn btn-default destroy hidden">摧毁贤者之石</button>
 								</td>
 							</tr>
 						</table>
@@ -2384,10 +2384,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Silver
+										银
 									</h2>
 									<span>
-										Silver is another metal most commonly found in the asteroid belt.
+										银是最常见于小行星带的另一种金属。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2418,98 +2418,98 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Scout Ship: <span id="scout">0</span>
+										侦察船: <span id="scout">0</span>
 									</h3>
 									<span>
-										The Scout Ship searches through the asteroid field for pieces of silver embedded in asteroids.
+										侦察船在小行星领域搜索嵌入小行星的银块。
 										<br>
-										Produces 1 silver per second.
+										每秒生产1银。
 										<br>
 										花费 <span id="scoutLunariteCost">100</span> 月岩, <span id="scoutTitaniumCost">20</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getScout()" class="btn btn-default">获取Scout Ship</button>
-									<button onclick="destroyMachine('scout')" class="btn btn-default destroy hidden">摧毁 Scout</button>
+									<button onclick="getScout()" class="btn btn-default">获取侦察船</button>
+									<button onclick="destroyMachine('scout')" class="btn btn-default destroy hidden">摧毁侦察船</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Interplanetary Laser: <span id="spaceLaser">0</span>
+										星际激光: <span id="spaceLaser">0</span>
 									</h3>
 									<span>
-										Cuts through asteroids to find silver deposits in their cores.
+										削减小行星在他们的核心找到银矿床。
 										<br>
-										Produces 13 silver per second.
+										每秒生产13银。
 										<br>
-										Uses 24 Energy per second.
+										每秒消耗24能源。
 										<br>
 										花费 <span id="spaceLaserLunariteCost">350</span> 月岩, <span id="spaceLaserGemCost">900</span> 宝石， <span id="spaceLaserOilCost">1,200</span> 石油。
 									</span>
 									<br>
 									<br>
-									<button onclick="getSpaceLaser()" class="btn btn-default">获取Interplanetary Laser</button>
-									<button onclick="destroyMachine('spaceLaser')" class="btn btn-default destroy hidden">摧毁 Space Laser</button>
+									<button onclick="getSpaceLaser()" class="btn btn-default">获取星际激光</button>
+									<button onclick="destroyMachine('spaceLaser')" class="btn btn-default destroy hidden">摧毁星际激光</button>
 								</td>
 							</tr>
 							<tr id="silverTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Big Bertha: <span id="bertha">0</span>
+										大伯莎: <span id="bertha">0</span>
 									</h3>
 									<span>
-										This large, space drill, named after the World War One Howitzer built almost a millennia ago, is a silver seeking machine specially designed for mining asteroids.
+										这种大的空间钻，命名后，近千年前修建的世界战争的一个榴弹炮，是一种银求专为小行星采矿机。
 										<br>
-										Produces 53 silver per second.
+										每秒生产53银。
 										<br>
-										Uses 65 Energy per second.
+										每秒消耗65能源。
 										<br>
 										花费 <span id="berthaLunariteCost">19,500</span> 月岩, <span id="berthaTitaniumCost">18,200</span> 钛, <span id="berthaSiliconCost">11,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBertha()" class="btn btn-default">获取Big Bertha</button>
-									<button onclick="destroyMachine('bertha')" class="btn btn-default destroy hidden">摧毁 Big Bertha</button>
+									<button onclick="getBertha()" class="btn btn-default">获取大伯莎</button>
+									<button onclick="destroyMachine('bertha')" class="btn btn-default destroy hidden">摧毁大伯莎</button>
 								</td>
 							</tr>
 							<tr id="silverTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Atomic Cannon: <span id="cannon">0</span>
+										原子大炮: <span id="cannon">0</span>
 									</h3>
 									<span>
-										This powerful cannon orbits Neptune and can atomise the surface of asteroids, revealing the silver within.
+										这个强大的炮轨道尼普顿可以毁掉小行星的表面，揭示银内。
 										<br>
-										Produces 208 silver per second.
+										每秒生产208银。
 										<br>
-										Uses 170 Energy per second.
+										每秒消耗170能源。
 										<br>
 										花费 <span id="cannonLunariteCost">85,100</span> 月岩, <span id="cannonOilCost">93,800</span> 石油， <span id="cannonMeteoriteCost">520</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCannon()" class="btn btn-default">获取Atomic Cannon</button>
-									<button onclick="destroyMachine('cannon')" class="btn btn-default destroy hidden">摧毁 Atomic Cannon</button>
+									<button onclick="getCannon()" class="btn btn-default">获取原子大炮</button>
+									<button onclick="destroyMachine('cannon')" class="btn btn-default destroy hidden">摧毁原子大炮</button>
 								</td>
 							</tr>
 							<tr id="silverTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Dead Werewolf Finder: <span id="werewolf">0</span>
+										死狼人寻找者: <span id="werewolf">0</span>
 									</h3>
 									<span>
-										The Silver bullets used to kill werewolfs are made from silver that has been compressed well over 1000 times. Extracting them will prove beneficial for your production.
+										用来杀死狼人的银弹是用银制成的，压缩了1000多次。 提取它们将有助于您的生产。
 										<br>
-										Produces 2261 silver per second.
+										每秒生产2261银。
 										<br>
-										Uses 1008 Energy per second.
+										每秒消耗1008能源。
 										<br>
 										花费 <span id='werewolfUraniumCost'>165000</span> 铀， <span id='werewolfGemCost'>209000</span> G <span id='werewolfMethaneCost'>170000</span> 甲烷.
 									<br>
 									<br>
-									<button onclick="getWerewolf()" class="btn btn-default">获取Dead Werewolf Finder</button>
-									<button onclick="destroyMachine('werewolf')" class="btn btn-default destroy hidden">摧毁 Dead Werewolf Finder</button>
+									<button onclick="getWerewolf()" class="btn btn-default">获取死狼人寻找者</button>
+									<button onclick="destroyMachine('werewolf')" class="btn btn-default destroy hidden">摧毁死狼人寻找者</button>
 								</td>
 							</tr>
 						</table>
@@ -2521,10 +2521,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Lava
+										熔岩
 									</h2>
 									<span>
-										Hard to handle and only found in volcanoes, Lava is one of the hardest resources to get.
+										难以处理，仅在火山中发现，熔岩是获得最难的资源之一。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2555,32 +2555,32 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Heat Resistant Crucible: <span id="crucible">0</span>
+										耐热坩埚: <span id="crucible">0</span>
 									</h3>
 									<span>
-										You can use a modified crucible to pick up lava and to store it for later use.
+										您可以使用修改后的坩埚来拾取熔岩，并将其储存以供以后使用。
 										<br>
-										Produces 1 Lava per second.
+										每秒产生1熔岩。
 										<br>
 										花费 <span id="crucibleGemCost">7,000</span> 宝石， <span id="crucibleLunariteCost">4,000</span> 月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCrucible()" class="btn btn-default">获取Crucible</button>
-									<button onclick="destroyMachine('crucible')" class="btn btn-default destroy hidden">摧毁 Heat Resistant Crucible</button>
+									<button onclick="getCrucible()" class="btn btn-default">获取耐热坩埚</button>
+									<button onclick="destroyMachine('crucible')" class="btn btn-default destroy hidden">摧毁耐热坩埚</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Lava Extractor: <span id="extractor">0</span>
+										熔岩提取器: <span id="extractor">0</span>
 									</h3>
 									<span>
 										This extracts lava from volcanoes automatically and quickly.
 										<br>
-										Produces 7 Lava per second.
+										每秒产生7熔岩。
 										<br>
-										Uses 58 Energy per second.
+										每秒消耗58能源。
 										<br>
 										花费 <span id="extractorLunariteCost">16,000</span> 月岩, <span id="extractorTitaniumCost">14,000</span> 钛, <span id="extractorSiliconCost">6,000</span> 硅.
 									</span>
@@ -2593,61 +2593,61 @@
 							<tr id="lavaTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Igneous Extruder: <span id="extruder">0</span>
+										火成岩挤出机: <span id="extruder">0</span>
 									</h3>
 									<span>
-										Instead of going out and finding lava, it can be more convenient to make it yourself with heat and pressure.
+										而不是出去寻找熔岩，它可以更方便地使自己的热量和压力。
 										<br>
-										Produces 43 Lava per second.
+										每秒产生43熔岩。
 										<br>
-										Uses 237 Energy per second.
+										每秒消耗237能源。
 										<br>
 										花费 <span id="extruderLunariteCost">69,000</span> 月岩, <span id="extruderTitaniumCost">57,000</span> 钛, <span id="extruderSiliconCost">39,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtruder()" class="btn btn-default">获取Igneous Extruder</button>
-									<button onclick="destroyMachine('extruder')" class="btn btn-default destroy hidden">摧毁 Igneous Extruder</button>
+									<button onclick="getExtruder()" class="btn btn-default">获取火成岩挤出机</button>
+									<button onclick="destroyMachine('extruder')" class="btn btn-default destroy hidden">摧毁火成岩挤出机</button>
 								</td>
 							</tr>
 							<tr id="lavaTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Volcanic Veluptuator: <span id="veluptuator">0</span>
+										火山喷泉: <span id="veluptuator">0</span>
 									</h3>
 									<span>
-										A melting pot of misery, pouring lava out from mined rock.
+										一个苦难的熔炉，从开采的岩石中浇出熔岩。
 										<br>
-										Produces 187 Lava per second.
+										每秒产生187熔岩。
 										<br>
-										Uses 689 Energy per second.
+										每秒消耗689能源。
 										<br>
 										花费 <span id="veluptuatorLunariteCost">298,000</span> 月岩, <span id="veluptuatorGoldCost">121,000</span> 黄金， <span id="veluptuatorMeteoriteCost">750</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getVeluptuator()" class="btn btn-default">获取Volcanic Veluptuator</button>
-									<button onclick="destroyMachine('veluptuator')" class="btn btn-default destroy hidden">摧毁 Volcanic Veluptuator</button>
+									<button onclick="getVeluptuator()" class="btn btn-default">获取火山喷泉</button>
+									<button onclick="destroyMachine('veluptuator')" class="btn btn-default destroy hidden">摧毁火山喷泉</button>
 								</td>
 							</tr>
 							<tr id="lavaTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Jupitonian Condensator: <span id="condensator">0</span>
+										jupitonian冷凝器: <span id="condensator">0</span>
 									</h3>
 									<span>
-										Condense gases from the heart of Jupiter into liquid magma.
+										从木星的心脏的浓缩气体成为液体岩浆。
 										<br>
-										Produces 2103 Lava per second.
+										每秒产生2103熔岩。
 										<br>
-										Uses 4142 Energy per second.
+										每秒消耗4142能源。
 										<br>
 										花费 <span id='condensatorLunariteCost'>288000</span> 月岩, <span id='condensatorGemCost'>210000</span> 宝石, <span id='condensatorIceCost'>238000</span> 冰.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCondensator()" class="btn btn-default">获取Jupitonian Condensator</button>
-									<button onclick="destroyMachine('condensator')" class="btn btn-default destroy hidden">摧毁 Jupitonian Condensator</button>
+									<button onclick="getCondensator()" class="btn btn-default">获取jupitonian冷凝器</button>
+									<button onclick="destroyMachine('condensator')" class="btn btn-default destroy hidden">摧毁jupitonian冷凝器</button>
 								</td>
 							</tr>
 						</table>
@@ -2659,10 +2659,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Hydrogen
+										氢气
 									</h2>
 									<span>
-										Hydrogen is extremely common on gas giants such as Jupiter and Saturn.
+										氢气在诸如木星和土星等天然气巨头中非常常见。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2693,92 +2693,92 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Hydrogen Collector: <span id="collector">0</span>
+										氢气收集器: <span id="collector">0</span>
 									</h3>
 									<span>
-										This collector travels around Jupiter seeking Hydrogen to store to bring back to Earth.
+										这个收藏家绕着木星旅行，寻求氢储存来带回地球。
 										<br>
-										Produces 1 Hydrogen per second.
+										每秒生产1氢气。
 										<br>
 										花费 <span id="collectorLunariteCost">6,000</span> 月岩, <span id="collectorTitaniumCost">4,800</span> 钛.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCollector()" class="btn btn-default">获取Collector</button>
-									<button onclick="destroyMachine('collector')" class="btn btn-default destroy hidden">摧毁 Collector</button>
+									<button onclick="getCollector()" class="btn btn-default">获取氢气收集器</button>
+									<button onclick="destroyMachine('collector')" class="btn btn-default destroy hidden">摧毁氢气收集器</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Gaseous Magnet: <span id="magnet">0</span>
+										气体磁铁: <span id="magnet">0</span>
 									</h3>
 									<span>
-										The magnet attracts the Hydrogen to it to increase the amount collected per second.
+										磁铁吸引氢气，以增加每秒收集的量。
 										<br>
-										Produces 5 Hydrogen per second.
+										每秒生产5氢气。
 										<br>
-										Uses 63 Energy per second.
+										每秒消耗63能源。
 										<br>
 										花费 <span id="magnetLunariteCost">10,800</span> 月岩, <span id="magnetTitaniumCost">9,600</span> 钛, <span id="magnetGoldCost">6,600</span> 黄金.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagnet()" class="btn btn-default">获取Magnet</button>
-									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">摧毁 Gaseous Magnet</button>
+									<button onclick="getMagnet()" class="btn btn-default">获取气体磁铁</button>
+									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">摧毁气体磁铁</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Electrolytic Cell: <span id="eCell">0</span>
+										电解池： <span id="eCell">0</span>
 									</h3>
 									<span>
-										These are made here on Earth and can turn water into hydrogen with a constant supply of Energy.
+										这些都是在地球上制成的，可以用能量的不断供给将水变成氢气。
 										<br>
-										Produces 28 Hydrogen per second.
+										每秒生产28氢气。
 										<br>
-										Uses 234 Energy per second.
+										每秒消耗234能源。
 										<br>
 										花费 <span id="eCellSilverCost">37,200</span> 银， <span id="eCellGoldCost">34,200</span> 黄金， <span id="eCellSiliconCost">25,800</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getECell()" class="btn btn-default">获取Electrolytic Cell</button>
-									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">摧毁 Electrolytic Cell</button>
+									<button onclick="getECell()" class="btn btn-default">获取电解池</button>
+									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">摧毁电解池</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Hindenburg Excavation: <span id="hindenburg">0</span>
+										兴登堡挖掘： <span id="hindenburg">0</span>
 									</h3>
 									<span>
-										Somehow, it works.
+										不知怎的，它有效。
 										<br>
-										Produces 113 Hydrogen per second.
+										每秒生产113氢气。
 										<br>
-										Uses 613 Energy per second.
+										每秒消耗613能源。
 										<br>
 										花费 <span id="hindenburgLunariteCost">172,000</span> 月岩, <span id="hindenburgMethaneCost">134,000</span> 甲烷, <span id="hindenburgMeteoriteCost">710</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getHindenburg()" class="btn btn-default">获取Hindenburg Excavation</button>
-									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">摧毁 Hindenburg Excavation</button>
+									<button onclick="getHindenburg()" class="btn btn-default">获取兴登堡挖掘</button>
+									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">摧毁兴登堡挖掘</button>
 								</td>
 							</tr>
 							<tr id="hydrogenTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Star Harvester: <span id="harvester">0</span>
+										星形收割机： <span id="harvester">0</span>
 									</h3>
 									<span>
-										'Stealing' is such a strong word. I prefer 'borrowing without return' when we harvest the outer regions of stars.
+										“偷”是这么强的词。 当我们收获星星的外围地区时，我更喜欢“无回报”。
 										<br>
-										Produces 3562 Hydrogen per second.
+										每秒生产3562氢气。
 										<br>
-										Uses 3562 Energy per second.
+										每秒消耗3562能源。
 										<br>
 										花费 <span id='harvesterLunariteCost'>250000</span> 月岩, <span id='harvesterWoodCost'>184000</span> 木头, <span id='harvesterOilCost'>146000</span> 石油。
 									</span>
@@ -2797,10 +2797,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Helium
+										氦气
 									</h2>
 									<span>
-										Helium is the second most common element on gas giants such as Jupiter and Saturn.
+										氦气是天然气巨头如木星和土星的第二大常见元素。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2831,99 +2831,99 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Helium Drone: <span id="drone">0</span>
+										氦无人机: <span id="drone">0</span>
 									</h3>
 									<span>
-										The Helium Drone scouts out the area on Saturn and picks out spots high in Helium which are then mined slowly by it.
+										氦气无人机侦察土星上的地区，并挑选氦气高点，然后慢慢开采。
 										<br>
-										Produces 1 Helium per second.
+										每秒生产1氦气。
 										<br>
 										花费 <span id="droneLunariteCost">8,400</span> 月岩, <span id="droneSiliconCost">6,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getDrone()" class="btn btn-default">获取Drone</button>
-									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">摧毁 Helium Drone</button>
+									<button onclick="getDrone()" class="btn btn-default">获取氦无人机</button>
+									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">摧毁氦无人机</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Helium Tanker: <span id="tanker">0</span>
+										氦罐车: <span id="tanker">0</span>
 									</h3>
 									<span>
-										This huge tanker holds large amounts of Helium and transports it from Saturn to Earth through the vacuum of space.
+										这艘巨大的油轮拥有大量的氦气，并通过空间的真空从土星运送到地球。
 										<br>
-										Produces 11 Helium per second.
+										每秒生产11氦气。
 										<br>
-										Uses 72 Energy per second.
+										每秒消耗72能源。
 										<br>
 										花费 <span id="tankerLunariteCost">12,600</span> 月岩, <span id="tankerTitaniumCost">10,200</span> 钛, <span id="tankerSiliconCost">8,400</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getTanker()" class="btn btn-default">获取Tanker</button>
-									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">摧毁 Helium Tanker</button>
+									<button onclick="getTanker()" class="btn btn-default">获取氦罐车</button>
+									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">摧毁氦罐车</button>
 								</td>
 							</tr>
 							<tr id="heliumTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Morphic Compressor: <span id="compressor">0</span>
+										变形压缩机: <span id="compressor">0</span>
 									</h3>
 									<span>
-										The Compressor packs helium densely into a small space so that it can be easily transported back to Earth.
+										压缩机将氦气密集地装入一个小空间，以便将其轻松地运送回地球。
 										<br>
-										Produces 57 Helium per second.
+										每秒生产57氦气。
 										<br>
-										Uses 248 Energy per second.
+										每秒消耗248能源。
 										<br>
 										花费 <span id="compressorLunariteCost">63,000</span> 月岩, <span id="compressorTitaniumCost">43,800</span> 钛, <span id="compressorSiliconCost">35,400</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCompressor()" class="btn btn-default">获取Morphic Compressor</button>
-									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">摧毁 Morphic Compressor</button>
+									<button onclick="getCompressor()" class="btn btn-default">获取变形压缩机</button>
+									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">摧毁变形压缩机</button>
 								</td>
 							</tr>
 							<tr id="heliumTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Gas Giant Skimmer: <span id="skimmer">0</span>
+										气体巨型撇渣器: <span id="skimmer">0</span>
 									</h3>
 									<span>
-										Flying into Gas Giants' atmospheres with a big bucket is the best plan we've had yet!
+										飞入气体巨人环境有一个大水桶是我们还没有最好的计划！
 										<br>
-										Produces 232 Helium per second.
+										每秒生产232氦气。
 										<br>
-										Uses 670 Energy per second.
+										每秒消耗670能源。
 										<br>
 										花费 <span id="skimmerLunariteCost">255,000</span> 月岩, <span id="skimmerTitaniumCost">173,000</span> 钛, <span id="skimmerMeteoriteCost">770</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getSkimmer()" class="btn btn-default">获取Gas Giant Skimmer</button>
-									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">摧毁 Gas Giant Skimmer</button>
+									<button onclick="getSkimmer()" class="btn btn-default">获取气体巨型撇渣器</button>
+									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">摧毁气体巨型撇渣器</button>
 								</td>
 							</tr>
 							<tr id="heliumTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										: <span id="cage">0</span>
+										笼罩星: <span id="cage">0</span>
 									</h3>
 									<span>
-										A contained miniature version of the sun uses nuclear fusion to create massive amounts of helium.
+										一个包含的微型版本的太阳使用核聚变来产生大量的氦气。
 										<br>
-										Produces 2369 Helium per second.
+										每秒生产2369氦气。
 										<br>
-										Uses 4075 Energy per second.
+										每秒消耗4075能源。
 										<br>
-										花费 <span id='cageLunariteCost'>171000</span> 月岩, <span id='cageSiliconCost'>165000</span> 硅， <span id='cageMeteoriteCost'>18600</span> Meterorite.
+										花费 <span id='cageLunariteCost'>171000</span> 月岩, <span id='cageSiliconCost'>165000</span> 硅， <span id='cageMeteoriteCost'>18600</span>陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getCage()" class="btn btn-default">获取Caged Star</button>
-									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">摧毁 Caged Star</button>
+									<button onclick="getCage()" class="btn btn-default">获取笼罩星</button>
+									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">摧毁笼罩星</button>
 								</td>
 							</tr>
 						</table>
@@ -3027,41 +3027,41 @@
 							<tr id="iceTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Mr Freeze: <span id="mrFreeze">0</span>
+										冰冻先生: <span id="mrFreeze">0</span>
 									</h3>
 									<span>
-										This robot is the coolest guy in the solar system.
+										这个机器人是太阳系中最酷的人。
 										<br>
-										Produces 278 Ice per second.
+										每秒生产278冰。
 										<br>
-										Uses 1,135 Energy per second.
+										每秒消耗1135能源。
 										<br>
 										花费 <span id="mrFreezeWoodCost">379,000</span> 木头, <span id="mrFreezeHeliumCost">14,000</span> 氦, <span id="mrFreezeMeteoriteCost">1,500</span> 陨石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getMrFreeze()" class="btn btn-default">获取Mr Freeze</button>
-									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">摧毁 Mr Freeze</button>
+									<button onclick="getMrFreeze()" class="btn btn-default">获取冰冻先生</button>
+									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">摧毁冰冻先生</button>
 								</td>
 							</tr>
 							<tr id="iceTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Overexchange Condenser: <span id="overexchange">0</span>
+										过流冷凝器: <span id="overexchange">0</span>
 									</h3>
 									<span>
-										Drain heat out of the ingredients so fast that you're not sure how to process it safely, but you managed to do it properly anyway.
+										从配料中排出热量如此之快，以至于您不确定如何安全处理，但是您仍然设法正确地进行处理。
 										<br>
-										Produces 2973 Ice per second.
+										每秒生产2973冰。
 										<br>
-										Uses 7397 Energy per second.
+										每秒消耗7397能源。
 										<br>
 										花费 <span id='overexchangeMetalCost'>210000</span> 金属, <span id='overexchangeSilverCost'>188000</span> 银, <span id='overexchangeHeliumCost'>205000</span> 氦.
 									</span>
 									<br>
 									<br>
-									<button onclick="getOverexchange()" class="btn btn-default">获取Overexchange Condenser</button>
-									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">摧毁 Overexchange Condenser</button>
+									<button onclick="getOverexchange()" class="btn btn-default">获取过流冷凝器</button>
+									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">摧毁过流冷凝器</button>
 								</td>
 							</tr>
 						</table>
@@ -3073,19 +3073,19 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Meteorite
+										陨石
 									</h2>
 									<span>
-										Creating Meteorite is only possible from purer forms of energy than those created with earth technology. Therefore, Plasma is necessary to make the strong resource.
+										创造陨石只能用比地球技术创造的更纯净的能量。 因此，等离子体是必需的，以形成强大的资源。
 										<br>
-										Converting to 1 Meteorite Costs 3 Plasma.
+										转换1陨石消耗3等离子体。
 									</span>
 									<br>
 									<br>
 									<hide class="gainButton">
-									<div onclick="gainResource('meteorite')" class="btn btn-default">Convert <span id="meteoriteGain">1</span></div>
+									<div onclick="gainResource('meteorite')" class="btn btn-default">转换 <span id="meteoriteGain">1</span></div>
 									</hide>
-									<button onclick="toggleMeteorite()" class="btn btn-default">Turn Meteorite Production <span id="meteoriteToggled">关闭</span></button>
+									<button onclick="toggleMeteorite()" class="btn btn-default">转换陨石生产 <span id="meteoriteToggled">关闭</span></button>
 									<br>
 									<br>
 								</td>
@@ -3110,37 +3110,37 @@
 							<tr id="meteoriteTier1" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Meteorite Printer: <span id="printer">0</span>
+										陨石打印机: <span id="printer">0</span>
 									</h3>
 									<span>
-										Construct an automated way of producing meteorite without you having to do anything.
+										构建一种自动化的陨石生产方法，无需您做任何事情。
 										<br>
-										Produces 1 Meteorite per second. Uses 3 Plasma per second.
+										每秒生产1陨石，消耗3等离子体。
 										<br>
 										花费 <span id="printerLunariteCost">100,000</span> 月岩, <span id="printerSiliconCost">60,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPrinter()" class="btn btn-default">获取Meteorite Printer</button>
-									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">摧毁 Meteorite Printer</button>
+									<button onclick="getPrinter()" class="btn btn-default">获取陨石打印机</button>
+									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">摧毁陨石打印机</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Meteorite Web: <span id="web">0</span>
+										陨石网: <span id="web">0</span>
 									</h3>
 									<span>
-										The Meteorite Web uses nano-fibres made while submerged in highly radioactive liquids to become strong enough to physically catch meteors from the Asteroid Belt. Plasma is required to refine the asteroids into Meteorite Ore, which can be usable.
+										陨石网使用纳米纤维制成，同时淹没在高度放射性的液体中，变得足够强大，可以从小行星皮带上捕获流星。 需要等离子体来将小行星细化为陨石矿，这是可以使用的。
 										<br>
-										Produces 8 Meteorite per second. Uses 21 Plasma per second.
+										每秒生产8陨石，消耗21等离子体。
 										<br>
 										花费 <span id="webLunariteCost">940,000</span> 月岩, <span id="webUraniumCost">490,000</span> 铀， <span id="webSiliconCost">510,000</span> 硅.
 									</span>
 									<br>
 									<br>
-									<button onclick="getWeb()" class="btn btn-default">获取Meteorite Web</button>
-									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">摧毁 Meteorite Web</button>
+									<button onclick="getWeb()" class="btn btn-default">获取陨石网</button>
+									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">摧毁陨石网</button>
 								</td>
 							</tr>
 						</table>
