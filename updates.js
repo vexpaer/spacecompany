@@ -175,12 +175,17 @@ Game.updatesData = (function(){
 	instance.relationUpgrades = {
 		desc: '重生升级现在为升级提供了关联。',
 		read: false
-	}
+	};
 
 	instance.fixSecondRebirth = {
 		desc: '固定后续重生。 你现在可以多次重生，不用担心贪污腐败！',
 		read: false
-	}
+	};
+
+	instance.T5Batteries = {
+		desc: 'Added Tier 5 Batteries: Stargaze -> Kitrinos Corporation',
+		read: false
+	};
 
 	return instance;
 

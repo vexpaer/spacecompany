@@ -19,28 +19,24 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 - 加载屏幕风味文字随着进度而改变
 - 机器概览选项卡
 
+
 v0.5.0 星际更新
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 
-- 暗物质
-- 声望 (https://www.reddit.com/r/SpaceCompany/comments/6lcgzu/plan_for_prestige/)
-- 未知的行星，你必须探索，知道它上面有什么
-- 每个星系都比最后直到声望重新起伏，
-- 将行星推入太阳将获得声望
 - 质量转换能量
 - 购买X按钮
 - 购买最大/自定义按钮
-- 降低存储成本
 - 更改数字格式化开始于100K
 - 重新平衡科学
 - 更换图标（带有图标的白色圆圈）
 
 # 更新日志:
 
-### v0.5.1
+### v0.5.1 (包括所有V0.5.0.X)
 ##### 功能
 
 - 存储升级折扣
+- T5电池
 
 ##### 小变化
 
@@ -61,7 +57,8 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - 修正奇迹重生后显示为激活
 - 修正太阳能系统在探索要求之前显示行星
 
-### v0.5.0
+
+### v0.5.0 星际更新
 ##### 功能
 
 - 离线生产
