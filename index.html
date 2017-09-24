@@ -17,17 +17,14 @@
 			// You can now access the Kongregate API with: kongregate.services.getUsername(), etc
 			// Proceed with loading your game...
 		});
-
 	</script> -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-75489477-2', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 </head>
 <body>
@@ -40,12 +37,10 @@
 		<br>
 	</div>
 	<div id="splashText" style="width:100%; font-size:40px; font-family: 'Orbitron', 'sans-serif'; font-weight: bold; color:#000000; line-height:40px; text-align:center;">
-		
 	</div>
 </div>
 <script type="text/javascript" src="data/splashTextData.js"></script>
 <div id="game" class="container hidden" style="width:95%; margin: auto;">
-
 	<!--  Bar at top of screen -->
 	<div class="navbar navbar-default ng-scope" role="navigation" ng-controller="HeaderCtrl">
 		<div class="container">
@@ -70,7 +65,6 @@
 				<div class="pull-right" style="width:200px;">
 					<a class="navbar-brand">
 						<span id="autoSaveTimer" class="text-muted small ng-binding" style="font-size:14px;">
-
 						</span>
 					</a>
 				</div>
@@ -81,7 +75,6 @@
 	</div>
 	<div height="30"></div>
 	<span id="updateBox"></span>
-
 <!-- Nav tabs -->
 	<ul class="nav nav-tabs no-select" role="tablist" id="tabList">
 		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 资源</a></li>
@@ -93,10 +86,7 @@
     	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> 帮助 / 问答</a></li>
     	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 更多...</a></li>
 	</ul>
-
-
 <!-- Tab panes -->
-
 	<div class="tab-content" id="tabContent">
 			<!-- Resources -->
 		<div role="tabpanel" class="tab-pane fade in active" id="resources">
@@ -651,8 +641,6 @@
 										每秒产生140等离子体。
 										<br>
 										花费 <span id="bathLavaCost">6.20M</span> 熔岩, <span id="bathGoldCost">5.90M</span> 黄金, <span id="bathMeteoriteCost">12,100</span> 陨石.
-										
-										
 									</span>
 									<br>
 									<br>
@@ -1015,7 +1003,6 @@
 										石油
 									</h2>
 									<span>
-										
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -3163,7 +3150,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Research -->
 		<div role="tabpanel" class="tab-pane fade" id="research">
 			<div class="container" style="width:300px; float:left;">
@@ -3327,7 +3313,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Solar System -->
 		<div role="tabpanel" class="tab-pane fade" id="solarSystem">
 			<div class="container" style="width:250px; float:left;">
@@ -3358,7 +3343,6 @@
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
 							<span>
-								
 							</span>
 						</td>
 					</tr>
@@ -3718,7 +3702,6 @@
 								<td>
 									<h3 class="default btn-link">
 										勘探
-
 									</h3>
 									<span>
 										探索金星将解锁甲烷和甲烷的动力。
@@ -4053,7 +4036,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Wonders -->
 		<div role="tabpanel" class="tab-pane fade" id="wonder">
 			<div class="container" style="width:250px; float:left;">
@@ -4652,7 +4634,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Sol Center -->
 		<div role="tabpanel" class="tab-pane fade" id="solCenterPage">
 			<div class="container" style="width:250px; float:left">
@@ -4748,8 +4729,8 @@
 									<h3 class="default btn-link">
 										用法
 									</h3>
-									<p>
-										在这里您将能源和等离子体转化为其它资源的地方。 <b>（右键单击返回X10）</b>
+									<p>这就是您将能源和等离子体转化为资源的地方。 <b>（右键点击返回X10）</b>
+										<hide class="autoEmcHide hidden"><br>使用自动Emc（解除重生），当您可以自动化多个时，顺序将从上到下（始终为Max）。</hide>
 									</p>
 									<div class="row">
 										<div class="col-md-12">
@@ -4768,109 +4749,127 @@
 													<th>材料</th>
 													<th>当前数量/存储</th>
 													<th></th>
+													<th class="autoEmcHide hidden">Auto Emc</th>
 												</thead>
 												<tbody>
 													<tr>
 														<td><span id="uraniumEmcVal">37</span> 能源</td>
-														<td><span id="uraniumEmcAmount">1</span> Uranium</td>
+														<td><span id="uraniumEmcAmount">1</span> 铀</td>
 														<td><span id="uraniumConv"><span data-bind="uranium">N/A</span> / <span data-bind="uraniumStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('uranium')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="uraniumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="lavaEmcVal">42</span> 能源</td>
 														<td><span id="lavaEmcAmount">1</span> 熔岩</td>
 														<td><span id="lavaConv"><span data-bind="lava">N/A</span> / <span data-bind="lavaStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lava')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="lavaAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="oilEmcVal">3</span> 能源</td>
 														<td><span id="oilEmcAmount">1</span> Oil</td>
 														<td><span id="oilConv"><span data-bind="oil">N/A</span> / <span data-bind="oilStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('oil')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="oilAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="metalEmcVal">1</span> 能源</td>
 														<td><span id="metalEmcAmount">1</span> 金属</td>
 														<td><span id="metalConv"><span data-bind="metal">N/A</span> / <span data-bind="metalStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('metal')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="metalAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="gemEmcVal">3</span> 能源</td>
 														<td><span id="gemEmcAmount">1</span> 宝石</td>
 														<td><span id="gemConv"><span data-bind="gem">N/A</span> / <span data-bind="gemStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gem')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="gemAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="charcoalEmcVal">2</span> 能源</td>
 														<td><span id="charcoalEmcAmount">1</span> 木炭</td>
 														<td><span id="charcoalConv"><span data-bind="charcoal">N/A</span> / <span data-bind="charcoalStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('charcoal')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="charcoalAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="woodEmcVal">1</span> 能源</td>
 														<td><span id="woodEmcAmount">1</span> 木头</td>
 														<td><span id="woodConv"><span data-bind="wood">N/A</span> / <span data-bind="woodStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('wood')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="woodAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="siliconEmcVal">23</span> 能源</td>
 														<td><span id="siliconEmcAmount">1</span> 硅</td>
 														<td><span id="siliconConv"><span data-bind="silicon">N/A</span> / <span data-bind="siliconStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silicon')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="siliconAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="lunariteEmcVal">15</span> 能源</td>
 														<td><span id="lunariteEmcAmount">1</span> 月岩</td>
 														<td><span id="lunariteConv"><span data-bind="lunarite">N/A</span> / <span data-bind="lunariteStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('lunarite')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="lunariteAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="methaneEmcVal">12</span> 能源</td>
 														<td><span id="methaneEmcAmount">1</span> 甲烷</td>
 														<td><span id="methaneConv"><span data-bind="methane">N/A</span> / <span data-bind="methaneStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('methane')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="methaneAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="titaniumEmcVal">17</span> 能源</td>
 														<td><span id="titaniumEmcAmount">1</span> 钛</td>
 														<td><span id="titaniumConv"><span data-bind="titanium">N/A</span> / <span data-bind="titaniumStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('titanium')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="titaniumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="goldEmcVal">42</span> 能源</td>
 														<td><span id="goldEmcAmount">1</span> 黄金</td>
 														<td><span id="goldConv"><span data-bind="gold">N/A</span> / <span data-bind="goldStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('gold')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="goldAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="silverEmcVal">42</span> 能源</td>
 														<td><span id="silverEmcAmount">1</span> 银</td>
 														<td><span id="silverConv"><span data-bind="silver">N/A</span> / <span data-bind="silverStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('silver')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="silverAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="hydrogenEmcVal">42</span> 能源</td>
 														<td><span id="hydrogenEmcAmount">1</span> 氢</td>
 														<td><span id="hydrogenConv"><span data-bind="hydrogen">N/A</span> / <span data-bind="hydrogenStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('hydrogen')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="hydrogenAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="heliumEmcVal">42</span> 能源</td>
 														<td><span id="heliumEmcAmount">1</span> 氦</td>
 														<td><span id="heliumConv"><span data-bind="helium">N/A</span> / <span data-bind="heliumStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('helium')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="heliumAutoEmc" class="autoEmc" />
 													</tr>
 													<tr>
 														<td><span id="iceEmcVal">42</span> 能源</td>
 														<td><span id="iceEmcAmount">1</span> Ice</td>
 														<td><span id="iceConv"><span data-bind="ice">N/A</span> / <span data-bind="iceStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('ice')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="iceAutoEmc" class="autoEmc" />
 													</tr>
 													<tr id="meteoriteEMC" class="hidden">
 														<td><span id="meteoriteEmcVal">42</span> 等离子体</td>
 														<td><span id="meteoriteEmcAmount">1</span> 陨石</td>
 														<td><span id="meteoriteConv"><span data-bind="meteorite">N/A</span> / <span data-bind="meteoriteStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertPlasma('meteorite')" role="button">转换</button></td>
+														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="meteoriteAutoEmc" class="autoEmc" />
 													</tr>
 												</tbody>
 											</table>
@@ -4962,7 +4961,7 @@
 											<br>
 											<br>
 											<h3 class="default btn-link">
-												Sphere: <span id="sphere">0</span> (Max. 1)
+												Sphere: <span id="sphere">0</span> (Max. <span id="sphereMax">1</span>)
 											</h3>
 											<span>
 												The entire sphere is a monolithic structure completely surrounding the sun. It will allow for enough energy to get interstellar travel and finally escape this Solar System. It will produce 1,000,000 energy per second.
@@ -4984,7 +4983,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Machines Tab -->
 		<div role="tabpanel" class="tab-pane fade in" id="machineTab">
 			<div class="container" style="width:250px; float:left;">
@@ -6459,7 +6457,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- More Tab -->
 		<div role="tabpanel" class="tab-pane fade" id="more">
 			<div class="container" style="width:250px; float:left">
@@ -6824,7 +6821,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Help -->
 		<div role="tabpanel" class="tab-pane fade in" id="help">
 			<div class="container" style="width:250px; float:left;">
@@ -6888,7 +6884,6 @@
 										<br>
 										<br>
 										您可以研究的第一个技术是“升级库存”，它允许您构建存储以容纳更多的每种类型的资源。 当建立机器和其他工具花费50多个资源时，这是必要的。
-
                                         您还可以研究“基础能源生产”，开创了电力和先进机器的世界，帮助您更快地获得资源。
 									</span>
 								</td>
@@ -7093,17 +7088,14 @@
 		</div>
 	</div>
 </div>
-
 </body>
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/lz-string.min.js"></script>
 <script type="text/javascript" src="lib/handlebars.min.js"></script>
 <script type="text/javascript" src="lib/pnotify.custom.min.js"></script>
-
 <!-- DEBUG -->
 <script type="text/javascript" src="variable.js"></script>
-
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="utils.js"></script>
 <script type="text/javascript" src="updates.js"></script>
@@ -7120,15 +7112,12 @@
 <script type="text/javascript" src="data/interstellarData.js"></script>
 <script type="text/javascript" src="data/starData.js"></script>
 <script type="text/javascript" src="settings.js"></script>
-
 <script type="text/javascript" src="interstellar.js"></script>
 <script type="text/javascript" src="star.js"></script>
 <script type="text/javascript" src="rocketParts.js"></script>
 <script type="text/javascript" src="rocket.js"></script>
-
 <script type="text/javascript" src="stargaze.js"></script>
 <script type="text/javascript" src="data/stargazeData.js"></script>
-
 <script type="text/javascript" src="ui/databoundElement.js"></script>
 <script type="text/javascript" src="ui/gameTabUI.js"></script>
 <script type="text/javascript" src="ui/resourceObserver.js"></script>
@@ -7139,7 +7128,6 @@
 <script type="text/javascript" src="ui/resourceUI.js"></script>
 <script type="text/javascript" src="ui/techUI.js"></script>
 <script type="text/javascript" src="ui/legacyUI.js"></script>
-
 <script type="text/javascript" src="core.js"></script>
 <script type="text/javascript" src="notification.js"></script>
 <script type="text/javascript" src="saving.js"></script>
@@ -7148,8 +7136,6 @@
 <script type="text/javascript" src="solarSystem.js"></script>
 <script type="text/javascript" src="wonder.js"></script>
 <script type="text/javascript" src="solCenter.js"></script>
-
 <!-- RELEASE -->
 <!--<script type="text/javascript" src="SpaceCompany.min.js"></script>-->
-
 </html>

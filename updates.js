@@ -187,6 +187,21 @@ Game.updatesData = (function(){
 		read: false
 	};
 
+	instance.memoryLeak = {
+		desc: 'Fixed Huge Memory Leak. The Game should run much smoother now and use much less CPU' ,
+		read: false
+	};
+
+	instance.multiSpheres = {
+		desc: 'Each Star System Conquered allows you to build a sphere.',
+		read: false
+	}
+
+	instance.autoEmc = {
+		desc: 'Added Auto Emc! Stargaze -> Prasnian Empire',
+		read: false
+	}
+
 	return instance;
 
 }());

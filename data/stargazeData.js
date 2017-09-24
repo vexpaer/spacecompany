@@ -108,7 +108,7 @@ Game.darkMatter = (function(){
 
 	instance.sphere = {
 		name: "Sphere",
-		desc: "For building a sphere in your home system and thus completing it, you get 15 dark matter. Other systems are completed when all stars have dyson spheres surrounding them and the dark matter given is proportional to the star size."
+		desc: "For building a sphere in your home system and thus completing it, you get 15 dark matter. For every sphere built in another system, you gain 5 dark matter."
 	};
 
 	instance.research = {
@@ -123,7 +123,7 @@ Game.darkMatter = (function(){
 
 	instance.swarm = {
 		name: "Swarms",
-		desc: "One of the more complex systems, your Dark Matter gained from swarms is judged on an old mathematical sequence: Pascal's Triangle. You will get 1 dark matter for passing each milestone of the pascal triangle sequence and gaining the number of swarms necessary. For example: 1,3,6,10,15,21...",
+		desc: "One of the more complex systems, your Dark Matter gained from swarms is judged on an old mathematical sequence: Pascal's Triangle. You will get 1 dark matter for passing each triangular number of swarms necessary. For example: 1,3,6,10,15,21...",
 	};
 
 	return instance;
@@ -252,7 +252,7 @@ Game.prestigeData = (function(){
 	instance.floor1Discount = {
 		name: "Floor 1 Discount",
 		desc: "All Wonders on the First Floor recieve a 15% price reduction.",
-		cost: 25,
+		cost: 16,
 		category: "prasnian",
 		opinion: 10,
 		onApply: function(){
@@ -264,7 +264,7 @@ Game.prestigeData = (function(){
 	instance.floor23Discount = {
 		name: "Floor 2 & 3 Discount",
 		desc: "All Wonders on the Second and Third Floor recieve a 20% price reduction.",
-		cost: 31,
+		cost: 19,
 		category: "prasnian",
 		opinion: 15,
 		onApply: function(){
@@ -272,6 +272,21 @@ Game.prestigeData = (function(){
 		},
 		achieved: false
 	};
+
+	instance.autoEmc = {
+		name: "Automated EMC",
+		desc: "Check a box on an EMC resource and have that resource be 'EMCed' to the max every second.",
+		cost: 24,
+		category: "prasnian",
+		opinion: 17,
+		onApply: function(){
+			var updateList = document.getElementsByClassName("autoEmcHide");
+			for(var i = updateList.length-1; i >= 0; i--){
+				updateList[i].className = "";
+			}
+		},
+		achieved: false
+	}
 
 	/**************
 	** Hyacinite **

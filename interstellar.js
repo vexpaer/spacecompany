@@ -21,7 +21,7 @@ Game.interstellar = (function(){
             
         }
 
-        console.log("Loaded " + this.navCount + " Interstellar Navs");
+        console.debug("Loaded " + this.navCount + " Interstellar Navs");
         this.comms.initialise();
         this.rocketParts.initialise();
         this.rocket.initialise();
@@ -519,6 +519,7 @@ Game.interstellar.military = (function(){
             var roll = Math.random();
             if(chance >= roll){
                 star.owned = true;
+                newUnlock('solCenter');
                 var randomShips = Game.utils.randArb(0,chance);
                 if(randomShips < 1){
                     for(var ship in this.entries){

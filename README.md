@@ -20,6 +20,16 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 - 机器概览选项卡
 
 
+v0.5.1
+https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
+
+- (Mass to Energy Conversion)
+- Buy X buttons
+- Buy Max/Custom Buttons
+- Change Letter Formatting To Start At 100K
+- Rebalance Science
+- Change Icons (white circle with icon inside)
+
 v0.5.0 星际更新
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 

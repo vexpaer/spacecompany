@@ -468,9 +468,12 @@ function legacyRefreshUI() {
         $('#energyLow').addClass('hidden');
     }
 
-    if(sphere > 0) {
+    if(sphere > Game.interstellar.stars.systemsConquered) {
         $('#buildSphereInfo').hide();
         $('#buildSphereButton').hide();
+    } else {
+        $('#buildSphereInfo').show();
+        $('#buildSphereButton').show();
     }
     $('#heaterToggled').text(heaterToggled === true ? "关闭" : "打开");
     $('#plasmaticToggled').text(plasmaticToggled === true ? "关闭" : "打开");
