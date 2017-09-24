@@ -88,7 +88,7 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - 肼催化剂 - T3火箭燃料
 - 星际雷达扫描仪
 - 成就等级
-- 将空间金属重命名为Lunarite
+- 将空间金属重命名为月岩
 - “Wonder”选项卡在完成后隐藏（为更多选项卡留出空间）
 - 重建成就工具提示
 - 暗物质

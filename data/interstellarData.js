@@ -3,7 +3,7 @@ Game.interstellarCategoryData = (function () {
     var instance = {};
 
     instance.general = {
-        title: 'Interstellar',
+        title: '星际',
         category: 'general'
     };
 
@@ -97,8 +97,8 @@ Game.interstellarData = (function(){
 	};
 
 	instance.overlord = {
-		name: "Overlord Cult",
-		desc: "This faction is shrowded in mystery. While not much is known, a great sense of power overlooks the whole galaxy, seemingly above the other 5 factions and their 'petty' squables. The upgrades from your loyalty to the Overlord are not constrained to a type and vary greatly.",
+		name: "霸主崇拜",
+		desc: "这个派系是神秘的。 虽然没有多少知名度，但伟大的权力意识可以忽略整个星系，似乎超过了其他5个派别和他们的“小”的可怜。 从忠诚到霸主的升级并不局限于一种类型，差别很大。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
@@ -135,8 +135,8 @@ Game.commsData = (function(){
 
 	instance.IRS = {
 		entryName: 'IRS',
-		name: 'Interstellar Radar Scanner',
-		desc: 'The Overlord gifts you with the technology to discover stars in outer space by using the IRS. Each one increases the exploration range by 1 Light Year.',
+		name: '星际雷达扫描仪',
+		desc: '霸主赠送你的技术，通过使用星际雷达扫描仪来发现外太空的星星。 每增加1光年的勘探范围。',
 		category: 'comms',
 		unlocked: true,
 		displayNeedsUpdate: true,
@@ -161,8 +161,8 @@ Game.rocketData = (function(){
 	var instance = {};
 
 	instance.tier1Rocket = {
-		name: 'Tier 1 Rocket',
-		desc: 'The Tier 1 Rocket can travel to Stars in the Milky Way, but cannot land on objects within the systems.',
+		name: '1级火箭',
+		desc: '一级火箭可以前往银河系的星星，但不能落在系统内的物体上。',
 		category: 'rocket',
 		max: 1,
 		unlocked: true,
@@ -184,9 +184,9 @@ Game.rocketPartsData = (function(){
 	var instance = {};
 
 	instance.shield = {
-		name: 'Shield Plating',
+		name: '屏蔽镀层',
 		entryName: 'shield',
-		desc: 'This plating combats the Sun\'s radiation, and can protect anyone inside from the frigid cold of space.',
+		desc: '这种电镀与太阳的辐射相抗衡，可以保护任何人免受寒冷的寒冷。',
 		category: 'rocketParts',
 		max: 50,
 		unlocked: true,
@@ -204,9 +204,9 @@ Game.rocketPartsData = (function(){
 	};
 
 	instance.engine = {
-		name: 'Engine Unit',
+		name: '发动机单元',
 		entryName: 'engine',
-		desc: 'These combine antimatter with matter in a controlled reaction to create propulsion that will carry you to the stars.',
+		desc: '这些将反物质与受控反应中的物质相结合，以产生将带您进入星星的推进剂。',
 		category: 'rocketParts',
 		max: 25,
 		unlocked: true,
@@ -224,9 +224,9 @@ Game.rocketPartsData = (function(){
 	};
 
 	instance.aero = {
-		name: 'Aerodynamic Sections',
+		name: '空气动力学部分',
 		entryName: 'aero',
-		desc: 'These allow for easy takeoffs and landings out of atmospheres so that you don\'t have to worry about air resistance.',
+		desc: '这些允许在大气环境下轻松起飞和着陆，这样您就不必担心空气阻力。',
 		category: 'rocketParts',
 		max: 15,
 		unlocked: true,
@@ -253,8 +253,8 @@ Game.antimatterData = (function(){
 
 	instance.drive = {
 		entryName: 'drive',
-		name: 'Alcubierre Drive',
-		desc: 'This powerful reactor can turn high-energy plasma into the most efficient fuel we can imagine.',
+		name: '阿库别瑞引擎',
+		desc: '这个强大的反应堆可以将高能量等离子体转化成我们可以想象的最有效的燃料。',
 		category: 'antimatter',
 		unlocked: true,
 		displayNeedsUpdate: true,
@@ -285,8 +285,8 @@ Game.militaryData = (function(){
 
 	instance.scout = {
 		entryName: 'scout',
-		name: 'Scout',
-		desc: 'Scout ships are the smallest and fastest ships and cost the least of all. Despite their seemingly little worth, they are important in battle and in numbers, can be deadly.',
+		name: '侦察船',
+		desc: '侦察船是最小和最快的船只，费用最少。 尽管他们似乎没有价值，但是在战斗和数量上都是重要的，可能是致命的。',
 		category: 'military',
 		unlocked: true,
 		displayNeedsUpdate: true,
@@ -309,8 +309,8 @@ Game.militaryData = (function(){
 
 	instance.frigate = {
 		entryName: 'frigate',
-		name: 'Frigate',
-		desc: 'Larger than scouts, Frigates are among the smaller side of ship warefare. They have more power than scouts, but are significantly slower.',
+		name: '护卫舰',
+		desc: '比侦察员更大，护卫舰是船舶战争的一小部分。 他们比侦察兵有更多的力量，但是速度要慢得多。',
 		category: 'military',
 		unlocked: true,
 		displayNeedsUpdate: true,

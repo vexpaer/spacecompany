@@ -221,8 +221,8 @@ Game.buildingData = (function () {
     });
 
     instance.lavaT2 = $.extend({}, baseProducerBuilding, {
-        name: 'Lava Extractor',
-        desc: 'This extracts lava from volcanoes automatically and quickly.',
+        name: '熔岩提取器',
+        desc: '这样可以自动快速地从火山中提取熔岩。',
         resource: 'lava',
         resourcePerSecond: {
             'energy': -58,
@@ -513,8 +513,8 @@ Game.buildingData = (function () {
 
     // Wood
     instance.woodT1 = $.extend({}, baseProducerBuilding, {
-        name: 'Woodcutter',
-        desc: 'Build an axe for your woodcutter.',
+        name: '樵夫',
+        desc: '为你的樵夫建一个斧头。',
         resource: 'wood',
         unlocked: true,
         resourcePerSecond: {

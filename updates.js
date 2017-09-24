@@ -183,7 +183,7 @@ Game.updatesData = (function(){
 	};
 
 	instance.T5Batteries = {
-		desc: 'Added Tier 5 Batteries: Stargaze -> Kitrinos Corporation',
+		desc: '添加第5级电池：星空-> kitrinos公司',
 		read: false
 	};
 
