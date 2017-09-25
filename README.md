@@ -1,24 +1,23 @@
-# 概述:
-太空公司是一个科幻小说增量游戏，您可以从地球上的谦逊的起点开始，在星系之间旅行，搭建戴森星球（Dyson Spheres）以及几乎整个星系的殖民地(ies?)
+# Overview:
+Space Company is a science-fiction incremental game where you start from humble beginnings on Earth, working your way up to travelling between star systems and building Dyson Spheres and pretty much colonising the entire galaxy(ies?)
 
-目前，游戏是Beta版，这意味着游戏中经常有积极的发展，现有功能的大多数bug都将被修复。你不必担心你的储存被擦掉。不过，偶尔会有bug，我会尽力修改。
+Currently, the game is in Beta, which means there is frequent, active development on the game and most bugs from existing features will have been fixed. You should not have to worry about your saves being wiped. However, there will be the occasional bug and I will endeavour to amend these.
 
-# 未来的计划
-- 查看 https://www.reddit.com/r/SpaceCompany/wiki/futureplans
-- 加载游戏时，您剩下的标签是您现在开始的标签
-- 随机事件
-- [把界面从bootstrap变为我自己的]
+# Plans for the Future
+- Check https://www.reddit.com/r/SpaceCompany/wiki/futureplans
+- When loading game, the tab you left on is the tab you now start on
+- Random Events
+- [Change UI from bootstrap to my own]
 
-# 路线图
+# RoadMap
 
-v0.6.0 知识更新
+v0.6.0 The Lore Update
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 
-- 在每个建筑物上添加知识，以及对您的太空公司的介绍
-- 重新平衡所有成本，不要使用太多的酸性月岩 / 宝石
-- 加载屏幕风味文字随着进度而改变
-- 机器概览选项卡
-
+- Adding Lore onto every Building and an introduction to your Space Company
+- Rebalance all costs to not use as much Lunarite/Gems
+- Loading screen flavour text changes as you progress
+- Machine Overview Tab
 
 v0.5.1
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
@@ -30,152 +29,147 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - Rebalance Science
 - Change Icons (white circle with icon inside)
 
-v0.5.0 星际更新
-https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
+# Changelog:
 
-- 质量转换能量
-- 购买X按钮
-- 购买最大/自定义按钮
-- 更改数字格式化开始于100K
-- 重新平衡科学
-- 更换图标（带有图标的白色圆圈）
+### v0.5.1 (includes all V0.5.0.X)
+##### Features
 
-# 更新日志:
+- Storage Upgrade Discounts
+- T5 batteries
+- Fixed Huge Memory Leak
+- Multiple Spheres
+- Auto Emc
+- Redid Rebirth
+- Respec
 
-### v0.5.1 (包括所有V0.5.0.X)
-##### 功能
+##### Small Changes
 
-- 存储升级折扣
-- T5电池
+- Made Alpha Centauri distance clear
+- You cannot rebirth without a sphere
+- Fixed higher antimatter storages not saving
+- Reduced framerate from 100fps to 10fps
 
-##### 小变化
+##### Bug Fixed
 
-- 使半人马座阿尔法星的距离清晰
-- 你不能在没有球体的情况下重生
-- 修正了更高的反物质储存不节能
-- 帧速率从100fps降低到10fps
+- Fixed Comms wonder not showing interstellar tab
+- Fixed TARDIS production being incorrect
+- Fixed Storage Discount not working
+- Fixed Storage Upgrade overwriting old storages if greater than 6400
+- Fixed Tier 1 Rocket not showing red costs when inadequate
+- Fixed Subsequent Rebirths
+- Fixed Plasma not showing Gain 20
+- Fixed Wonders showing up as activated after rebirth
+- Fixed Solar System Showing planets before exploring requirements
+- Fixed AutoEmc using energy for meteorite
 
-##### 错误修正
+### v0.5.0 The Interstellar Update
+##### Features
 
-- 修正通讯想知道没有显示星际标签
-- 修正TARDIS生产不正确
-- 修正存储折扣不工作
-- 修正存储升级覆盖旧存储（如果大于6400）
-- 修正一级火箭不足以显示红色成本
-- 修正后续重生
-- 修正等离子体不显示增益20
-- 修正奇迹重生后显示为激活
-- 修正太阳能系统在探索要求之前显示行星
+- Offline Production
+- Screen Notifications Graphics Option
+- Kongregate Leaderboard
+- 7 New Themes
+- Random Loading Messages (100)
+- Communication Wonder
+- Rocket Wonder
+- Antimatter Wonder
+- Portal Room
+- Stargate
+- Plasma Storage Units
+- Buying Multiple Dyson Parts
+- Option to Hide Gain Buttons
+- Achievements for Rings and Swarms
+- Time Until Storage Full Display
+- Max Emc Conversion Button
+- Tier 3 Batteries
+- Tier 4 Labs
+- Tier 4 Batteries
+- Custom Company Name
+- Copy Export to Clipboard
+- Update Log On Page Load
+- Battery Efficiency Research
+- Coloured Destroy Button Option
+- Hydrazine Catalyst - T3 Rocket Fuel
+- Interstellar Radar Scanner
+- Achievement Ranks
+- Renamed Space Metal as Lunarite
+- The Wonder Tab hides itself when completed (makes space for more tabs)
+- Rebuilt Achievement Tooltips
+- Dark Matter
+- Hide Completed Tabs Button
+- Added Astronomical Breakthrough
+- Seperate Option for Autosave Notifications
 
+##### Small Changes
 
-### v0.5.0 星际更新
-##### 功能
+- Individual buttons to turn off Plasma and Meteorite Machines
+- Turn-off switch for all energy producers/consumers
+- Alternative scientific formatting
+- Made it clear that Dyson Sections Costs reset when used
+- 'Off' Option For Autosaving
+- Science Forced 1 Decimal Until 100
+- Cleared Up Misconceptions With 'NB:' Notes
+- Uranium + Plasma Achievements
+- Changed Some Descriptions
+- Made Red Bold Costs Also Underlined
+- Allow decreasing EMC amount with right click
+- Changed Version Number System to include 4th digit
+- Made EMC Max By Default
+- Import Checks For Empty Field To Refuse Load
+- Fixed Typos
+- Fixed Interstellar Backwards Compatibility
+- Changed Dyson Parts Buying To Buy Parts And Build Dyson
+- Destroy Alcubierre Drive Button
+- Nerfed Energy Efficiency to be 1000x cheaper, but only go up to 25%
+- Changed Multibuy researches to show current level instead of next level
+- Buffed Battery Efficiency to 200 levels instead of 50
+- Nerfed Rocket Fuel Research Costs
+- Buffed Hydrazine Production
+- Achievement Number Formatting
+- Rocket Fuel Machine Achievements
+- Refactored EMC (behind the scenes)
+- Optimised Saving and Loading
+- Time until storage full now shows until empty if negative gain
+- Reset achievements
+- Standardised gainResource() function
+- Achievement Stars are worth their position
 
-- 离线生产
-- 屏幕通知图形选项
-- Kongregate 排行榜
-- 7个新主题
-- 加载界面随机载入信息（100条）
-- 通信奇迹
-- 火箭奇迹
-- 反物质奇迹
-- 门户室
-- 星际之门
-- 等离子体存储单元
-- 购买多个Dyson零件
-- 隐藏增益按钮的选项
-- 戒指和群众的成就
-- 时间直到存储完整显示
-- Max Emc转换按钮
-- 三级电池
-- 第4层实验室
-- 第4层电池
-- 公司名称
-- 复制导出到剪贴板
-- 更新登录页面加载
-- 电池效率研究
-- 彩色销毁按钮选项
-- 肼催化剂 - T3火箭燃料
-- 星际雷达扫描仪
-- 成就等级
-- 将空间金属重命名为月岩
-- “Wonder”选项卡在完成后隐藏（为更多选项卡留出空间）
-- 重建成就工具提示
-- 暗物质
-- 隐藏已完成的标签按钮
-- 增加了天文学突破
-- 自动保存通知单独选项
+##### Bug Fixes
 
-##### 小变化
-
-- 个别按钮关闭等离子和陨石机
-- 所有能源生产商/消费者的关闭开关
-- 替代科学格式化
-- 明确指出，戴森的部分成本在使用时重置
-- “关闭”选项用于自动保存
-- 科学强迫1小数到100
-- 用“NB：”注释清除了误解
-- 铀+等离子体成就
-- 改变了一些描述
-- 制作红色大胆费用也下划线
-- 允许通过右键单击降低EMC量
-- 更改版本号系统包括第4位数
-- 默认为EMC Max
-- 导入检查空场以拒绝负载
-- 固定错字
-- 固定的星际向后兼容性
-- 更改戴森零件购买零件和构建戴森
-- 破坏Alcubierre驱动器按钮
-- 削弱能源效率要低1000倍，但只能涨到25％
-- 更改了批量研究，以显示当前水平而不是下一级
-- 将电池效率提升到200级，而不是50级
-- 削弱火箭燃料研究费用
-- 缓冲肼生产
-- 成就号格式
-- 火箭燃油机成就
-- 重组EMC（幕后）
-- 优化保存和加载
-- 直到储存充满的时间现在显示为空，如果负增益
-- 重置成就
-- 标准化的gainResource（）函数
-- 成就明星值得他们的立场
-
-##### Bug修复
-
-- 修复了带有太阳能系统侧栏的Bug
-- 固定解锁标签统计错误
-- 固定火箭发射成本不红
-- 固定反物质选项卡突出显示粘贴
-- 固定错字
-- 固定火箭奇迹不工作
-- 固定太阳能电池板显示错误的输出
-- 固定星际选项卡未加载值
-- 固定折叠太阳系侧栏选项卡视觉错误
-- 固定门户室氦虫
-- 固定等离子体标签上的空白错误
-- 固定无限陨石虫
-- 固定星际不扣除资源
-- 固定戴森节成本错误
-- 固定等离子体EMC显示错误
-- 固定星光红色成本错误
-- 固定T3电池的月岩成本不节省
-- 固定UI Bug与某些主题
-- 固定火箭建筑不保存
-- 固定反物质小数不统一
-- 固定电池不解锁而不刷新
-- 固定的星际向后兼容性
-- 固定浏览器兼容性问题
-- 固定反物质在全存储时不变绿
-- 固定肼研究成本不变红
-- 固定反物质超过100k
-- 固定购买多个太阳系火箭
-- 固定T4科学只在刷新后才能解锁
-- 固定肼不能获得资源效率
-- 固定指数符号UI
-- 固定错字
-- 固定遥望星空不显示直到刷新
-- 固定硅成就不存在
-- 固定标志不动画
+- Fixed Bug With Solar System Sidebar
+- Fixed Unlocked Tabs Statistic Bug
+- Fixed Rocket Launching Costs Not Being Red
+- Fixed Antimatter Tab Highlighting Sticking
+- Fixed Typos
+- Fixed Rocket Wonder Not Working
+- Fixed Solar Panel Showing Incorrect Output
+- Fixed Interstellar Tab Not Loading Values
+- Fixed Collapse Outer Solar System SideBarTab Visual Bug
+- Fixed Portal Room Helium Bug
+- Fixed Whitespace Bug on Plasma Tab
+- Fixed Infinite Meteorite Bug
+- Fixed Stargate Not Deducting Resources
+- Fixed Dyson Sections Cost Bug
+- Fixed Plasma EMC Display Bug
+- Fixed Stargate Red Costs Bug
+- Fixed T3 Battery Lunarite Cost Not Saving
+- Fixed UI Bug With Certain Themes
+- Fixed Rocket Building Not Saving
+- Fixed Antimatter Decimals Not Being Uniform
+- Fixed Batteries Not Unlocking Without Refresh
+- Fixed Interstellar Backwards Compatibility
+- Fixed Browser Compatibility Problem
+- Fixed Antimatter Not Turning Green On Full Storage
+- Fixed Hydrazine Research Cost Not Turning Red
+- Fixed Antimatter Going Above 100k
+- Fixed Buying Multiple Solar System Rockets
+- Fixed T4 Science unlocking only after refresh
+- Fixed Hydrazine Not Getting Resource Efficiency
+- Fixed Exponential Notation UI
+- Fixed Typos
+- Fixed Stargaze not showing up until refresh
+- Fixed Silicon Achievement not existing
+- Fixed Logo not animating
 
 ### v0.4.4
 ##### Features
