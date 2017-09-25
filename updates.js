@@ -188,17 +188,17 @@ Game.updatesData = (function(){
 	};
 
 	instance.memoryLeak = {
-		desc: 'Fixed Huge Memory Leak. The Game should run much smoother now and use much less CPU' ,
+		desc: '修复了巨大的内存泄漏。 游戏应该运行得更顺利，使用更少的CPU' ,
 		read: false
 	};
 
 	instance.multiSpheres = {
-		desc: 'Each Star System Conquered allows you to build a sphere.',
+		desc: '征服的每个星系统允许您构建一个球体。',
 		read: false
 	}
 
 	instance.autoEmc = {
-		desc: 'Added Auto Emc! Stargaze -> Prasnian Empire',
+		desc: '添加了自动Emc！ 遥望星空 - > Prasnian帝国',
 		read: false
 	}
 
