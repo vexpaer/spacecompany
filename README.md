@@ -1,46 +1,46 @@
-# 概述:
-太空公司是一个科幻小说增量游戏，您可以从地球上的谦逊的起点开始，在星系之间旅行，搭建戴森星球（Dyson Spheres）以及几乎整个星系的殖民地(ies?)
+# Overview:
+Space Company is a science-fiction incremental game where you start from humble beginnings on Earth, working your way up to travelling between star systems and building Dyson Spheres and pretty much colonising the entire galaxy(ies?)
 
-目前，游戏是Beta版，这意味着游戏中经常有积极的发展，现有功能的大多数bug都将被修复。你不必担心你的储存被擦掉。不过，偶尔会有bug，我会尽力修改。
+Currently, the game is in Beta, which means there is frequent, active development on the game and most bugs from existing features will have been fixed. You should not have to worry about your saves being wiped. However, there will be the occasional bug and I will endeavour to amend these.
 
-# 未来的计划
-- 查看 https://www.reddit.com/r/SpaceCompany/wiki/futureplans
-- 加载游戏时，您剩下的标签是您现在开始的标签
-- 随机事件
-- [把界面从bootstrap变为我自己的]
+# Plans for the Future
+- Check https://www.reddit.com/r/SpaceCompany/wiki/futureplans
+- When loading game, the tab you left on is the tab you now start on
+- Random Events
+- [Change UI from bootstrap to my own]
 
-# 路线图
+# RoadMap
 
-v0.6.0 知识更新
+v0.6.0 The Lore Update
 https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.6
 
-- 在每个建筑物上添加知识，以及对您的太空公司的介绍
-- 重新平衡所有成本，不要使用太多的酸性月岩 / 宝石
-- 加载屏幕风味文字随着进度而改变
-- 机器概览选项卡
+- Adding Lore onto every Building and an introduction to your Space Company
+- Rebalance all costs to not use as much Lunarite/Gems
+- Loading screen flavour text changes as you progress
+- Machine Overview Tab
 
-v0.5.1 
-https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
+v0.5.1
 
-- 质量转换能量
-- 购买X按钮
-- 购买最大/自定义按钮
-- 更改数字格式化开始于100K
-- 重新平衡科学
-- 更换图标（带有图标的白色圆圈）
+- (Mass to Energy Conversion)
+- Buy X buttons
+- Buy Max/Custom Buttons
+- Change Letter Formatting To Start At 100K
+- Rebalance Science
+- Change Icons (white circle with icon inside)
 
-# 更新日志:
+# Changelog:
 
-### v0.5.1 (包括所有V0.5.0.X)
-##### 功能
+### v0.5.1 (includes all V0.5.0.X)
+##### Features
 
-- 存储升级折扣
-- T5电池
-- 修复了巨大的内存泄漏
-- 多个领域
-- 汽车Emc
-- 重生重生
+- Storage Upgrade Discounts
+- T5 batteries
+- Fixed Huge Memory Leak
+- Multiple Spheres
+- Auto Emc
+- Redid Rebirth
 - Respec
+- Meteorite Tier 3 and 4
 
 ##### Small Changes
 
@@ -48,6 +48,9 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - You cannot rebirth without a sphere
 - Fixed higher antimatter storages not saving
 - Reduced framerate from 100fps to 10fps
+- Build 250 Segments and Dyson Sphere Button
+- Balanced Ice T5 to have cost just below storage level rather than above it
+- AutoEmc keeps a 10K bank of plasma to avoid meteorite production depletion due to 0 plasma stored.
 
 ##### Bug Fixed
 
@@ -61,6 +64,7 @@ https://www.reddit.com/r/SpaceCompany/wiki/futureplans#wiki_v0.5
 - Fixed Wonders showing up as activated after rebirth
 - Fixed Solar System Showing planets before exploring requirements
 - Fixed AutoEmc using energy for meteorite
+- Fixed Fusion Reactor not using enough Hydrogen
 
 ### v0.5.0 The Interstellar Update
 ##### Features

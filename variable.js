@@ -29,7 +29,7 @@ var solarPanel = 0; var solarPanelMetalCost = 30; var solarPanelGemCost = 35; va
 var methaneStation = 0; var methaneStationLunariteCost = 110; var methaneStationTitaniumCost = 90; var methaneStationMethaneInput = 6; var methaneStationOutput = 23;
 var nuclearStation = 0; var nuclearStationLunariteCost = 20000; var nuclearStationTitaniumCost = 10000; var nuclearStationUraniumInput = 7; var nuclearStationOutput = 153;
 var magmatic = 0; var magmaticLunariteCost = 25000; var magmaticGemCost = 20000; var magmaticSilverCost = 15000; var magmaticLavaInput = 11; var magmaticOutput = 191;
-var fusionReactor = 0; var fusionReactorLunariteCost = 30000; var fusionReactorTitaniumCost = 20000; var fusionReactorSiliconCost = 15000; var fusionReactorHydrogenInput = 1; var fusionReactorHeliumInput = 10; var fusionReactorOutput = 273;
+var fusionReactor = 0; var fusionReactorLunariteCost = 30000; var fusionReactorTitaniumCost = 20000; var fusionReactorSiliconCost = 15000; var fusionReactorHydrogenInput = 10; var fusionReactorHeliumInput = 10; var fusionReactorOutput = 273;
 
 // Uranium
 var uranium = 0; var uraniumStorage = 50; var uraniumNextStorage = 100; var uraniumps = 0;
@@ -157,12 +157,14 @@ var icePick = 0; var icePickLunariteCost = 17800; var icePickGemCost = 19300; va
 var iceDrill = 0; var iceDrillLunariteCost = 23900; var iceDrillTitaniumCost = 21200; var iceDrillSiliconCost = 19600; var iceDrillEnergyInput = 83; var iceDrillOutput = 9;
 var freezer = 0; var freezerLunariteCost = 117000; var freezerTitaniumCost = 86000; var freezerSiliconCost = 73000; var freezerEnergyInput = 397; var freezerOutput = 65;
 var mrFreeze = 0; var mrFreezeWoodCost = 379000; var mrFreezeHeliumCost = 14000; var mrFreezeMeteoriteCost = 1500; var mrFreezeEnergyInput = 1135; var mrFreezeOutput = 278;
-var overexchange = 0; var overexchangeMetalCost = 210000; var overexchangeSilverCost = 188000; var overexchangeHeliumCost = 205000; var overexchangeEnergyInput = 7397; var overexchangeOutput = 2973;
+var overexchange = 0; var overexchangeMetalCost = 210000; var overexchangeSilverCost = 188000; var overexchangeHeliumCost = 204000; var overexchangeEnergyInput = 7397; var overexchangeOutput = 2973;
 
 // Meteorite
 var meteorite = 0; var meteoriteStorage = 50; var meteoriteNextStorage = 100; var meteoriteStorageCost = 100; var meteoriteps = 0; var meteoriteToggled = true;
 var printer = 0; var printerLunariteCost = 100000; var printerSiliconCost = 50000; var printerPlasmaInput = 3; var printerOutput = 1;
 var web = 0; var webLunariteCost = 930000; var webUraniumCost = 490000; var webSiliconCost = 510000; var webPlasmaInput = 21; var webOutput = 8;
+var smasher = 0; var smasherSiliconCost = 3230000; var smasherSilverCost = 5890000; var smasherGemCost = 8340000; var smasherPlasmaInput = 111; var smasherOutput = 72;
+var nebulous = 0; var nebulousLunariteCost = 25800000; var nebulousLavaCost = 19700000; var nebulousGoldCost = 21900000; var nebulousPlasmaInput = 142; var nebulousOutput = 135;
 
 // Science
 var science = 0; var scienceps = 0;

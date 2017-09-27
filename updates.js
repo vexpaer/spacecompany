@@ -203,7 +203,17 @@ Game.updatesData = (function(){
 	}
 
 	instance.respec = {
-		desc: 'Keep your DM upgrades and have the ability to respec.',
+		desc: '保持你的DM升级和有respec的能力。',
+		read: false
+	}
+
+	instance.segmentAndSphere = {
+		desc: '建立250段和戴森球按钮',
+		read: false
+	}
+
+	instance.meteoriteTier34 = {
+		desc: '陨石层级3和4遥望星空 - > Moviton同步',
 		read: false
 	}
 
