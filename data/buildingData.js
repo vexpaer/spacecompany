@@ -1062,8 +1062,8 @@ Game.buildingData = (function () {
     });
 
     instance.iceT2 = $.extend({}, baseProducerBuilding, {
-        name: 'Ice Drill',
-        desc: 'The Ice Drill is more effective than the Pickaxe and gains much more Ice every second. However, it does use electricity.',
+        name: '冰钻',
+        desc: '冰钻比镐更有效，每秒获得更多的冰。 但是，它确实使用电力。',
         resource: 'ice',
         resourcePerSecond: {
             'energy': -83,

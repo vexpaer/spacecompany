@@ -14,7 +14,7 @@ Game.techData = (function () {
         desc: '购买解锁的东西。',
         notifyTitle: null,
         notifyText: null,
-        buttonText: 'Unlock',
+        buttonText: '解锁',
 
         current: 0,
         maxLevel: 1,

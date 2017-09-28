@@ -138,8 +138,8 @@ Game.resourceData = (function () {
      ******************************/
 
     instance.lunarite = {
-        name: 'Lunarite',
-        desc: 'Lunarite is found on the Moon and is a rare type of resource not found on Earth. It is much stronger than regular metal but is a lot harder to get.',
+        name: '月岩',
+        desc: '月球上发现月岩，是地球上罕见的罕见资源。 它比普通金属强得多，但要难得多。',
         icon: 'lunariteIcon',
         category: 'innerSol',
         baseCapacity: 50,
