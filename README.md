@@ -104,6 +104,7 @@ Buffed Capital Ship\' power and defense
 - Hide Completed Tabs Button
 - Added Astronomical Breakthrough
 - Seperate Option for Autosave Notifications
+- Rebirth (a huge number of features here)
 
 ##### Small Changes
 

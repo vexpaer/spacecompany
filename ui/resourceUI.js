@@ -16,14 +16,91 @@ Game.resourcesUI = (function(){
 			if ($('#' + RESOURCE[id] + 'NextStorage').length > 0) {
 				Game.ui.bindElement(RESOURCE[id] + 'NextStorage', this.createNextStorageDelegate(RESOURCE[id]));
 			}
+
+			var storageData = Game.resources.getStorageData(RESOURCE[id]);
+			if (storageData !== null) {
+				for (var costResource in storageData.cost) {
+					Game.ui.bindElement(storageData.htmlIdCosts[costResource], this.createStorageCostDelegate(RESOURCE[id], costResource));
+				}
+			}
 		}
+
+		for (id in BUILDING) {
+			if ($('#' + BUILDING[id]).length > 0) {
+				Game.ui.bindElement(BUILDING[id], this.createBuildingDelegate(BUILDING[id]));
+			}
+
+			var buildingData = Game.buildings.getBuildingData(BUILDING[id]);
+			if (buildingData !== null) {
+				for (costResource in buildingData.cost) {
+					Game.ui.bindElement(buildingData.htmlIdCosts[costResource], this.createBuildingCostDelegate(BUILDING[id], costResource));
+				}
+			}
+		}
+
+		Game.ui.bindElement('charcoalEngineOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.CharcoalEngine);
+			return data.output[RESOURCE.Energy] * data.prodMultiplier;
+		});
+		Game.ui.bindElement('solarPanelOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.SolarPanel);
+			return data.output[RESOURCE.Energy] * data.prodMultiplier;
+		});
+
+		Game.ui.bindElement('pumpjackOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.Pumpjack);
+			return data.output[RESOURCE.Oil] * data.prodMultiplier;
+		});
+		Game.ui.bindElement('heavyDrillOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.HeavyDrill);
+			return data.output[RESOURCE.Metal] * data.prodMultiplier;
+		});
+		Game.ui.bindElement('advancedDrillOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.AdvancedDrill);
+			return data.output[RESOURCE.Gem] * data.prodMultiplier;
+		});
+		Game.ui.bindElement('furnaceOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.Furnace);
+			return data.output[RESOURCE.Charcoal] * data.prodMultiplier;
+		});
+		Game.ui.bindElement('furnaceWoodInput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.Furnace);
+			return data.upkeep[RESOURCE.Wood] * data.upkeepMultiplier;
+		});
+		Game.ui.bindElement('laserCutterOutput', function() {
+			var data = Game.buildings.getBuildingData(BUILDING.LaserCutter);
+			return data.output[RESOURCE.Wood] * data.prodMultiplier;
+		});
 
 		// the auto bindings need to be updated after this is done
 		Game.ui.updateAutoDataBindings();
 	};
 
 	instance.update = function(delta) {
+		for (var id in RESOURCE) {
+			var current = getResource(RESOURCE[id]);
+			var capacity = getStorage(RESOURCE[id]);
+			var production = getProduction(RESOURCE[id]);
 
+			Game.settings.turnRedOrGreen(current, capacity, RESOURCE[id]);
+			Game.settings.turnRedOnNegative(production, RESOURCE[id] + 'ps');
+
+			var storageData = Game.resources.getStorageData(RESOURCE[id]);
+			if (storageData !== null) {
+				for (var costResource in storageData.cost) {
+					Game.settings.turnRed(getResource(costResource), storageData.cost[costResource], storageData.htmlIdCosts[costResource]);
+				}
+			}
+		}
+
+		for (id in BUILDING) {
+			var buildingData = Game.buildings.getBuildingData(BUILDING[id]);
+			if (buildingData !== null) {
+				for (costResource in buildingData.cost) {
+					Game.settings.turnRed(getResource(costResource), buildingData.cost[costResource], buildingData.htmlIdCosts[costResource]);
+				}
+			}
+		}
 	};
 
 	instance.createResourceDelegate = function(id) {
@@ -108,6 +185,24 @@ Game.resourcesUI = (function(){
 	instance.createNextStorageDelegate = function(id) {
 		return (function() {
 			return Game.settings.format(getStorage(id) * 2);
+		});
+	};
+
+	instance.createStorageCostDelegate = function(id, costResource) {
+		return (function() {
+			return Game.settings.format(Game.resources.getStorageData(id).cost[costResource]);
+		});
+	};
+
+	instance.createBuildingDelegate = function(id) {
+		return (function() {
+			return Game.settings.format(getBuildingNum(id));
+		});
+	};
+
+	instance.createBuildingCostDelegate = function(id, costResource) {
+		return (function() {
+			return Game.settings.format(Game.buildings.getBuildingData(id).cost[costResource]);
 		});
 	};
 
