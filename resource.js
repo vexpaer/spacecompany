@@ -1,84 +1,108 @@
 Game.resources = (function(){
 
-    var instance = {};
+	var instance = {};
 
-    instance.dataVersion = 5;
-    instance.entries = {};
-    instance.categoryEntries = {};
-    instance.storageUpgrades = {};
-    instance.resourceTypeCount = 0;
-    instance.resourceCategoryCount = 0;
-    instance.storageUpgradeCount = 0;
+	instance.dataVersion = 5;
+	instance.entries = {};
+	instance.categoryEntries = {};
+	instance.storageUpgrades = {};
 
-    instance.initialise = function() {
-        for (var id in Game.resourceData) {
-            var data = Game.resourceData[id];
-            this.resourceTypeCount++;
-            this.entries[id] = $.extend({}, data, {
-                id: id,
-                htmlId: 'res_' + id,
-                current: 0,
-                perSecond: 0,
-                perClick: 1,
-                iconPath: Game.constants.iconPath,
-                iconExtension: Game.constants.iconExtension,
-                displayNeedsUpdate: true,
-                hidden: false
-            });
+	instance.initialise = function() {
+		var numResources = 0;
+		for (var id in Game.resourceData) {
+			numResources++;
+			this.entries[id] = this.initResource(id);
+		}
 
-            this.entries[id].capacity = data.baseCapacity;
-        }
+		var numCategories = 0;
+		for (id in Game.resourceCategoryData) {
+			numCategories++;
+			this.categoryEntries[id] = this.initResourceCategory(id);
+		}
 
-        for (var id in Game.resourceCategoryData) {
-            var data = Game.resourceCategoryData[id];
-            this.resourceCategoryCount++;
-            this.categoryEntries[id] = $.extend({}, data, {
-                id: id
-            });
-        }
+		for (id in Game.storageData) {
+			var data = this.initStorage(id);
+			this.storageUpgrades[id] = data;
+			this.entries[data.resource].storage = data;
+		}
 
-        for (var id in Game.storageData) {
-            var data = Game.storageData[id];
-            this.storageUpgradeCount++;
-            this.storageUpgrades[id] = $.extend({}, data, {
-                id: id,
-                htmlId: "store_" + id
-            });
-        }
+		console.debug("Loaded " + numCategories + " Resource Categories");
+		console.debug("Loaded " + numResources + " Resource Types");
+	};
 
-        console.debug("Loaded " + this.resourceCategoryCount + " Resource Categories");
-        console.debug("Loaded " + this.resourceTypeCount + " Resource Types");
-    };
+	instance.initResource = function(id) {
+		// using extend to create a new object and leave the defaults unchanged
+		var data = jQuery.extend({}, Game.resourceData[id]);
+		data.setId(id);
+		data.capacity = data.baseCapacity;
+		return data;
+	};
 
-    instance.update = function(delta) {
-        for(var id in this.entries) {
-            var addValue = this.entries[id].perSecond * delta;
-            this.addResource(id, addValue);
-        }
-    };
+	instance.initResourceCategory = function(id) {
+		// using extend to create a new object and leave the defaults unchanged
+		var data = jQuery.extend({}, Game.resourceCategoryData[id]);
+		data.setId(id);
+		return data;
+	};
 
-    instance.save = function(data) {
-        data.resources = { v: this.dataVersion, r: {}};
-        for(var key in this.entries) {
-            data.resources.r[key] = {
-                n: this.entries[key].current,
-                u: this.entries[key].unlocked
-            }
-        }
-    };
+	instance.initStorage = function(id) {
+		// using extend to create a new object and leave the defaults unchanged
+		var data = jQuery.extend({}, Game.storageData[id]);
+		data.cost = jQuery.extend({}, data.cost);
+		data.setId(id);
+		return data;
+	};
 
-    instance.load = function(data) {
-        if(data.resources) {
-            if(data.resources.v && data.resources.v === this.dataVersion) {
-                for(var id in data.resources.i) {
-                    if(this.entries[id]) {
-                        this.addResource(id, data.resources.r[id].n);
-                        this.entries[id].unlocked = data.resources.r[id].u;
-                    }
-                }
-            }
-        }
-    };
+	instance.reset = function() {
+		for (var id in Game.resourceData) {
+			this.entries[id] = this.initResource(id);
+		}
+		for (id in Game.storageData) {
+			var data = this.initStorage(id);
+			this.storageUpgrades[id] = data;
+			this.entries[data.resource].storage = data;
+		}
+	};
+
+	instance.update = function(delta) {
+		for(var id in this.entries) {
+			var addValue = this.entries[id].perSecond * delta;
+			this.addResource(id, addValue);
+		}
+	};
+
+	instance.save = function(data) {
+		data.resources = { v: this.dataVersion, r: {}};
+		for(var key in this.entries) {
+			data.resources.r[key] = {
+				n: this.entries[key].current,
+				u: this.entries[key].unlocked
+			}
+		}
+	};
+
+	instance.load = function(data) {
+		if(data.resources) {
+			if(data.resources.v && data.resources.v === this.dataVersion) {
+				for(var id in data.resources.i) {
+					if(this.entries[id]) {
+						this.addResource(id, data.resources.r[id].n);
+						this.entries[id].unlocked = data.resources.r[id].u;
+					}
+				}
+			}
+		}
+
+		// Load the old storage values
+		for (id in RESOURCE) {
+			var capacity = data[RESOURCE[id] + 'Storage'];
+			if (typeof capacity === 'undefined') {
+				continue;
+			}
+			this.entries[RESOURCE[id]].capacity = capacity;
+			this.entries[RESOURCE[id]].storage.updateCost(capacity);
+		}
+	};
 
 	// TODO: change to data-driven resources when available
 	instance.getResource = function(id) {
@@ -111,6 +135,22 @@ Game.resources = (function(){
 			return 0;
 		}
 		return window[id + 'ps'];
+	};
+
+	instance.getAllProduction = function() {
+		var result = {};
+		for (var id in RESOURCE) {
+			result[RESOURCE[id]] = this.getProduction(RESOURCE[id]);
+		}
+		return result;
+	};
+
+	// TODO: change to data-driven resources when available
+	instance.setProduction = function(id, value) {
+		if (typeof window[id + 'ps'] === 'undefined') {
+			return;
+		}
+		window[id + 'ps'] = value;
 	};
 
 	// TODO: change to data-driven resources when available
@@ -167,120 +207,77 @@ Game.resources = (function(){
 		window[id] = getStorage(id);
 	};
 
-    instance.setPerSecondProduction = function(id, value) {
-        if(!this.entries[id]) {
-            console.error("Unknown Resource: " + id);
-            return;
-        }
+	instance.getStorageData = function(resourceId) {
+		if (typeof this.entries[resourceId] === 'undefined') {
+			return null;
+		}
+		return this.entries[resourceId].storage;
+	};
 
-        if (value < 0 || isNaN(value) || value === undefined) {
-            console.error("Invalid per second value: " + value + " for " + id);
-            return;
-        }
+	instance.upgradeStorage = function(resourceId) {
+		var upgradeData = this.getStorageData(resourceId);
+		if (upgradeData === null) {
+			return;
+		}
 
-        this.entries[id].perSecond = value;
-    };
+		// make sure we have the required resources
+		for (var costResource in upgradeData.cost) {
+			if (this.getResource(costResource) < upgradeData.cost[costResource]) {
+				return;
+			}
+		}
 
-    instance.upgradeStorage = function(id){
-        var upgradeData = this.storageUpgrades[id];
-        var res = this.getResourceData(upgradeData.resource);
-        if(res.current >= res.capacity*storagePrice){
-            res.current -= res.capacity*storagePrice;
-            res.capacity *= 2;
-            res.displayNeedsUpdate = true;
+		// now actually spend the resources
+		for (costResource in upgradeData.cost) {
+			this.takeResource(costResource, upgradeData.cost[costResource]);
+		}
 
-            for(var r in upgradeData.cost){
-                upgradeData.cost[r] *= 2;
-            }
-            upgradeData.displayNeedsUpdate = true;
-        }
-    };
+		var res = this.getResourceData(resourceId);
+		res.capacity *= 2;
+		upgradeData.updateCost(res.capacity);
 
-    instance.calcCost = function(self, resource){
-        return Math.floor(Game.buildingData[self.id].cost[resource.toString()] * Math.pow(1.1,self.current));
-    };
+		// still using the old storage variables
+		// TODO: remove this when the transition to data-driven storage is complete
+		window[resourceId + 'Storage'] = res.capacity;
+	};
 
-    instance.updateCost = function(data){
-        // TODO
-    };
+	instance.updateStorageCosts = function() {
+		for (var id in this.storageUpgrades) {
+			var storageData = this.storageUpgrades[id];
+			storageData.updateCost(this.entries[storageData.resource].capacity);
+		}
+	};
 
-    instance.buyMachine = function(id, count){
-        var data = Game.buildings.getBuildingData(id);
-        var resourcePass = 0;
-        for(var resource in data.cost){
-            var res = Game.resources.getResourceData(resource);
-            if(res.current >= data.cost[resource]){
-                resourcePass += 1;
-            }
-        }
-        if(resourcePass === Object.keys(data.cost).length){
-            data.current += 1;
-            for(var resource in data.cost){
-                var res = Game.resources.getResourceData(resource);
-                res.current -= data.cost[resource];
-            }
-            this.updateCost(data);
-            this.updateResourcesPerSecond();
-            data.displayNeedsUpdate = true;
-        }
-    };
+	instance.unlock = function(id) {
+		this.entries[id].unlocked = true;
+		this.entries[id].displayNeedsUpdate = true;
+	};
 
-    instance.destroyMachine = function(id, count){
-        var data = Game.buildings.getBuildingData(id);
-        if(data.current >= count){
-            data.current -= count;
-            this.updateCost(data);
-            data.displayNeedsUpdate = true;
-        }
-    };
+	instance.getResourceData = function(id) {
+		return this.entries[id];
+	};
 
-    instance.updateResourcesPerSecond = function(){
-        for(var resource in this.entries){
-            var res = this.entries[resource];
-            var ps = 0;
-            for(var id in Game.buildings.entries){
-                var building = Game.buildings.entries[id];
-                for(var value in building.resourcePerSecond){
-                    if(value == res){
-                        var val = building.resourcePerSecond[value];
-                        ps += val * building.current;
-                    }
-                }
-            }
-            res.perSecond = ps;
-        }
-    };
+	instance.getCategoryData = function(id) {
+		return this.categoryEntries[id];
+	};
 
-    instance.unlock = function(id) {
-        this.entries[id].unlocked = true;
-        this.entries[id].displayNeedsUpdate = true;
-    };
+	instance.showByCategory = function(category) {
+		for(var id in this.entries) {
+			var data = this.entries[id];
+			if(data.category === category) {
+				data.hidden = false;
+			}
+		}
+	};
 
-    instance.getResourceData = function(id) {
-        return this.entries[id];
-    };
-
-    instance.getCategoryData = function(id) {
-        return this.categoryEntries[id];
-    };
-
-    instance.showByCategory = function(category) {
-        for(var id in this.entries) {
-            var data = this.entries[id];
-            if(data.category === category) {
-                data.hidden = false;
-            }
-        }
-    };
-
-    instance.hideByCategory = function(category) {
-        for(var id in this.entries) {
-            var data = this.entries[id];
-            if(data.category === category) {
-                data.hidden = true;
-            }
-        }
-    };
+	instance.hideByCategory = function(category) {
+		for(var id in this.entries) {
+			var data = this.entries[id];
+			if(data.category === category) {
+				data.hidden = true;
+			}
+		}
+	};
 
     return instance;
 }());

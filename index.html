@@ -602,8 +602,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">获取超级加热器</button>
-									<button onclick="toggleHeater()" class="btn btn-default">把超级加热器 <span id="heaterToggled">关闭</span></button>
+									<button onclick="buyBuilding(BUILDING.Heater)" class="btn btn-default">获取超级加热器</button>
+									<button onclick="toggleHeater()" class="btn btn-default">把超级加热器<span id="heaterToggled">关闭</span></button>
 									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">摧毁超级加热器</button>
 								</td>
 							</tr>
@@ -623,7 +623,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlasmatic()" class="btn btn-default">获取等离子体坑</button>
+									<button onclick="buyBuilding(BUILDING.Plasmatic)" class="btn btn-default">获取等离子体坑</button>
 									<button onclick="togglePlasmatic()" class="btn btn-default">把等离子体坑<span id="plasmaticToggled">关闭</span></button>
 									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">摧毁等离子体坑</button>
 								</td>
@@ -644,7 +644,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getBath()" class="btn btn-default">获取电子保险箱</button>
+									<button onclick="buyBuilding(BUILDING.Bath)" class="btn btn-default">获取电子保险箱</button>
 									<button onclick="toggleBath()" class="btn btn-default">把电子保险箱<span id="bathToggled">关闭</span></button>
 									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">摧毁电子保险箱</button>
 								</td>
@@ -759,7 +759,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCharcoalEngine()" class="btn btn-default">获取木炭引擎</button>
+									<button onclick="buyBuilding(BUILDING.CharcoalEngine)" class="btn btn-default">获取木炭引擎</button>
 									<button onclick="destroyMachine('charcoalEngine')" class="btn btn-default destroy hidden">摧毁木炭引擎</button>
 								</td>
 							</tr>
@@ -777,14 +777,14 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getSolarPanel()" class="btn btn-default">获取太阳能板</button>
+									<button onclick="buyBuilding(BUILDING.SolarPanel)" class="btn btn-default">获取太阳能板</button>
 									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">摧毁太阳能板</button>
 								</td>
 							</tr>
 							<tr id="methanePower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										沼气发电站: <span id="methaneStation">0</span>
+										甲烷发电站: <span id="methaneStation">0</span>
 									</h3>
 									<span>
 										从金星燃烧强大的甲烷，以满足您所有的电力需求。
@@ -795,8 +795,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMethaneStation()" class="btn btn-default">获取沼气发电站</button>
-									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">摧毁沼气发电站</button>
+									<button onclick="buyBuilding(BUILDING.MethaneStation)" class="btn btn-default">获取甲烷发电站</button>
+									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">摧毁甲烷发电站</button>
 								</td>
 							</tr>
 							<tr id="nuclearPower" class="hidden">
@@ -813,7 +813,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getNuclearStation()" class="btn btn-default">获取核电站</button>
+									<button onclick="buyBuilding(BUILDING.NuclearStation)" class="btn btn-default">获取核电站</button>
 									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">摧毁核电站</button>
 								</td>
 							</tr>
@@ -831,7 +831,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagmatic()" class="btn btn-default">获取熔岩发电机</button>
+									<button onclick="buyBuilding(BUILDING.Magmatic)" class="btn btn-default">获取熔岩发电机</button>
 									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">摧毁熔岩发电机</button>
 								</td>
 							</tr>
@@ -849,7 +849,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFusionReactor()" class="btn btn-default">获取核聚变反应堆</button>
+									<button onclick="buyBuilding(BUILDING.FusionReactor)" class="btn btn-default">获取核聚变反应堆</button>
 									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">摧毁核聚变反应堆</button>
 								</td>
 							</tr>
@@ -890,7 +890,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeUraniumStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('uranium')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -907,7 +907,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getGrinder()" class="btn btn-default">获取磨床</button>
+									<button onclick="buyBuilding(BUILDING.Grinder)" class="btn btn-default">获取磨床</button>
 									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">摧毁磨床</button>
 								</td>
 							</tr>
@@ -927,7 +927,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCubic()" class="btn btn-default">获取立方会议室</button>
+									<button onclick="buyBuilding(BUILDING.Cubic)" class="btn btn-default">获取立方会议室</button>
 									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">摧毁立方会议室</button>
 								</td>
 							</tr>
@@ -947,7 +947,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getEnricher()" class="btn btn-default">获取铀富集</button>
+									<button onclick="buyBuilding(BUILDING.Enricher)" class="btn btn-default">获取铀富集</button>
 									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">摧毁铀富集</button>
 								</td>
 							</tr>
@@ -967,7 +967,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getRecycler()" class="btn btn-default">获取铀回收站</button>
+									<button onclick="buyBuilding(BUILDING.Recycler)" class="btn btn-default">获取铀回收站</button>
 									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">摧毁铀回收站</button>
 								</td>
 							</tr>
@@ -987,7 +987,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetNuke()" class="btn btn-default">获取行星核工厂</button>
+									<button onclick="buyBuilding(BUILDING.PlanetNuke)" class="btn btn-default">获取行星核工厂</button>
 									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">摧毁行星核工厂</button>
 								</td>
 							</tr>
@@ -1025,7 +1025,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeOilStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('oil')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1042,7 +1042,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">获取Pump</button>
+									<button onclick="buyBuilding(BUILDING.Pump)" class="btn btn-default">获取小泵</button>
 									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">摧毁小泵</button>
 								</td>
 							</tr>
@@ -1060,7 +1060,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPumpjack()" class="btn btn-default">获取抽油机</button>
+									<button onclick="buyBuilding(BUILDING.Pumpjack)" class="btn btn-default">获取抽油机</button>
 									<button onclick="destroyMachine('pumpjack')" class="btn btn-default destroy hidden">摧毁抽油机</button>
 								</td>
 							</tr>
@@ -1080,7 +1080,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilField()" class="btn btn-default">获取油田</button>
+									<button onclick="buyBuilding(BUILDING.OilField)" class="btn btn-default">获取油田</button>
 									<button onclick="destroyMachine('oilField')" class="btn btn-default destroy hidden">摧毁油田</button>
 								</td>
 							</tr>
@@ -1100,7 +1100,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getOilRig()" class="btn btn-default">获取海上钻井平台</button>
+									<button onclick="buyBuilding(BUILDING.OilRig)" class="btn btn-default">获取海上钻井平台</button>
 									<button onclick="destroyMachine('oilRig')" class="btn btn-default destroy hidden">摧毁海上钻井平台</button>
 								</td>
 							</tr>
@@ -1120,7 +1120,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFossilator()" class="btn btn-default">获取Fossilator 9000</button>
+									<button onclick="buyBuilding(BUILDING.Fossilator)" class="btn btn-default">获取化石9000</button>
 									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">摧毁化石9000</button>
 								</td>
 							</tr>
@@ -1161,7 +1161,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMetalStorage()" class="btn btn-default">升级库存</button>
+									<button onclick="upgradeStorage('metal')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1178,7 +1178,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMiner()" class="btn btn-default">获取矿工</button>
+									<button onclick="buyBuilding(BUILDING.Miner)" class="btn btn-default">获取矿工</button>
 									<button onclick="destroyMachine('miner')" class="btn btn-default destroy hidden">摧毁矿工</button>
 								</td>
 							</tr>
@@ -1198,7 +1198,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeavyDrill()" class="btn btn-default">获取重型钻机</button>
+									<button onclick="buyBuilding(BUILDING.HeavyDrill)" class="btn btn-default">获取重型钻机</button>
 									<button onclick="destroyMachine('heavyDrill')" class="btn btn-default destroy hidden">摧毁重型钻机</button>
 								</td>
 							</tr>
@@ -1218,8 +1218,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getGigaDrill()" class="btn btn-default">获取Giga Drill</button>
-									<button onclick="destroyMachine('gigaDrill')" class="btn btn-default destroy hidden">摧毁 Giga Drill</button>
+									<button onclick="buyBuilding(BUILDING.GigaDrill)" class="btn btn-default">获取Giga Drill</button>
+									<button onclick="destroyMachine('gigaDrill')" class="btn btn-default destroy hidden">摧毁Giga Drill</button>
 								</td>
 							</tr>
 							<tr id="metalTier4" class="hidden">
@@ -1238,7 +1238,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getQuantumDrill()" class="btn btn-default">获取量子钻</button>
+									<button onclick="buyBuilding(BUILDING.QuantumDrill)" class="btn btn-default">获取量子钻</button>
 									<button onclick="destroyMachine('quantumDrill')" class="btn btn-default destroy hidden">摧毁量子钻</button>
 								</td>
 							</tr>
@@ -1258,7 +1258,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMultiDrill()" class="btn btn-default">获取多元宇宙钻</button>
+									<button onclick="buyBuilding(BUILDING.MultiDrill)" class="btn btn-default">获取多元宇宙钻l</button>
 									<button onclick="destroyMachine('multiDrill')" class="btn btn-default destroy hidden">摧毁多元宇宙钻</button>
 								</td>
 							</tr>
@@ -1299,7 +1299,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeGemStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('gem')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1316,7 +1316,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getGemMiner()" class="btn btn-default">获取宝石矿工</button>
+									<button onclick="buyBuilding(BUILDING.GemMiner)" class="btn btn-default">获取宝石矿工</button>
 									<button onclick="destroyMachine('gemMiner')" class="btn btn-default destroy hidden">摧毁宝石矿工</button>
 								</td>
 							</tr>
@@ -1336,7 +1336,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getAdvancedDrill()" class="btn btn-default">获取高级钻</button>
+									<button onclick="buyBuilding(BUILDING.AdvancedDrill)" class="btn btn-default">获取高级钻</button>
 									<button onclick="destroyMachine('advancedDrill')" class="btn btn-default destroy hidden">摧毁高级钻</button>
 								</td>
 							</tr>
@@ -1356,7 +1356,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondDrill()" class="btn btn-default">获取钻石镶嵌钻</button>
+									<button onclick="buyBuilding(BUILDING.DiamondDrill)" class="btn btn-default">获取钻石镶嵌钻</button>
 									<button onclick="destroyMachine('diamondDrill')" class="btn btn-default destroy hidden">摧毁钻石镶嵌钻</button>
 								</td>
 							</tr>
@@ -1376,7 +1376,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCarbyneDrill()" class="btn btn-default">获取卡宾钻</button>
+									<button onclick="buyBuilding(BUILDING.CarbyneDrill)" class="btn btn-default">获取卡宾钻</button>
 									<button onclick="destroyMachine('carbyneDrill')" class="btn btn-default destroy hidden">摧毁卡宾钻</button>
 								</td>
 							</tr>
@@ -1396,7 +1396,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondChamber()" class="btn btn-default">获取Diamond Accretion Chamber</button>
+									<button onclick="buyBuilding(BUILDING.DiamondChamber)" class="btn btn-default">获取Diamond Accretion Chamber</button>
 									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">摧毁 Diamond Accretion Chamber</button>
 								</td>
 							</tr>
@@ -1438,7 +1438,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeCharcoalStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('charcoal')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1457,7 +1457,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodburner()" class="btn btn-default">获取木材燃烧器</button>
+									<button onclick="buyBuilding(BUILDING.Woodburner)" class="btn btn-default">获取木材燃烧器</button>
 									<button onclick="destroyMachine('woodburner')" class="btn btn-default destroy hidden">摧毁木材燃烧器</button>
 								</td>
 							</tr>
@@ -1479,7 +1479,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFurnace()" class="btn btn-default">获取炉子</button>
+									<button onclick="buyBuilding(BUILDING.Furnace)" class="btn btn-default">获取炉子</button>
 									<button onclick="destroyMachine('furnace')" class="btn btn-default destroy hidden">摧毁炉子</button>
 								</td>
 							</tr>
@@ -1501,7 +1501,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getKiln()" class="btn btn-default">获取工业窑炉</button>
+									<button onclick="buyBuilding(BUILDING.Kiln)" class="btn btn-default">获取工业窑炉</button>
 									<button onclick="destroyMachine('kiln')" class="btn btn-default destroy hidden">摧毁工业窑炉</button>
 								</td>
 							</tr>
@@ -1523,7 +1523,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFryer()" class="btn btn-default">获取森林炸锅</button>
+									<button onclick="buyBuilding(BUILDING.Fryer)" class="btn btn-default">获取森林炸锅</button>
 									<button onclick="destroyMachine('fryer')" class="btn btn-default destroy hidden">摧毁森林炸锅</button>
 								</td>
 							</tr>
@@ -1545,7 +1545,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMicroPollutor()" class="btn btn-default">获取微反射污染</button>
+									<button onclick="buyBuilding(BUILDING.MicroPollutor)" class="btn btn-default">获取微反射污染</button>
 									<button onclick="destroyMachine('microPollutor')" class="btn btn-default destroy hidden">摧毁微反射污染</button>
 								</td>
 							</tr>
@@ -1586,7 +1586,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeWoodStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('wood')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1603,7 +1603,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getWoodcutter()" class="btn btn-default">获取樵夫</button>
+									<button onclick="buyBuilding(BUILDING.Woodcutter)" class="btn btn-default">获取樵夫</button>
 									<button onclick="destroyMachine('woodcutter')" class="btn btn-default destroy hidden">摧毁樵夫</button>
 								</td>
 							</tr>
@@ -1623,8 +1623,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLaserCutter()" class="btn btn-default">获取激光切割机</button>
-									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">摧毁 激光切割机</button>
+									<button onclick="buyBuilding(BUILDING.LaserCutter)" class="btn btn-default">获取激光切割机</button>
+									<button onclick="destroyMachine('laserCutter')" class="btn btn-default destroy hidden">摧毁激光切割机</button>
 								</td>
 							</tr>
 							<tr id="woodTier3" class="hidden">
@@ -1643,7 +1643,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeforester()" class="btn btn-default">获取大众死灵兽</button>
+									<button onclick="buyBuilding(BUILDING.Deforester)" class="btn btn-default">获取大众死灵兽</button>
 									<button onclick="destroyMachine('deforester')" class="btn btn-default destroy hidden">摧毁大众死灵兽</button>
 								</td>
 							</tr>
@@ -1663,7 +1663,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getInfuser()" class="btn btn-default">获取生物质注射器</button>
+									<button onclick="buyBuilding(BUILDING.Infuser)" class="btn btn-default">获取生物质注射器</button>
 									<button onclick="destroyMachine('infuser')" class="btn btn-default destroy hidden">摧毁生物质注射器</button>
 								</td>
 							</tr>
@@ -1683,7 +1683,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getForest()" class="btn btn-default">获取俄罗斯森林</button>
+									<button onclick="buyBuilding(BUILDING.Forest)" class="btn btn-default">获取俄罗斯森林</button>
 									<button onclick="destroyMachine('forest')" class="btn btn-default destroy hidden">摧毁俄罗斯森林</button>
 								</td>
 							</tr>
@@ -1724,7 +1724,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeSiliconStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('silicon')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1741,7 +1741,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getBlowtorch()" class="btn btn-default">获取授权喷灯</button>
+									<button onclick="buyBuilding(BUILDING.Blowtorch)" class="btn btn-default">获取授权喷灯</button>
 									<button onclick="destroyMachine('blowtorch')" class="btn btn-default destroy hidden">摧毁授权喷灯</button>
 								</td>
 							</tr>
@@ -1761,7 +1761,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getScorcher()" class="btn btn-default">获取海边热气</button>
+									<button onclick="buyBuilding(BUILDING.Scorcher)" class="btn btn-default">获取海边热气</button>
 									<button onclick="destroyMachine('scorcher')" class="btn btn-default destroy hidden">摧毁海边热气</button>
 								</td>
 							</tr>
@@ -1781,7 +1781,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getAnnihilator()" class="btn btn-default">获取海滩歼灭者</button>
+									<button onclick="buyBuilding(BUILDING.Annihilator)" class="btn btn-default">获取海滩歼灭者</button>
 									<button onclick="destroyMachine('annihilator')" class="btn btn-default destroy hidden">摧毁海滩歼灭者</button>
 								</td>
 							</tr>
@@ -1801,7 +1801,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDesert()" class="btn btn-default">获取沙漠毁灭者</button>
+									<button onclick="buyBuilding(BUILDING.Desert)" class="btn btn-default">获取沙漠毁灭者</button>
 									<button onclick="destroyMachine('desert')" class="btn btn-default destroy hidden">摧毁沙漠毁灭者</button>
 								</td>
 							</tr>
@@ -1821,8 +1821,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getTardis()" class="btn btn-default">获取TARDIS</button>
-									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">摧毁TARDIS</button>
+									<button onclick="buyBuilding(BUILDING.Tardis)" class="btn btn-default">获取T.A.R.D.I.S.</button>
+									<button onclick="destroyMachine('tardis')" class="btn btn-default destroy hidden">摧毁T.A.R.D.I.S.</button>
 								</td>
 							</tr>
 						</table>
@@ -1862,7 +1862,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLunariteStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('lunarite')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -1879,7 +1879,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonWorker()" class="btn btn-default">获取原住月球工人</button>
+									<button onclick="buyBuilding(BUILDING.MoonWorker)" class="btn btn-default">获取原住月球工人</button>
 									<button onclick="destroyMachine('moonWorker')" class="btn btn-default destroy hidden">解雇原住月球工人</button>
 								</td>
 							</tr>
@@ -1899,8 +1899,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonDrill()" class="btn btn-default">获取Low-Gravity Drill</button>
-									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">摧毁 Low-Gravity Drill</button>
+									<button onclick="buyBuilding(BUILDING.MoonDrill)" class="btn btn-default">获取Low-Gravity Drill</button>
+									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">摧毁Low-Gravity Drill</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier3" class="hidden">
@@ -1919,7 +1919,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonQuarry()" class="btn btn-default">获取月球采石场</button>
+									<button onclick="buyBuilding(BUILDING.MoonQuarry)" class="btn btn-default">获取月球采石场</button>
 									<button onclick="destroyMachine('moonQuarry')" class="btn btn-default destroy hidden">摧毁月球采石场</button>
 								</td>
 							</tr>
@@ -1939,7 +1939,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetExcavator()" class="btn btn-default">获取行星挖掘机</button>
+									<button onclick="buyBuilding(BUILDING.PlanetExcavator)" class="btn btn-default">获取行星挖掘机</button>
 									<button onclick="destroyMachine('planetExcavator')" class="btn btn-default destroy hidden">摧毁行星挖掘机</button>
 								</td>
 							</tr>
@@ -1959,7 +1959,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCloner()" class="btn btn-default">获取月亮克隆</button>
+									<button onclick="buyBuilding(BUILDING.Cloner)" class="btn btn-default">获取月亮克隆</button>
 									<button onclick="destroyMachine('cloner')" class="btn btn-default destroy hidden">摧毁月亮克隆</button>
 								</td>
 							</tr>
@@ -2000,7 +2000,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMethaneStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('methane')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2017,7 +2017,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getVacuum()" class="btn btn-default">获取吸尘器</button>
+									<button onclick="buyBuilding(BUILDING.Vacuum)" class="btn btn-default">获取吸尘器</button>
 									<button onclick="destroyMachine('vacuum')" class="btn btn-default destroy hidden">摧毁吸尘器</button>
 								</td>
 							</tr>
@@ -2037,7 +2037,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getSuctionExcavator()" class="btn btn-default">获取吸挖掘机</button>
+									<button onclick="buyBuilding(BUILDING.SuctionExcavator)" class="btn btn-default">获取吸挖掘机</button>
 									<button onclick="destroyMachine('suctionExcavator')" class="btn btn-default destroy hidden">摧毁吸挖掘机</button>
 								</td>
 							</tr>
@@ -2057,7 +2057,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getSpaceCow()" class="btn btn-default">获取空间奶牛</button>
+									<button onclick="buyBuilding(BUILDING.SpaceCow)" class="btn btn-default">获取空间奶牛</button>
 									<button onclick="destroyMachine('spaceCow')" class="btn btn-default destroy hidden">摧毁空间奶牛</button>
 								</td>
 							</tr>
@@ -2077,7 +2077,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getVent()" class="btn btn-default">获取水热通风</button>
+									<button onclick="buyBuilding(BUILDING.Vent)" class="btn btn-default">获取水热通风</button>
 									<button onclick="destroyMachine('vent')" class="btn btn-default destroy hidden">摧毁水热通风</button>
 								</td>
 							</tr>
@@ -2097,7 +2097,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getInterCow()" class="btn btn-default">获取星际牛</button>
+									<button onclick="buyBuilding(BUILDING.InterCow)" class="btn btn-default">获取星际牛</button>
 									<button onclick="destroyMachine('interCow')" class="btn btn-default destroy hidden">摧毁星际牛</button>
 								</td>
 							</tr>
@@ -2138,7 +2138,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeTitaniumStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('titanium')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2155,7 +2155,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getExplorer()" class="btn btn-default">获取探险者</button>
+									<button onclick="buyBuilding(BUILDING.Explorer)" class="btn btn-default">获取探险者</button>
 									<button onclick="destroyMachine('explorer')" class="btn btn-default destroy hidden">摧毁探险者</button>
 								</td>
 							</tr>
@@ -2175,7 +2175,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLunariteDrill()" class="btn btn-default">获取陆钻</button>
+									<button onclick="buyBuilding(BUILDING.LunariteDrill)" class="btn btn-default">获取陆钻</button>
 									<button onclick="destroyMachine('lunariteDrill')" class="btn btn-default destroy hidden">摧毁陆钻</button>
 								</td>
 							</tr>
@@ -2195,7 +2195,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPentaDrill()" class="btn btn-default">获取五角钻</button>
+									<button onclick="buyBuilding(BUILDING.PentaDrill)" class="btn btn-default">获取五角钻</button>
 									<button onclick="destroyMachine('pentaDrill')" class="btn btn-default destroy hidden">摧毁五角钻</button>
 								</td>
 							</tr>
@@ -2215,7 +2215,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getTitanDrill()" class="btn btn-default">获取泰坦之钻</button>
+									<button onclick="buyBuilding(BUILDING.TitanDrill)" class="btn btn-default">获取泰坦之钻</button>
 									<button onclick="destroyMachine('titanDrill')" class="btn btn-default destroy hidden">摧毁泰坦之钻</button>
 								</td>
 							</tr>
@@ -2235,7 +2235,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getClub()" class="btn btn-default">获取俱乐部</button>
+									<button onclick="buyBuilding(BUILDING.Club)" class="btn btn-default">获取俱乐部</button>
 									<button onclick="destroyMachine('club')" class="btn btn-default destroy hidden">摧毁俱乐部</button>
 								</td>
 							</tr>
@@ -2276,7 +2276,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeGoldStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('gold')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2293,7 +2293,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDroid()" class="btn btn-default">获取火箭机器人</button>
+									<button onclick="buyBuilding(BUILDING.Droid)" class="btn btn-default">获取火箭机器人</button>
 									<button onclick="destroyMachine('droid')" class="btn btn-default destroy hidden">摧毁火箭机器人</button>
 								</td>
 							</tr>
@@ -2313,7 +2313,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDestroyer()" class="btn btn-default">获取小行星驱逐舰</button>
+									<button onclick="buyBuilding(BUILDING.Destroyer)" class="btn btn-default">获取小行星驱逐舰</button>
 									<button onclick="destroyMachine('destroyer')" class="btn btn-default destroy hidden">摧毁小行星驱逐舰</button>
 								</td>
 							</tr>
@@ -2333,7 +2333,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDeathStar()" class="btn btn-default">获取死星JR</button>
+									<button onclick="buyBuilding(BUILDING.DeathStar)" class="btn btn-default">获取死星JR</button>
 									<button onclick="destroyMachine('deathStar')" class="btn btn-default destroy hidden">摧毁死星JR</button>
 								</td>
 							</tr>
@@ -2353,7 +2353,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getActuator()" class="btn btn-default">获取时空猎器</button>
+									<button onclick="buyBuilding(BUILDING.Actuator)" class="btn btn-default">获取时空猎器</button>
 									<button onclick="destroyMachine('actuator')" class="btn btn-default destroy hidden">摧毁时空猎器</button>
 								</td>
 							</tr>
@@ -2373,7 +2373,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPhilosopher()" class="btn btn-default">获取贤者之石</button>
+									<button onclick="buyBuilding(BUILDING.Philosopher)" class="btn btn-default">获取贤者之石</button>
 									<button onclick="destroyMachine('philosopher')" class="btn btn-default destroy hidden">摧毁贤者之石</button>
 								</td>
 							</tr>
@@ -2414,7 +2414,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeSilverStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('silver')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2431,7 +2431,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getScout()" class="btn btn-default">获取侦察船</button>
+									<button onclick="buyBuilding(BUILDING.Scout)" class="btn btn-default">获取侦察船</button>
 									<button onclick="destroyMachine('scout')" class="btn btn-default destroy hidden">摧毁侦察船</button>
 								</td>
 							</tr>
@@ -2451,7 +2451,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getSpaceLaser()" class="btn btn-default">获取星际激光</button>
+									<button onclick="buyBuilding(BUILDING.SpaceLaser)" class="btn btn-default">获取星际激光</button>
 									<button onclick="destroyMachine('spaceLaser')" class="btn btn-default destroy hidden">摧毁星际激光</button>
 								</td>
 							</tr>
@@ -2471,7 +2471,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getBertha()" class="btn btn-default">获取大伯莎</button>
+									<button onclick="buyBuilding(BUILDING.Bertha)" class="btn btn-default">获取大伯莎</button>
 									<button onclick="destroyMachine('bertha')" class="btn btn-default destroy hidden">摧毁大伯莎</button>
 								</td>
 							</tr>
@@ -2491,7 +2491,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCannon()" class="btn btn-default">获取原子大炮</button>
+									<button onclick="buyBuilding(BUILDING.Cannon)" class="btn btn-default">获取原子大炮</button>
 									<button onclick="destroyMachine('cannon')" class="btn btn-default destroy hidden">摧毁原子大炮</button>
 								</td>
 							</tr>
@@ -2507,10 +2507,11 @@
 										<br>
 										每秒消耗1008能源。
 										<br>
-										花费 <span id='werewolfUraniumCost'>165000</span> 铀， <span id='werewolfGemCost'>209000</span> G <span id='werewolfMethaneCost'>170000</span> 甲烷.
+										花费 <span id='werewolfUraniumCost'>165000</span> 铀, <span id='werewolfGemCost'>209000</span> 宝石, <span id='werewolfMethaneCost'>170000</span> 甲烷.
+									</span>
 									<br>
 									<br>
-									<button onclick="getWerewolf()" class="btn btn-default">获取死狼人寻找者</button>
+									<button onclick="buyBuilding(BUILDING.Werewolf)" class="btn btn-default">获取死狼人寻找者</button>
 									<button onclick="destroyMachine('werewolf')" class="btn btn-default destroy hidden">摧毁死狼人寻找者</button>
 								</td>
 							</tr>
@@ -2551,7 +2552,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeLavaStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('lava')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2568,7 +2569,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCrucible()" class="btn btn-default">获取耐热坩埚</button>
+									<button onclick="buyBuilding(BUILDING.Crucible)" class="btn btn-default">获取耐热坩埚</button>
 									<button onclick="destroyMachine('crucible')" class="btn btn-default destroy hidden">摧毁耐热坩埚</button>
 								</td>
 							</tr>
@@ -2588,8 +2589,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtractor()" class="btn btn-default">获取Extractor</button>
-									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">摧毁 Lava Extractor</button>
+									<button onclick="buyBuilding(BUILDING.Extractor)" class="btn btn-default">获取Extractor</button>
+									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">摧毁Lava Extractor</button>
 								</td>
 							</tr>
 							<tr id="lavaTier3" class="hidden">
@@ -2608,7 +2609,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtruder()" class="btn btn-default">获取火成岩挤出机</button>
+									<button onclick="buyBuilding(BUILDING.Extruder)" class="btn btn-default">获取火成岩挤出机</button>
 									<button onclick="destroyMachine('extruder')" class="btn btn-default destroy hidden">摧毁火成岩挤出机</button>
 								</td>
 							</tr>
@@ -2628,7 +2629,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getVeluptuator()" class="btn btn-default">获取火山喷泉</button>
+									<button onclick="buyBuilding(BUILDING.Veluptuator)" class="btn btn-default">获取火山喷泉</button>
 									<button onclick="destroyMachine('veluptuator')" class="btn btn-default destroy hidden">摧毁火山喷泉</button>
 								</td>
 							</tr>
@@ -2648,7 +2649,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCondensator()" class="btn btn-default">获取jupitonian冷凝器</button>
+									<button onclick="buyBuilding(BUILDING.Condensator)" class="btn btn-default">获取jupitonian冷凝器</button>
 									<button onclick="destroyMachine('condensator')" class="btn btn-default destroy hidden">摧毁jupitonian冷凝器</button>
 								</td>
 							</tr>
@@ -2689,7 +2690,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeHydrogenStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('hydrogen')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2706,7 +2707,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCollector()" class="btn btn-default">获取氢气收集器</button>
+									<button onclick="buyBuilding(BUILDING.Collector)" class="btn btn-default">获取氢气收集器</button>
 									<button onclick="destroyMachine('collector')" class="btn btn-default destroy hidden">摧毁氢气收集器</button>
 								</td>
 							</tr>
@@ -2726,7 +2727,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagnet()" class="btn btn-default">获取气体磁铁</button>
+									<button onclick="buyBuilding(BUILDING.Magnet)" class="btn btn-default">获取气体磁铁</button>
 									<button onclick="destroyMachine('magnet')" class="btn btn-default destroy hidden">摧毁气体磁铁</button>
 								</td>
 							</tr>
@@ -2746,7 +2747,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getECell()" class="btn btn-default">获取电解池</button>
+									<button onclick="buyBuilding(BUILDING.ECell)" class="btn btn-default">获取电解池</button>
 									<button onclick="destroyMachine('eCell')" class="btn btn-default destroy hidden">摧毁电解池</button>
 								</td>
 							</tr>
@@ -2766,7 +2767,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHindenburg()" class="btn btn-default">获取兴登堡挖掘</button>
+									<button onclick="buyBuilding(BUILDING.Hindenburg)" class="btn btn-default">获取兴登堡挖掘</button>
 									<button onclick="destroyMachine('hindenburg')" class="btn btn-default destroy hidden">摧毁兴登堡挖掘</button>
 								</td>
 							</tr>
@@ -2786,8 +2787,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHarvester()" class="btn btn-default">获取Star Harvester</button>
-									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">摧毁 Star Harvester</button>
+									<button onclick="buyBuilding(BUILDING.Harvester)" class="btn btn-default">获取Star Harvester</button>
+									<button onclick="destroyMachine('harvester')" class="btn btn-default destroy hidden">摧毁Star Harvester</button>
 								</td>
 							</tr>
 						</table>
@@ -2827,7 +2828,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeHeliumStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('helium')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2844,7 +2845,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDrone()" class="btn btn-default">获取氦无人机</button>
+									<button onclick="buyBuilding(BUILDING.Drone)" class="btn btn-default">获取氦无人机</button>
 									<button onclick="destroyMachine('drone')" class="btn btn-default destroy hidden">摧毁氦无人机</button>
 								</td>
 							</tr>
@@ -2864,7 +2865,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getTanker()" class="btn btn-default">获取氦罐车</button>
+									<button onclick="buyBuilding(BUILDING.Tanker)" class="btn btn-default">获取氦罐车</button>
 									<button onclick="destroyMachine('tanker')" class="btn btn-default destroy hidden">摧毁氦罐车</button>
 								</td>
 							</tr>
@@ -2884,7 +2885,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCompressor()" class="btn btn-default">获取变形压缩机</button>
+									<button onclick="buyBuilding(BUILDING.Compressor)" class="btn btn-default">获取变形压缩机</button>
 									<button onclick="destroyMachine('compressor')" class="btn btn-default destroy hidden">摧毁变形压缩机</button>
 								</td>
 							</tr>
@@ -2904,7 +2905,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getSkimmer()" class="btn btn-default">获取气体巨型撇渣器</button>
+									<button onclick="buyBuilding(BUILDING.Skimmer)" class="btn btn-default">获取气体巨型撇渣器</button>
 									<button onclick="destroyMachine('skimmer')" class="btn btn-default destroy hidden">摧毁气体巨型撇渣器</button>
 								</td>
 							</tr>
@@ -2924,7 +2925,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getCage()" class="btn btn-default">获取笼罩星</button>
+									<button onclick="buyBuilding(BUILDING.Cage)" class="btn btn-default">获取笼罩星</button>
 									<button onclick="destroyMachine('cage')" class="btn btn-default destroy hidden">摧毁笼罩星</button>
 								</td>
 							</tr>
@@ -2965,7 +2966,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeIceStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('ice')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr>
@@ -2982,7 +2983,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getIcePick()" class="btn btn-default">获取冰镐</button>
+									<button onclick="buyBuilding(BUILDING.IcePick)" class="btn btn-default">获取冰镐</button>
 									<button onclick="destroyMachine('icePick')" class="btn btn-default destroy hidden">摧毁冰镐</button>
 								</td>
 							</tr>
@@ -3002,7 +3003,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getIceDrill()" class="btn btn-default">获取冰钻</button>
+									<button onclick="buyBuilding(BUILDING.IceDrill)" class="btn btn-default">获取冰钻</button>
 									<button onclick="destroyMachine('iceDrill')" class="btn btn-default destroy hidden">摧毁冰钻</button>
 								</td>
 							</tr>
@@ -3022,7 +3023,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFreezer()" class="btn btn-default">获取海洋冰柜</button>
+									<button onclick="buyBuilding(BUILDING.Freezer)" class="btn btn-default">获取海洋冰柜</button>
 									<button onclick="destroyMachine('freezer')" class="btn btn-default destroy hidden">摧毁海洋冰柜</button>
 								</td>
 							</tr>
@@ -3042,7 +3043,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMrFreeze()" class="btn btn-default">获取冰冻先生</button>
+									<button onclick="buyBuilding(BUILDING.MrFreeze)" class="btn btn-default">获取冰冻先生</button>
 									<button onclick="destroyMachine('mrFreeze')" class="btn btn-default destroy hidden">摧毁冰冻先生</button>
 								</td>
 							</tr>
@@ -3062,7 +3063,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getOverexchange()" class="btn btn-default">获取过流冷凝器</button>
+									<button onclick="buyBuilding(BUILDING.Overexchange)" class="btn btn-default">获取过流冷凝器</button>
 									<button onclick="destroyMachine('overexchange')" class="btn btn-default destroy hidden">摧毁过流冷凝器</button>
 								</td>
 							</tr>
@@ -3106,7 +3107,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeMeteoriteStorage()" class="btn btn-default">升级存储</button>
+									<button onclick="upgradeStorage('meteorite')" class="btn btn-default">升级存储</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier1" class="hidden">
@@ -3123,7 +3124,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPrinter()" class="btn btn-default">获取陨石打印机</button>
+									<button onclick="buyBuilding(BUILDING.Printer)" class="btn btn-default">获取陨石打印机</button>
 									<button onclick="destroyMachine('printer')" class="btn btn-default destroy hidden">摧毁陨石打印机</button>
 								</td>
 							</tr>
@@ -3141,28 +3142,28 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getWeb()" class="btn btn-default">获取陨石网</button>
+									<button onclick="buyBuilding(BUILDING.Web)" class="btn btn-default">获取陨石网</button>
 									<button onclick="destroyMachine('web')" class="btn btn-default destroy hidden">摧毁陨石网</button>
 								</td>
 							</tr>
 							<tr id="meteoriteTier3" class="hidden">
-								<td>
-									<h3 class="default btn-link">
-										星球粉碎机: <span id="smasher">0</span>
-									</h3>
-									<span>
-										得到陨石的古老方式：通过对它们发射高能粒子束来拆除无人居住的外行星，然后收集碎片。
+							<td>
+								<h3 class="default btn-link">
+									星球粉碎机: <span id="smasher">0</span>
+								</h3>
+								<span>
+									得到陨石的古老方式：通过对它们发射高能粒子束来拆除无人居住的外行星，然后收集碎片。
 										<br>
 										每秒产生72颗陨石。 消耗111等离子体。
 										<br>
 										Costs <span id="smasherSiliconCost">3.23M</span> 硅, <span id="smasherSilverCost">5.89M</span> 银, <span id="smasherGemCost">8.34M</span> 宝石.
 									</span>
-									<br>
-									<br>
-									<button onclick="getSmasher()" class="btn btn-default">获取星球粉碎机</button>
-									<button onclick="destroyMachine('smasher')" class="btn btn-default destroy hidden">摧毁星球粉碎机</button>
-								</td>
-							</tr>
+								<br>
+								<br>
+								<button onclick="buyBuilding(BUILDING.Smasher)" class="btn btn-default">获取Planet Smasher</button>
+								<button onclick="destroyMachine('smasher')" class="btn btn-default destroy hidden">摧毁Planet Smasher</button>
+							</td>
+						</tr>
 							<tr id="meteoriteTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
@@ -3177,8 +3178,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getNebulous()" class="btn btn-default">Get Nebulous Synthesizer</button>
-									<button onclick="destroyMachine('nebulous')" class="btn btn-default destroy hidden">Destroy Nebulous Synthesizer</button>
+									<button onclick="buyBuilding(BUILDING.Nebulous)" class="btn btn-default">获取Nebulous Synthesizer</button>
+									<button onclick="destroyMachine('nebulous')" class="btn btn-default destroy hidden">摧毁Nebulous Synthesizer</button>
 								</td>
 							</tr>
 						</table>
@@ -3252,7 +3253,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLab()" class="btn btn-default">建造</button>
+									<button onclick="buyBuilding(BUILDING.Lab)" class="btn btn-default">建造</button>
 									<br>
 									<br>
 								</td>
@@ -3271,7 +3272,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT2()" class="btn btn-default">建立实验室T2</button>
+									<button onclick="buyBuilding(BUILDING.LabT2)" class="btn btn-default">建立实验室T2</button>
 									<br>
 									<br>
 								</td>
@@ -3290,7 +3291,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT3()" class="btn btn-default">建立实验室T3</button>
+									<button onclick="buyBuilding(BUILDING.LabT3)" class="btn btn-default">建立实验室T3</button>
 								</td>
 							</tr>
 							<tr id="labTier4" class="hidden">
@@ -3307,7 +3308,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT4()" class="btn btn-default">建立实验室T4</button>
+									<button onclick="buyBuilding(BUILDING.LabT4)" class="btn btn-default">建立实验室T4</button>
 								</td>
 							</tr>
 							<tr id="labTier5" class="hidden">
@@ -3324,7 +3325,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getLabT5()" class="btn btn-default">建立实验室T5</button>
+									<button onclick="buyBuilding(BUILDING.LabT5)" class="btn btn-default">建立实验室T5</button>
 								</td>
 							</tr>
 						</table>
@@ -3559,7 +3560,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getChemicalPlant()" class="btn btn-default">建造化工厂</button>
+									<button onclick="buyBuilding(BUILDING.ChemicalPlant)" class="btn btn-default">建造化工厂</button>
 									<button onclick="destroyMachine('chemicalPlant')" class="btn btn-default destroy hidden">摧毁化工厂</button>
 									<br>
 									<br>
@@ -3581,7 +3582,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getOxidisation()" class="btn btn-default">建造氧化室</button>
+									<button onclick="buyBuilding(BUILDING.Oxidisation)" class="btn btn-default">建造氧化室</button>
 									<button onclick="destroyMachine('oxidisation')" class="btn btn-default destroy hidden">摧毁氧化室</button>
 									<br>
 									<br>
@@ -3603,7 +3604,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getHydrazine()" class="btn btn-default">建造肼催化剂</button>
+									<button onclick="buyBuilding(BUILDING.Hydrazine)" class="btn btn-default">建造肼催化剂</button>
 									<button onclick="destroyMachine('hydrazine')" class="btn btn-default destroy hidden">摧毁肼催化剂</button>
 									<br>
 									<br>
