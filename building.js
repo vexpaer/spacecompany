@@ -1,326 +1,100 @@
 Game.buildings = (function(){
 
-	var instance = {};
+    var instance = {};
 
-	instance.dataVersion = 1;
-	instance.entries = {};
-	instance.updatePerSecondProduction = true;
+    instance.dataVersion = 1;
+    instance.entries = {};
+    instance.updatePerSecondProduction = true;
+    instance.techTypeCount = 0;
 
-	instance.initialise = function() {
-		var numBuildings = 0;
-		for (var id in Game.buildingData) {
-			numBuildings++;
-			this.entries[id] = this.initBuilding(id);
-		}
+    instance.initialise = function() {
+        for (var id in Game.buildingData) {
+            var data = Game.buildingData[id];
+            this.techTypeCount++;
+            this.entries[id] = $.extend({}, data, {
+                id: id,
+                htmlId: 'resbld_' + id,
+                current: 0,
+                iconPath: Game.constants.iconPath,
+                iconName: data.icon,
+                iconExtension: Game.constants.iconExtension,
+                max: data.maxCount,
+                displayNeedsUpdate: true
+            });
+        }
 
-		console.debug("Loaded " + numBuildings + " Building Types");
-	};
+        console.debug("Loaded " + this.techTypeCount + " Building Types");
+    };
 
-	instance.initBuilding = function(id) {
-		// using extend to create a new object and leave the defaults unchanged
-		var data = jQuery.extend({}, Game.buildingData[id]);
-		data.cost = jQuery.extend({}, data.cost);
-		data.setId(id);
-		return data;
-	};
+    instance.update = function(delta) {
+        if (this.updatePerSecondProduction === true) {
+            this.updateProduction();
+        }
+    };
 
-	instance.reset = function() {
-		for (var id in Game.buildingData) {
-			this.entries[id] = this.initBuilding(id);
-		}
-	};
+    instance.save = function(data) {
+        data.buildings = { v: this.dataVersion, i: {}};
+        for(var key in this.entries) {
+            data.buildings.i[key] = this.entries[key].current;
+        }
+    };
 
-	instance.update = function(delta) {
+    instance.load = function(data) {
+        if(data.buildings) {
+            if(data.buildings.v && data.buildings.v === this.dataVersion) {
+                for(var id in data.buildings.i) {
+                    if(this.entries[id]) {
+                        this.constructBuildings(id, data.buildings.i[id]);
+                    }
+                }
+            }
+        }
+    };
 
-	};
+    instance.constructBuildings = function(id, count) {
+        // Add the buildings and clamp to the maximum
+        var newValue = Math.floor(this.entries[id].current + count);
+        this.entries[id].current = Math.min(newValue, this.entries[id].max);
+        this.entries[id].displayNeedsUpdate = true;
+        this.updatePerSecondProduction = true;
+    };
 
-	instance.save = function(data) {
-		data.buildings = { v: this.dataVersion, i: {}};
-		for(var key in this.entries) {
-			data.buildings.i[key] = this.entries[key].current;
-		}
-	};
+    instance.destroyBuildings = function(id, count) {
+        // Remove the buildings and ensure we can not go below 0
+        var newValue = Math.floor(this.entries[id].current - count);
+        this.entries[id].current = Math.max(newValue, 0);
+        this.entries[id].displayNeedsUpdate = true;
+        this.updatePerSecondProduction = true;
+    };
 
-	instance.load = function(data) {
-		if(data.buildings) {
-			if(data.buildings.v && data.buildings.v === this.dataVersion) {
-				for(var id in data.buildings.i) {
-					if(this.entries[id]) {
-						// TODO
-					}
-				}
-			}
-		}
+    instance.unlock = function(id) {
+        this.entries[id].unlocked = true;
+        this.entries[id].displayNeedsUpdate = true;
+    };
 
-		// Load the old building values
-		for (id in BUILDING) {
-			var current = data[BUILDING[id]];
-			if (typeof current === 'undefined') {
-				continue;
-			}
-			this.entries[BUILDING[id]].current = current;
-			this.entries[BUILDING[id]].updateCost(current);
-		}
-	};
+    instance.updateProduction = function() {
+        for(var id in this.entries) {
+            var data = this.entries[id];
+            if(data.current == 0) {
+                // Nothing to be done
+                continue;
+            }
 
-	instance.getBuildingData = function(id) {
-		var data = this.entries[id];
-		if (typeof data === 'undefined') {
-			return null;
-		}
-		return data;
-	};
+            var buildingData = this.entries[id];
+            if (!buildingData.resource) {
+                continue;
+            }
 
-	// TODO: change to data-driven buildings when available
-	instance.getNum = function(id) {
-		var count = window[id];
-		if (typeof count === 'undefined') {
-			return 0;
-		}
-		return count;
-	};
+            var baseValue = data.current * buildingData.perSecond;
+            Game.resources.setPerSecondProduction(buildingData.resource, baseValue);
+        }
 
-	instance.updateProductionMultiplier = function(buildingId, factor) {
-		var data = this.getBuildingData(buildingId);
-		if (data === null) {
-			return;
-		}
-		data.prodMultiplier *= factor;
-	};
+        this.updatePerSecondProduction = false;
+    };
 
-	instance.updateUpkeepMultiplier = function(buildingId, factor) {
-		var data = this.getBuildingData(buildingId);
-		if (data === null) {
-			return;
-		}
-		data.upkeepMultiplier *= factor;
-	};
+    instance.getBuildingData = function(id) {
+        return this.entries[id];
+    };
 
-	instance.setActive = function(buildingId, active) {
-		var data = this.getBuildingData(buildingId);
-		if (data === null) {
-			return;
-		}
-		data.active = active;
-	};
-
-	instance.setActiveByResource = function(resourceId, active) {
-		for (var id in this.entries) {
-			var data = this.entries[id];
-			if (data.resource === resourceId) {
-				data.active = active;
-			}
-		}
-	};
-
-	instance.calculateEnergyOutput = function() {
-		if (globalEnergyLock === true) {
-			return 0;
-		}
-
-		// Fixed outputs first
-		// TODO: make rings/swarms/spheres into buildings
-		var output = (ring*5000) + (swarm*25000) + (sphere*1000000);
-
-		// use the old production as an approximation for current production
-		var oldProd = Game.resources.getAllProduction();
-
-		for (var id in this.entries) {
-			var data = this.entries[id];
-			if (data.output === null || typeof data.output[RESOURCE.Energy] === 'undefined') {
-				// this doesn't output energy
-				continue;
-			}
-			if (data.active === false) {
-				// no energy produced when off
-				continue;
-			}
-
-			var hasResources = true;
-			if (data.upkeep !== null) {
-				for (var upkeepResource in data.upkeep) {
-					if (getResource(upkeepResource) + oldProd[upkeepResource] < 0) {
-						// not enough resources available for upkeep
-						hasResources = false;
-						break;
-					}
-				}
-			}
-			if (hasResources) {
-				output += data.output[RESOURCE.Energy] * data.current * data.prodMultiplier;
-			}
-		}
-
-		return output;
-	};
-
-	instance.calculateEnergyUse = function() {
-		if (globalEnergyLock === true) {
-			return 0;
-		}
-
-		var use = 0;
-
-		// use the old production as an approximation for current production
-		var oldProd = Game.resources.getAllProduction();
-
-		for (var id in this.entries) {
-			var data = this.entries[id];
-			if (data.upkeep === null || typeof data.upkeep[RESOURCE.Energy] === 'undefined') {
-				// this doesn't require energy
-				continue;
-			}
-			if (data.active === false) {
-				// no energy consumed when off
-				continue;
-			}
-
-			var hasResources = true;
-			for (var upkeepResource in data.upkeep) {
-				if (upkeepResource === RESOURCE.Energy) {
-					// don't check energy here because we're calculating energy use
-					continue;
-				}
-				if (getResource(upkeepResource) + oldProd[upkeepResource] < 0) {
-					// not enough resources available for upkeep
-					hasResources = false;
-					break;
-				}
-			}
-			if (hasResources) {
-				use += data.upkeep[RESOURCE.Energy] * data.current;
-			}
-		}
-
-		return use;
-	};
-
-	instance.calculateProduction = function(energyLow, resourceMultiplier, outProd) {
-		// use the old production as an approximation for current production
-		var oldProd = Game.resources.getAllProduction();
-
-		for (var id in this.entries) {
-			var data = this.entries[id];
-			if (data.output === null) {
-				// this doesn't produce anything
-				continue;
-			}
-			if (data.active === false) {
-				// no resources produced when off
-				continue;
-			}
-			if ((energyLow || globalEnergyLock) && data.upkeep !== null && typeof data.upkeep[RESOURCE.Energy] !== 'undefined') {
-				// energy low! this can't produce anything
-				continue;
-			}
-
-			// first check that we have enough resources to keep the building active
-			var hasResources = true;
-			for (var upkeepResource in data.upkeep) {
-				if (upkeepResource === RESOURCE.Energy) {
-					// don't check energy here because it has already been checked
-					continue;
-				}
-				if (getResource(upkeepResource) + oldProd[upkeepResource] < 0) {
-					// not enough resources available for upkeep
-					hasResources = false;
-					break;
-				}
-			}
-
-			// now apply the building's output and upkeep
-			if (hasResources) {
-				for (upkeepResource in data.upkeep) {
-					if (upkeepResource === RESOURCE.Energy) {
-						// don't remove energy here because it has already been removed
-						continue;
-					}
-					outProd[upkeepResource] -= data.upkeep[upkeepResource] * data.current * data.upkeepMultiplier;
-				}
-				for (var outputResource in data.output) {
-					if (outputResource === RESOURCE.Energy) {
-						// don't add this here, it's already been done
-						continue;
-					}
-					var multiplier = 1;
-					if (outputResource !== RESOURCE.Science) {
-						multiplier = resourceMultiplier;
-					}
-					outProd[outputResource] += data.output[outputResource] * data.current * data.prodMultiplier * multiplier;
-				}
-			}
-		}
-	};
-
-	instance.updateBuildingCosts = function() {
-		for (var id in this.entries) {
-			var buildingData = this.entries[id];
-			buildingData.updateCost(this.getNum(id));
-		}
-	};
-
-	instance.buyBuilding = function(buildingId) {
-		var buildingData = this.getBuildingData(buildingId);
-		if (buildingData === null) {
-			return;
-		}
-
-		// make sure we have the required resources
-		for (var costResource in buildingData.cost) {
-			if (getResource(costResource) < buildingData.cost[costResource]) {
-				return;
-			}
-		}
-
-		// now actually spend the resources
-		for (costResource in buildingData.cost) {
-			Game.resources.takeResource(costResource, buildingData.cost[costResource]);
-		}
-
-		buildingData.current++;
-		buildingData.updateCost(buildingData.current);
-
-		buildingData.onPurchase();
-
-		// still using the old building variables
-		// TODO: remove this when the transition to data-driven buildings is complete
-		window[buildingId] = buildingData.current;
-
-		Game.statistics.add('tierOwned' + buildingData.tier);
-	};
-
-	instance.destroyBuilding = function(buildingId) {
-		var buildingData = this.getBuildingData(buildingId);
-		if (buildingData === null) {
-			return;
-		}
-
-		if (buildingData.current <= 0) {
-			return;
-		}
-
-		buildingData.current--;
-		buildingData.updateCost(buildingData.current);
-
-		// still using the old building variables
-		// TODO: remove this when the transition to data-driven buildings is complete
-		window[buildingId] = buildingData.current;
-	};
-
-	return instance;
+    return instance;
 }());
-
-// globally accessible wrapper for Game.buildings.getNum();
-function getBuildingNum(id) {
-	return Game.buildings.getNum(id);
-}
-
-// globally accessible wrapper for Game.buildings.buyBuilding();
-function buyBuilding(id) {
-	return Game.buildings.buyBuilding(id);
-}
-
-// globally accessible wrapper for Game.buildings.destroyBuilding();
-function destroyMachine(id){
-	Game.buildings.destroyBuilding(id);
-}

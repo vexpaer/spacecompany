@@ -1,37 +1,29 @@
 Game.resourceCategoryData = (function () {
 
-	var instance = {};
+    var instance = {};
 
-	var categoryBase = {
-		id: null,
-
-		setId: function(id) {
-			this.id = id;
-		}
-	};
-
-    instance.energy = $.extend({}, categoryBase, {
+    instance.energy = {
         title: '能源',
         category: 'energy'
-    });
+    };
 
-    instance.earth = $.extend({}, categoryBase, {
+    instance.earth = {
         class: 'collapseEarth',
         title: '地球资源',
         category: 'earth'
-    });
+    };
 
-    instance.innerSol = $.extend({}, categoryBase, {
+    instance.innerSol = {
         class: 'collapseInnerPlanetary',
         title: '内行星资源',
         category: 'innerSol'
-    });
+    };
 
-    instance.outerSol = $.extend({}, categoryBase, {
+    instance.outerSol = {
         class: 'collapseOuterPlanetary',
         title: '外行星资源',
         category: 'outerSol'
-    });
+    };
 
     return instance;
 
@@ -39,275 +31,247 @@ Game.resourceCategoryData = (function () {
 
 Game.resourceData = (function () {
 
-	var instance = {};
+    var instance = {};
 
-	var resourceBase = {
-		id: null,
-		htmlId: null,
-
-		iconPath: Game.constants.iconPath,
-		iconExtension: Game.constants.iconExtension,
-
-		hidden: false,
-		displayNeedsUpdate: true,
-
-		current: 0,
-		capacity: 0,
-		perSecond: 0,
-		perClick: 1,
-
-		storage: null,
-
-		setId: function(id) {
-			this.id = id;
-			this.htmlId = id;
-		}
-	};
 
     /*********************
      * Energy Resources  *
      *********************/
 
-    instance.energy = $.extend({}, resourceBase, {
+    instance.energy = {
         name: 'Energy',
         desc: '能源是由诸如蒸汽机，太阳能发电等电源创造的，甚至可以融合能源和核能。 您可以开始的最大限度是100,000能量，但是电池可以解锁，这可以增加这一点。',
         icon: 'energyIcon',
         category: 'energy',
         baseCapacity: 50000,
         unlocked: false
-    });
+    };
 
-    instance.plasma = $.extend({}, resourceBase, {
+    instance.plasma = {
         name: 'Plasma',
         desc: 'Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company.',
         icon: 'plasmaIcon',
         category: 'energy',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.uranium = $.extend({}, resourceBase, {
+    instance.uranium = {
         name: 'Uranium',
         desc: '金属是主要资源之一。 它用于许多事情，包括存储升级，机器和大部分太空的东西。',
         icon: 'uraniumIcon',
         category: 'energy',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.lava = $.extend({}, resourceBase, {
+    instance.lava = {
         name: 'Lava',
         desc: '难以处理，仅在火山中发现，熔岩是获得最难的资源之一。',
         icon: 'lavaIcon',
         category: 'energy',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
     /********************
      * Earth Resources  *
      ********************/
 
-    instance.oil = $.extend({}, resourceBase, {
+    instance.oil = {
         name: '石油',
         desc: '石油从地上抽出来，用于构建二级资源采集器。',
         icon: 'oilIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.metal = $.extend({}, resourceBase, {
+    instance.metal = {
         name: '金属',
         desc: 'Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.',
         icon: 'metalIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: true
-    });
+    };
 
-    instance.gem = $.extend({}, resourceBase, {
+    instance.gem = {
         name: '宝石',
         desc: 'Gems are one of the primary resources. They are used for advanced machines and for powerful tools and components. They are more useful in later game.',
         icon: 'gemIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: true
-    });
+    };
 
-    instance.charcoal = $.extend({}, resourceBase, {
+    instance.charcoal = {
         name: 'Charcoal',
         desc: 'Charcoal is a secondary tier resource and is used by Engines to produce power for your company. 1 Charcoal is created by burning wood',
         icon: 'charcoalIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.wood = $.extend({}, resourceBase, {
+    instance.wood = {
         name: 'Wood',
         desc: 'Wood is one of the primary resources. It is used more often in early game for tools and buildings.',
         icon: 'woodIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: true
-    });
+    };
 
-    instance.silicon = $.extend({}, resourceBase, {
+    instance.silicon = {
         name: 'Silicon',
         desc: 'Silicon is useful for automatic mining systems of the third tier. These will be very useful in building your first wonder. Despite being a high tier resource, it is found mainly on Earth by heating sand.',
         icon: 'siliconIcon',
         category: 'earth',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
 
     /******************************
      * Inner Planetary Resources  *
      ******************************/
 
-    instance.lunarite = $.extend({}, resourceBase, {
+    instance.lunarite = {
         name: '月岩',
         desc: '月球上发现月岩，是地球上罕见的罕见资源。 它比普通金属强得多，但要难得多。',
         icon: 'lunariteIcon',
         category: 'innerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.methane = $.extend({}, resourceBase, {
+    instance.methane = {
         name: 'Methane',
         desc: 'Methane is a gas found in abundance on Venus. It can be used to power your company much more effectively than solid fuel.',
         icon: 'methaneIcon',
         category: 'innerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.titanium = $.extend({}, resourceBase, {
+    instance.titanium = {
         name: 'Titanium',
         desc: 'Titanium is a metal found mostly on Mars. It is used for building strong machines and methane power plants.',
         icon: 'titaniumIcon',
         category: 'innerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.gold = $.extend({}, resourceBase, {
+    instance.gold = {
         name: '黄金',
         desc: '金是在小行星内发现的金属。 它用于构建一些奇迹和复杂的机器。',
         icon: 'goldIcon',
         category: 'innerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.silver = $.extend({}, resourceBase, {
+    instance.silver = {
         name: 'Silver',
         desc: 'Silver is another metal most commonly found in the asteroid belt.',
         icon: 'silverIcon',
         category: 'innerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
     /******************************
      * Outer Planetary Resources  *
      ******************************/
 
-    instance.hydrogen = $.extend({}, resourceBase, {
+    instance.hydrogen = {
         name: 'Hydrogen',
         desc: 'Hydrogen is extremely common on gas giants such as Jupiter and Saturn.',
         icon: 'hydrogenIcon',
         category: 'outerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.helium = $.extend({}, resourceBase, {
-       name: '氦气',
+    instance.helium = {
+        name: '氦气',
         desc: '氦气是天然气巨头如木星和土星的第二大常见元素。',
         icon: 'heliumIcon',
         category: 'outerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.ice = $.extend({}, resourceBase, {
+    instance.ice = {
         name: 'Ice',
         desc: 'Ice, although it can be collected on Earth, is not nearly as profitable as flying to Pluto and back with space craft full of the stuff. It is mainly used for super-cooling technology necessary for Tier 4 machines.',
         icon: 'iceIcon',
         category: 'outerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.meteorite = $.extend({}, resourceBase, {
+    instance.meteorite = {
         name: 'Meteorite',
         desc: 'Creating Meteorite is only possible from purer forms of energy than those created with earth technology. Therefore, Plasma is necessary to make the strong resource.',
         icon: 'meteoriteIcon',
         category: 'outerSol',
         baseCapacity: 50,
         unlocked: false
-    });
+    };
 
-    instance.science = $.extend({}, resourceBase, {
+    instance.science = {
         name: 'Science Production',
         desc: 'Science is used for researching new technologies to further your progress in the game.',
         icon: 'scienceIcon',
-        baseCapacity: -1,
+        baseCapacity: 1000000,
         unlocked: false
-    });
+    };
 
     return instance;
 }());
 
 Game.storageData = (function(){
 
-	var instance = {};
+    var instance = {};
 
-	// Storage Upgrades
-	var baseUpgradeData = {
-		id: null,
-		htmlId: null,
-		htmlIdCosts: null,
+    // Storage Upgrades
+    var baseUpgradeData = {
+        name: 'Storage Upgrade:',
+        unlocked: true,
+        costType: COST_TYPE.FIXED,
+        current: 0,
+        maxLevel: -1,
+        resource: undefined,
+        displayNeedsUpdate: true,
 
-		name: 'Storage Upgrade:',
-		unlocked: true,
-		costType: COST_TYPE.FIXED,
-		current: 0,
-		maxLevel: -1,
-		resource: null,
-		displayNeedsUpdate: true,
+        buttonText: 'Upgrade Storage',
 
-		buttonText: 'Upgrade Storage',
 
-		setId: function(id) {
-			this.id = id;
-			this.htmlId = id;
-			this.htmlIdCosts = {};
-			for (var resource in this.cost) {
-				if (resource === this.resource) {
-					this.htmlIdCosts[resource] = resource + 'StorageCost';
-				}
-				else {
-					this.htmlIdCosts[resource] = this.resource + 'Storage' + Game.utils.capitaliseFirst(resource) + 'Cost';
-				}
-			}
-		},
-
-		updateCost: function(capacity) {
-			var baseCapacity = 50;
-			for (var costResource in this.cost) {
-				this.cost[costResource] = capacity * (Game.storageData[this.id].cost[costResource] / baseCapacity) * storagePrice;
-			}
-		}
-	};
+        apply: function (self) {
+            if (typeof self.resource === 'undefined') {
+                return;
+            }
+            var res = Game.resources.getResourceData(self.resource);
+            res.capacity *= 2;
+            res.displayNeedsUpdate = true;
+            self.displayNeedsUpdate = true;
+        },
+    };
 
     /*********************
      * Energy Resources  *
      *********************/
+
+    instance.storageUpgradePlasma = $.extend({}, baseUpgradeData, {
+        desc: 'Upgrade your Plasma storage size to ',
+        resource: 'plasma',
+        cost: {
+            'plasma': 50
+        }
+    });
 
     instance.storageUpgradeUranium = $.extend({}, baseUpgradeData, {
         desc: 'Upgrade your Uranium storage size to ',
@@ -393,7 +357,7 @@ Game.storageData = (function(){
         resource: 'lunarite',
         cost: {
             'lunarite': 50,
-            'metal': 200
+            'metal': 400
         }
     });
 
@@ -469,7 +433,7 @@ Game.storageData = (function(){
         resource: 'meteorite',
         cost: {
             'meteorite': 50,
-            'lunarite': 200
+            'lunarite': 4
         }
     });
 

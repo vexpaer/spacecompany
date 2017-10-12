@@ -387,8 +387,8 @@ Game.militaryData = (function(){
 		unlocked: true,
 		displayNeedsUpdate: true,
 		stats: {
-			'power': 57,
-			'defense': 62,
+			'power': 18,
+			'defense': 20,
 			'speed': 5
 		},
 		cost: {

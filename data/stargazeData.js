@@ -108,7 +108,7 @@ Game.darkMatter = (function(){
 
 	instance.sphere = {
 		name: "Sphere",
-		desc: "For building a sphere in your home system and thus completing it, you get 15 dark matter. Other systems are completed when all stars have dyson spheres surrounding them and the dark matter given is proportional to the star size."
+		desc: "For building a sphere in your home system and thus completing it, you get 15 dark matter. For every sphere built in another system, you gain 5 dark matter."
 	};
 
 	instance.research = {
@@ -123,7 +123,7 @@ Game.darkMatter = (function(){
 
 	instance.swarm = {
 		name: "Swarms",
-		desc: "One of the more complex systems, your Dark Matter gained from swarms is judged on an old mathematical sequence: Pascal's Triangle. You will get 1 dark matter for passing each milestone of the pascal triangle sequence and gaining the number of swarms necessary. For example: 1,3,6,10,15,21...",
+		desc: "One of the more complex systems, your Dark Matter gained from swarms is judged on an old mathematical sequence: Pascal's Triangle. You will get 1 dark matter for passing each triangular number of swarms necessary. For example: 1,3,6,10,15,21...",
 	};
 
 	return instance;
@@ -157,7 +157,21 @@ Game.prestigeData = (function(){
 	            data.displayNeedsUpdate = true;
 	        }
 	    },
+	    remove: function(){
+	    	for(var id in Game.stargaze.entries){
+	            var data = Game.stargaze.getStargazeData(id);
+	            data.unlocked = false;
+	            data.displayNeedsUpdate = true;
+	        }
+	    },
 		achieved: false,
+	};
+
+	instance.respec = {
+		name: "Respec",
+		desc: "When you have made a mistake or want to change your upgrades, you can respec and refund every upgrade for dark matter. Unfortunately, this huge amount of power can only be unleashed a finite number of times. The Overlord graciously gives you 3 free chances at redemption, but the rest will have to be earned through rebirth (1 extra every 3 times). <br><b>NB: You will lose machines gained with these ugprades, including all T5 machines. You will also divide your storage by 128 if you have the starting storage. (6400/50 = 128).</b>",
+		cost: 0,
+		category: "intro",
 	};
 
 	instance.increaseProd1 = {
@@ -167,6 +181,9 @@ Game.prestigeData = (function(){
 		category: "darkMatter",
 		onApply: function(){
 	        dmBoost += 0.01;
+	    },
+	    remove: function(){
+	    	dmBoost -= 0.01;
 	    },
 		achieved: false,
 	};
@@ -194,6 +211,12 @@ Game.prestigeData = (function(){
 			// 	Game.resources.entries[id].displayNeedsUpdate = true;
 			// }
 		},
+		remove: function(){
+	    	gainNum = 1;
+			for(var resource in RESOURCE){
+				if(RESOURCE[resource] != "science")$('#' + RESOURCE[resource] + 'Gain').text(gainNum);
+			}
+	    },
 		achieved: false
 	};
 
@@ -215,6 +238,17 @@ Game.prestigeData = (function(){
 
 			// new
 		},
+		remove: function(){
+	    	for(var i = 0; i < resources.length; i++){
+				if(window[resources[i] + "Storage"] <= 6400){
+					window[resources[i] + "Storage"] = 50;
+					window[resources[i] + "NextStorage"] = 50 * 2;
+				} else {
+					window[resources[i] + "Storage"] /= 128;
+					window[resources[i] + "NextStorage"] /= 128;
+				}
+			}
+	    },
 		achieved: false
 	};
 
@@ -227,10 +261,12 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			// old
 			storagePrice -= 0.25;
-			Game.resources.updateStorageCosts();
 
 			// new
 		},
+		remove: function(){
+	    	storagePrice += 0.25;
+	    },
 		achieved: false
 	};
 
@@ -247,32 +283,64 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			document.getElementById("plasmaTier3").className = "";
 		},
+		remove: function(){
+	    	document.getElementById("plasmaTier3").className = "hidden";
+	    	bath = 0;
+	    	updateCost();
+	    },
 		achieved: false
 	};
 
 	instance.floor1Discount = {
 		name: "Floor 1 Discount",
 		desc: "All Wonders on the First Floor recieve a 15% price reduction.",
-		cost: 25,
+		cost: 16,
 		category: "prasnian",
 		opinion: 10,
 		onApply: function(){
 			floor1Price -= 0.15;
 		},
+		remove: function(){
+	    	floor1Price += 0.15;
+	    },
 		achieved: false
 	};
 
 	instance.floor23Discount = {
 		name: "Floor 2 & 3 Discount",
 		desc: "All Wonders on the Second and Third Floor recieve a 20% price reduction.",
-		cost: 31,
+		cost: 19,
 		category: "prasnian",
 		opinion: 15,
 		onApply: function(){
 			floor23Price -= 0.2;
 		},
+		remove: function(){
+	    	floor23Price += 0.2;
+	    },
 		achieved: false
 	};
+
+	instance.autoEmc = {
+		name: "Automated EMC",
+		desc: "Check a box on an EMC resource and have that resource be 'EMCed' to the max every second.",
+		cost: 24,
+		category: "prasnian",
+		opinion: 17,
+		onApply: function(){
+			var updateList = document.getElementsByClassName("autoEmcHide");
+			for(var i = updateList.length-1; i >= 0; i--){
+				updateList[i].className = "autoEmcHide";
+			}
+		},
+		remove: function(){
+	    	var updateList = document.getElementsByClassName("autoEmcHide");
+			for(var i = updateList.length-1; i >= 0; i--){
+				updateList[i].className = "autoEmcHide hidden";
+			}
+	    },
+		achieved: false
+	}
 
 	/**************
 	** Hyacinite **
@@ -284,12 +352,13 @@ Game.prestigeData = (function(){
 		cost: 7,
 		category: "hyacinite",
 		opinion: 3,
+		rebirthStart: {lab:20},
 		onApply: function(){
-			// old
 			lab += 20;
-
-			// new
 		},
+		remove: function(){
+	    	lab -= 20
+	    },
 		achieved: false
 	};
 
@@ -302,10 +371,14 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			// old
 			labT1Multi -= 0.2;
-			Game.buildings.updateBuildingCosts();
+			updateLabCost();
 
 			// new
 		},
+		remove: function(){
+	    	labT1Multi += 0.2;
+			updateLabCost();
+	    },
 		achieved: false
 	};
 
@@ -318,6 +391,11 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			document.getElementById("labTier5").className = "";
 		},
+		remove: function(){
+	    	document.getElementById("labTier5").className = "hidden";
+	    	labT5 = 0;
+	    	updateLabCost();
+	    },
 		achieved: false
 	};
 
@@ -330,6 +408,9 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			Game.tech.entries["energyEfficiencyResearch"].maxLevel += 25;
 		},
+		remove: function(){
+	    	Game.tech.entries["energyEfficiencyResearch"].maxLevel = 25;
+	    },
 		achieved: false
 	};
 
@@ -346,8 +427,27 @@ Game.prestigeData = (function(){
 		opinion: 4,
 		onApply: function(){
 			T1Price -= 0.1;
-			Game.buildings.updateBuildingCosts();
 		},
+		remove: function(){
+	    	T1Price += 0.1;
+	    },
+		achieved: false
+	};
+
+	instance.T5Batteries = {
+		name: "Tier 5 Batteries",
+		desc: "Unlock the fifth tier of batteries for all your energy storage needs.",
+		cost: 14,
+		category: "kitrinos",
+		opinion: 17,
+		onApply: function(){
+			document.getElementById("batteriesT5").className = "";
+		},
+		remove: function(){
+	    	document.getElementById("batteriesT5").className = "hidden";
+	    	batteryT5 = 0;
+	    	updateCost();
+	    },
 		achieved: false
 	};
 
@@ -360,6 +460,9 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			unlockTier5();
 		},
+		remove: function(){
+	    	removeTier5();
+	    },
 		achieved: false
 	};
 
@@ -384,6 +487,9 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			chemicalBoost += 1;
 		},
+		remove: function(){
+	    	chemicalBoost -= 1;
+	    },
 		achieved: false
 	};
 
@@ -396,6 +502,9 @@ Game.prestigeData = (function(){
 		onApply: function(){
 			rocketPrice -= 0.35;
 		},
+		remove: function(){
+	    	rocketPrice += 0.35;
+	    },
 		achieved: false
 	};
 
@@ -409,10 +518,10 @@ Game.prestigeData = (function(){
 			document.getElementById("meteoriteTier3").className = "";
 		},
 		remove: function(){
-			document.getElementById("meteoriteTier3").className = "hidden";
-			smasher = 0;
-			Game.buildings.getBuildingData(BUILDING.Smasher).updateCost(0);
-		},
+	    	document.getElementById("meteoriteTier3").className = "hidden";
+	    	smasher = 0;
+			updateCost();
+	    },
 		achieved: false
 	}
 
@@ -426,10 +535,10 @@ Game.prestigeData = (function(){
 			document.getElementById("meteoriteTier4").className = "";
 		},
 		remove: function(){
-			document.getElementById("meteoriteTier4").className = "hidden";
-			nebulous = 0;
-			Game.buildings.getBuildingData(BUILDING.Nebulous).updateCost(0);
-		},
+	    	document.getElementById("meteoriteTier4").className = "hidden";
+	    	nebulous = 0;
+			updateCost();
+	    },
 		achieved: false
 	}
 

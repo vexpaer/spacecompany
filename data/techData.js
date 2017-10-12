@@ -438,12 +438,12 @@ Game.techData = (function () {
         },
         tabAlerts: ['resources'],
         onApply: function() {
-			Game.buildings.updateProductionMultiplier(BUILDING.Pumpjack, 2);
-			Game.buildings.updateProductionMultiplier(BUILDING.HeavyDrill, 2);
-			Game.buildings.updateProductionMultiplier(BUILDING.AdvancedDrill, 2);
-			Game.buildings.updateUpkeepMultiplier(BUILDING.Furnace, 2);
-			Game.buildings.updateProductionMultiplier(BUILDING.Furnace, 2);
-			Game.buildings.updateProductionMultiplier(BUILDING.LaserCutter, 2);
+            pumpjackOutput *= 2;
+            heavyDrillOutput *= 2;
+            advancedDrillOutput *= 2;
+            furnaceWoodInput *= 2;
+            furnaceOutput *= 2;
+            laserCutterOutput *= 2;
         }
     });
 
@@ -458,7 +458,7 @@ Game.techData = (function () {
         },
         tabAlerts: ['resources'],
         onApply: function() {
-            Game.buildings.updateProductionMultiplier(BUILDING.CharcoalEngine, 2);
+            charcoalEngineOutput = 4;
         }
     });
 
@@ -474,7 +474,7 @@ Game.techData = (function () {
         newTechs: ['unlockBatteries'],
         tabAlerts: ['resources'],
         onApply: function() {
-            Game.buildings.updateProductionMultiplier(BUILDING.SolarPanel, 2);
+            solarPanelOutput = 3;
         }
     });
 

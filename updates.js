@@ -195,30 +195,25 @@ Game.updatesData = (function(){
 	instance.multiSpheres = {
 		desc: '征服的每个星系统允许您构建一个球体。',
 		read: false
-	};
+	}
 
 	instance.autoEmc = {
 		desc: '添加了自动Emc！ 遥望星空 - > Prasnian帝国',
 		read: false
-	};
+	}
 
 	instance.respec = {
 		desc: '保持你的DM升级和有respec的能力。',
 		read: false
-	};
+	}
 
 	instance.segmentAndSphere = {
 		desc: '建立250段和戴森球按钮',
 		read: false
-	};
+	}
 
 	instance.meteoriteTier34 = {
 		desc: '陨石层级3和4遥望星空 - > Moviton同步',
-		read: false
-	};
-
-	instance.buffCapitalShip = {
-		desc: '缓冲资本船舶的电力和防御。',
 		read: false
 	}
 
