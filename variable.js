@@ -1,6 +1,6 @@
 // Variables in save function
 
-var versionNumber = "V0.5.0.5 Beta"; var companyName = "太空";
+var versionNumber = "V0.5.0.6 Beta"; var companyName = "太空";
 
 // unlocked & activated
 var researchUnlocked = false; var researched = []; var available = []; var explored = [];

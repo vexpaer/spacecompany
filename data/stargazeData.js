@@ -101,7 +101,7 @@ Game.darkMatter = (function(){
 	** DM Gain **
 	************/
 
-	instance.wonders = {
+	instance.wonder = {
 		name: "Wonders",
 		desc: "You get Dark Matter for the floors of the Wonder Station that you complete. It is likely you will have achieved all of these in your first run before resetting. You get 4 Dark Matter for every floor completed, but 2 for the last floor (only one wonder).",
 	};
@@ -140,7 +140,7 @@ Game.prestigeData = (function(){
 
 	instance.rebirth = {
 		name: "Rebirth",
-		desc: "Stepping forth into a new life is a great undertaking and not something to be done on a whim. Once certain, you may start afresh, maintaining the knowledge and experience you gave gained from your previous life and renew yourself, achieving greater and faster than before. You will keep any unspent dark matter, as well as your upgrades. <br><b>NB: You cannot rebirth without a sphere, even on second runs.<br> NB: You will lose all upgrades purchased in your last life, so make sure you have more dark matter than you did last time.</b>",
+		desc: "Stepping forth into a new life is a great undertaking and not something to be done on a whim. Once certain, you may start afresh, maintaining the knowledge and experience you gave gained from your previous life and renew yourself, achieving greater and faster than before. You will keep any unspent dark matter, as well as your upgrades. <br><b>NB: You cannot rebirth without a sphere, even on second runs.<br> NB: You will keep all upgrades purchased in your previous life  </b>",
 		cost: 0,
 		category: "intro",
 	};
