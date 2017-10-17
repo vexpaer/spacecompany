@@ -215,7 +215,17 @@ Game.updatesData = (function(){
 	instance.meteoriteTier34 = {
 		desc: '陨石层级3和4遥望星空 - > Moviton同步',
 		read: false
-	}
+	};
+
+	instance.buffCapitalShip = {
+		desc: 'Buffed Capital Ship\' power and defense.',
+		read: false
+	};
+
+	instance.dmStats = {
+		desc: 'Live counter showing how much DM you will get from each section',
+		read: false
+	};
 
 	return instance;
 

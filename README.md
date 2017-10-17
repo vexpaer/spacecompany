@@ -41,6 +41,7 @@ v0.5.1
 - Redid Rebirth
 - Respec
 - Meteorite Tier 3 and 4
+- Live counter showing how much DM you will get from each section
 
 ##### Small Changes
 
@@ -65,6 +66,8 @@ v0.5.1
 - Fixed Solar System Showing planets before exploring requirements
 - Fixed AutoEmc using energy for meteorite
 - Fixed Fusion Reactor not using enough Hydrogen
+- Fixed Invasion Chance being NaN when reputation is above 60
+- Fixed Absorb not working
 
 ### v0.5.0 The Interstellar Update
 ##### Features
