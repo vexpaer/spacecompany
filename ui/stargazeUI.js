@@ -23,7 +23,7 @@ Game.stargazeUI = (function(){
 
     instance.initialise = function() {
 
-        this.tab = Game.ui.createTab({id: 'stargaze', title: 'Stargaze'});
+        this.tab = Game.ui.createTab({id: 'stargaze', title: '星际'});
         this.tab.initialise();
 
         if(sphere == 0) {
@@ -98,7 +98,7 @@ Game.stargazeUI = (function(){
                 '<h3 class="default btn-link">{{name}}: <span id=\'respecCount\'>3</span></h3>',
                 '<span>',
                     '<p>{{{desc}}}</p>',
-                    '<p id="{{htmlId}}_cost">Costs: {{cost}} Dark Matter</p>',,
+                    '<p id="{{htmlId}}_cost">花费: {{cost}} 暗物质</p>',,
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">Respec</div>',
                 '<br><br>',
@@ -106,10 +106,10 @@ Game.stargazeUI = (function(){
 
         instance.upgradeTemplate = Handlebars.compile(
             ['<tr id="{{htmlId}}"><td>',
-                '<h3 class="default btn-link">{{name}}: <span id="{{htmlId}}Achieved">Dormant</span></h3>',
+                '<h3 class="default btn-link">{{name}}: <span id="{{htmlId}}Achieved">休眠</span></h3>',
                 '<span>',
                     '<p>{{{desc}}}</p>',
-                    '<p id="{{htmlId}}_cost">花费: {{cost}} Dark Matter</p>',
+                    '<p id="{{htmlId}}_cost">花费: {{cost}} 暗物质</p>',
                     '<p id="{{htmlId}}_opinion">通过改善关系 {{opinion}}</p>',
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-default">Activate</div>',
@@ -183,7 +183,7 @@ Game.stargazeUI = (function(){
                         document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "激活";
                         document.getElementById("stargazeUpg" + id + '_buy').className = "btn btn-default disabled";
                     } else{
-                        document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "Dormant";
+                        document.getElementById("stargazeUpg" + id + 'Achieved').innerHTML = "休眠";
                         document.getElementById("stargazeUpg" + id + '_buy').className = "btn btn-default";
                     }
                 }
@@ -318,14 +318,14 @@ Game.stargazeUI = (function(){
         for(var id in data.cost) {
             var resourceData = Game.resources.getResourceData(id);
             if(!data) {
-                console.error("Unknown Resource in cost: " + id);
+                console.error("Unknown Resource in 花费： " + id);
                 continue;
             }
 
             segments.push({i: id, h: data.htmlId + '_' + id + '_c', n: resourceData.name, c: data.cost[id]});
         }
 
-        var resultHtml = '<span>Cost: </span>';
+        var resultHtml = '<span>花费： </span>';
         for(var i = 0; i < segments.length; i++) {
             var segmentData = segments[i];
             resultHtml = resultHtml + '<span id="' + segmentData.h + '">ERR</span> ';
@@ -353,14 +353,14 @@ Game.stargazeUI = (function(){
         for(var id in data.cost) {
             var rocketPartData = Game.interstellar.rocketParts.getPartData(id);
             if(!data) {
-                console.error("Unknown Part in cost: " + id);
+                console.error("Unknown Part in 花费： " + id);
                 continue;
             }
 
             segments.push({i: id, h: data.htmlId + '_' + id + '_c', n: rocketPartData.name, c: data.cost[id]});
         }
 
-        var resultHtml = '<span>Cost: </span>';
+        var resultHtml = '<span>花费: </span>';
         for(var i = 0; i < segments.length; i++) {
             var segmentData = segments[i];
             resultHtml = resultHtml + '<span id="' + segmentData.h + '">ERR</span> ';

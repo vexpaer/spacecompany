@@ -133,7 +133,7 @@ Game.updatesData = (function(){
 	};
 
 	instance.stargazeIntro = {
-		desc: 'Barebones + Intro添加了Stargaze标签',
+		desc: '准系统 + 简介添加了星空标签',
 		read: false
 	};
 
@@ -218,12 +218,12 @@ Game.updatesData = (function(){
 	};
 
 	instance.buffCapitalShip = {
-		desc: 'Buffed Capital Ship\' power and defense.',
+		desc: '缓冲资本船舶的电力和防御。',
 		read: false
 	};
 
 	instance.dmStats = {
-		desc: 'Live counter showing how much DM you will get from each section',
+		desc: '现场计数器显示每个部分将获得多少DM',
 		read: false
 	};
 

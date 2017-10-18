@@ -8,7 +8,7 @@ Game.interstellarCategoryData = (function () {
     };
 
     instance.faction = {
-        title: 'Faction Star Systems',
+        title: '派系星系',
         category: 'faction',
     };
 
@@ -50,14 +50,14 @@ Game.interstellarData = (function(){
 	};
 
 	instance.military = {
-		name: 'Military',
+		name: '军事',
 		desc: 'This is where you can build up your fleet of ships to invade other systems. Your total fleet\'s attributes are based on which ships you own.',
 		category: 'general',
 		unlocked: false
 	};
 
 	instance.carnelian = {
-		name: "Carnelian Resistance",
+		name: "红磨石",
 		desc: "A ruthless faction with a fierce anger towards the ones in power, most notable, the Prasnian Empire. They are incessant in their opposition and focus their whole force towards attacking their enemies. Because of this, what they offer comprises mostly of upgrades tending towards a more active gameplay.",
 		category: "faction",
 		opinion: 0,
@@ -89,8 +89,8 @@ Game.interstellarData = (function(){
 	};
 
 	instance.moviton = {
-		name: "Moviton Syndicate",
-		desc: "The Moviton Syndicate is an expansionist centred faction, with a goal of conquest over the galaxy. They often play both sides of a conflict, hoping to gain from the chaos. They offer improvements in your travel, including rocket building and interstellar travel.",
+		name: "莫韦什辛迪加",
+		desc: "莫韦什辛迪加是一个以扩张主义为中心的阵营，其目标是征服银河系。 他们经常发挥双方的冲突，希望从混乱中获益。 他们提供您的旅行，包括火箭建设和星际旅行。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false

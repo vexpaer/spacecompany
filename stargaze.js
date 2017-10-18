@@ -85,7 +85,7 @@ Game.stargaze = (function(){
 				document.getElementById(tabsUnlocked[i]).className = "hidden";
 			}
 			for(var i = 0; i < activated.length; i++){
-				$(document.getElementById(activated[i] + "Activation")).text("Dormant");
+				$(document.getElementById(activated[i] + "Activation")).text("休眠");
 				document.getElementById(activated[i] + "Activation").className = "red";
 			}
 			Game.tech.reset();
@@ -195,7 +195,7 @@ Game.stargaze = (function(){
 		if(this.respecCount <= 0){
 			return;
 		}
-		if(confirm('Warning! You will still lose the respec if you have no upgrades.') == false){
+		if(confirm('警告！ 如果没有升级，您仍然会丢失。') == false){
 			return;
 		}
 		this.respecCount -= 1;

@@ -1044,7 +1044,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">获取Pump</button>
+									<button onclick="getPump()" class="btn btn-default">获取小泵</button>
 									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">摧毁小泵</button>
 								</td>
 							</tr>
@@ -1901,8 +1901,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonDrill()" class="btn btn-default">获取Low-Gravity Drill</button>
-									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">摧毁 Low-Gravity Drill</button>
+									<button onclick="getMoonDrill()" class="btn btn-default">获取低重力钻</button>
+									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">摧毁低重力钻</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier3" class="hidden">
@@ -3380,7 +3380,7 @@
 							<img src="Icons/rocketIcon.png" style="width:30px; height:auto">
 						</td>
 						<td colspan="3" style="vertical-align:middle;">
-							<span>
+							<span>太空火箭
 							</span>
 						</td>
 					</tr>
@@ -3651,16 +3651,16 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Launch Rocket
+										发射火箭
 									</h3>
 									<span>
-										Launching the rocket into space will unlock space mining, exploration and other planets.
+										发射火箭进入太空将解锁空采矿，勘探和其他行星。
 										<br>
-										This requires <span id="rocketRocketCost" class="red">1</span> rocket and <span id="rocketRocketFuelCost" class="red">20</span>火箭燃料。
+										消耗<span id="rocketRocketCost" class="red">1</span> 火箭和 <span id="rocketRocketFuelCost" class="red">20</span>火箭燃料。
 									</span>
 									<br>
 									<br>
-									<button onclick="launchRocket()" class="btn btn-default">Launch Rocket</button>
+									<button onclick="launchRocket()" class="btn btn-default">发射火箭</button>
 									<br>
 									<br>
 								</td>
@@ -3677,7 +3677,7 @@
 										月球
 									</h2>
 									<span>
-										月球是我们最大的卫星，每27天围绕地球一次。 它含有大量的Lunarite，从几十年前与地球分离出来。 它比普通金属强得多，用于建造更先进的机器。
+										月球是我们最大的卫星，每27天围绕地球一次。 它含有大量的月岩，从几十年前与地球分离出来。 它比普通金属强得多，用于建造更先进的机器。
 									</span>
 									<br>
 									<br>
@@ -3689,7 +3689,7 @@
 										勘探
 									</h3>
 									<span>
-										Exploring the Moon will unlock the collection of 月岩。
+										探索月球将解锁月岩。
 										<br>
 										花费 <span id="moonRocketFuelCost">20</span>火箭燃料。
 									</span>
@@ -3777,7 +3777,7 @@
 										勘探
 									</h3>
 									<span>
-										Exploring Mars unlocks Titanium production, which allows you to harvest Silicon on Earth and to build Methane power plants.
+										探索火星解锁钛生产，这使您可以在地球上收获硅并建造甲烷发电厂。
 										<br>
 										花费 <span id="marsRocketFuelCost">80</span> 火箭燃料.
 									</span>
@@ -4102,14 +4102,14 @@
 					<tr id="energeticWonderNav" onclick="activeWonderTab('energeticWonderNav')" class="sideTab hidden" href="#energeticWonderTab" aria-controls="energeticWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								活力奇迹: <span id="energeticActivation">Dormant</span>
+								活力奇迹: <span id="energeticActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="techWonderNav" onclick="activeWonderTab('techWonderNav')" class="sideTab hidden" href="#techWonderTab" aria-controls="techWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								技术奇迹: <span id="techActivation">Dormant</span>
+								技术奇迹: <span id="techActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
@@ -4130,28 +4130,28 @@
 					<tr id="communicationWonderNav" onclick="activeWonderTab('communicationWonderNav')" class="sideTab hidden" href="#communicationWonderTab" aria-controls="communicationWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								通讯奇迹： <span id="commsActivation">Dormant</span>
+								通讯奇迹： <span id="commsActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="rocketWonderNav" onclick="activeWonderTab('rocketWonderNav')" class="sideTab hidden" href="#rocketWonderTab" aria-controls="rocketWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								火箭奇迹：<span id="rocketActivation">Dormant</span>
+								火箭奇迹：<span id="rocketActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="antimatterWonderNav" onclick="activeWonderTab('antimatterWonderNav')" class="sideTab hidden" href="#antimatterWonderTab" aria-controls="antimatterWonderTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								反物质奇迹： <span id="antimatterActivation">Dormant</span>
+								反物质奇迹： <span id="antimatterActivation">休眠</span>
 							</span>
 						</td>
 					</tr>
 					<tr id="portalRoomNav" onclick="activeWonderTab('portalRoomNav')" class="sideTab hidden" href="#portalRoomTab" aria-controls="portalRoomTab" role="tab" data-toggle="tab" style="height:60px;">
 						<td colspan="2" style="vertical-align:middle;">
 							<span>
-								门户室：<span id="portalRoomActivation">Dormant</span>
+								门户室：<span id="portalRoomActivation">休眠</span>
 							</span>
 						</td>
 					</tr>

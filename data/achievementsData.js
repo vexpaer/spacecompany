@@ -615,7 +615,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_47',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'lunariteIcon',
-		title: '建造 %s Low-Gravity Drills',
+		title: '建造 %s 低重力钻',
 		evaluator: function(x) { return moonDrill >= x },
 		progressEvaluator: function(x) { return moonDrill/x }
 	};

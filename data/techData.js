@@ -181,9 +181,9 @@ Game.techData = (function () {
     });
 
     instance.unlockRocketFuelT3 = $.extend({}, techBase, {
-        name: 'Hydrazine',
-        desc: 'Hydrazine is a compound created by Methane that increases the speed at which rocket fuel can be produced in a Hydrazine Catalyst Machine.',
-        buttonText: '解锁Hydrazine',
+        name: '肼',
+        desc: '肼是由甲烷产生的化合物，其增加了在肼催化剂机中可以产生火箭燃料的速度.',
+        buttonText: '解锁肼',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -195,7 +195,7 @@ Game.techData = (function () {
 
     instance.unlockLabT2 = $.extend({}, techBase, {
         name: '第2级科学',
-        desc: 'Researching this will allow you to increase your science production drastically.',
+        desc: '研究这将使您可以大幅增加科学产量。',
         buttonText: '解锁第2级科学',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
@@ -207,7 +207,7 @@ Game.techData = (function () {
 
     instance.unlockLabT3 = $.extend({}, techBase, {
         name: '第3级科学',
-        desc: 'Researching this will allow you to access the third 第of science production, creating much more science than the previous tiers.',
+        desc: '研究这个将允许您访问第三个科学制作，创造比以前的层次更多的科学。',
         buttonText: '解锁第3级科学',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
@@ -219,7 +219,7 @@ Game.techData = (function () {
 
     instance.unlockLabT4 = $.extend({}, techBase, {
         name: '第4级科学',
-        desc: 'Researching this will allow you to access the fourth 第of science production, creating 10 times as much science as the previous tier.',
+        desc: '研究这个将使您能够访问第四个科学制作，创造出与上一级相当于科学的10倍。',
         buttonText: '解锁第4级科学',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
