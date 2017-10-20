@@ -357,9 +357,9 @@ Game.techData = (function () {
     });
 
     instance.unlockMeteorite = $.extend({}, techBase, {
-        name: 'Meteorite',
-        desc: 'Meteorite is one of the rare resources in the Galaxy as it is an artificial one. All of the pre-existing Meteorite that once was in the Kuiper Belt, and similar asteroid fields in other solar systems, has all been mined away. Now, the only way to get is to make it in machines from energy.',
-        buttonText: '解锁Meteorite',
+        name: '陨石',
+        desc: '陨石是银河系中罕见的资源之一，因为它是人造的。 所有曾经存在于Kuiper带的陨石，以及其他太阳系中类似的小行星都已被开采。 现在，唯一的办法就是把它从能源中拿到机器上。',
+        buttonText: '解锁陨石',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -371,9 +371,9 @@ Game.techData = (function () {
     });
 
     instance.unlockMeteoriteTier1 = $.extend({}, techBase, {
-        name: 'Meteorite 第1',
-        desc: 'Research an automated way to gather Meteorite so that you don\'t have to worry about losing out when you\'re not around.',
-        buttonText: '解锁Meteorite 第1',
+        name: '第1陨石',
+        desc: '研究一种自动化的方式来收集陨石，这样你就不用担心当你不在身边时就会失败。',
+        buttonText: '解锁第1陨石',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -386,9 +386,9 @@ Game.techData = (function () {
     });
 
     instance.unlockMeteoriteTier2 = $.extend({}, techBase, {
-        name: 'Meteorite 第2',
-        desc: 'Research a more efficient method of getting meteorite than creating it artificially.',
-        buttonText: '解锁Meteorite 第2',
+        name: '第2陨石',
+        desc: '研究获得的陨石是人为地创造它的一个更有效的方法。',
+        buttonText: '解锁第2陨石',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -399,9 +399,9 @@ Game.techData = (function () {
     });
 
     instance.unlockDyson = $.extend({}, techBase, {
-        name: 'Dyson Ring',
-        desc: 'Dyson Rings produce huge amounts of energy by surrounding the sun in solar stations.',
-        buttonText: '解锁Dyson Rings',
+        name: '戴森环',
+        desc: '戴森环在太阳能站周围的太阳周围产生巨大的能量。',
+        buttonText: '解锁戴森环',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -413,9 +413,9 @@ Game.techData = (function () {
     });
 
     instance.unlockDysonSphere = $.extend({}, techBase, {
-        name: 'Dyson Swarms and Spheres',
-        desc: 'The Dyson Swarms encapsulate the sun in rings of solar stations, whereas Spheres completely encompasses it to allows you to harness enough energy to go interstellar.',
-        buttonText: '解锁Dyson Swarms/Spheres',
+        name: '戴森群和球体',
+        desc: '戴森成群封装太阳能站的环太阳，而球体完全包围它可以让您利用足够的能量去星际。',
+        buttonText: '解锁戴森群和球体',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -428,9 +428,9 @@ Game.techData = (function () {
     //Upgrades
 
     instance.upgradeResourceTech = $.extend({}, techBase, {
-        name: 'Upgrade Resource Technology',
-        desc: 'Make your resource machines produce even more resources than before. This upgrade doubles the amount they produce for each unit of Energy.',
-        buttonText: 'Upgrade Resource Tech',
+        name: '升级资源技术',
+        desc: '使您的资源机器产生比以前更多的资源。 这种升级将为每个能源单位生产的数量翻倍。',
+        buttonText: '升级资源技术',
         type: TECH_TYPE.UPGRADE,
         costType: COST_TYPE.FIXED,
         cost: {
