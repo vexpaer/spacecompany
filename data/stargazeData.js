@@ -65,7 +65,7 @@ Game.stargazeData = (function(){
 	};
 
 	instance.kitrinos = {
-		name: "Kitrinos Corporation",
+		name: "Kitrinos公司",
 		desc: "This private company has grown powerful over the galaxy and is inspired by profits, with allies to those who can support their aims. Upgrades offered focus on passive gains, with a large amount of automation.",
 		category: "faction",
 		opinion: 0,
@@ -81,8 +81,8 @@ Game.stargazeData = (function(){
 	};
 
 	instance.overlord = {
-		name: "Overlord Cult",
-		desc: "This faction is shrowded in mystery. While not much is known, a great sense of power overlooks the whole galaxy, seemingly above the other 5 factions and their 'petty' squables. The upgrades from your loyalty to the Overlord are not constrained to a type and vary greatly.",
+		name: "霸主崇拜",
+		desc: "这个派系是神秘的。 虽然没有多少知名度，但伟大的权力意识可以忽略整个星系，似乎超过了其他5个派别和他们的“小”的可怜。 从忠诚到霸主的升级并不局限于一种类型，差别很大。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
@@ -292,8 +292,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.floor1Discount = {
-		name: "Floor 1 Discount",
-		desc: "All Wonders on the First Floor recieve a 15% price reduction.",
+		name: "1楼折扣",
+		desc: "一楼所有奇观价格下降15％。",
 		cost: 16,
 		category: "prasnian",
 		opinion: 10,
@@ -307,8 +307,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.floor23Discount = {
-		name: "Floor 2 & 3 Discount",
-		desc: "All Wonders on the Second and Third Floor recieve a 20% price reduction.",
+		name: "2楼和3楼折扣",
+		desc: "二楼和三楼的奇迹都可以降价20％。",
 		cost: 19,
 		category: "prasnian",
 		opinion: 15,
@@ -322,8 +322,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.autoEmc = {
-		name: "Automated EMC",
-		desc: "Check a box on an EMC resource and have that resource be 'EMCed' to the max every second.",
+		name: "自动化EMC",
+		desc: "检查EMC资源上的一个框，并将该资源的“EMCed”设置为每秒最大值。",
 		cost: 24,
 		category: "prasnian",
 		opinion: 17,
@@ -347,8 +347,8 @@ Game.prestigeData = (function(){
 	**************/
 
 	instance.startingLabs = {
-		name: "Starting Labs",
-		desc: "Start with 20 T1 Labs on rebirth.",
+		name: "起始实验室",
+		desc: "重生时，拥有20个T1实验室。",
 		cost: 7,
 		category: "hyacinite",
 		opinion: 3,
@@ -363,8 +363,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.labDiscount = {
-		name: "Lab Discount",
-		desc: "T2+ Labs are 20% cheaper with this upgrade.",
+		name: "实验室折扣",
+		desc: "T2以上的实验室升级价格便宜20％。",
 		cost: 16,
 		category: "hyacinite",
 		opinion: 12,
@@ -383,8 +383,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.T5Labs = {
-		name: "Tier 5 Laboratories",
-		desc: "Unlock the Space Scientific Satellite Station",
+		name: "5级实验室",
+		desc: "解锁太空科学卫星站",
 		cost: 24,
 		category: "hyacinite",
 		opinion: 14,
@@ -400,8 +400,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.energyEff = {
-		name: "Energy Efficiency Cap",
-		desc: "Increase Energy Efficiency research cap to 50% instead of 25%.",
+		name: "能源效率上限",
+		desc: "将能源效率研究的上限提高到50％，而不是25％。",
 		cost: 36,
 		category: "hyacinite",
 		opinion: 25,
@@ -420,8 +420,8 @@ Game.prestigeData = (function(){
 	*************/
 
 	instance.T1Discount = {
-		name: "Tier 1 Machine Discount",
-		desc: "All Tier 1 machines on every resource (in resources tab) are 10% cheaper.",
+		name: "一级机器折扣",
+		desc: "每个资源（资源选项卡）中的所有第1层机器都便宜10％。",
 		cost: 8,
 		category: "kitrinos",
 		opinion: 4,
@@ -435,8 +435,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.T5Batteries = {
-		name: "Tier 5 Batteries",
-		desc: "Unlock the fifth tier of batteries for all your energy storage needs.",
+		name: "第5层电池",
+		desc: "解除所有能源储存需求的第五层电池。",
 		cost: 14,
 		category: "kitrinos",
 		opinion: 17,
@@ -452,8 +452,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.T5Machines = {
-		name: "Tier 5 Machines",
-		desc: "Gain access to a fifth tier of machines to produce resources.",
+		name: "第5层机器",
+		desc: "获得第五层机器以获得资源。",
 		cost: 35,
 		category: "kitrinos",
 		opinion: 20,
@@ -479,8 +479,8 @@ Game.prestigeData = (function(){
 	************/
 
 	instance.chemicalBoost = {
-		name: "Chemical Plant Boost",
-		desc: "Produce 100% more rocket fuel per chemical plant.",
+		name: "化工厂推动",
+		desc: "每个化学工厂生产100％以上的火箭燃料。",
 		cost: 11,
 		category: "moviton",
 		opinion: 7,
@@ -494,8 +494,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.rocketDiscount = {
-		name: "Rocket Discount",
-		desc: "Rocket Parts Cost 35% less.",
+		name: "火箭折扣",
+		desc: "火箭零件成本降低35％。",
 		cost: 23,
 		category: "moviton",
 		opinion: 28,
@@ -509,8 +509,8 @@ Game.prestigeData = (function(){
 	};
 
 	instance.meteoriteTier3 = {
-		name: "Meteorite Tier 3",
-		desc: "Unlock the Planet Smasher building.",
+		name: "陨石3级",
+		desc: "解锁行星粉碎机建筑。",
 		cost: 37,
 		category: "moviton",
 		opinion: 29,
@@ -526,8 +526,8 @@ Game.prestigeData = (function(){
 	}
 
 	instance.meteoriteTier4 = {
-		name: "Meteorite Tier 4",
-		desc: "Unlock the Nebulous Synthesizer building.",
+		name: "陨石4层",
+		desc: "解锁含糊不清的合成建设。",
 		cost: 49,
 		category: "moviton",
 		opinion: 36,

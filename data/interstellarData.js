@@ -37,7 +37,7 @@ Game.interstellarData = (function(){
 
 	instance.antimatter = {
 		name: '反物质',
-		desc: '您的星际旅行燃料是在这里生产的。 不幸的是，您只能处理每个星系的100k反物质，因为它是非常不稳定的。<br><br><button class="btn btn-default" onclick="toggleAntimatter()">切换反物质 <span id="antimatterToggled">On</span></button>',
+		desc: '您的星际旅行燃料是在这里生产的。 不幸的是，您只能处理每个星系的100k反物质，因为它是非常不稳定的。<br><br><button class="btn btn-default" onclick="toggleAntimatter()">切换反物质 <span id="antimatterToggled">开启</span></button>',
 		category: 'general',
 		unlocked: false
 	};
@@ -81,7 +81,7 @@ Game.interstellarData = (function(){
 	};
 
 	instance.kitrinos = {
-		name: "Kitrinos Corporation",
+		name: "Kitrinos公司",
 		desc: "This private company has grown powerful over the galaxy and is inspired by profits, with allies to those who can support their aims. Upgrades offered focus on passive gains, with a large amount of automation.",
 		category: "faction",
 		opinion: 0,

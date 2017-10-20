@@ -89,7 +89,7 @@ Game.stargazeUI = (function(){
                     '<p>{{{desc}}}</p>',
                     '<p id="{{htmlId}}_cost">花费： {{cost}} 暗物质</p>',,
                 '</span>',
-                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">Rebirth</div>',
+                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">重生</div>',
                 '<br><br>',
                 '</td></tr>'].join('\n'));
 
@@ -100,7 +100,7 @@ Game.stargazeUI = (function(){
                     '<p>{{{desc}}}</p>',
                     '<p id="{{htmlId}}_cost">花费: {{cost}} 暗物质</p>',,
                 '</span>',
-                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">Respec</div>',
+                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-warning">撤回</div>',
                 '<br><br>',
                 '</td></tr>'].join('\n'));
 

@@ -305,7 +305,7 @@ Game.techData = (function () {
     instance.unlockPlasmaTier2 = $.extend({}, techBase, {
         name: '等离子2级技术',
         desc: '这项研究打开了等离子体生产的第二个等离子体坑',
-        buttonText: '解锁Plasma 第2',
+        buttonText: '解锁等离子2级技术',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -317,8 +317,8 @@ Game.techData = (function () {
 
     instance.unlockPSU = $.extend({}, techBase, {
         name: '等离子存储单元',
-        desc: 'PSU增加了您可以一次存储的等离子体的上限。',
-        buttonText: '解锁PSUs',
+        desc: '等离子存储单元增加了您可以一次存储的等离子体的上限。',
+        buttonText: '解锁等离子存储单元',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -330,9 +330,9 @@ Game.techData = (function () {
     });
 
     instance.unlockPSUT2 = $.extend({}, techBase, {
-        name: '第2 Plasma Storage Units',
-        desc: '第2 PSUs are more efficient at storing plasma but they are significantly larger and require more resources to make.',
-        buttonText: '解锁T2 PSUs',
+        name: '第2等离子体存储单元',
+        desc: '第2等离子体存储单元在存储等离子体方面更有效率，但是它们显着更大，需要更多的资源来制造。',
+        buttonText: '解锁等离子体存储单元',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
@@ -343,9 +343,9 @@ Game.techData = (function () {
     });
 
     instance.unlockEmc = $.extend({}, techBase, {
-        name: 'Energy-Mass Conversion',
-        desc: 'This power technology not only lets you create existing resources, but allows you to make new, and only creatable elements, such as meteorite.',
-        buttonText: '解锁EMC',
+        name: '能量转换',
+        desc: '这种电源技术不仅可以让您创建现有的资源，还可以让您创建新的，唯一可创建的元素，如陨石。',
+        buttonText: '解锁能量转换',
         type: TECH_TYPE.UNLOCK,
         costType: COST_TYPE.FIXED,
         cost: {
