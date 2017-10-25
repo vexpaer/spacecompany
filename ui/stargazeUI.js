@@ -23,7 +23,7 @@ Game.stargazeUI = (function(){
 
     instance.initialise = function() {
 
-        this.tab = Game.ui.createTab({id: 'stargaze', title: '星际'});
+        this.tab = Game.ui.createTab({id: 'stargaze', title: '看星星'});
         this.tab.initialise();
 
         if(sphere == 0) {

@@ -3,7 +3,7 @@ Game.achievementsCategoryData = (function () {
 	var instance = {};
 		
 	instance.resources = {
-		title: 'Resources',
+		title: '资源',
 		brackets: [50, 5000, 500000, 50000000, 5000000000],
 		entries: [
 			'resUranium', 'resLava',
@@ -14,7 +14,7 @@ Game.achievementsCategoryData = (function () {
 	};
 		
 	instance.producers = {
-		title: 'Producers',
+		title: '生产者',
 		brackets: [10, 50, 100, 500, 1000],
 		entries: [
 			'prodPlasma1', 'prodPlasma2',
@@ -444,7 +444,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_36',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'metalIcon',
-		title: '建造 %s Giga Drills',
+		title: '建造 %s 千兆钻',
 		evaluator: function(x) { return gigaDrill >= x },
 		progressEvaluator: function(x) { return gigaDrill/x }
 	};
@@ -453,7 +453,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_37',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'metalIcon',
-		title: '建造 %s Quantum Drills',
+		title: '建造 %s 量子钻',
 		evaluator: function(x) { return quantumDrill >= x },
 		progressEvaluator: function(x) { return quantumDrill/x }
 	};
@@ -462,7 +462,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_38',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'gemIcon',
-		title: '建造 %s Gem Miners',
+		title: '建造 %s 宝石矿工',
 		evaluator: function(x) { return gemMiner >= x },
 		progressEvaluator: function(x) { return gemMiner/x }
 	};
@@ -471,7 +471,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_39',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'gemIcon',
-		title: '建造 %s Advanced Drills',
+		title: '建造 %s 先进的钻',
 		evaluator: function(x) { return advancedDrill >= x },
 		progressEvaluator: function(x) { return advancedDrill/x }
 	};
@@ -480,7 +480,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_40',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'gemIcon',
-		title: '建造 %s Diamond Encrusted Drills',
+		title: '建造 %s 钻石镶嵌钻',
 		evaluator: function(x) { return diamondDrill >= x },
 		progressEvaluator: function(x) { return diamondDrill/x }
 	};
@@ -489,7 +489,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_41',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'gemIcon',
-		title: '建造 %s Carbyne Drills',
+		title: '建造 %s 卡宾钻',
 		evaluator: function(x) { return carbyneDrill >= x },
 		progressEvaluator: function(x) { return carbyneDrill/x }
 	};

@@ -278,7 +278,7 @@ Game.interstellarUI = (function(){
             ['<td style="vertical-align:middle;" colspan="1">',
                     '<span>{{name}}</span>',
                 '</td><td style="vertical-align:middle; text-align:right;" colspan="2">',
-                '<span id="interRocketBuilt" class="red">Not Built</span>'].join('\n'));
+                '<span id="interRocketBuilt" class="red">未建造</span>'].join('\n'));
 
         instance.antimatterNavTemplate = Handlebars.compile(
             ['<td style="vertical-align:middle;">',

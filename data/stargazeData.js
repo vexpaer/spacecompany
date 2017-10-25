@@ -66,15 +66,15 @@ Game.stargazeData = (function(){
 
 	instance.kitrinos = {
 		name: "Kitrinos公司",
-		desc: "This private company has grown powerful over the galaxy and is inspired by profits, with allies to those who can support their aims. Upgrades offered focus on passive gains, with a large amount of automation.",
+		desc: "这家私营公司在银河系发展壮大，受到利润的鼓舞，与那些支持他们目标的盟友有着共同的利益。升级的重点是被动增益，自动化程度高。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
 	};
 
 	instance.moviton = {
-		name: "Moviton Syndicate",
-		desc: "The Moviton Syndicate is an expansionist centred faction, with a goal of conquest over the galaxy. They often play both sides of a conflict, hoping to gain from the chaos. They offer improvements in your travel, including rocket building and interstellar travel.",
+		name: "莫维顿辛迪加",
+		desc: "莫维顿辛迪加是扩张为中心的派系，在星系的一个目标，征服。他们经常扮演冲突的双方，希望从混乱中获益。他们提供改善你的旅行，包括火箭建设和星际旅行。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false

@@ -359,8 +359,8 @@ Game.buildingData = (function () {
     });
 
     instance.metalT3 = $.extend({}, baseProducerBuilding, {
-        name: 'Giga Drill',
-        desc: 'Giga Drills extract Metal at colossal speeds.',
+        name: '千兆钻',
+        desc: '千兆钻以很快的速度提取金属。',
         resource: 'metal',
         resourcePerSecond: {
             'energy': -9,
@@ -374,8 +374,8 @@ Game.buildingData = (function () {
     });
 
     instance.metalT4 = $.extend({}, baseProducerBuilding, {
-        name: 'Quantum Drill',
-        desc: 'Quantum Drills bend the space-time continuum to get metal faster than physically possible.',
+        name: '量子钻',
+        desc: '量子钻可以弯曲时空连续体，使得金属比物理上更快。',
         resource: 'metal',
         resourcePerSecond: {
             'energy': -24,
