@@ -547,11 +547,11 @@ Game.interstellarUI = (function(){
                 segmentsProd.push(segmentX);
             }
         }
-        var useHtml = "<span>Uses </span>";
-        var prodHtml = "<span>Produces </span>";
+        var useHtml = "<span>消耗 </span>";
+        var prodHtml = "<span>生产 </span>";
         for(var i = 0; i < segmentsUse.length; i++){
             var segmentData = segmentsUse[i];
-            var html = '<span id="' + segmentData.n + 'Use">' + (segmentData.p*-1) + " " + segmentData.n + '</span>';
+            var html = '<span id="' + segmentData.n + '使用">' + (segmentData.p*-1) + " " + segmentData.n + '</span>';
             useHtml += html;
             if(i < segmentsUse.length - 1) {
                 useHtml += '<span>, </span>';
@@ -559,14 +559,14 @@ Game.interstellarUI = (function(){
         }
         for(var i = 0; i < segmentsProd.length; i++){
             var segmentData = segmentsProd[i];
-            var html = '<span id="' + segmentData.n + 'Prod">' + segmentData.p + " " + segmentData.n + '</span>';
+            var html = '<span id="' + segmentData.n + '促进">' + segmentData.p + " " + segmentData.n + '</span>';
             prodHtml += html;
             if(i < segmentsProd.length - 1) {
                 prodHtml += '<span>, </span>';
             }
         }
-        useHtml += '<span> per second.</span>'
-        prodHtml += '<span> per second.</span>'
+        useHtml += '<span> 每秒。</span>'
+        prodHtml += '<span> 每秒。</span>'
         var target = $('#antimatter_' + machineData.id + '_use');
         target.empty()
         target.append(useHtml);

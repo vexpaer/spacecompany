@@ -62,7 +62,7 @@
 					</span>
 				</a>
 				<a class="navbar-brand">
-					<span class="text-muted small">点击版本号查看完整的更改日志</span>
+					<span class="text-muted small">点击版本号查看完整的更改日志</span><font>如果点按钮无效，请点“更多”→“保存”下面的保存按钮一次，刷新就可以了。</font>
 				</a>
 				<div class="pull-right" style="width:200px;">
 					<a class="navbar-brand">
@@ -585,7 +585,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSUT2()" class="btn btn-default">获取PSU T2</button>
+									<button onclick="getPSUT2()" class="btn btn-default">获取2级电源模块</button>
 								</td>
 							</tr>
 							<tr>
@@ -690,46 +690,46 @@
 							<tr id="batteriesT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2电池: <span id="batteryT2">0</span>
+										2级电池: <span id="batteryT2">0</span>
 									</h3>
 									<span>
-										T2电池增加你的能量存储上限50万/每个电池。
+										2级电池增加你的能量存储上限50万/每个电池。
 										<br>
 										花费 <span id="batteryT2MetalCost">550,000</span> 金属， <span id="batteryT2GemCost">550,000</span> 宝石， <span id="batteryT2LunariteCost">330,000</span> 月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT2()" class="btn btn-default">获取T2电池</button>
+									<button onclick="getBatteryT2()" class="btn btn-default">获取2级电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T3电池: <span id="batteryT3">0</span>
+										3级电池: <span id="batteryT3">0</span>
 									</h3>
 									<span>
-										T3电池增加你的能量存储上限500万/每个电池。
+										3级电池增加你的能量存储上限500万/每个电池。
 										<br>
 										花费 <span id="batteryT3MetalCost">5,500,000</span> 金属， <span id="batteryT3GemCost">5,500,000</span> 宝石， <span id="batteryT3LunariteCost">3,300,000</span> 月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT3()" class="btn btn-default">获取T3电池</button>
+									<button onclick="getBatteryT3()" class="btn btn-default">获取3级电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T4电池: <span id="batteryT4">0</span>
+										4级电池: <span id="batteryT4">0</span>
 									</h3>
 									<span>
-										T4电池增加你的能量存储上限5000万/每个电池。
+										4级电池增加你的能量存储上限5000万/每个电池。
 										<br>
 										花费 <span id="batteryT4MetalCost">55,000,000</span> 金属， <span id="batteryT4GemCost">55,000,000</span> 宝石， <span id="batteryT4LunariteCost">33,000,000</span> 月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT4()" class="btn btn-default">获取T4电池</button>
+									<button onclick="getBatteryT4()" class="btn btn-default">获取4级电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT5" class="hidden">
@@ -1123,7 +1123,7 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getFossilator()" class="btn btn-default">获取Fossilator 9000</button>
+									<button onclick="getFossilator()" class="btn btn-default">获取化石9000</button>
 									<button onclick="destroyMachine('fossilator')" class="btn btn-default destroy hidden">摧毁化石9000</button>
 								</td>
 							</tr>
@@ -1386,10 +1386,10 @@
 							<tr id="gemTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Diamond Accretion Chamber: <span id="diamondChamber">0</span>
+										金刚石加注室: <span id="diamondChamber">0</span>
 									</h3>
 									<span>
-										This special container condenses carbon dioxide gas into diamonds, creating gems at a faster rate than any drill.
+										这种特殊的容器将二氧化碳气体冷凝成钻石，以比任何钻机更快的速度生成宝石。
 										<br>
 										每秒生产3747宝石。
 										<br>
@@ -1399,8 +1399,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getDiamondChamber()" class="btn btn-default">获取Diamond Accretion Chamber</button>
-									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">摧毁 Diamond Accretion Chamber</button>
+									<button onclick="getDiamondChamber()" class="btn btn-default">获取金刚石加注室</button>
+									<button onclick="destroyMachine('diamondChamber')" class="btn btn-default destroy hidden">摧毁金刚石加注室</button>
 								</td>
 							</tr>
 						</table>
@@ -2591,8 +2591,8 @@
 									</span>
 									<br>
 									<br>
-									<button onclick="getExtractor()" class="btn btn-default">获取Extractor</button>
-									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">摧毁 Lava Extractor</button>
+									<button onclick="getExtractor()" class="btn btn-default">获取熔岩提取器</button>
+									<button onclick="destroyMachine('extractor')" class="btn btn-default destroy hidden">摧毁熔岩提取器</button>
 								</td>
 							</tr>
 							<tr id="lavaTier3" class="hidden">
@@ -3169,19 +3169,19 @@
 							<tr id="meteoriteTier4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Nebulous Synthesizer: <span id="nebulous">0</span>
+										星云合成器: <span id="nebulous">0</span>
 									</h3>
 									<span>
-										Bypass the need for demolishing planets entirely by building your own nebula to create meteorites instead of planets.
+										绕过完全摧毁行星的需要，建立自己的星云，创造陨石，而不是行星。
 										<br>
-										Produces 135 Meteorite per second. Uses 142 Plasma per second.
+										每秒产生135颗陨石。每秒消耗142个等离子体。
 										<br>
-										Costs <span id="nebulousLunariteCost">25.8M</span> Lunarite, <span id="nebulousLavaCost">19.7M</span> Lava, <span id="nebulousGoldCost">21.9M</span> Gold.
+										Costs <span id="nebulousLunariteCost">25.8M</span> 月岩, <span id="nebulousLavaCost">19.7M</span> 熔岩, <span id="nebulousGoldCost">21.9M</span> 黄金.
 									</span>
 									<br>
 									<br>
-									<button onclick="getNebulous()" class="btn btn-default">Get Nebulous Synthesizer</button>
-									<button onclick="destroyMachine('nebulous')" class="btn btn-default destroy hidden">Destroy Nebulous Synthesizer</button>
+									<button onclick="getNebulous()" class="btn btn-default">获取星云合成器</button>
+									<button onclick="destroyMachine('nebulous')" class="btn btn-default destroy hidden">摧毁星云合成器</button>
 								</td>
 							</tr>
 						</table>
