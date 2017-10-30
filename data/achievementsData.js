@@ -363,7 +363,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_75',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'lavaIcon',
-		title: '建造 %s Lava Extractors',
+		title: '建造 %s 熔岩提取机',
 		evaluator: function(x) { return extractor >= x },
 		progressEvaluator: function(x) { return extractor/x }
 	};
@@ -372,7 +372,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_76',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'lavaIcon',
-		title: '建造 %s Igneous Extruders',
+		title: '建造 %s 火成岩挤出机',
 		evaluator: function(x) { return extruder >= x },
 		progressEvaluator: function(x) { return extruder/x }
 	};
