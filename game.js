@@ -156,7 +156,7 @@ var Game = (function() {
 
     instance.load = function() {
         var data = JSON.parse(localStorage.getItem("save"));
-
+		console.log("data:"+ data );
         if(data && data !== null) {
             this.achievements.load(data);
             this.statistics.load(data);
