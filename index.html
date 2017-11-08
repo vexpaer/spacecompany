@@ -4694,7 +4694,7 @@
 					<tr id="unlockDysonNav" onclick="activeSolCenterTab('unlockDysonNav')" href="#unlockDysonResearch" aria-controls="unlockDysonResearch" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="vertical-align:middle;">
 							<span>
-								戴森片段
+								戴森碎片
 							</span>
 						</td>
 						<td style="vertical-align:middle;">
@@ -4807,7 +4807,7 @@
 													</tr>
 													<tr>
 														<td><span id="oilEmcVal">3</span> 能源</td>
-														<td><span id="oilEmcAmount">1</span> Oil</td>
+														<td><span id="oilEmcAmount">1</span> 石油</td>
 														<td><span id="oilConv"><span data-bind="oil">N/A</span> / <span data-bind="oilStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('oil')" role="button">转换</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="oilAutoEmc" class="autoEmc" />
@@ -4898,7 +4898,7 @@
 													</tr>
 													<tr>
 														<td><span id="iceEmcVal">42</span> 能源</td>
-														<td><span id="iceEmcAmount">1</span> Ice</td>
+														<td><span id="iceEmcAmount">1</span> 冰</td>
 														<td><span id="iceConv"><span data-bind="ice">N/A</span> / <span data-bind="iceStorage">N/A</span></span></td>
 														<td><button class="btn btn-default pull-right" onclick="convertEnergy('ice')" role="button">转换</button></td>
 														<td class="autoEmcHide hidden" style="text-align:center;"><input type="checkbox" id="iceAutoEmc" class="autoEmc" />
@@ -4972,15 +4972,15 @@
 											环: <span id="ring">0</span>
 										</h3>
 										<span>
-											环是一个太阳能带，环绕着太阳能，每秒产生5000个能量。 这个需要 <span id="ringRocketFuelCost">50,000</span> 火箭燃料把片段放在适当位置。
+											环是一个太阳能带，环绕着太阳能，每秒产生5000个能量。 这个需要 <span id="ringRocketFuelCost">50,000</span> 火箭燃料把碎片放在适当位置。
 											<br>
 											<br>
-											你当前有<span id="dysonPieces2">0</span>个，建造一个环总共需要50个戴森片段。
+											你当前有<span id="dysonPieces2">0</span>个，建造一个环总共需要50个戴森碎片。
 											<br>
 											<br>
 										</span>
 										<button onclick="buildRing()" class="btn btn-default">构建环</button>
-										<button onclick="buildDysonTo(50);buildRing()" class="btn btn-default">建造到50戴森片段</button>
+										<button onclick="buildDysonTo(50);buildRing()" class="btn btn-default">建造到50戴森碎片</button>
 										<br>
 										<br>
 										<hide id="dysonSphere" class="hidden">
@@ -4988,15 +4988,15 @@
 												群体: <span id="swarm">0</span>
 											</h3>
 											<span>
-												群体是太阳站的一系列运行在太阳上，一旦建成，它每秒能产生25,000的能量。 但是，它需要<span id="swarmRocketFuelCost">250,000</span> 火箭燃料把片段放在适当位置。
+												群体是太阳站的一系列运行在太阳上，一旦建成，它每秒能产生25,000的能量。 但是，它需要<span id="swarmRocketFuelCost">250,000</span> 火箭燃料把碎片放在适当位置。
 												<br>
 												<br>
-												你当前有<span id="dysonPieces">0</span>个，建造一个群体总共需要100个戴森片段。
+												你当前有<span id="dysonPieces">0</span>个，建造一个群体总共需要100个戴森碎片。
 												<br>
 												<br>
 											</span>
 											<button onclick="buildSwarm()" class="btn btn-default">构建群体</button>
-											<button onclick="buildDysonTo(100);buildSwarm()" class="btn btn-default">建造到100戴森片段</button>
+											<button onclick="buildDysonTo(100);buildSwarm()" class="btn btn-default">建造到100戴森碎片</button>
 											<br>
 											<br>
 											<h3 class="default btn-link">
@@ -5008,13 +5008,13 @@
 												花费： <span id="sphereRocketFuelCost">1.000M</span> 火箭燃料组装件。
 												<br>
 												<br>
-												<span id="buildSphereInfo">你当前有 <span id="dysonPieces3">0</span>个，建造一个群体总共需要250个戴森片段。</span>
+												<span id="buildSphereInfo">你当前有 <span id="dysonPieces3">0</span>个，建造一个群体总共需要250个戴森碎片。</span>
 												<br>
 												<br>
 											</span>
 											<hide id="buildSphereButton">
 												<button onclick="buildSphere()" class="btn btn-default">构建领域</button>
-												<button onclick="buildDysonTo(250);buildSphere()" class="btn btn-default">建造到250戴森片段</button>
+												<button onclick="buildDysonTo(250);buildSphere()" class="btn btn-default">建造到250戴森碎片</button>
 											</hide>
 										</hide>
 									</span>
@@ -6690,7 +6690,7 @@
 										修改游戏公司名称
 									</h3>
 				                	<div class="checkbox">
-										<input type="text" name="companyName"> 公司 <input type="submit" value="Submit">
+										<input type="text" name="companyName"> 公司 <input type="submit" value="提交">
 									</div>
 				                </td>
 							</tr>

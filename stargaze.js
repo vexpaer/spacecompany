@@ -77,7 +77,7 @@ Game.stargaze = (function(){
 				document.getElementById(explored[i]).className = "inner sideTab hidden";
 				if(explored[i] != "moon", explored[i] != "venus", explored[i] != "mars", explored[i] != "asteroidBelt")document.getElementById(explored[i]).className = "outer sideTab hidden";
 			}
-			document.getElementById("rocket").innerHTML = "Not Built";
+			document.getElementById("rocket").innerHTML = "未建造";
 			document.getElementById("rocketRocketCost").className = "red";
 			document.getElementById("solarRocket").className = "";
 			document.getElementById("spaceRocket").className = "sideTab";

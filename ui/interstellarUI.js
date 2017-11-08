@@ -41,7 +41,7 @@ Game.interstellarUI = (function(){
         instance.militaryTitleTemplate = Handlebars.compile(
             ['<tr><td colspan="2" style="border:none;">',
                 '<h2 class="default btn-link">{{name}}</h2>',
-                '<h4><b>Total Fleet Attributes:</b></h4>',
+                '<h4><b>总舰队属性:</b></h4>',
                 '<span class="fleetPower">0</span> 功率,',
                 '<span class="fleetDefense">0</span> 防御,',
                 '<span class="fleetSpeed">0</span> 速度',
@@ -51,11 +51,11 @@ Game.interstellarUI = (function(){
         instance.factionTitleTemplate = Handlebars.compile(
             ['<tr><td style="border:none; width:50%;">',
                 '<h2 class="default btn-link">{{name}}</h2>',
-                '<h4><b>Relationship: {{opinion}}</b></h4>',
+                '<h4><b>关系: {{opinion}}</b></h4>',
                 '<span>{{desc}}</span>',
                 '<br><br>',
                 '</td><td style="border:none; width:50%;">',
-                '<br><br><br><h4><b>Your Invasion Fleet:</b></h4>',
+                '<br><br><br><h4><b>你的入侵舰队:</b></h4>',
                 '<h4><span class="fleetPower">0</span> 功率,',
                 '<span class="fleetDefense">0</span> 防御,',
                 '<span class="fleetSpeed">0</span> 速度</h4>',
@@ -122,10 +122,10 @@ Game.interstellarUI = (function(){
             ['<tr id="{{htmlId}}_conquer" class="hidden"><td colspan="1">',
                 '<h3 class="default btn-link" id="{{htmlId}}_name">{{name}}: <span id="{{htmlId}}_owned">受保护</span></h3>',
                 '<h5>',
-                    'Distance: {{distance}}<br>',
-                    'Planets: {{planets}}<br>',
-                    'Faction: {{faction}}<br>',
-                    'Resources Present: {{resource1}}, {{resource2}}',
+                    '距离: {{distance}}<br>',
+                    '星球: {{planets}}<br>',
+                    '阵营: {{faction}}<br>',
+                    '资源现状: {{resource1}}, {{resource2}}',
                 '</h5><hide id="{{htmlId}}_conquerButtons">',
 
                     // Espionage
@@ -262,11 +262,11 @@ Game.interstellarUI = (function(){
                 '<h3 class="default btn-link">{{name}}: <span id="{{htmlId}}Count">0</span></h3>',
                 '<span>',
                     '<p>{{desc}}</p>',
-                    '<p id="{{htmlId}}_stats">Attributes: {{stats.power}} Power, {{stats.defense}} Defense, {{stats.speed}} Speed</p>',
+                    '<p id="{{htmlId}}_stats">属性: {{stats.power}} 能量, {{stats.defense}} 防御, {{stats.speed}} 速度</p>',
                     '<p id="{{htmlId}}_cost"></p>',
                 '</span>',
                 '<div id="{{htmlId}}_buy" onclick="Game.interstellar.military.buildShip(\'{{entryName}}\')" class="btn btn-default">获取 1</div>',
-                '<div id="{{htmlId}}_destroy" onclick="Game.interstellar.military.destroyShip(\'{{entryName}}\')" class="btn btn-default">Destroy 1</div>',
+                '<div id="{{htmlId}}_destroy" onclick="Game.interstellar.military.destroyShip(\'{{entryName}}\')" class="btn btn-default">摧毁 1</div>',
                 '</td></tr>'].join('\n'));
 
         instance.navTemplate = Handlebars.compile(
@@ -551,7 +551,7 @@ Game.interstellarUI = (function(){
         var prodHtml = "<span>生产 </span>";
         for(var i = 0; i < segmentsUse.length; i++){
             var segmentData = segmentsUse[i];
-            var html = '<span id="' + segmentData.n + '使用">' + (segmentData.p*-1) + " " + segmentData.n + '</span>';
+            var html = '<span id="' + segmentData.n + 'Use">' + (segmentData.p*-1) + " " + segmentData.n + '</span>';
             useHtml += html;
             if(i < segmentsUse.length - 1) {
                 useHtml += '<span>, </span>';
@@ -559,7 +559,7 @@ Game.interstellarUI = (function(){
         }
         for(var i = 0; i < segmentsProd.length; i++){
             var segmentData = segmentsProd[i];
-            var html = '<span id="' + segmentData.n + '促进">' + segmentData.p + " " + segmentData.n + '</span>';
+            var html = '<span id="' + segmentData.n + 'Prod">' + segmentData.p + " " + segmentData.n + '</span>';
             prodHtml += html;
             if(i < segmentsProd.length - 1) {
                 prodHtml += '<span>, </span>';
@@ -753,7 +753,7 @@ Game.interstellarUI = (function(){
         if(data.built == true){
             var status = document.getElementById('roc_' + data.id + 'Built');
             document.getElementById("interRocketBuilt").className = "green";
-            document.getElementById("interRocketBuilt").innerHTML = "Built";
+            document.getElementById("interRocketBuilt").innerHTML = "已建造";
             for(var id in this.rocketPartEntries){
                 var partData = Game.interstellar.rocketParts.entries[id];
                 if(partData.entryName == "shield" || "engine" || "aero"){
@@ -833,7 +833,7 @@ Game.interstellarUI = (function(){
             segments.push({i: id, h: data.htmlId + '_' + id + '_c', n: resourceData.name, c: data.cost[id]});
         }
 
-        var resultHtml = '<span>Cost: </span>';
+        var resultHtml = '<span>花费: </span>';
         for(var i = 0; i < segments.length; i++) {
             var segmentData = segments[i];
             resultHtml = resultHtml + '<span id="' + segmentData.h + '"></span> ';
@@ -868,7 +868,7 @@ Game.interstellarUI = (function(){
             segments.push({i: id, h: data.htmlId + '_' + id + '_c', n: rocketPartData.name, c: data.cost[id]});
         }
 
-        var resultHtml = '<span>Cost: </span>';
+        var resultHtml = '<span>花费: </span>';
         for(var i = 0; i < segments.length; i++) {
             var segmentData = segments[i];
             resultHtml = resultHtml + '<span id="' + segmentData.h + '">' + segmentData.c + '</span> ';

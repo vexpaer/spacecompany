@@ -48,8 +48,8 @@ Game.resourceData = (function () {
     };
 
     instance.plasma = {
-        name: 'Plasma',
-        desc: 'Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company.',
+        name: '等离子体',
+        desc: '等离子体是物质的第四种状态，被第四层机器和大型空间结构用作贵公司的极限电源。',
         icon: 'plasmaIcon',
         category: 'energy',
         baseCapacity: 50,
@@ -187,8 +187,8 @@ Game.resourceData = (function () {
      ******************************/
 
     instance.hydrogen = {
-        name: 'Hydrogen',
-        desc: 'Hydrogen is extremely common on gas giants such as Jupiter and Saturn.',
+        name: '氢气',
+        desc: '氢气是对天然气巨头，如木星和土星非常普遍。',
         icon: 'hydrogenIcon',
         category: 'outerSol',
         baseCapacity: 50,
@@ -205,8 +205,8 @@ Game.resourceData = (function () {
     };
 
     instance.ice = {
-        name: 'Ice',
-        desc: 'Ice, although it can be collected on Earth, is not nearly as profitable as flying to Pluto and back with space craft full of the stuff. It is mainly used for super-cooling technology necessary for Tier 4 machines.',
+        name: '冰',
+        desc: '冰虽然可以在地球上被收集，但是与飞往冥王星和用太空飞船返回的东西相比，还不如利润丰厚。 主要用于4级机器所需的超级冷却技术。',
         icon: 'iceIcon',
         category: 'outerSol',
         baseCapacity: 50,
@@ -214,8 +214,8 @@ Game.resourceData = (function () {
     };
 
     instance.meteorite = {
-        name: 'Meteorite',
-        desc: 'Creating Meteorite is only possible from purer forms of energy than those created with earth technology. Therefore, Plasma is necessary to make the strong resource.',
+        name: '陨石',
+        desc: '创造陨石只能从比地球技术创造的更纯粹的能源形式。 因此，等离子体是必不可少的资源。',
         icon: 'meteoriteIcon',
         category: 'outerSol',
         baseCapacity: 50,
@@ -223,8 +223,8 @@ Game.resourceData = (function () {
     };
 
     instance.science = {
-        name: 'Science Production',
-        desc: 'Science is used for researching new technologies to further your progress in the game.',
+        name: '科学生产',
+        desc: '科学被用于研究新技术来推动你在游戏中的进步。',
         icon: 'scienceIcon',
         baseCapacity: 1000000,
         unlocked: false

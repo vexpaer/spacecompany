@@ -33,7 +33,7 @@ Game.stargazeData = (function(){
 
 	instance.darkMatter = {
 		name: "暗物质",
-		desc: "在这里，您可以看到您所获得的黑暗事物多少以及重置时收到的收益（括号中）。 您可以了解DM的获取方式，并且可以将其用于特定于Dark-Matter的升级。",
+		desc: "在这里，您可以看到您所获得的黑暗事物多少以及重置时收到的收益（括号中）。 您可以了解DM的获取方式，并且可以将其用于特定于暗物质的升级。",
 		current: 0,
 		count: 0,
 		category: "general",

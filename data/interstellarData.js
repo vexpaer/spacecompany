@@ -22,7 +22,7 @@ Game.interstellarData = (function(){
 
 	instance.comms = {
 		name: '通讯',
-		desc: '这是您了解其他系统旅行的地方。 <br> <b>注意：半人马座阿尔法星的第一颗星星是4.3 LY。 1 IRS不会让你在那里。</b>',
+		desc: '这是您了解其他系统旅行的地方。 <br> <b>注意：半人马座阿尔法星的第一颗星星是4.3 LY。 1 星际雷达扫描仪不会让你在那里。</b>',
 		category: 'general',
 		unlocked: false
 	};
@@ -73,8 +73,8 @@ Game.interstellarData = (function(){
 	};
 
 	instance.hyacinite = {
-		name: "Hyacinite Congregation",
-		desc: "The Hyacinite Congregationg is a science loving society, proud of all advances in technology and always looking to the future. They fight for the truth and are welcoming to anyone who shares their beliefs.",
+		name: "善恶会众",
+		desc: "善恶会众是一个热爱科学的社会，为科技的进步而自豪，并且一直展望未来。 他们争取真相，欢迎任何分享信仰的人。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
@@ -82,7 +82,7 @@ Game.interstellarData = (function(){
 
 	instance.kitrinos = {
 		name: "Kitrinos公司",
-		desc: "This private company has grown powerful over the galaxy and is inspired by profits, with allies to those who can support their aims. Upgrades offered focus on passive gains, with a large amount of automation.",
+		desc: "这个私人公司在银河系中已经发展壮大，受到了利润的启发，同盟国对那些能够支持他们的目标的人们也是如此。 提供的升级主要集中在被动收益上，具有大量的自动化功能。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
@@ -333,8 +333,8 @@ Game.militaryData = (function(){
 
 	instance.corvette = {
 		entryName: 'corvette',
-		name: 'Corvette',
-		desc: 'The Corvette is a mid-sized ship with decent speed, given its other attributes. What it lacks in defense, it makes up for in power and speed and is a good ship to populate your fleets with.',
+		name: '巡洋舰',
+		desc: '巡洋舰是一艘中等速度的船，具有其他特性。 它所缺乏的防守，它弥补了力量和速度，是一个很好的运输船队。',
 		category: 'military',
 		unlocked: true,
 		displayNeedsUpdate: true,
@@ -357,8 +357,8 @@ Game.militaryData = (function(){
 
 	instance.battlecruiser = {
 		entryName: 'battlecruiser',
-		name: 'Battle Cruiser',
-		desc: 'The Battle Cruiser is a costly investment, but pays off with a balanced mix of power, defense and speed. It is a high-end ship, both in terms of attributes and cost.',
+		name: '战列巡洋舰',
+		desc: '战巡洋舰是一项成本高昂的投资，但是却能够平衡力量，防御和速度。 无论是在属性还是成本方面，它都是高端船舶。',
 		category: 'military',
 		unlocked: true,
 		displayNeedsUpdate: true,
@@ -381,8 +381,8 @@ Game.militaryData = (function(){
 
 	instance.capitalship = {
 		entryName: 'capitalship',
-		name: 'Capital Ship',
-		desc: 'The Capital Ship is a Defense-heavy ship, but can still pack a punch with it\'s large attack force. The main downside is the slow speed, dragging the fleet\'s manouverability down.',
+		name: '主力舰',
+		desc: '主力舰是一艘防御重型舰，但仍然可以用大量的攻击力打下一拳。 主要的缺点是速度慢，拖下了车队的可操作性。',
 		category: 'military',
 		unlocked: true,
 		displayNeedsUpdate: true,
