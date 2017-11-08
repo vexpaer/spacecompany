@@ -51,14 +51,14 @@ Game.interstellarData = (function(){
 
 	instance.military = {
 		name: '军事',
-		desc: 'This is where you can build up your fleet of ships to invade other systems. Your total fleet\'s attributes are based on which ships you own.',
+		desc: '这是你可以建立你的舰队入侵其他系统的地方。 你的总舰队的属性是基于你拥有的船只。',
 		category: 'general',
 		unlocked: false
 	};
 
 	instance.carnelian = {
 		name: "红磨石",
-		desc: "A ruthless faction with a fierce anger towards the ones in power, most notable, the Prasnian Empire. They are incessant in their opposition and focus their whole force towards attacking their enemies. Because of this, what they offer comprises mostly of upgrades tending towards a more active gameplay.",
+		desc: "一个对当权者最为愤怒的无情派，最显着的是普拉斯的帝国。 他们不断地反对，集中全力攻击敌人。 正因为如此，他们所提供的主要是升级趋向于更积极的游戏。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false

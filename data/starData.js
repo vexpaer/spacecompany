@@ -6,7 +6,7 @@ Game.starData = (function(){
 		name: "Alpha Centauri",
 		distance: 4.3,
 		planets: 1,
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		factionId: "hyacinite",
 		resource1: "Ice",
 		resource2: "Hydrogen",
@@ -21,7 +21,7 @@ Game.starData = (function(){
 		name: "Barnard's Star",
 		distance: 5.94,
 		planets: 0,
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		factionId: "carnelian",
 		resource1: "Hydrogen",
 		resource2: "Helium",
@@ -36,7 +36,7 @@ Game.starData = (function(){
 		name: "CN Leonis",
 		distance: 7.8,
 		planets: 1,
-		faction: "Prasnian Empire",
+		faction: "Prasnian帝国",
 		factionId: "prasnian",
 		resource1: "Lunarite",
 		resource2: "Gem",
@@ -51,7 +51,7 @@ Game.starData = (function(){
 		name: "Lalande 21185",
 		distance: 8.31,
 		planets: 1,
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		factionId: "kitrinos",
 		resource1: "Titanium",
 		resource2: "Silicon",
@@ -66,7 +66,7 @@ Game.starData = (function(){
 		name: "BL Ceti",
 		distance: 8.55,
 		planets: 1,
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		factionId: "moviton",
 		resource1: "Charcoal",
 		resource2: "Methane",
@@ -82,7 +82,7 @@ Game.starData = (function(){
 		distance: 8.6,
 		planets: 5,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Silicon",
 		resource2: "Methane",
 		stats: {
@@ -97,7 +97,7 @@ Game.starData = (function(){
 		distance: 9.69,
 		planets: 2,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Gold",
 		resource2: "Lava",
 		stats: {
@@ -112,7 +112,7 @@ Game.starData = (function(){
 		distance: 10.33,
 		planets: 2,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Uranium",
 		resource2: "Methane",
 		stats: {
@@ -127,7 +127,7 @@ Game.starData = (function(){
 		distance: 10.5,
 		planets: 5,
 		factionId: "prasnian",
-		faction: "Prasnian Empire",
+		faction: "Prasnian帝国",
 		resource1: "Hydrogen",
 		resource2: "Metal",
 		stats: {
@@ -142,7 +142,7 @@ Game.starData = (function(){
 		distance: 10.73,
 		planets: 5,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Oil",
 		resource2: "Lava",
 		stats: {
@@ -157,7 +157,7 @@ Game.starData = (function(){
 		distance: 10.89,
 		planets: 4,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Hydrogen",
 		resource2: "Helium",
 		stats: {
@@ -172,7 +172,7 @@ Game.starData = (function(){
 		distance: 11.08,
 		planets: 1,
 		factionId: "hyacinite",
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		resource1: "Silver",
 		resource2: "Metal",
 		stats: {
@@ -187,7 +187,7 @@ Game.starData = (function(){
 		distance: 11.41,
 		planets: 1,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Gem",
 		resource2: "Charcoal",
 		stats: {
@@ -202,7 +202,7 @@ Game.starData = (function(){
 		distance: 11.43,
 		planets: 5,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Uranium",
 		resource2: "Ice",
 		stats: {
@@ -217,7 +217,7 @@ Game.starData = (function(){
 		distance: 11.64,
 		planets: 1,
 		factionId: "prasnian",
-		faction: "Prasnian Empire",
+		faction: "Prasnian帝国",
 		resource1: "Helium",
 		resource2: "Lunarite",
 		stats: {
@@ -232,7 +232,7 @@ Game.starData = (function(){
 		distance: 11.64,
 		planets: 5,
 		factionId: "hyacinite",
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		resource1: "Meteorite",
 		resource2: "Silver",
 		stats: {
@@ -247,7 +247,7 @@ Game.starData = (function(){
 		distance: 11.8,
 		planets: 1,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Methane",
 		resource2: "Gold",
 		stats: {
@@ -262,7 +262,7 @@ Game.starData = (function(){
 		distance: 11.83,
 		planets: 4,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Helium",
 		resource2: "Methane",
 		stats: {
@@ -277,7 +277,7 @@ Game.starData = (function(){
 		distance: 11.83,
 		planets: 5,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Gem",
 		resource2: "Oil",
 		stats: {
@@ -292,7 +292,7 @@ Game.starData = (function(){
 		distance: 11.9,
 		planets: 4,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Silicon",
 		resource2: "Silicon",
 		stats: {
@@ -307,7 +307,7 @@ Game.starData = (function(){
 		distance: 11.94,
 		planets: 4,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Uranium",
 		resource2: "Gem",
 		stats: {
@@ -322,7 +322,7 @@ Game.starData = (function(){
 		distance: 12.2,
 		planets: 1,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Gold",
 		resource2: "Hydrogen",
 		stats: {
@@ -337,7 +337,7 @@ Game.starData = (function(){
 		distance: 12.39,
 		planets: 1,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Uranium",
 		resource2: "Titanium",
 		stats: {
@@ -352,7 +352,7 @@ Game.starData = (function(){
 		distance: 12.4,
 		planets: 4,
 		factionId: "prasnian",
-		faction: "Prasnian Empire",
+		faction: "Prasnian帝国",
 		resource1: "Silver",
 		resource2: "Meteorite",
 		stats: {
@@ -367,7 +367,7 @@ Game.starData = (function(){
 		distance: 12.78,
 		planets: 1,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Lava",
 		resource2: "Silver",
 		stats: {
@@ -382,7 +382,7 @@ Game.starData = (function(){
 		distance: 12.87,
 		planets: 5,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Meteorite",
 		resource2: "Silver",
 		stats: {
@@ -397,7 +397,7 @@ Game.starData = (function(){
 		distance: 13.07,
 		planets: 4,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Lunarite",
 		resource2: "Ice",
 		stats: {
@@ -412,7 +412,7 @@ Game.starData = (function(){
 		distance: 13.16,
 		planets: 1,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Wood",
 		resource2: "Metal",
 		stats: {
@@ -427,7 +427,7 @@ Game.starData = (function(){
 		distance: 13.47,
 		planets: 1,
 		factionId: "hyacinite",
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		resource1: "Charcoal",
 		resource2: "Lava",
 		stats: {
@@ -442,7 +442,7 @@ Game.starData = (function(){
 		distance: 13.91,
 		planets: 5,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Metal",
 		resource2: "Meteorite",
 		stats: {
@@ -457,7 +457,7 @@ Game.starData = (function(){
 		distance: 14.05,
 		planets: 1,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Silver",
 		resource2: "Lava",
 		stats: {
@@ -472,7 +472,7 @@ Game.starData = (function(){
 		distance: 14.13,
 		planets: 1,
 		factionId: "hyacinite",
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		resource1: "Gold",
 		resource2: "Silicon",
 		stats: {
@@ -487,7 +487,7 @@ Game.starData = (function(){
 		distance: 14.22,
 		planets: 3,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Silicon",
 		resource2: "Methane",
 		stats: {
@@ -502,7 +502,7 @@ Game.starData = (function(){
 		distance: 14.57,
 		planets: 2,
 		factionId: "moviton",
-		faction: "Moviton Syndicate",
+		faction: "莫维顿辛迪加",
 		resource1: "Metal",
 		resource2: "Hydrogen",
 		stats: {
@@ -517,7 +517,7 @@ Game.starData = (function(){
 		distance: 14.65,
 		planets: 1,
 		factionId: "hyacinite",
-		faction: "Hyacinite Congregation",
+		faction: "善恶会众",
 		resource1: "Lava",
 		resource2: "Methane",
 		stats: {
@@ -532,7 +532,7 @@ Game.starData = (function(){
 		distance: 14.76,
 		planets: 4,
 		factionId: "kitrinos",
-		faction: "Kitrinos Corporation",
+		faction: "善恶会众",
 		resource1: "Uranium",
 		resource2: "Lava",
 		stats: {
@@ -547,7 +547,7 @@ Game.starData = (function(){
 		distance: 14.77,
 		planets: 2,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Lunarite",
 		resource2: "Lunarite",
 		stats: {
@@ -562,7 +562,7 @@ Game.starData = (function(){
 		distance: 14.8,
 		planets: 1,
 		factionId: "prasnian",
-		faction: "Prasnian Empire",
+		faction: "Prasnian帝国",
 		resource1: "Methane",
 		resource2: "Hydrogen",
 		stats: {
@@ -577,7 +577,7 @@ Game.starData = (function(){
 		distance: 15.07,
 		planets: 1,
 		factionId: "carnelian",
-		faction: "Carnelian Resistance",
+		faction: "玛瑙抵抗",
 		resource1: "Lunarite",
 		resource2: "Silver",
 		stats: {

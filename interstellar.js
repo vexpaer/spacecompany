@@ -466,12 +466,12 @@ Game.interstellar.military = (function(){
         var roll = Math.random();
         if(chance >= roll){
             star.spy += 1;
-            Game.notifyInfo("Successful Espionage!", "You have found out more about the star system!");
+            Game.notifyInfo("间谍行动成功！", "你已经发现了更多关于星系的信息！");
         } else {
             var scout = this.entries.scout;
             scout.count -= scout.active;
             scout.active = 0;
-            Game.notifyInfo("Espionage Failed!", "You lost all of your active scouts.");
+            Game.notifyInfo("间谍行动失败！", "你失去了所有的派出的侦察兵。");
         }
         star.displayNeedsUpdate = true;
         this.updateFleetStats();

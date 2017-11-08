@@ -49,7 +49,7 @@ Game.stargazeData = (function(){
 	};
 
 	instance.prasnian = {
-		name: "Prasnian Empire",
+		name: "Prasnian帝国",
 		desc: "The current leader in the galaxy and the faction most focused on keeping things as they are. Opposed to change, they have an authoritarian regime and offer mainly upgrades concerning structures such as the Dysons or Wonders",
 		category: "faction",
 		opinion: 0,
@@ -57,8 +57,8 @@ Game.stargazeData = (function(){
 	};
 
 	instance.hyacinite = {
-		name: "Hyacinite Congregation",
-		desc: "The Hyacinite Congregationg is a science loving society, proud of all advances in technology and always looking to the future. They fight for the truth and are welcoming to anyone who shares their beliefs.",
+		name: "善恶会众",
+		desc: "善恶会众是一个热爱科学的社会，为科技的进步而自豪，并且一直展望未来。 他们争取真相，欢迎任何分享信仰的人。",
 		category: "faction",
 		opinion: 0,
 		unlocked: false
