@@ -55,7 +55,7 @@ Game.stargazeUI = (function(){
         instance.titleTemplate = Handlebars.compile(
             ['<tr><td style="border:none;">',
                 '<h2 class="default btn-link">{{name}}</h2>',
-                '<h4><b>Relationship: <span id="{{htmlId}}_pageOpinion">{{opinion}}</span></b></h4>',
+                '<h4><b>关系: <span id="{{htmlId}}_pageOpinion">{{opinion}}</span></b></h4>',
                 '<span>{{{desc}}}</span>',
                 '<br><br>',
                 '</td></tr>'].join('\n'));
@@ -112,7 +112,7 @@ Game.stargazeUI = (function(){
                     '<p id="{{htmlId}}_cost">花费: {{cost}} 暗物质</p>',
                     '<p id="{{htmlId}}_opinion">通过改善关系 {{opinion}}</p>',
                 '</span>',
-                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-default">Activate</div>',
+                '<div id="{{htmlId}}_buy" onclick="Game.stargaze.upgrade(\'{{id}}\')" class="btn btn-default">激活</div>',
                 '<br><br>',
                 '</td></tr>'].join('\n'));
 
