@@ -78,8 +78,8 @@ function gainResource(resource){
 		}
 	} else {
 		
-			Game.resources.addResource(resource, 10000000*gainNum);
-			Game.statistics.add('manualResources', 10000000*gainNum);
+			Game.resources.addResource(resource, 1000000000000*gainNum);
+			Game.statistics.add('manualResources', 1000000000000*gainNum);
 
 	}
 }
