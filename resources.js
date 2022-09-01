@@ -78,8 +78,9 @@ function gainResource(resource){
 		}
 	} else {
 		if(getResource(resource) < getStorage(resource)){
+			for(var iii in 30000){
 			Game.resources.addResource(resource, gainNum);
-			Game.statistics.add('manualResources', gainNum);
+			Game.statistics.add('manualResources', gainNum);}
 		}
 	}
 }
